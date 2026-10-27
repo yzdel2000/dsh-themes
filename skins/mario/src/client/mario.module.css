@@ -1,87 +1,8 @@
-/* mario — 超级马里奥 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-mario], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-mario] {
+/* mario — 超级马里奥 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-mario],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-mario]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #3a2415;
-  background-color: #fff9ec;
-}
-
-body[data-dsh-mario][data-ds-dark-theme] {
-  color: #f2e4c8;
-  background-color: #141009;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-mario] {
-  --color-primary: #e52521;
-  --primary: #e52521;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 229, 37, 33;
-  --color-primary-light-1: #f0534f;
-  --color-primary-light-2: #f78a87;
-  --color-primary-light-3: #fbc4c2;
-  --color-primary-dark-1: #b01a17;
-  --brand: #e52521;
-  --brand-light: #fde8e7;
-  --brand-hover: #f04440;
-  --color-brand-fill: #e52521;
-  --color-brand-bg: #fde8e7;
-  --aou-1: #fdf0ef;
-  --aou-2: #fadbd9;
-  --aou-3: #f5b8b3;
-  --aou-4: #ef8f89;
-  --aou-5: #e85a52;
-  --aou-6: #e52521;
-  --aou-7: #c01d1a;
-  --aou-8: #971613;
-  --aou-9: #6e100e;
-  --aou-10: #450a08;
-  --bg-base: #fff9ec;
-  --bg-1: #fff3d9;
-  --bg-2: #fbeac8;
-  --bg-3: #f5dcac;
-  --bg-4: #e8c88e;
-  --bg-5: #d9ae70;
-  --bg-6: #b98d55;
-  --bg-8: #7a5a33;
-  --bg-9: #4a3721;
-  --bg-10: #241a10;
-  --color-bg-1: #fff3d9;
-  --color-bg-2: #fbeac8;
-  --color-bg-3: #f5dcac;
-  --color-bg-4: #e8c88e;
-  --bg-hover: #fde9c9;
-  --bg-active: #f9dda8;
-  --text-primary: #3a2415;
-  --text-secondary: #7a5c40;
-  --text-disabled: #c9b49a;
-  --text-0: #241505;
-  --text-white: #fffdf5;
-  --color-text-1: #3a2415;
-  --color-text-2: #7a5c40;
-  --color-text-3: #a08464;
-  --color-text-4: #c9b49a;
-  --border-base: #e3c892;
-  --border-light: #f0dcb4;
-  --border-special: #d4af72;
-  --color-border: #e3c892;
-  --color-border-1: #e3c892;
-  --color-border-2: #f0dcb4;
-  --fill: #fff3d9;
-  --color-fill: #fff3d9;
-  --fill-0: #fffcf3;
-  --fill-white-to-black: #fffcf3;
-  --dialog-fill-0: #fffcf3;
-  --inverse: #3a2415;
-  --success: #3fa34d;
-  --warning: #fbd000;
-  --danger: #e52521;
-  --info: #2b50c8;
-  --message-user-bg: #dce6ff;
-  --message-tips-bg: #fff0d0;
-  --workspace-btn-bg: #fde8e7;
-  --color-guid-agent-bar: #fff0d8;
   --mario-red: #e52521;
   --mario-red-dark: #b01a17;
   --mario-blue: #2b50c8;
@@ -91,90 +12,132 @@ body[data-dsh-mario] {
   --mario-brick: #b9552f;
   --mario-brick-dark: #8a3a1e;
   --mario-cream: #fff6e3;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-mario][data-ds-dark-theme] {
-  --color-primary: #ff5147;
-  --primary: #ff5147;
-  --primary-rgb: 255, 81, 71;
-  --color-primary-light-1: #ff7a70;
-  --color-primary-light-2: #ffa29b;
-  --color-primary-light-3: #ffc9c5;
-  --color-primary-dark-1: #d92e26;
-  --brand: #ff5147;
-  --brand-light: #4a1712;
-  --brand-hover: #ff6a60;
-  --color-brand-fill: #ff5147;
-  --color-brand-bg: #4a1712;
-  --aou-1: #450a08;
-  --aou-2: #6e100e;
-  --aou-3: #971613;
-  --aou-4: #c01d1a;
-  --aou-5: #e52521;
-  --aou-6: #ff5147;
-  --aou-7: #ff7a70;
-  --aou-8: #ffa29b;
-  --aou-9: #ffc9c5;
-  --aou-10: #fde8e7;
-  --bg-base: #141009;
-  --bg-1: #1d1710;
-  --bg-2: #271e14;
-  --bg-3: #33271a;
-  --bg-4: #403120;
-  --bg-5: #514028;
-  --bg-6: #6b5636;
-  --bg-8: #a8895c;
-  --bg-9: #d9be92;
-  --bg-10: #f5e8cd;
-  --color-bg-1: #1d1710;
-  --color-bg-2: #271e14;
-  --color-bg-3: #33271a;
-  --color-bg-4: #403120;
-  --bg-hover: #2e2415;
-  --bg-active: #3a2d1a;
-  --text-primary: #f2e4c8;
-  --text-secondary: #c4ab85;
-  --text-disabled: #6e5c42;
-  --text-0: #fff6e3;
-  --text-white: #fffdf5;
-  --color-text-1: #f2e4c8;
-  --color-text-2: #c4ab85;
-  --color-text-3: #9a8461;
-  --color-text-4: #6e5c42;
-  --border-base: #4d3b22;
-  --border-light: #3a2d1a;
-  --border-special: #6e5730;
-  --color-border: #4d3b22;
-  --color-border-1: #4d3b22;
-  --color-border-2: #3a2d1a;
-  --fill: #271e14;
-  --color-fill: #271e14;
-  --fill-0: #1d1710;
-  --fill-white-to-black: #141009;
-  --dialog-fill-0: #241c11;
-  --inverse: #f2e4c8;
-  --success: #4cc45c;
-  --warning: #fbd000;
-  --danger: #ff5147;
-  --info: #5b7dff;
-  --message-user-bg: #24408f;
-  --message-tips-bg: #33271a;
-  --workspace-btn-bg: #4a1712;
-  --color-guid-agent-bar: #241c11;
-  --mario-red: #ff5147;
-  --mario-red-dark: #d92e26;
-  --mario-blue: #5b7dff;
-  --mario-blue-dark: #3d5ad9;
-  --mario-gold: #ffd21f;
-  --mario-gold-dark: #d9a800;
-  --mario-brick: #c96a3f;
-  --mario-brick-dark: #8a3a1e;
-  --mario-cream: #2a2114;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-mario] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #fff9ec;
+  --dsw-alias-bg-l1: #fff3d9;
+  --dsw-alias-bg-l2: #fbeac8;
+  --dsw-alias-bg-layer-1: #fff3d9;
+  --dsw-alias-bg-layer-2: #fbeac8;
+  --dsw-alias-bg-layer-3: #f5dcac;
+  --dsw-alias-bg-layer-4: #e8c88e;
+  --dsw-alias-bg-overlay: #fffcf3;
+  --dsw-alias-bg-module-platform: #fbeac8;
+  --dsw-alias-bg-multi-select: #f9dda8;
+  --dsw-alias-bg-skeleton: #f5dcac;
+  --dsw-alias-bg-document-preview: #fff3d9;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #e52521 30%, transparent);
+  --dsw-alias-label-primary: #3a2415;
+  --dsw-alias-label-secondary: #7a5c40;
+  --dsw-alias-label-tertiary: #a08464;
+  --dsw-alias-label-quaternary: #c9b49a;
+  --dsw-alias-label-caption: #241505;
+  --dsw-alias-label-dimmed: #c9b49a;
+  --dsw-alias-label-primary-dimmed: #7a5c40;
+  --dsw-alias-label-primary-bluish: #3a2415;
+  --dsw-alias-label-primary-inverted: #fffdf5;
+  --dsw-alias-label-primary-foreground: #fffdf5;
+  --dsw-alias-label-document-preview: #3a2415;
+  --dsw-alias-label-error: #e52521;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #3a2415 30%, transparent);
+  --dsw-alias-label-deep-diving: #2b50c8;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #2b50c8 55%, transparent);
+  --dsw-alias-link: #e52521;
+  --dsw-alias-border-l1: #f0dcb4;
+  --dsw-alias-border-l2: #e3c892;
+  --dsw-alias-border-l2-darkmode-thin: #f0dcb4;
+  --dsw-alias-border-l3: #d4af72;
+  --dsw-alias-border-l4: #d4af72;
+  --dsw-alias-border-inverted: #3a2415;
+  --dsw-alias-border-inverted2: #3a2415;
+  --dsw-alias-separator-primary: #f0dcb4;
+  --dsw-alias-brand-primary: #e52521;
+  --dsw-alias-brand-primary-invert: #3a2415;
+  --dsw-alias-brand-text: #fffdf5;
+  --dsw-alias-onboarding-accent: #e52521;
+  --dsw-alias-markdown-citation: #f0534f;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #e52521 14%, transparent);
+  --dsw-alias-markdown-inline-code: #fff3d9;
+  --dsw-alias-markdown-code-block: #fff3d9;
+  --dsw-alias-markdown-code-block-banner: #fbeac8;
+  --dsw-alias-markdown-code-segment-selected: #f5dcac;
+  --dsw-alias-markdown-code-segment-unselected: #fff3d9;
+  --dsw-alias-markdown-placeholder: #c9b49a;
+  --dsw-alias-fill-l1: #fff3d9;
+  --dsw-alias-fill-l2: #fffcf3;
+  --dsw-alias-fill-tertiary: #f5dcac;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #3a2415 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #fde9c9;
+  --dsw-alias-interactive-bg-active: #f9dda8;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #e52521 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #e52521 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #f5dcac;
+  --dsw-alias-state-error-primary: #e52521;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #e52521 15%, transparent);
+  --dsw-alias-state-success-primary: #3fa34d;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #3fa34d 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #3fa34d 8%, transparent);
+  --dsw-alias-state-warn-primary: #fbd000;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #fbd000 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #fbd000 8%, transparent);
+  --dsw-alias-state-warn-label: #fbd000;
+  --dsw-alias-state-business-primary: #2b50c8;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #2b50c8 10%, transparent);
+  --dsw-alias-state-idle-primary: #c9b49a;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #3fa34d 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #e52521 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #7a5c40 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #3fa34d 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #3fa34d 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #3fa34d 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #e52521 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #e52521 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #e52521 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #7a5c40 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #fff3d9;
+  --dsw-alias-scrollbar-bg-l2: #fbeac8;
+  --dsw-alias-scrollbar-hover-l1: #fde9c9;
+  --dsw-alias-scrollbar-hover-l2: #fde9c9;
+  --dsw-alias-menu-icon: #7a5c40;
+  --dsw-alias-menu-group-header-fill: #fbeac8;
+  --dsw-alias-tooltip-bg: #3a2415;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #f5dcac;
+  --dsw-alias-toast-label: #3a2415;
+  --dsw-alias-switch-thumb: #fffdf5;
+  --dsw-alias-turn-trigger: #7a5c40;
+  --dsw-alias-turn-trigger-bg: #fbeac8;
+  --dsw-alias-turn-trigger-bg-hover: #f5dcac;
+  --dsw-alias-button-primary-fill: #e52521;
+  --dsw-alias-button-primary-hover: #b01a17;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #e52521 45%, transparent);
+  --dsw-alias-button-contrast-fill: #b01a17;
+  --dsw-alias-button-elevated-fill: #fff3d9;
+  --dsw-alias-button-floating-fill: #fbeac8;
+  --dsw-alias-button-floating-hover: #fde9c9;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #e52521 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #f78a87;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #e52521 24%, transparent);
+  --dsw-alias-button-info-fill: #2b50c8;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #2b50c8 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #fbeac8;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #fde9c9;
+  --dsw-alias-onboarding-card-fill: #fff3d9;
+  --dsw-alias-onboarding-secondary-fill: #fbeac8;
+  --dsw-alias-onboarding-checkbox-border: #e3c892;
+  --dsw-alias-settings-card-fill: #fbeac8;
+  --dsw-alias-settings-card-stroke: #e3c892;
+  --dsw-specific-bubble: #fbeac8;
+  --dsw-specific-bubble-highlight: #dce6ff;
+  --dsw-specific-input-major: #fffcf3;
+  --dsw-specific-login-input: #fff3d9;
+  --dsw-specific-menu: #fff3d9;
+  --dsw-specific-selector: #fbeac8;
+  --dsw-specific-sidebar-fill: #fff3d9;
+  --dsw-specific-sidebar-nav-item-active: #f9dda8;
+  --dsw-specific-sidebar-nav-item-active-accent: #e52521;
+  --dsw-specific-sidebar-nav-item-hover: #fde9c9;
+  --dsw-specific-tip: #f5dcac;
   --dsw-static-deepseek-50: #fdf0ef;
   --dsw-static-blue-50: #fdf0ef;
   --dsw-static-deepseek-50p: #fadbd9;
@@ -262,10 +225,146 @@ body[data-dsh-mario] {
   --dsw-static-red-500: #e52521;
   --dsw-static-red-600: color-mix(in srgb, #e52521 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #e52521 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-mario][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-mario][data-ds-dark-theme]{
+  color: #f2e4c8;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 255, 81, 71;
+  --mario-red: #ff5147;
+  --mario-red-dark: #d92e26;
+  --mario-blue: #5b7dff;
+  --mario-blue-dark: #3d5ad9;
+  --mario-gold: #ffd21f;
+  --mario-gold-dark: #d9a800;
+  --mario-brick: #c96a3f;
+  --mario-brick-dark: #8a3a1e;
+  --mario-cream: #2a2114;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #141009;
+  --dsw-alias-bg-l1: #1d1710;
+  --dsw-alias-bg-l2: #271e14;
+  --dsw-alias-bg-layer-1: #1d1710;
+  --dsw-alias-bg-layer-2: #271e14;
+  --dsw-alias-bg-layer-3: #33271a;
+  --dsw-alias-bg-layer-4: #403120;
+  --dsw-alias-bg-overlay: #241c11;
+  --dsw-alias-bg-module-platform: #271e14;
+  --dsw-alias-bg-multi-select: #3a2d1a;
+  --dsw-alias-bg-skeleton: #33271a;
+  --dsw-alias-bg-document-preview: #1d1710;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #ff5147 30%, transparent);
+  --dsw-alias-label-primary: #f2e4c8;
+  --dsw-alias-label-secondary: #c4ab85;
+  --dsw-alias-label-tertiary: #9a8461;
+  --dsw-alias-label-quaternary: #6e5c42;
+  --dsw-alias-label-caption: #fff6e3;
+  --dsw-alias-label-dimmed: #6e5c42;
+  --dsw-alias-label-primary-dimmed: #c4ab85;
+  --dsw-alias-label-primary-bluish: #f2e4c8;
+  --dsw-alias-label-primary-inverted: #fffdf5;
+  --dsw-alias-label-primary-foreground: #fffdf5;
+  --dsw-alias-label-document-preview: #f2e4c8;
+  --dsw-alias-label-error: #ff5147;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #f2e4c8 30%, transparent);
+  --dsw-alias-label-deep-diving: #5b7dff;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #5b7dff 55%, transparent);
+  --dsw-alias-link: #ff5147;
+  --dsw-alias-border-l1: #3a2d1a;
+  --dsw-alias-border-l2: #4d3b22;
+  --dsw-alias-border-l2-darkmode-thin: #3a2d1a;
+  --dsw-alias-border-l3: #6e5730;
+  --dsw-alias-border-l4: #6e5730;
+  --dsw-alias-border-inverted: #f2e4c8;
+  --dsw-alias-border-inverted2: #f2e4c8;
+  --dsw-alias-separator-primary: #3a2d1a;
+  --dsw-alias-brand-primary: #ff5147;
+  --dsw-alias-brand-primary-invert: #f2e4c8;
+  --dsw-alias-brand-text: #fffdf5;
+  --dsw-alias-onboarding-accent: #ff5147;
+  --dsw-alias-markdown-citation: #ff7a70;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #ff5147 14%, transparent);
+  --dsw-alias-markdown-inline-code: #271e14;
+  --dsw-alias-markdown-code-block: #1d1710;
+  --dsw-alias-markdown-code-block-banner: #271e14;
+  --dsw-alias-markdown-code-segment-selected: #33271a;
+  --dsw-alias-markdown-code-segment-unselected: #1d1710;
+  --dsw-alias-markdown-placeholder: #6e5c42;
+  --dsw-alias-fill-l1: #271e14;
+  --dsw-alias-fill-l2: #1d1710;
+  --dsw-alias-fill-tertiary: #33271a;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #f2e4c8 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #2e2415;
+  --dsw-alias-interactive-bg-active: #3a2d1a;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #ff5147 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #ff5147 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #33271a;
+  --dsw-alias-state-error-primary: #ff5147;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #ff5147 15%, transparent);
+  --dsw-alias-state-success-primary: #4cc45c;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #4cc45c 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #4cc45c 8%, transparent);
+  --dsw-alias-state-warn-primary: #fbd000;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #fbd000 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #fbd000 8%, transparent);
+  --dsw-alias-state-warn-label: #fbd000;
+  --dsw-alias-state-business-primary: #5b7dff;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #5b7dff 10%, transparent);
+  --dsw-alias-state-idle-primary: #6e5c42;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #4cc45c 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #ff5147 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #c4ab85 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #4cc45c 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #4cc45c 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #4cc45c 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #ff5147 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #ff5147 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #ff5147 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #c4ab85 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #1d1710;
+  --dsw-alias-scrollbar-bg-l2: #271e14;
+  --dsw-alias-scrollbar-hover-l1: #2e2415;
+  --dsw-alias-scrollbar-hover-l2: #2e2415;
+  --dsw-alias-menu-icon: #c4ab85;
+  --dsw-alias-menu-group-header-fill: #271e14;
+  --dsw-alias-tooltip-bg: #f2e4c8;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #33271a;
+  --dsw-alias-toast-label: #f2e4c8;
+  --dsw-alias-switch-thumb: #fffdf5;
+  --dsw-alias-turn-trigger: #c4ab85;
+  --dsw-alias-turn-trigger-bg: #271e14;
+  --dsw-alias-turn-trigger-bg-hover: #33271a;
+  --dsw-alias-button-primary-fill: #ff5147;
+  --dsw-alias-button-primary-hover: #d92e26;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #ff5147 45%, transparent);
+  --dsw-alias-button-contrast-fill: #d92e26;
+  --dsw-alias-button-elevated-fill: #1d1710;
+  --dsw-alias-button-floating-fill: #271e14;
+  --dsw-alias-button-floating-hover: #2e2415;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #ff5147 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #ffa29b;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #ff5147 24%, transparent);
+  --dsw-alias-button-info-fill: #5b7dff;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #5b7dff 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #271e14;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #2e2415;
+  --dsw-alias-onboarding-card-fill: #1d1710;
+  --dsw-alias-onboarding-secondary-fill: #271e14;
+  --dsw-alias-onboarding-checkbox-border: #4d3b22;
+  --dsw-alias-settings-card-fill: #271e14;
+  --dsw-alias-settings-card-stroke: #4d3b22;
+  --dsw-specific-bubble: #271e14;
+  --dsw-specific-bubble-highlight: #24408f;
+  --dsw-specific-input-major: #241c11;
+  --dsw-specific-login-input: #1d1710;
+  --dsw-specific-menu: #1d1710;
+  --dsw-specific-selector: #271e14;
+  --dsw-specific-sidebar-fill: #1d1710;
+  --dsw-specific-sidebar-nav-item-active: #3a2d1a;
+  --dsw-specific-sidebar-nav-item-active-accent: #ff5147;
+  --dsw-specific-sidebar-nav-item-hover: #2e2415;
+  --dsw-specific-tip: #33271a;
   --dsw-static-deepseek-50: #450a08;
   --dsw-static-blue-50: #450a08;
   --dsw-static-deepseek-50p: #6e100e;
@@ -353,69 +452,8 @@ body[data-dsh-mario][data-ds-dark-theme] {
   --dsw-static-red-500: #ff5147;
   --dsw-static-red-600: color-mix(in srgb, #ff5147 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #ff5147 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-mario] {
-  --dsw-alias-button-primary-fill: #e52521;
-  --dsw-alias-button-primary-hover: #f04440;
-  --dsw-alias-button-primary-dimmed: #fadbd9;
-  --dsw-alias-button-info-fill: #e52521;
-  --dsw-alias-button-info-hover: #f04440;
-  --dsw-alias-button-contrast-fill: #c01d1a;
-  --dsw-alias-button-ghost-active-fill: #fde8e7;
-  --dsw-alias-button-ghost-active-hover: #fadbd9;
-  --dsw-alias-button-ghost-active-border: #ef8f89;
-  --dsw-alias-button-elevated-fill: #fffcf3;
-  --dsw-alias-button-floating-fill: #fffcf3;
-  --dsw-alias-button-floating-hover: #fde9c9;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(229, 37, 33, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(229, 37, 33, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(229, 37, 33, 0.6);
-  --dsw-specific-bubble: #dce6ff;
-  --dsw-specific-bubble-highlight: #f5b8b3;
-  --dsw-specific-input-major: #fffcf3;
-  --dsw-specific-login-input: #fffcf3;
-  --dsw-specific-sidebar-fill: #e52521;
-  --dsw-specific-sidebar-nav-item-active: #fadbd9;
-  --dsw-specific-sidebar-nav-item-hover: #fde9c9;
-  --dsw-specific-sidebar-nav-item-active-accent: #ef8f89;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-mario][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #ff5147;
-  --dsw-alias-button-primary-hover: #ff6a60;
-  --dsw-alias-button-primary-dimmed: #6e100e;
-  --dsw-alias-button-info-fill: #ff5147;
-  --dsw-alias-button-info-hover: #ff6a60;
-  --dsw-alias-button-contrast-fill: #ff7a70;
-  --dsw-alias-button-ghost-active-fill: #4a1712;
-  --dsw-alias-button-ghost-active-hover: #6e100e;
-  --dsw-alias-button-ghost-active-border: #c01d1a;
-  --dsw-alias-button-elevated-fill: #1d1710;
-  --dsw-alias-button-floating-fill: #1d1710;
-  --dsw-alias-button-floating-hover: #2e2415;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(255, 81, 71, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(255, 81, 71, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(255, 81, 71, 0.6);
-  --dsw-specific-bubble: #24408f;
-  --dsw-specific-bubble-highlight: #971613;
-  --dsw-specific-input-major: #1d1710;
-  --dsw-specific-login-input: #1d1710;
-  --dsw-specific-sidebar-fill: #ff5147;
-  --dsw-specific-sidebar-nav-item-active: #6e100e;
-  --dsw-specific-sidebar-nav-item-hover: #2e2415;
-  --dsw-specific-sidebar-nav-item-active-accent: #c01d1a;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-mario] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-mario]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-mario]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -441,9 +479,7 @@ body[data-dsh-mario]::before {
       );
     background-size: 52px 52px, 52px 52px, 52px 52px;
     background-position: 0 0, 0 0, 0 13px;
-}
-
-body[data-dsh-mario]::after {
+}body[data-dsh-mario]::after{
   content: '';
     position: fixed;
     inset: -40px 0;
@@ -456,126 +492,42 @@ body[data-dsh-mario]::after {
     background-size: 140px 140px, 110px 110px;
     background-position: 0 0, 55px 70px;
     animation: mario-coin-drift 9s ease-in-out infinite alternate;
-}
-
-body[data-dsh-mario] [class*='sider'] [class*='item'] {
-  border-radius: 10px;
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-body[data-dsh-mario] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 4px 0 0 0 var(--mario-gold), inset 5px 0 0 0 var(--mario-gold-dark);
-}
-
-body[data-dsh-mario] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-mario] [class*='sider'] [class*='item'][class*='selected'] {
-  background-color: var(--bg-active) !important;
-    box-shadow: inset 4px 0 0 0 var(--mario-red), inset 5px 0 0 0 var(--mario-red-dark);
-    font-weight: 600;
-}
-
-body[data-dsh-mario] button[class*='primary'],
-body[data-dsh-mario] button[class*='primary']:not(.arco-btn-disabled) {
-  position: relative;
-    background-color: var(--mario-gold) !important;
-    background-image:
-      radial-gradient(circle at 6px 6px, var(--mario-gold-dark) 0 2px, transparent 2.8px),
-      radial-gradient(circle at calc(100% - 6px) 6px, var(--mario-gold-dark) 0 2px, transparent 2.8px),
-      radial-gradient(circle at 6px calc(100% - 6px), var(--mario-gold-dark) 0 2px, transparent 2.8px),
-      radial-gradient(circle at calc(100% - 6px) calc(100% - 6px), var(--mario-gold-dark) 0 2px, transparent 2.8px),
-      linear-gradient(180deg, #ffe14d 0%, var(--mario-gold) 55%, #edb400 100%) !important;
-    border: 2px solid var(--mario-gold-dark) !important;
-    border-bottom-width: 4px !important;
-    border-radius: 10px !important;
-    color: var(--text-0) !important;
-    font-weight: 700;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
-    box-shadow: 0 2px 6px rgba(200, 155, 0, 0.3);
-    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
-}
-
-body[data-dsh-mario] button[class*='primary']:hover,
-body[data-dsh-mario] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.06);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 12px rgba(200, 155, 0, 0.42), 0 0 10px rgba(251, 208, 0, 0.35);
-}
-
-body[data-dsh-mario] button[class*='primary']:active,
-body[data-dsh-mario] button[class*='primary']:not(.arco-btn-disabled):active {
-  transform: translateY(1px);
-    border-bottom-width: 2px !important;
-    box-shadow: 0 1px 3px rgba(200, 155, 0, 0.3);
-}
-
-body[data-dsh-mario] pre,
-body[data-dsh-mario] .markdown-body pre {
+}body[data-dsh-mario] pre{
   background: linear-gradient(180deg, #2c1d10 0%, #241a10 100%) !important;
     border: 2px solid var(--mario-brick-dark) !important;
     border-left: 5px solid var(--mario-gold) !important;
     border-radius: 10px !important;
     box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.35);
-}
-
-body[data-dsh-mario] pre code,
-body[data-dsh-mario] .markdown-body pre code {
+}body[data-dsh-mario] pre code{
   background: transparent !important;
-    color: #f7e9c9 !important;
-    text-shadow: none;
-}
-
-body[data-dsh-mario] code,
-body[data-dsh-mario] .markdown-body code {
-  background-color: var(--brand-light);
+  color: #f7e9c9 !important;
+  text-shadow: none;
+  border: none;
+  padding: 0;
+}body[data-dsh-mario] code{
+  background-color: var(--dsw-alias-markdown-citation);
     color: var(--mario-red-dark);
     border: 1px solid #f2c4b8;
     border-radius: 5px;
     padding: 0.1em 0.35em;
-}
-
-body[data-dsh-mario] pre code,
-body[data-dsh-mario] .markdown-body pre code {
-  border: none;
-    padding: 0;
-}
-
-body[data-dsh-mario] .markdown-body blockquote {
+}body[data-dsh-mario] blockquote{
   background-color: rgba(63, 163, 77, 0.08);
-    border-left: 5px solid var(--success);
+    border-left: 5px solid var(--dsw-alias-state-success-primary);
     border-radius: 0 10px 10px 0;
-}
-
-body[data-dsh-mario]::selection {
+}body[data-dsh-mario]::selection{
   background: color-mix(in srgb, #fbd000 55%, transparent);
-}
-
-body[data-dsh-mario]::-webkit-scrollbar {
+}body[data-dsh-mario]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-mario]::-webkit-scrollbar-thumb {
+}body[data-dsh-mario]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #f0534f, var(--mario-red-dark));
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-mario]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-mario]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #ffe14d, var(--mario-gold-dark));
-}
-
-body[data-dsh-mario]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-mario][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-mario][data-ds-dark-theme]::before {
+}body[data-dsh-mario]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-mario][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -601,9 +553,7 @@ body[data-dsh-mario][data-ds-dark-theme]::before {
       );
     background-size: 52px 52px, 52px 52px, 52px 52px;
     background-position: 0 0, 0 0, 0 13px;
-}
-
-body[data-dsh-mario][data-ds-dark-theme]::after {
+}body[data-dsh-mario][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: -40px 0;
@@ -616,132 +566,48 @@ body[data-dsh-mario][data-ds-dark-theme]::after {
     background-size: 140px 140px, 110px 110px;
     background-position: 0 0, 55px 70px;
     animation: mario-coin-drift 9s ease-in-out infinite alternate;
-}
-
-body[data-dsh-mario][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 10px;
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-body[data-dsh-mario][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 4px 0 0 0 var(--mario-gold), inset 5px 0 0 0 var(--mario-gold-dark);
-}
-
-body[data-dsh-mario][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-mario][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background-color: var(--bg-active) !important;
-    box-shadow: inset 4px 0 0 0 var(--mario-red), inset 5px 0 0 0 var(--mario-red-dark);
-    font-weight: 600;
-}
-
-body[data-dsh-mario][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-mario][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  position: relative;
-    background-color: var(--mario-gold) !important;
-    background-image:
-      radial-gradient(circle at 6px 6px, var(--mario-gold-dark) 0 2px, transparent 2.8px),
-      radial-gradient(circle at calc(100% - 6px) 6px, var(--mario-gold-dark) 0 2px, transparent 2.8px),
-      radial-gradient(circle at 6px calc(100% - 6px), var(--mario-gold-dark) 0 2px, transparent 2.8px),
-      radial-gradient(circle at calc(100% - 6px) calc(100% - 6px), var(--mario-gold-dark) 0 2px, transparent 2.8px),
-      linear-gradient(180deg, #ffe14d 0%, var(--mario-gold) 55%, #edb400 100%) !important;
-    border: 2px solid var(--mario-gold-dark) !important;
-    border-bottom-width: 4px !important;
-    border-radius: 10px !important;
-    color: #241505 !important;
-    font-weight: 700;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
-    box-shadow: 0 2px 8px rgba(255, 210, 31, 0.28);
-    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
-}
-
-body[data-dsh-mario][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-mario][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.08);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 14px rgba(255, 210, 31, 0.4), 0 0 16px rgba(255, 210, 31, 0.5);
-}
-
-body[data-dsh-mario][data-ds-dark-theme] button[class*='primary']:active,
-body[data-dsh-mario][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):active {
-  transform: translateY(1px);
-    border-bottom-width: 2px !important;
-    box-shadow: 0 1px 3px rgba(255, 210, 31, 0.25);
-}
-
-body[data-dsh-mario][data-ds-dark-theme] pre,
-body[data-dsh-mario][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-mario][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #1c130a 0%, #120c06 100%) !important;
     border: 2px solid var(--mario-brick-dark) !important;
     border-left: 5px solid var(--mario-gold) !important;
     border-radius: 10px !important;
     box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
-}
-
-body[data-dsh-mario][data-ds-dark-theme] pre code,
-body[data-dsh-mario][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-mario][data-ds-dark-theme] pre code{
   background: transparent !important;
-    color: #f7e9c9 !important;
-    text-shadow: none;
-}
-
-body[data-dsh-mario][data-ds-dark-theme] code,
-body[data-dsh-mario][data-ds-dark-theme] .markdown-body code {
-  background-color: var(--brand-light);
+  color: #f7e9c9 !important;
+  text-shadow: none;
+  border: none;
+  padding: 0;
+}body[data-dsh-mario][data-ds-dark-theme] code{
+  background-color: var(--dsw-alias-markdown-citation);
     color: #ff9d96;
     border: 1px solid #6e241e;
     border-radius: 5px;
     padding: 0.1em 0.35em;
-}
-
-body[data-dsh-mario][data-ds-dark-theme] pre code,
-body[data-dsh-mario][data-ds-dark-theme] .markdown-body pre code {
-  border: none;
-    padding: 0;
-}
-
-body[data-dsh-mario][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-mario][data-ds-dark-theme] blockquote{
   background-color: rgba(76, 196, 92, 0.1);
-    border-left: 5px solid var(--success);
+    border-left: 5px solid var(--dsw-alias-state-success-primary);
     border-radius: 0 10px 10px 0;
-}
-
-body[data-dsh-mario][data-ds-dark-theme]::selection {
+}body[data-dsh-mario][data-ds-dark-theme]::selection{
   background: color-mix(in srgb, #ffd21f 55%, transparent);
-}
-
-body[data-dsh-mario][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-mario][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-mario][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-mario][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #ff7a70, var(--mario-red-dark));
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-mario][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-mario][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #ffe14d, var(--mario-gold-dark));
-}
-
-body[data-dsh-mario][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
+}body[data-dsh-mario][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
 }
 
 /* --- keyframes --- */
-@keyframes mario-coin-drift {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(24px); }
+@keyframes mario-coin-drift {0%{ transform: translateY(0); }100%{ transform: translateY(24px); }
 }
 
-@keyframes mario-titlebar-shine {
-  0% { left: -30%; }
-  60% { left: 110%; }
-  100% { left: 110%; }
-}
-
-@keyframes mario-coin-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-mario]{
+  --dsh-windows-content-radius: 6px;
 }

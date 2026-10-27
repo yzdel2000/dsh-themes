@@ -1,174 +1,140 @@
-/* mario-peach — 超级马里奥 · 桃花公主 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-mario-peach], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-mario-peach] {
+/* mario-peach — 超级马里奥 · 桃花公主 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-mario-peach],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-mario-peach]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #33202b;
-  background-color: #faf3f7;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] {
-  color: #f6ecf2;
-  background-color: #140a11;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-mario-peach] {
-  --color-primary: #d6378b;
-  --primary: #d6378b;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 214, 55, 139;
-  --color-primary-light-1: #e06aa5;
-  --color-primary-light-2: #ec99c2;
-  --color-primary-light-3: #f7c8de;
-  --color-primary-dark-1: #a82768;
-  --brand: #d6378b;
-  --brand-light: #fceef6;
-  --brand-hover: #b02c71;
-  --color-brand-fill: #d6378b;
-  --color-brand-bg: #fbe4f0;
-  --aou-1: #fceef6;
-  --aou-2: #f9d6ea;
-  --aou-3: #f3b3d5;
-  --aou-4: #ec8abf;
-  --aou-5: #e363a5;
-  --aou-6: #d6378b;
-  --aou-7: #b02c71;
-  --aou-8: #8b2259;
-  --aou-9: #681843;
-  --aou-10: #450e2c;
-  --bg-base: #faf3f7;
-  --bg-1: #f3e8ee;
-  --bg-2: #ecdce5;
-  --bg-3: #e3ceda;
-  --bg-4: #d8becd;
-  --bg-5: #c9abbf;
-  --bg-6: #b496ab;
-  --bg-8: #92748a;
-  --bg-9: #6b5264;
-  --bg-10: #45303f;
-  --color-bg-1: #f3e8ee;
-  --color-bg-2: #ecdce5;
-  --color-bg-3: #e3ceda;
-  --color-bg-4: #d8becd;
-  --bg-hover: #ecdee6;
-  --bg-active: #e3d0dc;
-  --text-primary: #33202b;
-  --text-secondary: #6b5260;
-  --text-disabled: #b49aa8;
-  --text-0: #1d1219;
-  --text-white: #ffffff;
-  --color-text-1: #33202b;
-  --color-text-2: #6b5260;
-  --color-text-3: #8f7384;
-  --color-text-4: #b49aa8;
-  --border-base: #d9c2d0;
-  --border-light: #e6d5df;
-  --border-special: #e8b7d3;
-  --color-border: #d9c2d0;
-  --color-border-1: #d9c2d0;
-  --color-border-2: #e6d5df;
-  --fill: #ecdce5;
-  --color-fill: #ecdce5;
-  --fill-0: #f3e8ee;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #fbf7f9;
-  --inverse: #33202b;
-  --success: #2f9e6b;
-  --warning: #d08a1d;
-  --danger: #d12f4f;
-  --info: #3a6fd8;
-  --message-user-bg: #b02c71;
-  --message-tips-bg: #f0e2ea;
-  --workspace-btn-bg: #fbe4f0;
-  --color-guid-agent-bar: #f0e4ec;
   --peach-pink: #d6378b;
   --peach-pink-soft: rgba(214, 55, 139, 0.3);
   --peach-gold: #c9962e;
   --peach-gold-hi: #e3b34d;
   --peach-sapphire: #3a6fd8;
   --peach-ivory: #fdfaf6;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-mario-peach][data-ds-dark-theme] {
-  --color-primary: #f06aae;
-  --primary: #f06aae;
-  --primary-rgb: 240, 106, 174;
-  --color-primary-light-1: #f48ec2;
-  --color-primary-light-2: #f9b3d6;
-  --color-primary-light-3: #fdd9ea;
-  --color-primary-dark-1: #c9448a;
-  --brand: #f06aae;
-  --brand-light: #3a1629;
-  --brand-hover: #ff86c0;
-  --color-brand-fill: #f06aae;
-  --color-brand-bg: #331325;
-  --aou-1: #331325;
-  --aou-2: #471b35;
-  --aou-3: #5c2345;
-  --aou-4: #742c58;
-  --aou-5: #8e346c;
-  --aou-6: #b04384;
-  --aou-7: #d05a9b;
-  --aou-8: #f06aae;
-  --aou-9: #f59cc9;
-  --aou-10: #fce0ef;
-  --bg-base: #140a11;
-  --bg-1: #1c1018;
-  --bg-2: #241520;
-  --bg-3: #2d1b28;
-  --bg-4: #382332;
-  --bg-5: #452c3e;
-  --bg-6: #55384c;
-  --bg-8: #7d5671;
-  --bg-9: #a67e96;
-  --bg-10: #d6b3c6;
-  --color-bg-1: #1c1018;
-  --color-bg-2: #241520;
-  --color-bg-3: #2d1b28;
-  --color-bg-4: #382332;
-  --bg-hover: #2a1a24;
-  --bg-active: #352130;
-  --text-primary: #f6ecf2;
-  --text-secondary: #c4a9ba;
-  --text-disabled: #6e5566;
-  --text-0: #fdf6fa;
-  --text-white: #ffffff;
-  --color-text-1: #f6ecf2;
-  --color-text-2: #c4a9ba;
-  --color-text-3: #9a8090;
-  --color-text-4: #6e5566;
-  --border-base: #3f2a39;
-  --border-light: #2f1f2b;
-  --border-special: #6e3355;
-  --color-border: #3f2a39;
-  --color-border-1: #3f2a39;
-  --color-border-2: #2f1f2b;
-  --fill: #241520;
-  --color-fill: #241520;
-  --fill-0: #1c1018;
-  --fill-white-to-black: #140a11;
-  --dialog-fill-0: #1e131b;
-  --inverse: #f6ecf2;
-  --success: #4caf7d;
-  --warning: #e8b45a;
-  --danger: #f06a8c;
-  --info: #6f9ae8;
-  --message-user-bg: #f2b6d6;
-  --message-tips-bg: #241628;
-  --workspace-btn-bg: #331325;
-  --color-guid-agent-bar: #20131c;
-  --peach-pink: #f06aae;
-  --peach-pink-soft: rgba(240, 106, 174, 0.35);
-  --peach-gold: #e9bd55;
-  --peach-gold-hi: #f5d78a;
-  --peach-sapphire: #6f9ae8;
-  --peach-ivory: #fdf3f8;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-mario-peach] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #faf3f7;
+  --dsw-alias-bg-l1: #f3e8ee;
+  --dsw-alias-bg-l2: #ecdce5;
+  --dsw-alias-bg-layer-1: #f3e8ee;
+  --dsw-alias-bg-layer-2: #ecdce5;
+  --dsw-alias-bg-layer-3: #e3ceda;
+  --dsw-alias-bg-layer-4: #d8becd;
+  --dsw-alias-bg-overlay: #fbf7f9;
+  --dsw-alias-bg-module-platform: #ecdce5;
+  --dsw-alias-bg-multi-select: #e3d0dc;
+  --dsw-alias-bg-skeleton: #e3ceda;
+  --dsw-alias-bg-document-preview: #f3e8ee;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #d6378b 30%, transparent);
+  --dsw-alias-label-primary: #33202b;
+  --dsw-alias-label-secondary: #6b5260;
+  --dsw-alias-label-tertiary: #8f7384;
+  --dsw-alias-label-quaternary: #b49aa8;
+  --dsw-alias-label-caption: #1d1219;
+  --dsw-alias-label-dimmed: #b49aa8;
+  --dsw-alias-label-primary-dimmed: #6b5260;
+  --dsw-alias-label-primary-bluish: #33202b;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #33202b;
+  --dsw-alias-label-error: #d12f4f;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #33202b 30%, transparent);
+  --dsw-alias-label-deep-diving: #3a6fd8;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #3a6fd8 55%, transparent);
+  --dsw-alias-link: #d6378b;
+  --dsw-alias-border-l1: #e6d5df;
+  --dsw-alias-border-l2: #d9c2d0;
+  --dsw-alias-border-l2-darkmode-thin: #e6d5df;
+  --dsw-alias-border-l3: #e8b7d3;
+  --dsw-alias-border-l4: #e8b7d3;
+  --dsw-alias-border-inverted: #33202b;
+  --dsw-alias-border-inverted2: #33202b;
+  --dsw-alias-separator-primary: #e6d5df;
+  --dsw-alias-brand-primary: #d6378b;
+  --dsw-alias-brand-primary-invert: #33202b;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #d6378b;
+  --dsw-alias-markdown-citation: #e06aa5;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #d6378b 14%, transparent);
+  --dsw-alias-markdown-inline-code: #ecdce5;
+  --dsw-alias-markdown-code-block: #f3e8ee;
+  --dsw-alias-markdown-code-block-banner: #ecdce5;
+  --dsw-alias-markdown-code-segment-selected: #e3ceda;
+  --dsw-alias-markdown-code-segment-unselected: #f3e8ee;
+  --dsw-alias-markdown-placeholder: #b49aa8;
+  --dsw-alias-fill-l1: #ecdce5;
+  --dsw-alias-fill-l2: #f3e8ee;
+  --dsw-alias-fill-tertiary: #e3ceda;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #33202b 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #ecdee6;
+  --dsw-alias-interactive-bg-active: #e3d0dc;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #d6378b 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #d12f4f 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #e3ceda;
+  --dsw-alias-state-error-primary: #d12f4f;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #d12f4f 15%, transparent);
+  --dsw-alias-state-success-primary: #2f9e6b;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #2f9e6b 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #2f9e6b 8%, transparent);
+  --dsw-alias-state-warn-primary: #d08a1d;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #d08a1d 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #d08a1d 8%, transparent);
+  --dsw-alias-state-warn-label: #d08a1d;
+  --dsw-alias-state-business-primary: #3a6fd8;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #3a6fd8 10%, transparent);
+  --dsw-alias-state-idle-primary: #b49aa8;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #2f9e6b 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #d12f4f 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #6b5260 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #2f9e6b 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #2f9e6b 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #2f9e6b 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #d12f4f 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #d12f4f 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #d12f4f 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #6b5260 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #f3e8ee;
+  --dsw-alias-scrollbar-bg-l2: #ecdce5;
+  --dsw-alias-scrollbar-hover-l1: #ecdee6;
+  --dsw-alias-scrollbar-hover-l2: #ecdee6;
+  --dsw-alias-menu-icon: #6b5260;
+  --dsw-alias-menu-group-header-fill: #ecdce5;
+  --dsw-alias-tooltip-bg: #33202b;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #e3ceda;
+  --dsw-alias-toast-label: #33202b;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #6b5260;
+  --dsw-alias-turn-trigger-bg: #ecdce5;
+  --dsw-alias-turn-trigger-bg-hover: #e3ceda;
+  --dsw-alias-button-primary-fill: #d6378b;
+  --dsw-alias-button-primary-hover: #a82768;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #d6378b 45%, transparent);
+  --dsw-alias-button-contrast-fill: #a82768;
+  --dsw-alias-button-elevated-fill: #f3e8ee;
+  --dsw-alias-button-floating-fill: #ecdce5;
+  --dsw-alias-button-floating-hover: #ecdee6;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #d6378b 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #ec99c2;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #d6378b 24%, transparent);
+  --dsw-alias-button-info-fill: #3a6fd8;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #3a6fd8 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #ecdce5;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #ecdee6;
+  --dsw-alias-onboarding-card-fill: #f3e8ee;
+  --dsw-alias-onboarding-secondary-fill: #ecdce5;
+  --dsw-alias-onboarding-checkbox-border: #d9c2d0;
+  --dsw-alias-settings-card-fill: #ecdce5;
+  --dsw-alias-settings-card-stroke: #d9c2d0;
+  --dsw-specific-bubble: #ecdce5;
+  --dsw-specific-bubble-highlight: #b02c71;
+  --dsw-specific-input-major: #fbf7f9;
+  --dsw-specific-login-input: #f3e8ee;
+  --dsw-specific-menu: #f3e8ee;
+  --dsw-specific-selector: #ecdce5;
+  --dsw-specific-sidebar-fill: #f3e8ee;
+  --dsw-specific-sidebar-nav-item-active: #e3d0dc;
+  --dsw-specific-sidebar-nav-item-active-accent: #d6378b;
+  --dsw-specific-sidebar-nav-item-hover: #ecdee6;
+  --dsw-specific-tip: #e3ceda;
   --dsw-static-deepseek-50: #fceef6;
   --dsw-static-blue-50: #fceef6;
   --dsw-static-deepseek-50p: #f9d6ea;
@@ -256,10 +222,143 @@ body[data-dsh-mario-peach] {
   --dsw-static-red-500: #d12f4f;
   --dsw-static-red-600: color-mix(in srgb, #d12f4f 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #d12f4f 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-mario-peach][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-mario-peach][data-ds-dark-theme]{
+  color: #f6ecf2;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 240, 106, 174;
+  --peach-pink: #f06aae;
+  --peach-pink-soft: rgba(240, 106, 174, 0.35);
+  --peach-gold: #e9bd55;
+  --peach-gold-hi: #f5d78a;
+  --peach-sapphire: #6f9ae8;
+  --peach-ivory: #fdf3f8;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #140a11;
+  --dsw-alias-bg-l1: #1c1018;
+  --dsw-alias-bg-l2: #241520;
+  --dsw-alias-bg-layer-1: #1c1018;
+  --dsw-alias-bg-layer-2: #241520;
+  --dsw-alias-bg-layer-3: #2d1b28;
+  --dsw-alias-bg-layer-4: #382332;
+  --dsw-alias-bg-overlay: #1e131b;
+  --dsw-alias-bg-module-platform: #241520;
+  --dsw-alias-bg-multi-select: #352130;
+  --dsw-alias-bg-skeleton: #2d1b28;
+  --dsw-alias-bg-document-preview: #1c1018;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #f06aae 30%, transparent);
+  --dsw-alias-label-primary: #f6ecf2;
+  --dsw-alias-label-secondary: #c4a9ba;
+  --dsw-alias-label-tertiary: #9a8090;
+  --dsw-alias-label-quaternary: #6e5566;
+  --dsw-alias-label-caption: #fdf6fa;
+  --dsw-alias-label-dimmed: #6e5566;
+  --dsw-alias-label-primary-dimmed: #c4a9ba;
+  --dsw-alias-label-primary-bluish: #f6ecf2;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #f6ecf2;
+  --dsw-alias-label-error: #f06a8c;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #f6ecf2 30%, transparent);
+  --dsw-alias-label-deep-diving: #6f9ae8;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #6f9ae8 55%, transparent);
+  --dsw-alias-link: #f06aae;
+  --dsw-alias-border-l1: #2f1f2b;
+  --dsw-alias-border-l2: #3f2a39;
+  --dsw-alias-border-l2-darkmode-thin: #2f1f2b;
+  --dsw-alias-border-l3: #6e3355;
+  --dsw-alias-border-l4: #6e3355;
+  --dsw-alias-border-inverted: #f6ecf2;
+  --dsw-alias-border-inverted2: #f6ecf2;
+  --dsw-alias-separator-primary: #2f1f2b;
+  --dsw-alias-brand-primary: #f06aae;
+  --dsw-alias-brand-primary-invert: #f6ecf2;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #f06aae;
+  --dsw-alias-markdown-citation: #f48ec2;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #f06aae 14%, transparent);
+  --dsw-alias-markdown-inline-code: #241520;
+  --dsw-alias-markdown-code-block: #1c1018;
+  --dsw-alias-markdown-code-block-banner: #241520;
+  --dsw-alias-markdown-code-segment-selected: #2d1b28;
+  --dsw-alias-markdown-code-segment-unselected: #1c1018;
+  --dsw-alias-markdown-placeholder: #6e5566;
+  --dsw-alias-fill-l1: #241520;
+  --dsw-alias-fill-l2: #1c1018;
+  --dsw-alias-fill-tertiary: #2d1b28;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #f6ecf2 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #2a1a24;
+  --dsw-alias-interactive-bg-active: #352130;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #f06aae 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #f06a8c 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #2d1b28;
+  --dsw-alias-state-error-primary: #f06a8c;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #f06a8c 15%, transparent);
+  --dsw-alias-state-success-primary: #4caf7d;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #4caf7d 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #4caf7d 8%, transparent);
+  --dsw-alias-state-warn-primary: #e8b45a;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #e8b45a 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #e8b45a 8%, transparent);
+  --dsw-alias-state-warn-label: #e8b45a;
+  --dsw-alias-state-business-primary: #6f9ae8;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #6f9ae8 10%, transparent);
+  --dsw-alias-state-idle-primary: #6e5566;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #4caf7d 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #f06a8c 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #c4a9ba 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #4caf7d 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #4caf7d 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #4caf7d 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #f06a8c 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #f06a8c 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #f06a8c 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #c4a9ba 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #1c1018;
+  --dsw-alias-scrollbar-bg-l2: #241520;
+  --dsw-alias-scrollbar-hover-l1: #2a1a24;
+  --dsw-alias-scrollbar-hover-l2: #2a1a24;
+  --dsw-alias-menu-icon: #c4a9ba;
+  --dsw-alias-menu-group-header-fill: #241520;
+  --dsw-alias-tooltip-bg: #f6ecf2;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #2d1b28;
+  --dsw-alias-toast-label: #f6ecf2;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #c4a9ba;
+  --dsw-alias-turn-trigger-bg: #241520;
+  --dsw-alias-turn-trigger-bg-hover: #2d1b28;
+  --dsw-alias-button-primary-fill: #f06aae;
+  --dsw-alias-button-primary-hover: #c9448a;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #f06aae 45%, transparent);
+  --dsw-alias-button-contrast-fill: #c9448a;
+  --dsw-alias-button-elevated-fill: #1c1018;
+  --dsw-alias-button-floating-fill: #241520;
+  --dsw-alias-button-floating-hover: #2a1a24;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #f06aae 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #f9b3d6;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #f06aae 24%, transparent);
+  --dsw-alias-button-info-fill: #6f9ae8;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #6f9ae8 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #241520;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #2a1a24;
+  --dsw-alias-onboarding-card-fill: #1c1018;
+  --dsw-alias-onboarding-secondary-fill: #241520;
+  --dsw-alias-onboarding-checkbox-border: #3f2a39;
+  --dsw-alias-settings-card-fill: #241520;
+  --dsw-alias-settings-card-stroke: #3f2a39;
+  --dsw-specific-bubble: #241520;
+  --dsw-specific-bubble-highlight: #f2b6d6;
+  --dsw-specific-input-major: #1e131b;
+  --dsw-specific-login-input: #1c1018;
+  --dsw-specific-menu: #1c1018;
+  --dsw-specific-selector: #241520;
+  --dsw-specific-sidebar-fill: #1c1018;
+  --dsw-specific-sidebar-nav-item-active: #352130;
+  --dsw-specific-sidebar-nav-item-active-accent: #f06aae;
+  --dsw-specific-sidebar-nav-item-hover: #2a1a24;
+  --dsw-specific-tip: #2d1b28;
   --dsw-static-deepseek-50: #331325;
   --dsw-static-blue-50: #331325;
   --dsw-static-deepseek-50p: #471b35;
@@ -347,69 +446,8 @@ body[data-dsh-mario-peach][data-ds-dark-theme] {
   --dsw-static-red-500: #f06a8c;
   --dsw-static-red-600: color-mix(in srgb, #f06a8c 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #f06a8c 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-mario-peach] {
-  --dsw-alias-button-primary-fill: #d6378b;
-  --dsw-alias-button-primary-hover: #b02c71;
-  --dsw-alias-button-primary-dimmed: #f9d6ea;
-  --dsw-alias-button-info-fill: #d6378b;
-  --dsw-alias-button-info-hover: #b02c71;
-  --dsw-alias-button-contrast-fill: #b02c71;
-  --dsw-alias-button-ghost-active-fill: #fceef6;
-  --dsw-alias-button-ghost-active-hover: #f9d6ea;
-  --dsw-alias-button-ghost-active-border: #ec8abf;
-  --dsw-alias-button-elevated-fill: #f3e8ee;
-  --dsw-alias-button-floating-fill: #f3e8ee;
-  --dsw-alias-button-floating-hover: #ecdee6;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(214, 55, 139, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(214, 55, 139, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(214, 55, 139, 0.6);
-  --dsw-specific-bubble: #b02c71;
-  --dsw-specific-bubble-highlight: #f3b3d5;
-  --dsw-specific-input-major: #f3e8ee;
-  --dsw-specific-login-input: #f3e8ee;
-  --dsw-specific-sidebar-fill: #d6378b;
-  --dsw-specific-sidebar-nav-item-active: #f9d6ea;
-  --dsw-specific-sidebar-nav-item-hover: #ecdee6;
-  --dsw-specific-sidebar-nav-item-active-accent: #ec8abf;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-mario-peach][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #f06aae;
-  --dsw-alias-button-primary-hover: #ff86c0;
-  --dsw-alias-button-primary-dimmed: #471b35;
-  --dsw-alias-button-info-fill: #f06aae;
-  --dsw-alias-button-info-hover: #ff86c0;
-  --dsw-alias-button-contrast-fill: #d05a9b;
-  --dsw-alias-button-ghost-active-fill: #3a1629;
-  --dsw-alias-button-ghost-active-hover: #471b35;
-  --dsw-alias-button-ghost-active-border: #742c58;
-  --dsw-alias-button-elevated-fill: #1c1018;
-  --dsw-alias-button-floating-fill: #1c1018;
-  --dsw-alias-button-floating-hover: #2a1a24;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(240, 106, 174, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(240, 106, 174, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(240, 106, 174, 0.6);
-  --dsw-specific-bubble: #f2b6d6;
-  --dsw-specific-bubble-highlight: #5c2345;
-  --dsw-specific-input-major: #1c1018;
-  --dsw-specific-login-input: #1c1018;
-  --dsw-specific-sidebar-fill: #f06aae;
-  --dsw-specific-sidebar-nav-item-active: #471b35;
-  --dsw-specific-sidebar-nav-item-hover: #2a1a24;
-  --dsw-specific-sidebar-nav-item-active-accent: #742c58;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-mario-peach] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-mario-peach]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-mario-peach]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -423,9 +461,7 @@ body[data-dsh-mario-peach]::before {
       radial-gradient(ellipse at 6% 92%, rgba(227, 179, 77, 0.12) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 500px 500px, 100% 100%, 100% 100%;
     opacity: 0.6;
-}
-
-body[data-dsh-mario-peach]::after {
+}body[data-dsh-mario-peach]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -440,128 +476,45 @@ body[data-dsh-mario-peach]::after {
     background-position: 0 0, 0 0, 11px 14px, 11px 14px;
     opacity: 0.06;
     animation: mario-peach-peach-heart-drift 30s linear infinite;
-}
-
-body[data-dsh-mario-peach] [class*='sider'] [class*='session'],
-body[data-dsh-mario-peach] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-mario-peach] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(236, 153, 194, 0.3);
-    box-shadow: inset 3px 0 0 0 rgba(214, 55, 139, 0.6);
-}
-
-body[data-dsh-mario-peach] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-mario-peach] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(214, 55, 139, 0.2), rgba(227, 179, 77, 0.1) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--peach-gold);
-}
-
-body[data-dsh-mario-peach] button[class*='primary'],
-body[data-dsh-mario-peach] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #a82768 0%, #d6378b 55%, #e363a5 100%) !important;
-    border: 1px solid var(--peach-gold-hi) !important;
-    color: var(--text-white) !important;
-    box-shadow: 0 2px 8px rgba(214, 55, 139, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    text-shadow: 0 1px 2px rgba(104, 24, 67, 0.5);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-mario-peach] button[class*='primary']:hover,
-body[data-dsh-mario-peach] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.07);
-    box-shadow: 0 3px 14px rgba(214, 55, 139, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
-    animation: mario-peach-peach-gem-sheen 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-mario-peach] pre,
-body[data-dsh-mario-peach] .markdown-body pre {
+}body[data-dsh-mario-peach] pre{
   background: linear-gradient(180deg, #331f2b 0%, #291923 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #d6378b !important;
     border-radius: 8px;
     box-shadow: inset 0 0 20px rgba(201, 150, 46, 0.12);
-}
-
-body[data-dsh-mario-peach] pre code,
-body[data-dsh-mario-peach] .markdown-body pre code {
+}body[data-dsh-mario-peach] pre code{
   background: transparent !important;
     color: #f3dde8 !important;
     text-shadow: none;
-}
-
-body[data-dsh-mario-peach] code,
-body[data-dsh-mario-peach] .markdown-body code {
+}body[data-dsh-mario-peach] code{
   background: rgba(227, 179, 77, 0.16);
     color: #a82768;
     border: 1px solid rgba(201, 150, 46, 0.4);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-mario-peach]::selection {
-  background: color-mix(in srgb, var(--brand) 25%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-mario-peach] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 6px rgba(69, 48, 63, 0.06), 0 0 0 1px rgba(236, 153, 194, 0.25);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-mario-peach] [class*='guidInputCard']:hover {
-  border-color: var(--peach-pink) !important;
-}
-
-body[data-dsh-mario-peach] [class*='agent-bar'],
-body[data-dsh-mario-peach] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(201, 150, 46, 0.45);
-}
-
-body[data-dsh-mario-peach]::-webkit-scrollbar {
+}body[data-dsh-mario-peach]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 25%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-mario-peach]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-mario-peach]::-webkit-scrollbar-thumb {
+}body[data-dsh-mario-peach]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #e363a5, #a82768);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-mario-peach]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-mario-peach]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #ec8abf, #8b2259);
-}
-
-body[data-dsh-mario-peach]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-mario-peach] .markdown-body a,
-body[data-dsh-mario-peach] a {
+}body[data-dsh-mario-peach]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-mario-peach] a{
   color: #a82768;
-}
-
-body[data-dsh-mario-peach] .markdown-body a:hover,
-body[data-dsh-mario-peach] a:hover {
+}body[data-dsh-mario-peach] a:hover{
   color: #d6378b;
-}
-
-body[data-dsh-mario-peach] .markdown-body blockquote {
+}body[data-dsh-mario-peach] blockquote{
   border-left: 3px solid var(--peach-sapphire);
     background: rgba(214, 55, 139, 0.07);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-mario-peach] .markdown-body hr,
-body[data-dsh-mario-peach] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-mario-peach] hr{
   border: none;
     height: 8px;
     background-image:
@@ -571,21 +524,7 @@ body[data-dsh-mario-peach] hr {
     background-repeat: repeat-x;
     background-position: 0 1px, 10px 1px;
     opacity: 0.6;
-}
-
-body[data-dsh-mario-peach] .arco-btn:not(button[class*='primary']):hover {
-  color: #a82768 !important;
-    border-color: rgba(214, 55, 139, 0.5) !important;
-    background-color: rgba(214, 55, 139, 0.08) !important;
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-mario-peach][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme]::before {
+}body[data-dsh-mario-peach][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -599,9 +538,7 @@ body[data-dsh-mario-peach][data-ds-dark-theme]::before {
       radial-gradient(ellipse at 6% 92%, rgba(240, 106, 174, 0.07) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 500px 500px, 100% 100%, 100% 100%;
     opacity: 0.8;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme]::after {
+}body[data-dsh-mario-peach][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -616,128 +553,45 @@ body[data-dsh-mario-peach][data-ds-dark-theme]::after {
     background-position: 0 0, 0 0, 11px 14px, 11px 14px;
     opacity: 0.07;
     animation: mario-peach-peach-heart-drift 30s linear infinite;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] [class*='sider'] [class*='session'],
-body[data-dsh-mario-peach][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(208, 90, 155, 0.22);
-    box-shadow: inset 3px 0 0 0 rgba(240, 106, 174, 0.7);
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-mario-peach][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(240, 106, 174, 0.26), rgba(233, 189, 85, 0.1) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--peach-gold);
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-mario-peach][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #b04384 0%, #f06aae 55%, #f48ec2 100%) !important;
-    border: 1px solid var(--peach-gold-hi) !important;
-    color: var(--text-white) !important;
-    box-shadow: 0 2px 8px rgba(240, 106, 174, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
-    text-shadow: 0 1px 2px rgba(92, 35, 69, 0.6);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-mario-peach][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.1);
-    box-shadow: 0 3px 16px rgba(240, 106, 174, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    animation: mario-peach-peach-gem-sheen 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] pre,
-body[data-dsh-mario-peach][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-mario-peach][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #1a1017 0%, #150c13 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #f06aae !important;
     border-radius: 8px;
     box-shadow: inset 0 0 24px rgba(111, 154, 232, 0.12);
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] pre code,
-body[data-dsh-mario-peach][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-mario-peach][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #f3dde8 !important;
     text-shadow: none;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] code,
-body[data-dsh-mario-peach][data-ds-dark-theme] .markdown-body code {
+}body[data-dsh-mario-peach][data-ds-dark-theme] code{
   background: rgba(233, 189, 85, 0.15);
     color: #f9b3d6;
     border: 1px solid rgba(233, 189, 85, 0.4);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 45%, transparent);
-    color: var(--text-white);
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 8px rgba(8, 4, 7, 0.5), 0 0 0 1px rgba(208, 90, 155, 0.2);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] [class*='guidInputCard']:hover {
-  border-color: var(--peach-pink) !important;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-mario-peach][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(233, 189, 85, 0.4);
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-mario-peach][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 45%, transparent);
+    color: var(--dsw-alias-label-primary-inverted);
+}body[data-dsh-mario-peach][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-mario-peach][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #f06aae, #742c58);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-mario-peach][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #f48ec2, #8e346c);
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-mario-peach][data-ds-dark-theme] a {
+}body[data-dsh-mario-peach][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-mario-peach][data-ds-dark-theme] a{
   color: #f48ec2;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-mario-peach][data-ds-dark-theme] a:hover {
+}body[data-dsh-mario-peach][data-ds-dark-theme] a:hover{
   color: #f9b3d6;
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-mario-peach][data-ds-dark-theme] blockquote{
   border-left: 3px solid var(--peach-sapphire);
     background: rgba(240, 106, 174, 0.1);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-mario-peach][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-mario-peach][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-mario-peach][data-ds-dark-theme] hr{
   border: none;
     height: 8px;
     background-image:
@@ -749,29 +603,11 @@ body[data-dsh-mario-peach][data-ds-dark-theme] hr {
     opacity: 0.6;
 }
 
-body[data-dsh-mario-peach][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: #f9b3d6 !important;
-    border-color: rgba(240, 106, 174, 0.5) !important;
-    background-color: rgba(240, 106, 174, 0.1) !important;
-}
-
 /* --- keyframes --- */
-@keyframes mario-peach-peach-heart-drift {
-  0% { background-position: 0 0, 0 0, 11px 14px, 11px 14px; }
-  100% { background-position: 44px 44px, 44px 44px, 55px 58px, 55px 58px; }
+@keyframes mario-peach-peach-heart-drift {0%{ background-position: 0 0, 0 0, 11px 14px, 11px 14px; }100%{ background-position: 44px 44px, 44px 44px, 55px 58px, 55px 58px; }
 }
 
-@keyframes mario-peach-peach-crown-breathe {
-  0%, 100% { box-shadow: 0 2px 10px rgba(214, 55, 139, 0.16), inset 0 -2px 6px rgba(201, 150, 46, 0.1); }
-  50% { box-shadow: 0 2px 16px rgba(214, 55, 139, 0.3), inset 0 -2px 8px rgba(201, 150, 46, 0.28); }
-}
-
-@keyframes mario-peach-peach-gem-sheen {
-  0%, 100% { box-shadow: 0 3px 12px rgba(214, 55, 139, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.32); }
-  50% { box-shadow: 0 3px 20px rgba(227, 179, 77, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.38); }
-}
-
-@keyframes mario-peach-peach-parasol-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-mario-peach]{
+  --dsh-windows-content-radius: 6px;
 }

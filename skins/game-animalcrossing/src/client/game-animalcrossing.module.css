@@ -1,174 +1,140 @@
-/* game-animalcrossing — 集合啦动物森友会 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-game-animalcrossing], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-game-animalcrossing] {
+/* game-animalcrossing — 集合啦动物森友会 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-game-animalcrossing],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-game-animalcrossing]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #2e3322;
-  background-color: #f3f0e4;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] {
-  color: #eef3e4;
-  background-color: #10170f;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-game-animalcrossing] {
-  --color-primary: #4fa24b;
-  --primary: #4fa24b;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 79, 162, 75;
-  --color-primary-light-1: #71b56d;
-  --color-primary-light-2: #95c992;
-  --color-primary-light-3: #c2e4c0;
-  --color-primary-dark-1: #3a7e38;
-  --brand: #4fa24b;
-  --brand-light: #eaf5e6;
-  --brand-hover: #3e843c;
-  --color-brand-fill: #4fa24b;
-  --color-brand-bg: #dff0da;
-  --aou-1: #e8f5e5;
-  --aou-2: #cde8c9;
-  --aou-3: #aad9a4;
-  --aou-4: #85c97d;
-  --aou-5: #68b85f;
-  --aou-6: #4fa24b;
-  --aou-7: #3e843c;
-  --aou-8: #2f662e;
-  --aou-9: #214920;
-  --aou-10: #143013;
-  --bg-base: #f3f0e4;
-  --bg-1: #ece8d9;
-  --bg-2: #e4dfcc;
-  --bg-3: #dad4bc;
-  --bg-4: #cdc6a9;
-  --bg-5: #bdb598;
-  --bg-6: #aaa183;
-  --bg-8: #867d63;
-  --bg-9: #605a46;
-  --bg-10: #3a3526;
-  --color-bg-1: #ece8d9;
-  --color-bg-2: #e4dfcc;
-  --color-bg-3: #dad4bc;
-  --color-bg-4: #cdc6a9;
-  --bg-hover: #e2dcc9;
-  --bg-active: #d7d0b9;
-  --text-primary: #2e3322;
-  --text-secondary: #5c5a48;
-  --text-disabled: #a6a08b;
-  --text-0: #171a10;
-  --text-white: #ffffff;
-  --color-text-1: #2e3322;
-  --color-text-2: #5c5a48;
-  --color-text-3: #837e68;
-  --color-text-4: #a6a08b;
-  --border-base: #cfc5a8;
-  --border-light: #ddd5c0;
-  --border-special: #9ccb8f;
-  --color-border: #cfc5a8;
-  --color-border-1: #cfc5a8;
-  --color-border-2: #ddd5c0;
-  --fill: #e4dfcc;
-  --color-fill: #e4dfcc;
-  --fill-0: #ece8d9;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #faf8ef;
-  --inverse: #2e3322;
-  --success: #3e9e57;
-  --warning: #d89a2e;
-  --danger: #cf4f4f;
-  --info: #3f9bbf;
-  --message-user-bg: #5c4a2c;
-  --message-tips-bg: #e3ecdb;
-  --workspace-btn-bg: #dff0da;
-  --color-guid-agent-bar: #eae5d4;
   --ac-leaf: #4fa24b;
   --ac-leaf-hi: #71b56d;
   --ac-wood: #8b6b3d;
   --ac-wood-dark: #5c4a2c;
   --ac-sky: #6fc3d6;
   --ac-cream: #fbf7e9;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] {
-  --color-primary: #6cc366;
-  --primary: #6cc366;
-  --primary-rgb: 108, 195, 102;
-  --color-primary-light-1: #8ad183;
-  --color-primary-light-2: #abe0a5;
-  --color-primary-light-3: #d3f0ce;
-  --color-primary-dark-1: #4e9e48;
-  --brand: #6cc366;
-  --brand-light: #1e3019;
-  --brand-hover: #84d07d;
-  --color-brand-fill: #6cc366;
-  --color-brand-bg: #1a2b16;
-  --aou-1: #162b14;
-  --aou-2: #22401f;
-  --aou-3: #2f562b;
-  --aou-4: #3d6f38;
-  --aou-5: #529b4c;
-  --aou-6: #6cc366;
-  --aou-7: #8ad183;
-  --aou-8: #abe0a5;
-  --aou-9: #d3f0ce;
-  --aou-10: #edf9ea;
-  --bg-base: #10170f;
-  --bg-1: #161e14;
-  --bg-2: #1c261a;
-  --bg-3: #232f20;
-  --bg-4: #2c3a28;
-  --bg-5: #374732;
-  --bg-6: #44563e;
-  --bg-8: #5e7355;
-  --bg-9: #84987a;
-  --bg-10: #b6c7ab;
-  --color-bg-1: #161e14;
-  --color-bg-2: #1c261a;
-  --color-bg-3: #232f20;
-  --color-bg-4: #2c3a28;
-  --bg-hover: #202a1c;
-  --bg-active: #28351f;
-  --text-primary: #eef3e4;
-  --text-secondary: #b3bda4;
-  --text-disabled: #5f6a55;
-  --text-0: #f7faf0;
-  --text-white: #ffffff;
-  --color-text-1: #eef3e4;
-  --color-text-2: #b3bda4;
-  --color-text-3: #89947c;
-  --color-text-4: #5f6a55;
-  --border-base: #2c3a28;
-  --border-light: #22301f;
-  --border-special: #4e7a3a;
-  --color-border: #2c3a28;
-  --color-border-1: #2c3a28;
-  --color-border-2: #22301f;
-  --fill: #1c261a;
-  --color-fill: #1c261a;
-  --fill-0: #161e14;
-  --fill-white-to-black: #10170f;
-  --dialog-fill-0: #18211a;
-  --inverse: #eef3e4;
-  --success: #5cc47a;
-  --warning: #e0ac45;
-  --danger: #e06868;
-  --info: #5cb8d4;
-  --message-user-bg: #54432a;
-  --message-tips-bg: #1a2417;
-  --workspace-btn-bg: #1a2b16;
-  --color-guid-agent-bar: #141c12;
-  --ac-leaf: #6cc366;
-  --ac-leaf-hi: #8ad183;
-  --ac-wood: #a8875a;
-  --ac-wood-dark: #54432a;
-  --ac-sky: #5cb8d4;
-  --ac-cream: #f2ecd6;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-game-animalcrossing] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #f3f0e4;
+  --dsw-alias-bg-l1: #ece8d9;
+  --dsw-alias-bg-l2: #e4dfcc;
+  --dsw-alias-bg-layer-1: #ece8d9;
+  --dsw-alias-bg-layer-2: #e4dfcc;
+  --dsw-alias-bg-layer-3: #dad4bc;
+  --dsw-alias-bg-layer-4: #cdc6a9;
+  --dsw-alias-bg-overlay: #faf8ef;
+  --dsw-alias-bg-module-platform: #e4dfcc;
+  --dsw-alias-bg-multi-select: #d7d0b9;
+  --dsw-alias-bg-skeleton: #dad4bc;
+  --dsw-alias-bg-document-preview: #ece8d9;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #4fa24b 30%, transparent);
+  --dsw-alias-label-primary: #2e3322;
+  --dsw-alias-label-secondary: #5c5a48;
+  --dsw-alias-label-tertiary: #837e68;
+  --dsw-alias-label-quaternary: #a6a08b;
+  --dsw-alias-label-caption: #171a10;
+  --dsw-alias-label-dimmed: #a6a08b;
+  --dsw-alias-label-primary-dimmed: #5c5a48;
+  --dsw-alias-label-primary-bluish: #2e3322;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #2e3322;
+  --dsw-alias-label-error: #cf4f4f;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #2e3322 30%, transparent);
+  --dsw-alias-label-deep-diving: #3f9bbf;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #3f9bbf 55%, transparent);
+  --dsw-alias-link: #4fa24b;
+  --dsw-alias-border-l1: #ddd5c0;
+  --dsw-alias-border-l2: #cfc5a8;
+  --dsw-alias-border-l2-darkmode-thin: #ddd5c0;
+  --dsw-alias-border-l3: #9ccb8f;
+  --dsw-alias-border-l4: #9ccb8f;
+  --dsw-alias-border-inverted: #2e3322;
+  --dsw-alias-border-inverted2: #2e3322;
+  --dsw-alias-separator-primary: #ddd5c0;
+  --dsw-alias-brand-primary: #4fa24b;
+  --dsw-alias-brand-primary-invert: #2e3322;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #4fa24b;
+  --dsw-alias-markdown-citation: #71b56d;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #4fa24b 14%, transparent);
+  --dsw-alias-markdown-inline-code: #e4dfcc;
+  --dsw-alias-markdown-code-block: #ece8d9;
+  --dsw-alias-markdown-code-block-banner: #e4dfcc;
+  --dsw-alias-markdown-code-segment-selected: #dad4bc;
+  --dsw-alias-markdown-code-segment-unselected: #ece8d9;
+  --dsw-alias-markdown-placeholder: #a6a08b;
+  --dsw-alias-fill-l1: #e4dfcc;
+  --dsw-alias-fill-l2: #ece8d9;
+  --dsw-alias-fill-tertiary: #dad4bc;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #2e3322 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #e2dcc9;
+  --dsw-alias-interactive-bg-active: #d7d0b9;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #4fa24b 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #cf4f4f 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #dad4bc;
+  --dsw-alias-state-error-primary: #cf4f4f;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #cf4f4f 15%, transparent);
+  --dsw-alias-state-success-primary: #3e9e57;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #3e9e57 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #3e9e57 8%, transparent);
+  --dsw-alias-state-warn-primary: #d89a2e;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #d89a2e 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #d89a2e 8%, transparent);
+  --dsw-alias-state-warn-label: #d89a2e;
+  --dsw-alias-state-business-primary: #3f9bbf;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #3f9bbf 10%, transparent);
+  --dsw-alias-state-idle-primary: #a6a08b;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #3e9e57 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #cf4f4f 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #5c5a48 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #3e9e57 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #3e9e57 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #3e9e57 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #cf4f4f 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #cf4f4f 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #cf4f4f 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #5c5a48 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #ece8d9;
+  --dsw-alias-scrollbar-bg-l2: #e4dfcc;
+  --dsw-alias-scrollbar-hover-l1: #e2dcc9;
+  --dsw-alias-scrollbar-hover-l2: #e2dcc9;
+  --dsw-alias-menu-icon: #5c5a48;
+  --dsw-alias-menu-group-header-fill: #e4dfcc;
+  --dsw-alias-tooltip-bg: #2e3322;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #dad4bc;
+  --dsw-alias-toast-label: #2e3322;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #5c5a48;
+  --dsw-alias-turn-trigger-bg: #e4dfcc;
+  --dsw-alias-turn-trigger-bg-hover: #dad4bc;
+  --dsw-alias-button-primary-fill: #4fa24b;
+  --dsw-alias-button-primary-hover: #3a7e38;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #4fa24b 45%, transparent);
+  --dsw-alias-button-contrast-fill: #3a7e38;
+  --dsw-alias-button-elevated-fill: #ece8d9;
+  --dsw-alias-button-floating-fill: #e4dfcc;
+  --dsw-alias-button-floating-hover: #e2dcc9;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #4fa24b 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #95c992;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #4fa24b 24%, transparent);
+  --dsw-alias-button-info-fill: #3f9bbf;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #3f9bbf 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #e4dfcc;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #e2dcc9;
+  --dsw-alias-onboarding-card-fill: #ece8d9;
+  --dsw-alias-onboarding-secondary-fill: #e4dfcc;
+  --dsw-alias-onboarding-checkbox-border: #cfc5a8;
+  --dsw-alias-settings-card-fill: #e4dfcc;
+  --dsw-alias-settings-card-stroke: #cfc5a8;
+  --dsw-specific-bubble: #e4dfcc;
+  --dsw-specific-bubble-highlight: #5c4a2c;
+  --dsw-specific-input-major: #faf8ef;
+  --dsw-specific-login-input: #ece8d9;
+  --dsw-specific-menu: #ece8d9;
+  --dsw-specific-selector: #e4dfcc;
+  --dsw-specific-sidebar-fill: #ece8d9;
+  --dsw-specific-sidebar-nav-item-active: #d7d0b9;
+  --dsw-specific-sidebar-nav-item-active-accent: #4fa24b;
+  --dsw-specific-sidebar-nav-item-hover: #e2dcc9;
+  --dsw-specific-tip: #dad4bc;
   --dsw-static-deepseek-50: #e8f5e5;
   --dsw-static-blue-50: #e8f5e5;
   --dsw-static-deepseek-50p: #cde8c9;
@@ -256,10 +222,143 @@ body[data-dsh-game-animalcrossing] {
   --dsw-static-red-500: #cf4f4f;
   --dsw-static-red-600: color-mix(in srgb, #cf4f4f 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #cf4f4f 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme]{
+  color: #eef3e4;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 108, 195, 102;
+  --ac-leaf: #6cc366;
+  --ac-leaf-hi: #8ad183;
+  --ac-wood: #a8875a;
+  --ac-wood-dark: #54432a;
+  --ac-sky: #5cb8d4;
+  --ac-cream: #f2ecd6;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #10170f;
+  --dsw-alias-bg-l1: #161e14;
+  --dsw-alias-bg-l2: #1c261a;
+  --dsw-alias-bg-layer-1: #161e14;
+  --dsw-alias-bg-layer-2: #1c261a;
+  --dsw-alias-bg-layer-3: #232f20;
+  --dsw-alias-bg-layer-4: #2c3a28;
+  --dsw-alias-bg-overlay: #18211a;
+  --dsw-alias-bg-module-platform: #1c261a;
+  --dsw-alias-bg-multi-select: #28351f;
+  --dsw-alias-bg-skeleton: #232f20;
+  --dsw-alias-bg-document-preview: #161e14;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #6cc366 30%, transparent);
+  --dsw-alias-label-primary: #eef3e4;
+  --dsw-alias-label-secondary: #b3bda4;
+  --dsw-alias-label-tertiary: #89947c;
+  --dsw-alias-label-quaternary: #5f6a55;
+  --dsw-alias-label-caption: #f7faf0;
+  --dsw-alias-label-dimmed: #5f6a55;
+  --dsw-alias-label-primary-dimmed: #b3bda4;
+  --dsw-alias-label-primary-bluish: #eef3e4;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #eef3e4;
+  --dsw-alias-label-error: #e06868;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #eef3e4 30%, transparent);
+  --dsw-alias-label-deep-diving: #5cb8d4;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #5cb8d4 55%, transparent);
+  --dsw-alias-link: #6cc366;
+  --dsw-alias-border-l1: #22301f;
+  --dsw-alias-border-l2: #2c3a28;
+  --dsw-alias-border-l2-darkmode-thin: #22301f;
+  --dsw-alias-border-l3: #4e7a3a;
+  --dsw-alias-border-l4: #4e7a3a;
+  --dsw-alias-border-inverted: #eef3e4;
+  --dsw-alias-border-inverted2: #eef3e4;
+  --dsw-alias-separator-primary: #22301f;
+  --dsw-alias-brand-primary: #6cc366;
+  --dsw-alias-brand-primary-invert: #eef3e4;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #6cc366;
+  --dsw-alias-markdown-citation: #8ad183;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #6cc366 14%, transparent);
+  --dsw-alias-markdown-inline-code: #1c261a;
+  --dsw-alias-markdown-code-block: #161e14;
+  --dsw-alias-markdown-code-block-banner: #1c261a;
+  --dsw-alias-markdown-code-segment-selected: #232f20;
+  --dsw-alias-markdown-code-segment-unselected: #161e14;
+  --dsw-alias-markdown-placeholder: #5f6a55;
+  --dsw-alias-fill-l1: #1c261a;
+  --dsw-alias-fill-l2: #161e14;
+  --dsw-alias-fill-tertiary: #232f20;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #eef3e4 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #202a1c;
+  --dsw-alias-interactive-bg-active: #28351f;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #6cc366 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #e06868 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #232f20;
+  --dsw-alias-state-error-primary: #e06868;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #e06868 15%, transparent);
+  --dsw-alias-state-success-primary: #5cc47a;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #5cc47a 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #5cc47a 8%, transparent);
+  --dsw-alias-state-warn-primary: #e0ac45;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #e0ac45 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #e0ac45 8%, transparent);
+  --dsw-alias-state-warn-label: #e0ac45;
+  --dsw-alias-state-business-primary: #5cb8d4;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #5cb8d4 10%, transparent);
+  --dsw-alias-state-idle-primary: #5f6a55;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #5cc47a 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #e06868 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #b3bda4 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #5cc47a 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #5cc47a 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #5cc47a 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #e06868 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #e06868 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #e06868 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #b3bda4 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #161e14;
+  --dsw-alias-scrollbar-bg-l2: #1c261a;
+  --dsw-alias-scrollbar-hover-l1: #202a1c;
+  --dsw-alias-scrollbar-hover-l2: #202a1c;
+  --dsw-alias-menu-icon: #b3bda4;
+  --dsw-alias-menu-group-header-fill: #1c261a;
+  --dsw-alias-tooltip-bg: #eef3e4;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #232f20;
+  --dsw-alias-toast-label: #eef3e4;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #b3bda4;
+  --dsw-alias-turn-trigger-bg: #1c261a;
+  --dsw-alias-turn-trigger-bg-hover: #232f20;
+  --dsw-alias-button-primary-fill: #6cc366;
+  --dsw-alias-button-primary-hover: #4e9e48;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #6cc366 45%, transparent);
+  --dsw-alias-button-contrast-fill: #4e9e48;
+  --dsw-alias-button-elevated-fill: #161e14;
+  --dsw-alias-button-floating-fill: #1c261a;
+  --dsw-alias-button-floating-hover: #202a1c;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #6cc366 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #abe0a5;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #6cc366 24%, transparent);
+  --dsw-alias-button-info-fill: #5cb8d4;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #5cb8d4 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #1c261a;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #202a1c;
+  --dsw-alias-onboarding-card-fill: #161e14;
+  --dsw-alias-onboarding-secondary-fill: #1c261a;
+  --dsw-alias-onboarding-checkbox-border: #2c3a28;
+  --dsw-alias-settings-card-fill: #1c261a;
+  --dsw-alias-settings-card-stroke: #2c3a28;
+  --dsw-specific-bubble: #1c261a;
+  --dsw-specific-bubble-highlight: #54432a;
+  --dsw-specific-input-major: #18211a;
+  --dsw-specific-login-input: #161e14;
+  --dsw-specific-menu: #161e14;
+  --dsw-specific-selector: #1c261a;
+  --dsw-specific-sidebar-fill: #161e14;
+  --dsw-specific-sidebar-nav-item-active: #28351f;
+  --dsw-specific-sidebar-nav-item-active-accent: #6cc366;
+  --dsw-specific-sidebar-nav-item-hover: #202a1c;
+  --dsw-specific-tip: #232f20;
   --dsw-static-deepseek-50: #162b14;
   --dsw-static-blue-50: #162b14;
   --dsw-static-deepseek-50p: #22401f;
@@ -347,69 +446,8 @@ body[data-dsh-game-animalcrossing][data-ds-dark-theme] {
   --dsw-static-red-500: #e06868;
   --dsw-static-red-600: color-mix(in srgb, #e06868 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #e06868 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-game-animalcrossing] {
-  --dsw-alias-button-primary-fill: #4fa24b;
-  --dsw-alias-button-primary-hover: #3e843c;
-  --dsw-alias-button-primary-dimmed: #cde8c9;
-  --dsw-alias-button-info-fill: #4fa24b;
-  --dsw-alias-button-info-hover: #3e843c;
-  --dsw-alias-button-contrast-fill: #3e843c;
-  --dsw-alias-button-ghost-active-fill: #eaf5e6;
-  --dsw-alias-button-ghost-active-hover: #cde8c9;
-  --dsw-alias-button-ghost-active-border: #85c97d;
-  --dsw-alias-button-elevated-fill: #ece8d9;
-  --dsw-alias-button-floating-fill: #ece8d9;
-  --dsw-alias-button-floating-hover: #e2dcc9;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(79, 162, 75, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(79, 162, 75, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(79, 162, 75, 0.6);
-  --dsw-specific-bubble: #5c4a2c;
-  --dsw-specific-bubble-highlight: #aad9a4;
-  --dsw-specific-input-major: #ece8d9;
-  --dsw-specific-login-input: #ece8d9;
-  --dsw-specific-sidebar-fill: #4fa24b;
-  --dsw-specific-sidebar-nav-item-active: #cde8c9;
-  --dsw-specific-sidebar-nav-item-hover: #e2dcc9;
-  --dsw-specific-sidebar-nav-item-active-accent: #85c97d;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #6cc366;
-  --dsw-alias-button-primary-hover: #84d07d;
-  --dsw-alias-button-primary-dimmed: #22401f;
-  --dsw-alias-button-info-fill: #6cc366;
-  --dsw-alias-button-info-hover: #84d07d;
-  --dsw-alias-button-contrast-fill: #8ad183;
-  --dsw-alias-button-ghost-active-fill: #1e3019;
-  --dsw-alias-button-ghost-active-hover: #22401f;
-  --dsw-alias-button-ghost-active-border: #3d6f38;
-  --dsw-alias-button-elevated-fill: #161e14;
-  --dsw-alias-button-floating-fill: #161e14;
-  --dsw-alias-button-floating-hover: #202a1c;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(108, 195, 102, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(108, 195, 102, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(108, 195, 102, 0.6);
-  --dsw-specific-bubble: #54432a;
-  --dsw-specific-bubble-highlight: #2f562b;
-  --dsw-specific-input-major: #161e14;
-  --dsw-specific-login-input: #161e14;
-  --dsw-specific-sidebar-fill: #6cc366;
-  --dsw-specific-sidebar-nav-item-active: #22401f;
-  --dsw-specific-sidebar-nav-item-hover: #202a1c;
-  --dsw-specific-sidebar-nav-item-active-accent: #3d6f38;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-game-animalcrossing] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-game-animalcrossing]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-game-animalcrossing]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -423,9 +461,7 @@ body[data-dsh-game-animalcrossing]::before {
       radial-gradient(ellipse at 6% 92%, rgba(79, 162, 75, 0.08) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 520px 520px, 100% 100%, 100% 100%;
     opacity: 0.75;
-}
-
-body[data-dsh-game-animalcrossing]::after {
+}body[data-dsh-game-animalcrossing]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -438,130 +474,45 @@ body[data-dsh-game-animalcrossing]::after {
     background-position: 0 0, 22px 22px;
     opacity: 0.05;
     animation: game-animalcrossing-ac-breeze-drift 26s linear infinite;
-}
-
-body[data-dsh-game-animalcrossing] [class*='sider'] [class*='session'],
-body[data-dsh-game-animalcrossing] [class*='sider'] [class*='item'] {
-  border-radius: 10px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-game-animalcrossing] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(111, 195, 214, 0.2);
-    box-shadow: inset 3px 0 0 0 rgba(111, 195, 214, 0.85);
-}
-
-body[data-dsh-game-animalcrossing] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-game-animalcrossing] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(79, 162, 75, 0.22), rgba(79, 162, 75, 0.06) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 #4fa24b;
-}
-
-body[data-dsh-game-animalcrossing] button[class*='primary'],
-body[data-dsh-game-animalcrossing] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #3e843c 0%, #4fa24b 55%, #68b85f 100%) !important;
-    border: 1px solid #aad9a4 !important;
-    
-    border-radius: 16px 4px 16px 4px !important;
-    color: var(--text-white) !important;
-    box-shadow: 0 2px 8px rgba(79, 162, 75, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    text-shadow: 0 1px 2px rgba(20, 48, 19, 0.5);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-game-animalcrossing] button[class*='primary']:hover,
-body[data-dsh-game-animalcrossing] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.08);
-    box-shadow: 0 3px 16px rgba(79, 162, 75, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.35);
-    animation: game-animalcrossing-ac-leaf-breathe 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-game-animalcrossing] pre,
-body[data-dsh-game-animalcrossing] .markdown-body pre {
+}body[data-dsh-game-animalcrossing] pre{
   background: linear-gradient(180deg, #4a3b26 0%, #3e301e 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #4fa24b !important;
     border-radius: 10px;
     box-shadow: inset 0 0 22px rgba(139, 107, 61, 0.3);
-}
-
-body[data-dsh-game-animalcrossing] pre code,
-body[data-dsh-game-animalcrossing] .markdown-body pre code {
+}body[data-dsh-game-animalcrossing] pre code{
   background: transparent !important;
     color: #efe7d2 !important;
     text-shadow: none;
-}
-
-body[data-dsh-game-animalcrossing] code,
-body[data-dsh-game-animalcrossing] .markdown-body code {
+}body[data-dsh-game-animalcrossing] code{
   background: rgba(79, 162, 75, 0.14);
     color: #2f662e;
     border: 1px solid rgba(79, 162, 75, 0.35);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-game-animalcrossing]::selection {
-  background: color-mix(in srgb, var(--brand) 30%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-game-animalcrossing] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 6px rgba(58, 53, 38, 0.08), 0 0 0 1px rgba(79, 162, 75, 0.12);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-game-animalcrossing] [class*='guidInputCard']:hover {
-  border-color: var(--ac-leaf-hi) !important;
-}
-
-body[data-dsh-game-animalcrossing] [class*='agent-bar'],
-body[data-dsh-game-animalcrossing] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(79, 162, 75, 0.4);
-}
-
-body[data-dsh-game-animalcrossing]::-webkit-scrollbar {
+}body[data-dsh-game-animalcrossing]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 30%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-game-animalcrossing]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-game-animalcrossing]::-webkit-scrollbar-thumb {
+}body[data-dsh-game-animalcrossing]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #68b85f, #2f662e);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-game-animalcrossing]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-game-animalcrossing]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #85c97d, #214920);
-}
-
-body[data-dsh-game-animalcrossing]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-game-animalcrossing] .markdown-body a,
-body[data-dsh-game-animalcrossing] a {
+}body[data-dsh-game-animalcrossing]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-game-animalcrossing] a{
   color: #3e843c;
-}
-
-body[data-dsh-game-animalcrossing] .markdown-body a:hover,
-body[data-dsh-game-animalcrossing] a:hover {
+}body[data-dsh-game-animalcrossing] a:hover{
   color: #4fa24b;
-}
-
-body[data-dsh-game-animalcrossing] .markdown-body blockquote {
+}body[data-dsh-game-animalcrossing] blockquote{
   border-left: 3px solid #4fa24b;
     background: rgba(79, 162, 75, 0.1);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-game-animalcrossing] .markdown-body hr,
-body[data-dsh-game-animalcrossing] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-game-animalcrossing] hr{
   border: none;
     height: 8px;
     background-image:
@@ -571,21 +522,7 @@ body[data-dsh-game-animalcrossing] hr {
     background-repeat: repeat-x;
     background-position: 0 1px, 7px 1px;
     opacity: 0.6;
-}
-
-body[data-dsh-game-animalcrossing] .arco-btn:not(button[class*='primary']):hover {
-  color: #3e843c !important;
-    border-color: rgba(79, 162, 75, 0.5) !important;
-    background-color: rgba(79, 162, 75, 0.08) !important;
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme]::before {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -599,9 +536,7 @@ body[data-dsh-game-animalcrossing][data-ds-dark-theme]::before {
       radial-gradient(ellipse at 6% 92%, rgba(108, 195, 102, 0.08) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 520px 520px, 100% 100%, 100% 100%;
     opacity: 0.9;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme]::after {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -614,130 +549,45 @@ body[data-dsh-game-animalcrossing][data-ds-dark-theme]::after {
     background-position: 0 0, 22px 22px;
     opacity: 0.06;
     animation: game-animalcrossing-ac-night-breeze 26s linear infinite;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] [class*='sider'] [class*='session'],
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 10px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(92, 184, 212, 0.16);
-    box-shadow: inset 3px 0 0 0 rgba(92, 184, 212, 0.8);
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(108, 195, 102, 0.26), rgba(108, 195, 102, 0.08) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 #6cc366;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #3d6f38 0%, #529b4c 55%, #6cc366 100%) !important;
-    border: 1px solid #8ad183 !important;
-    
-    border-radius: 16px 4px 16px 4px !important;
-    color: #f7faf0 !important;
-    box-shadow: 0 2px 8px rgba(108, 195, 102, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    text-shadow: 0 1px 2px rgba(14, 30, 12, 0.6);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.1);
-    box-shadow: 0 3px 16px rgba(108, 195, 102, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.28);
-    animation: game-animalcrossing-ac-firefly-pulse 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] pre,
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #151b12 0%, #11170e 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #6cc366 !important;
     border-radius: 10px;
     box-shadow: inset 0 0 24px rgba(44, 80, 60, 0.3);
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] pre code,
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #dbe8d2 !important;
     text-shadow: none;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] code,
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] .markdown-body code {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme] code{
   background: rgba(108, 195, 102, 0.16);
     color: #abe0a5;
     border: 1px solid rgba(108, 195, 102, 0.3);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 45%, transparent);
-    color: var(--text-white);
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 8px rgba(6, 10, 5, 0.5), 0 0 0 1px rgba(108, 195, 102, 0.14);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] [class*='guidInputCard']:hover {
-  border-color: #3d6f38 !important;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(108, 195, 102, 0.4);
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 45%, transparent);
+    color: var(--dsw-alias-label-primary-inverted);
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #6cc366, #2f562b);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #8ad183, #3d6f38);
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] a {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme] a{
   color: #8ad183;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] a:hover {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme] a:hover{
   color: #abe0a5;
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme] blockquote{
   border-left: 3px solid #6cc366;
     background: rgba(108, 195, 102, 0.1);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-game-animalcrossing][data-ds-dark-theme] hr{
   border: none;
     height: 8px;
     background-image:
@@ -749,44 +599,20 @@ body[data-dsh-game-animalcrossing][data-ds-dark-theme] hr {
     opacity: 0.6;
 }
 
-body[data-dsh-game-animalcrossing][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: #abe0a5 !important;
-    border-color: rgba(108, 195, 102, 0.5) !important;
-    background-color: rgba(108, 195, 102, 0.1) !important;
-}
-
 /* --- keyframes --- */
-@keyframes game-animalcrossing-ac-breeze-drift {
-  0% { background-position: 0 0, 22px 22px; }
-  100% { background-position: 44px 44px, 66px 66px; }
+@keyframes game-animalcrossing-ac-breeze-drift {0%{ background-position: 0 0, 22px 22px; }100%{ background-position: 44px 44px, 66px 66px; }
 }
 
-@keyframes game-animalcrossing-ac-sign-sway {
-  0%, 100% { box-shadow: 0 2px 8px rgba(92, 74, 44, 0.3); }
-  50% { box-shadow: 0 3px 14px rgba(79, 162, 75, 0.35); }
+
+
+
+
+
+
+@keyframes game-animalcrossing-ac-night-breeze {0%{ background-position: 0 0, 22px 22px; }100%{ background-position: 44px 44px, 66px 66px; }
 }
 
-@keyframes game-animalcrossing-ac-leaf-breathe {
-  0%, 100% { box-shadow: 0 3px 12px rgba(79, 162, 75, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.32); }
-  50% { box-shadow: 0 3px 20px rgba(79, 162, 75, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.38); }
-}
-
-@keyframes game-animalcrossing-ac-frame-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
-}
-
-@keyframes game-animalcrossing-ac-night-breeze {
-  0% { background-position: 0 0, 22px 22px; }
-  100% { background-position: 44px 44px, 66px 66px; }
-}
-
-@keyframes game-animalcrossing-ac-lantern-glow {
-  0%, 100% { box-shadow: 0 2px 10px rgba(108, 195, 102, 0.18); }
-  50% { box-shadow: 0 2px 16px rgba(108, 195, 102, 0.4); }
-}
-
-@keyframes game-animalcrossing-ac-firefly-pulse {
-  0%, 100% { box-shadow: 0 3px 14px rgba(108, 195, 102, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.26); }
-  50% { box-shadow: 0 3px 22px rgba(108, 195, 102, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.32); }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-game-animalcrossing]{
+  --dsh-windows-content-radius: 6px;
 }

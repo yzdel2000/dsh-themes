@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T09:53:43.833Z",
+  "generatedAt": "2026-10-27T09:06:24.082Z",
   "count": 151,
   "skins": [
     {
@@ -16,8 +16,9 @@
       "bodyAttr": "data-dsh-ayu",
       "author": "aionui-themes",
       "tagline": "Ayu 官方 Light 版，净白暖橙",
+      "description": "Ayu 官方 Mirage 版，暖橙夜色（含昼夜双模式）",
       "order": 1,
-      "tokens": 4810,
+      "tokens": 5794,
       "thumb": {
         "light": "thumbs/ayu.light.webp",
         "dark": "thumbs/ayu.dark.webp"
@@ -25,8 +26,7 @@
       "preview": {
         "light": "previews/ayu.light.webp",
         "dark": "previews/ayu.dark.webp"
-      },
-      "description": "Ayu 官方 Mirage 版，暖橙夜色（含昼夜双模式）"
+      }
     },
     {
       "id": "catppuccin",
@@ -42,8 +42,9 @@
       "bodyAttr": "data-dsh-catppuccin",
       "author": "aionui-themes",
       "tagline": "Latte 晨光奶咖，Mauve 马卡龙紫",
+      "description": "Mocha 深夜咖啡，Mauve 马卡龙紫（含昼夜双模式）",
       "order": 2,
-      "tokens": 5275,
+      "tokens": 6092,
       "thumb": {
         "light": "thumbs/catppuccin.light.webp",
         "dark": "thumbs/catppuccin.dark.webp"
@@ -51,8 +52,7 @@
       "preview": {
         "light": "previews/catppuccin.light.webp",
         "dark": "previews/catppuccin.dark.webp"
-      },
-      "description": "Mocha 深夜咖啡，Mauve 马卡龙紫（含昼夜双模式）"
+      }
     },
     {
       "id": "darcula",
@@ -68,8 +68,9 @@
       "bodyAttr": "data-dsh-darcula",
       "author": "aionui-themes",
       "tagline": "IntelliJ 经典白底与藏青关键字",
+      "description": "IntelliJ 经典深灰底与橙黄关键字（含昼夜双模式）",
       "order": 3,
-      "tokens": 5140,
+      "tokens": 6015,
       "thumb": {
         "light": "thumbs/darcula.light.webp",
         "dark": "thumbs/darcula.dark.webp"
@@ -77,8 +78,7 @@
       "preview": {
         "light": "previews/darcula.light.webp",
         "dark": "previews/darcula.dark.webp"
-      },
-      "description": "IntelliJ 经典深灰底与橙黄关键字（含昼夜双模式）"
+      }
     },
     {
       "id": "donald-duck",
@@ -94,8 +94,9 @@
       "bodyAttr": "data-dsh-donald-duck",
       "author": "aionui-themes",
       "tagline": "水手蓝帽衫配黄嘴红领结的海军风",
+      "description": "深夜甲板上水手蓝衫映着黄嘴红领结（含昼夜双模式）",
       "order": 4,
-      "tokens": 6311,
+      "tokens": 6871,
       "thumb": {
         "light": "thumbs/donald-duck.light.webp",
         "dark": "thumbs/donald-duck.dark.webp"
@@ -103,8 +104,7 @@
       "preview": {
         "light": "previews/donald-duck.light.webp",
         "dark": "previews/donald-duck.dark.webp"
-      },
-      "description": "深夜甲板上水手蓝衫映着黄嘴红领结（含昼夜双模式）"
+      }
     },
     {
       "id": "dracula",
@@ -120,8 +120,9 @@
       "bodyAttr": "data-dsh-dracula",
       "author": "aionui-themes",
       "tagline": "羊皮纸白底上的紫粉语法色，白昼古堡",
+      "description": "暗紫古堡底，紫粉绿的吸血鬼之夜（含昼夜双模式）",
       "order": 5,
-      "tokens": 5042,
+      "tokens": 5893,
       "thumb": {
         "light": "thumbs/dracula.light.webp",
         "dark": "thumbs/dracula.dark.webp"
@@ -129,8 +130,7 @@
       "preview": {
         "light": "previews/dracula.light.webp",
         "dark": "previews/dracula.dark.webp"
-      },
-      "description": "暗紫古堡底，紫粉绿的吸血鬼之夜（含昼夜双模式）"
+      }
     },
     {
       "id": "egg-matrix",
@@ -147,8 +147,9 @@
       "bodyAttr": "data-dsh-egg-matrix",
       "author": "aionui-themes",
       "tagline": "白昼矩阵：纸上打印的绿色代码流",
+      "description": "绿色数字雨落在黑色终端上（含昼夜双模式）",
       "order": 6,
-      "tokens": 5729,
+      "tokens": 6348,
       "thumb": {
         "light": "thumbs/egg-matrix.light.webp",
         "dark": "thumbs/egg-matrix.dark.webp"
@@ -156,8 +157,7 @@
       "preview": {
         "light": "previews/egg-matrix.light.webp",
         "dark": "previews/egg-matrix.dark.webp"
-      },
-      "description": "绿色数字雨落在黑色终端上（含昼夜双模式）"
+      }
     },
     {
       "id": "egg-pacman",
@@ -173,8 +173,9 @@
       "bodyAttr": "data-dsh-egg-pacman",
       "author": "aionui-themes",
       "tagline": "白昼街机厅，迷宫依旧运转",
+      "description": "黑底黄吃豆人，迷宫蓝墙四幽灵（含昼夜双模式）",
       "order": 7,
-      "tokens": 5680,
+      "tokens": 6156,
       "thumb": {
         "light": "thumbs/egg-pacman.light.webp",
         "dark": "thumbs/egg-pacman.dark.webp"
@@ -182,8 +183,7 @@
       "preview": {
         "light": "previews/egg-pacman.light.webp",
         "dark": "previews/egg-pacman.dark.webp"
-      },
-      "description": "黑底黄吃豆人，迷宫蓝墙四幽灵（含昼夜双模式）"
+      }
     },
     {
       "id": "everforest",
@@ -199,8 +199,9 @@
       "bodyAttr": "data-dsh-everforest",
       "author": "aionui-themes",
       "tagline": "晨雾米白纸面，林间新绿的护眼浅色",
+      "description": "森林绿底，护眼低对比的暗夜林海（含昼夜双模式）",
       "order": 8,
-      "tokens": 5109,
+      "tokens": 5964,
       "thumb": {
         "light": "thumbs/everforest.light.webp",
         "dark": "thumbs/everforest.dark.webp"
@@ -208,8 +209,7 @@
       "preview": {
         "light": "previews/everforest.light.webp",
         "dark": "previews/everforest.dark.webp"
-      },
-      "description": "森林绿底，护眼低对比的暗夜林海（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-christmas",
@@ -225,8 +225,9 @@
       "bodyAttr": "data-dsh-festival-christmas",
       "author": "aionui-themes",
       "tagline": "白昼雪景，红绿金装点圣诞",
+      "description": "圣诞夜雪落，彩灯与礼物相伴（含昼夜双模式）",
       "order": 9,
-      "tokens": 6073,
+      "tokens": 6420,
       "thumb": {
         "light": "thumbs/festival-christmas.light.webp",
         "dark": "thumbs/festival-christmas.dark.webp"
@@ -234,8 +235,7 @@
       "preview": {
         "light": "previews/festival-christmas.light.webp",
         "dark": "previews/festival-christmas.dark.webp"
-      },
-      "description": "圣诞夜雪落，彩灯与礼物相伴（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-dragonboat",
@@ -250,8 +250,9 @@
       "bodyAttr": "data-dsh-festival-dragonboat",
       "author": "aionui-themes",
       "tagline": "艾草绿粽叶香，龙舟红漆竞渡忙",
+      "description": "夜泊汨罗，灯影龙舟映江波（含昼夜双模式）",
       "order": 10,
-      "tokens": 5868,
+      "tokens": 6253,
       "thumb": {
         "light": "thumbs/festival-dragonboat.light.webp",
         "dark": "thumbs/festival-dragonboat.dark.webp"
@@ -259,8 +260,7 @@
       "preview": {
         "light": "previews/festival-dragonboat.light.webp",
         "dark": "previews/festival-dragonboat.dark.webp"
-      },
-      "description": "夜泊汨罗，灯影龙舟映江波（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-halloween",
@@ -276,8 +276,9 @@
       "bodyAttr": "data-dsh-festival-halloween",
       "author": "aionui-themes",
       "tagline": "白昼糖果色的南瓜与蝙蝠巡游",
+      "description": "南瓜灯、蝙蝠与鬼火的紫夜狂欢（含昼夜双模式）",
       "order": 11,
-      "tokens": 6329,
+      "tokens": 6576,
       "thumb": {
         "light": "thumbs/festival-halloween.light.webp",
         "dark": "thumbs/festival-halloween.dark.webp"
@@ -285,8 +286,7 @@
       "preview": {
         "light": "previews/festival-halloween.light.webp",
         "dark": "previews/festival-halloween.dark.webp"
-      },
-      "description": "南瓜灯、蝙蝠与鬼火的紫夜狂欢（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-lantern",
@@ -302,8 +302,9 @@
       "bodyAttr": "data-dsh-festival-lantern",
       "author": "aionui-themes",
       "tagline": "汤圆白底，灯谜红纸点睛",
+      "description": "夜色灯会，花灯暖光映汤圆（含昼夜双模式）",
       "order": 12,
-      "tokens": 5996,
+      "tokens": 6562,
       "thumb": {
         "light": "thumbs/festival-lantern.light.webp",
         "dark": "thumbs/festival-lantern.dark.webp"
@@ -311,8 +312,7 @@
       "preview": {
         "light": "previews/festival-lantern.light.webp",
         "dark": "previews/festival-lantern.dark.webp"
-      },
-      "description": "夜色灯会，花灯暖光映汤圆（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-midautumn",
@@ -327,8 +327,9 @@
       "bodyAttr": "data-dsh-festival-midautumn",
       "author": "aionui-themes",
       "tagline": "白昼桂香米纸色，金月玉兔照旧圆",
+      "description": "圆月金辉桂香夜，玉兔月饼共团圆（含昼夜双模式）",
       "order": 13,
-      "tokens": 6088,
+      "tokens": 6629,
       "thumb": {
         "light": "thumbs/festival-midautumn.light.webp",
         "dark": "thumbs/festival-midautumn.dark.webp"
@@ -336,8 +337,7 @@
       "preview": {
         "light": "previews/festival-midautumn.light.webp",
         "dark": "previews/festival-midautumn.dark.webp"
-      },
-      "description": "圆月金辉桂香夜，玉兔月饼共团圆（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-newyear",
@@ -352,8 +352,9 @@
       "bodyAttr": "data-dsh-festival-newyear",
       "author": "aionui-themes",
       "tagline": "香槟白昼里的烟花碎金与倒数",
+      "description": "午夜蓝下的烟花与香槟金倒计时（含昼夜双模式）",
       "order": 14,
-      "tokens": 6183,
+      "tokens": 6585,
       "thumb": {
         "light": "thumbs/festival-newyear.light.webp",
         "dark": "thumbs/festival-newyear.dark.webp"
@@ -361,8 +362,7 @@
       "preview": {
         "light": "previews/festival-newyear.light.webp",
         "dark": "previews/festival-newyear.dark.webp"
-      },
-      "description": "午夜蓝下的烟花与香槟金倒计时（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-qixi",
@@ -378,8 +378,9 @@
       "bodyAttr": "data-dsh-festival-qixi",
       "author": "aionui-themes",
       "tagline": "晨光里的红线与鹊桥余韵",
+      "description": "银河鹊桥会，一线系牵牛（含昼夜双模式）",
       "order": 15,
-      "tokens": 5732,
+      "tokens": 6380,
       "thumb": {
         "light": "thumbs/festival-qixi.light.webp",
         "dark": "thumbs/festival-qixi.dark.webp"
@@ -387,8 +388,7 @@
       "preview": {
         "light": "previews/festival-qixi.light.webp",
         "dark": "previews/festival-qixi.dark.webp"
-      },
-      "description": "银河鹊桥会，一线系牵牛（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-sakura",
@@ -404,8 +404,9 @@
       "bodyAttr": "data-dsh-festival-sakura",
       "author": "aionui-themes",
       "tagline": "粉樱吹雪与日式暖帘的春日白昼",
+      "description": "夜樱灯影下缓缓飘落的绯色花瓣（含昼夜双模式）",
       "order": 16,
-      "tokens": 6214,
+      "tokens": 6643,
       "thumb": {
         "light": "thumbs/festival-sakura.light.webp",
         "dark": "thumbs/festival-sakura.dark.webp"
@@ -413,8 +414,7 @@
       "preview": {
         "light": "previews/festival-sakura.light.webp",
         "dark": "previews/festival-sakura.dark.webp"
-      },
-      "description": "夜樱灯影下缓缓飘落的绯色花瓣（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-spring",
@@ -430,8 +430,9 @@
       "bodyAttr": "data-dsh-festival-spring",
       "author": "aionui-themes",
       "tagline": "宣纸暖白衬红金窗花与灯笼",
+      "description": "中国红金灯笼映照的喜庆年夜（含昼夜双模式）",
       "order": 17,
-      "tokens": 6041,
+      "tokens": 6444,
       "thumb": {
         "light": "thumbs/festival-spring.light.webp",
         "dark": "thumbs/festival-spring.dark.webp"
@@ -439,8 +440,7 @@
       "preview": {
         "light": "previews/festival-spring.light.webp",
         "dark": "previews/festival-spring.dark.webp"
-      },
-      "description": "中国红金灯笼映照的喜庆年夜（含昼夜双模式）"
+      }
     },
     {
       "id": "festival-valentine",
@@ -455,8 +455,9 @@
       "bodyAttr": "data-dsh-festival-valentine",
       "author": "aionui-themes",
       "tagline": "玫瑰红粉、爱心挂串与情书火漆",
+      "description": "夜色玫瑰、烛光爱心与火漆情书（含昼夜双模式）",
       "order": 18,
-      "tokens": 6322,
+      "tokens": 6715,
       "thumb": {
         "light": "thumbs/festival-valentine.light.webp",
         "dark": "thumbs/festival-valentine.dark.webp"
@@ -464,8 +465,7 @@
       "preview": {
         "light": "previews/festival-valentine.light.webp",
         "dark": "previews/festival-valentine.dark.webp"
-      },
-      "description": "夜色玫瑰、烛光爱心与火漆情书（含昼夜双模式）"
+      }
     },
     {
       "id": "flexoki",
@@ -481,8 +481,9 @@
       "bodyAttr": "data-dsh-flexoki",
       "author": "aionui-themes",
       "tagline": "暖纸墨字亮色系，青墨点睛",
+      "description": "墨色纸感暗色系，青墨点睛（含昼夜双模式）",
       "order": 19,
-      "tokens": 4839,
+      "tokens": 5864,
       "thumb": {
         "light": "thumbs/flexoki.light.webp",
         "dark": "thumbs/flexoki.dark.webp"
@@ -490,8 +491,7 @@
       "preview": {
         "light": "previews/flexoki.light.webp",
         "dark": "previews/flexoki.dark.webp"
-      },
-      "description": "墨色纸感暗色系，青墨点睛（含昼夜双模式）"
+      }
     },
     {
       "id": "game-amongus",
@@ -507,8 +507,9 @@
       "bodyAttr": "data-dsh-game-amongus",
       "author": "aionui-themes",
       "tagline": "飞船食堂晨光里的红色船员",
+      "description": "红色船员在太空舱里做任务（含昼夜双模式）",
       "order": 20,
-      "tokens": 5619,
+      "tokens": 6218,
       "thumb": {
         "light": "thumbs/game-amongus.light.webp",
         "dark": "thumbs/game-amongus.dark.webp"
@@ -516,8 +517,7 @@
       "preview": {
         "light": "previews/game-amongus.light.webp",
         "dark": "previews/game-amongus.dark.webp"
-      },
-      "description": "红色船员在太空舱里做任务（含昼夜双模式）"
+      }
     },
     {
       "id": "game-animalcrossing",
@@ -533,8 +533,9 @@
       "bodyAttr": "data-dsh-game-animalcrossing",
       "author": "aionui-themes",
       "tagline": "嫩绿叶子与狸克木牌的岛屿小清新",
+      "description": "夜航无人岛：萤火绿叶与狸克木牌（含昼夜双模式）",
       "order": 21,
-      "tokens": 5775,
+      "tokens": 6225,
       "thumb": {
         "light": "thumbs/game-animalcrossing.light.webp",
         "dark": "thumbs/game-animalcrossing.dark.webp"
@@ -542,8 +543,7 @@
       "preview": {
         "light": "previews/game-animalcrossing.light.webp",
         "dark": "previews/game-animalcrossing.dark.webp"
-      },
-      "description": "夜航无人岛：萤火绿叶与狸克木牌（含昼夜双模式）"
+      }
     },
     {
       "id": "game-cyberpunk2077",
@@ -559,8 +559,9 @@
       "bodyAttr": "data-dsh-game-cyberpunk2077",
       "author": "aionui-themes",
       "tagline": "白昼夜之城，黄黑警示与残存霓虹",
+      "description": "夜之城霓虹黄黑与RELIC红（含昼夜双模式）",
       "order": 22,
-      "tokens": 5609,
+      "tokens": 6189,
       "thumb": {
         "light": "thumbs/game-cyberpunk2077.light.webp",
         "dark": "thumbs/game-cyberpunk2077.dark.webp"
@@ -568,8 +569,7 @@
       "preview": {
         "light": "previews/game-cyberpunk2077.light.webp",
         "dark": "previews/game-cyberpunk2077.dark.webp"
-      },
-      "description": "夜之城霓虹黄黑与RELIC红（含昼夜双模式）"
+      }
     },
     {
       "id": "game-eldenring",
@@ -585,8 +585,9 @@
       "bodyAttr": "data-dsh-game-eldenring",
       "author": "aionui-themes",
       "tagline": "黄金树晨光下的赐福指引",
+      "description": "黄金树的赐福与褪色者的夜（含昼夜双模式）",
       "order": 23,
-      "tokens": 5578,
+      "tokens": 6214,
       "thumb": {
         "light": "thumbs/game-eldenring.light.webp",
         "dark": "thumbs/game-eldenring.dark.webp"
@@ -594,8 +595,7 @@
       "preview": {
         "light": "previews/game-eldenring.light.webp",
         "dark": "previews/game-eldenring.dark.webp"
-      },
-      "description": "黄金树的赐福与褪色者的夜（含昼夜双模式）"
+      }
     },
     {
       "id": "game-hollowknight",
@@ -611,8 +611,9 @@
       "bodyAttr": "data-dsh-game-hollowknight",
       "author": "aionui-themes",
       "tagline": "圣巢晨雾中的小骑士面具",
+      "description": "黑白小骑士面具与梦之钉微光（含昼夜双模式）",
       "order": 24,
-      "tokens": 5612,
+      "tokens": 6174,
       "thumb": {
         "light": "thumbs/game-hollowknight.light.webp",
         "dark": "thumbs/game-hollowknight.dark.webp"
@@ -620,8 +621,7 @@
       "preview": {
         "light": "previews/game-hollowknight.light.webp",
         "dark": "previews/game-hollowknight.dark.webp"
-      },
-      "description": "黑白小骑士面具与梦之钉微光（含昼夜双模式）"
+      }
     },
     {
       "id": "game-kirby",
@@ -637,8 +637,9 @@
       "bodyAttr": "data-dsh-game-kirby",
       "author": "aionui-themes",
       "tagline": "粉红圆球与星星棒的软萌白昼",
+      "description": "夜空下粉球与星星棒的梦境（含昼夜双模式）",
       "order": 25,
-      "tokens": 5483,
+      "tokens": 6123,
       "thumb": {
         "light": "thumbs/game-kirby.light.webp",
         "dark": "thumbs/game-kirby.dark.webp"
@@ -646,8 +647,7 @@
       "preview": {
         "light": "previews/game-kirby.light.webp",
         "dark": "previews/game-kirby.dark.webp"
-      },
-      "description": "夜空下粉球与星星棒的梦境（含昼夜双模式）"
+      }
     },
     {
       "id": "game-minecraft",
@@ -663,8 +663,9 @@
       "bodyAttr": "data-dsh-game-minecraft",
       "author": "aionui-themes",
       "tagline": "苦力怕绿的像素方块世界",
+      "description": "黑夜嘶嘶作响的苦力怕（含昼夜双模式）",
       "order": 26,
-      "tokens": 5612,
+      "tokens": 6202,
       "thumb": {
         "light": "thumbs/game-minecraft.light.webp",
         "dark": "thumbs/game-minecraft.dark.webp"
@@ -672,8 +673,7 @@
       "preview": {
         "light": "previews/game-minecraft.light.webp",
         "dark": "previews/game-minecraft.dark.webp"
-      },
-      "description": "黑夜嘶嘶作响的苦力怕（含昼夜双模式）"
+      }
     },
     {
       "id": "game-portal",
@@ -689,8 +689,9 @@
       "bodyAttr": "data-dsh-game-portal",
       "author": "aionui-themes",
       "tagline": "光圈科技白舱与橙蓝双传送门",
+      "description": "深夜实验舱里的橙蓝传送门辉光（含昼夜双模式）",
       "order": 27,
-      "tokens": 5585,
+      "tokens": 6214,
       "thumb": {
         "light": "thumbs/game-portal.light.webp",
         "dark": "thumbs/game-portal.dark.webp"
@@ -698,8 +699,7 @@
       "preview": {
         "light": "previews/game-portal.light.webp",
         "dark": "previews/game-portal.dark.webp"
-      },
-      "description": "深夜实验舱里的橙蓝传送门辉光（含昼夜双模式）"
+      }
     },
     {
       "id": "game-stardew",
@@ -715,8 +715,9 @@
       "bodyAttr": "data-dsh-game-stardew",
       "author": "aionui-themes",
       "tagline": "田园像素农场，蓝鸡与四季作物",
+      "description": "夜幕农场，星光下的蓝鸡低鸣（含昼夜双模式）",
       "order": 28,
-      "tokens": 5680,
+      "tokens": 6325,
       "thumb": {
         "light": "thumbs/game-stardew.light.webp",
         "dark": "thumbs/game-stardew.dark.webp"
@@ -724,8 +725,7 @@
       "preview": {
         "light": "previews/game-stardew.light.webp",
         "dark": "previews/game-stardew.dark.webp"
-      },
-      "description": "夜幕农场，星光下的蓝鸡低鸣（含昼夜双模式）"
+      }
     },
     {
       "id": "game-tetris",
@@ -741,8 +741,9 @@
       "bodyAttr": "data-dsh-game-tetris",
       "author": "aionui-themes",
       "tagline": "白昼竞技场上的七彩像素方块",
+      "description": "七彩四格方块的深夜霓虹堆叠（含昼夜双模式）",
       "order": 29,
-      "tokens": 5544,
+      "tokens": 6228,
       "thumb": {
         "light": "thumbs/game-tetris.light.webp",
         "dark": "thumbs/game-tetris.dark.webp"
@@ -750,8 +751,7 @@
       "preview": {
         "light": "previews/game-tetris.light.webp",
         "dark": "previews/game-tetris.dark.webp"
-      },
-      "description": "七彩四格方块的深夜霓虹堆叠（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-ayaka",
@@ -767,8 +767,9 @@
       "bodyAttr": "data-dsh-genshin-ayaka",
       "author": "aionui-themes",
       "tagline": "白鹭公主的冰蓝折扇与椿花",
+      "description": "雪夜庭园的冰蓝折扇与椿花（含昼夜双模式）",
       "order": 30,
-      "tokens": 5531,
+      "tokens": 6154,
       "thumb": {
         "light": "thumbs/genshin-ayaka.light.webp",
         "dark": "thumbs/genshin-ayaka.dark.webp"
@@ -776,8 +777,7 @@
       "preview": {
         "light": "previews/genshin-ayaka.light.webp",
         "dark": "previews/genshin-ayaka.dark.webp"
-      },
-      "description": "雪夜庭园的冰蓝折扇与椿花（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-furina",
@@ -793,8 +793,9 @@
       "bodyAttr": "data-dsh-genshin-furina",
       "author": "aionui-themes",
       "tagline": "水神的歌剧舞台，聚光灯与泡泡",
+      "description": "谢幕后的深蓝剧场，水光与礼帽（含昼夜双模式）",
       "order": 31,
-      "tokens": 5572,
+      "tokens": 6171,
       "thumb": {
         "light": "thumbs/genshin-furina.light.webp",
         "dark": "thumbs/genshin-furina.dark.webp"
@@ -802,8 +803,7 @@
       "preview": {
         "light": "previews/genshin-furina.light.webp",
         "dark": "previews/genshin-furina.dark.webp"
-      },
-      "description": "谢幕后的深蓝剧场，水光与礼帽（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-ganyu",
@@ -819,8 +819,9 @@
       "bodyAttr": "data-dsh-genshin-ganyu",
       "author": "aionui-themes",
       "tagline": "冰蓝麒麟的云海与清心",
+      "description": "夜幕云海间的冰麟微光（含昼夜双模式）",
       "order": 32,
-      "tokens": 5574,
+      "tokens": 6198,
       "thumb": {
         "light": "thumbs/genshin-ganyu.light.webp",
         "dark": "thumbs/genshin-ganyu.dark.webp"
@@ -828,8 +829,7 @@
       "preview": {
         "light": "previews/genshin-ganyu.light.webp",
         "dark": "previews/genshin-ganyu.dark.webp"
-      },
-      "description": "夜幕云海间的冰麟微光（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-hutao",
@@ -845,8 +845,9 @@
       "bodyAttr": "data-dsh-genshin-hutao",
       "author": "aionui-themes",
       "tagline": "白梅映雪的火红昼行",
+      "description": "往生堂主的火红梅花夜（含昼夜双模式）",
       "order": 33,
-      "tokens": 5665,
+      "tokens": 6317,
       "thumb": {
         "light": "thumbs/genshin-hutao.light.webp",
         "dark": "thumbs/genshin-hutao.dark.webp"
@@ -854,8 +855,7 @@
       "preview": {
         "light": "previews/genshin-hutao.light.webp",
         "dark": "previews/genshin-hutao.dark.webp"
-      },
-      "description": "往生堂主的火红梅花夜（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-klee",
@@ -871,8 +871,9 @@
       "bodyAttr": "data-dsh-genshin-klee",
       "author": "aionui-themes",
       "tagline": "蹦蹦炸弹与火花四叶草的童趣涂鸦",
+      "description": "夜幕下的蹦蹦炸弹火花涂鸦（含昼夜双模式）",
       "order": 34,
-      "tokens": 5610,
+      "tokens": 6218,
       "thumb": {
         "light": "thumbs/genshin-klee.light.webp",
         "dark": "thumbs/genshin-klee.dark.webp"
@@ -880,8 +881,7 @@
       "preview": {
         "light": "previews/genshin-klee.light.webp",
         "dark": "previews/genshin-klee.dark.webp"
-      },
-      "description": "夜幕下的蹦蹦炸弹火花涂鸦（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-nahida",
@@ -897,8 +897,9 @@
       "bodyAttr": "data-dsh-genshin-nahida",
       "author": "aionui-themes",
       "tagline": "草绿梦境与四叶草的净善宫晨光",
+      "description": "虚空终端绿光照亮的深夜梦境（含昼夜双模式）",
       "order": 35,
-      "tokens": 5854,
+      "tokens": 6511,
       "thumb": {
         "light": "thumbs/genshin-nahida.light.webp",
         "dark": "thumbs/genshin-nahida.dark.webp"
@@ -906,8 +907,7 @@
       "preview": {
         "light": "previews/genshin-nahida.light.webp",
         "dark": "previews/genshin-nahida.dark.webp"
-      },
-      "description": "虚空终端绿光照亮的深夜梦境（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-raiden",
@@ -923,8 +923,9 @@
       "bodyAttr": "data-dsh-genshin-raiden",
       "author": "aionui-themes",
       "tagline": "白无垢上的紫电金纹",
+      "description": "紫电巴纹，无想一刀（含昼夜双模式）",
       "order": 36,
-      "tokens": 5634,
+      "tokens": 6251,
       "thumb": {
         "light": "thumbs/genshin-raiden.light.webp",
         "dark": "thumbs/genshin-raiden.dark.webp"
@@ -932,8 +933,7 @@
       "preview": {
         "light": "previews/genshin-raiden.light.webp",
         "dark": "previews/genshin-raiden.dark.webp"
-      },
-      "description": "紫电巴纹，无想一刀（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-wanderer",
@@ -949,8 +949,9 @@
       "bodyAttr": "data-dsh-genshin-wanderer",
       "author": "aionui-themes",
       "tagline": "白昼风起，斗笠下的旅人",
+      "description": "靛蓝斗笠下，风起人偶行（含昼夜双模式）",
       "order": 37,
-      "tokens": 5636,
+      "tokens": 6214,
       "thumb": {
         "light": "thumbs/genshin-wanderer.light.webp",
         "dark": "thumbs/genshin-wanderer.dark.webp"
@@ -958,8 +959,7 @@
       "preview": {
         "light": "previews/genshin-wanderer.light.webp",
         "dark": "previews/genshin-wanderer.dark.webp"
-      },
-      "description": "靛蓝斗笠下，风起人偶行（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-xiao",
@@ -975,8 +975,9 @@
       "bodyAttr": "data-dsh-genshin-xiao",
       "author": "aionui-themes",
       "tagline": "傩面夜叉昼行，青绿风息拂过璃月山野",
+      "description": "傩面夜叉，青绿风息隐于业障暗夜（含昼夜双模式）",
       "order": 38,
-      "tokens": 5516,
+      "tokens": 6147,
       "thumb": {
         "light": "thumbs/genshin-xiao.light.webp",
         "dark": "thumbs/genshin-xiao.dark.webp"
@@ -984,8 +985,7 @@
       "preview": {
         "light": "previews/genshin-xiao.light.webp",
         "dark": "previews/genshin-xiao.dark.webp"
-      },
-      "description": "傩面夜叉，青绿风息隐于业障暗夜（含昼夜双模式）"
+      }
     },
     {
       "id": "genshin-zhongli",
@@ -1001,8 +1001,9 @@
       "bodyAttr": "data-dsh-genshin-zhongli",
       "author": "aionui-themes",
       "tagline": "岩王帝君的宣纸金纹与茶烟",
+      "description": "岩王帝君的棕金华袍与天星（含昼夜双模式）",
       "order": 39,
-      "tokens": 5587,
+      "tokens": 6168,
       "thumb": {
         "light": "thumbs/genshin-zhongli.light.webp",
         "dark": "thumbs/genshin-zhongli.dark.webp"
@@ -1010,8 +1011,7 @@
       "preview": {
         "light": "previews/genshin-zhongli.light.webp",
         "dark": "previews/genshin-zhongli.dark.webp"
-      },
-      "description": "岩王帝君的棕金华袍与天星（含昼夜双模式）"
+      }
     },
     {
       "id": "github",
@@ -1027,8 +1027,9 @@
       "bodyAttr": "data-dsh-github",
       "author": "aionui-themes",
       "tagline": "GitHub 官方浅色，白底蓝链与贡献格绿",
+      "description": "GitHub 官方深色，深夜蓝黑与贡献格绿（含昼夜双模式）",
       "order": 40,
-      "tokens": 4935,
+      "tokens": 5943,
       "thumb": {
         "light": "thumbs/github.light.webp",
         "dark": "thumbs/github.dark.webp"
@@ -1036,8 +1037,7 @@
       "preview": {
         "light": "previews/github.light.webp",
         "dark": "previews/github.dark.webp"
-      },
-      "description": "GitHub 官方深色，深夜蓝黑与贡献格绿（含昼夜双模式）"
+      }
     },
     {
       "id": "gruvbox",
@@ -1053,8 +1053,9 @@
       "bodyAttr": "data-dsh-gruvbox",
       "author": "aionui-themes",
       "tagline": "复古暖黄做旧纸底的日光模式",
+      "description": "复古暖黄做旧纸底的深夜模式（含昼夜双模式）",
       "order": 41,
-      "tokens": 5029,
+      "tokens": 5881,
       "thumb": {
         "light": "thumbs/gruvbox.light.webp",
         "dark": "thumbs/gruvbox.dark.webp"
@@ -1062,8 +1063,7 @@
       "preview": {
         "light": "previews/gruvbox.light.webp",
         "dark": "previews/gruvbox.dark.webp"
-      },
-      "description": "复古暖黄做旧纸底的深夜模式（含昼夜双模式）"
+      }
     },
     {
       "id": "hsr-acheron",
@@ -1079,8 +1079,9 @@
       "bodyAttr": "data-dsh-hsr-acheron",
       "author": "aionui-themes",
       "tagline": "雾紫晨空下的血刃与彼岸花",
+      "description": "紫黑虚无里的血刃与彼岸花（含昼夜双模式）",
       "order": 42,
-      "tokens": 5416,
+      "tokens": 6068,
       "thumb": {
         "light": "thumbs/hsr-acheron.light.webp",
         "dark": "thumbs/hsr-acheron.dark.webp"
@@ -1088,8 +1089,7 @@
       "preview": {
         "light": "previews/hsr-acheron.light.webp",
         "dark": "previews/hsr-acheron.dark.webp"
-      },
-      "description": "紫黑虚无里的血刃与彼岸花（含昼夜双模式）"
+      }
     },
     {
       "id": "hsr-danheng",
@@ -1105,8 +1105,9 @@
       "bodyAttr": "data-dsh-hsr-danheng",
       "author": "aionui-themes",
       "tagline": "青龙水纹与长枪寒光的清晓",
+      "description": "青龙水纹与长枪寒光的冷青夜（含昼夜双模式）",
       "order": 43,
-      "tokens": 5533,
+      "tokens": 6147,
       "thumb": {
         "light": "thumbs/hsr-danheng.light.webp",
         "dark": "thumbs/hsr-danheng.dark.webp"
@@ -1114,8 +1115,7 @@
       "preview": {
         "light": "previews/hsr-danheng.light.webp",
         "dark": "previews/hsr-danheng.dark.webp"
-      },
-      "description": "青龙水纹与长枪寒光的冷青夜（含昼夜双模式）"
+      }
     },
     {
       "id": "hsr-firefly",
@@ -1131,8 +1131,9 @@
       "bodyAttr": "data-dsh-hsr-firefly",
       "author": "aionui-themes",
       "tagline": "白昼薄暮下的萤火绿与银白装甲",
+      "description": "夏夜萤火绿光与萨姆银白机甲（含昼夜双模式）",
       "order": 44,
-      "tokens": 5590,
+      "tokens": 6225,
       "thumb": {
         "light": "thumbs/hsr-firefly.light.webp",
         "dark": "thumbs/hsr-firefly.dark.webp"
@@ -1140,8 +1141,7 @@
       "preview": {
         "light": "previews/hsr-firefly.light.webp",
         "dark": "previews/hsr-firefly.dark.webp"
-      },
-      "description": "夏夜萤火绿光与萨姆银白机甲（含昼夜双模式）"
+      }
     },
     {
       "id": "hsr-jingyuan",
@@ -1157,8 +1157,9 @@
       "bodyAttr": "data-dsh-hsr-jingyuan",
       "author": "aionui-themes",
       "tagline": "白金神君的雷霆棋局",
+      "description": "夜幕罗浮上的金雷棋局（含昼夜双模式）",
       "order": 45,
-      "tokens": 5518,
+      "tokens": 6126,
       "thumb": {
         "light": "thumbs/hsr-jingyuan.light.webp",
         "dark": "thumbs/hsr-jingyuan.dark.webp"
@@ -1166,8 +1167,7 @@
       "preview": {
         "light": "previews/hsr-jingyuan.light.webp",
         "dark": "previews/hsr-jingyuan.dark.webp"
-      },
-      "description": "夜幕罗浮上的金雷棋局（含昼夜双模式）"
+      }
     },
     {
       "id": "hsr-kafka",
@@ -1183,8 +1183,9 @@
       "bodyAttr": "data-dsh-hsr-kafka",
       "author": "aionui-themes",
       "tagline": "白昼酒杯里游走的紫红蛛丝",
+      "description": "紫红蛛丝缠绕的红酒之夜（含昼夜双模式）",
       "order": 46,
-      "tokens": 5616,
+      "tokens": 6351,
       "thumb": {
         "light": "thumbs/hsr-kafka.light.webp",
         "dark": "thumbs/hsr-kafka.dark.webp"
@@ -1192,8 +1193,7 @@
       "preview": {
         "light": "previews/hsr-kafka.light.webp",
         "dark": "previews/hsr-kafka.dark.webp"
-      },
-      "description": "紫红蛛丝缠绕的红酒之夜（含昼夜双模式）"
+      }
     },
     {
       "id": "hsr-march7",
@@ -1209,8 +1209,9 @@
       "bodyAttr": "data-dsh-hsr-march7",
       "author": "aionui-themes",
       "tagline": "粉蓝相机与冰晶的元气少女",
+      "description": "星夜冰晶里的粉发快门少女（含昼夜双模式）",
       "order": 47,
-      "tokens": 5485,
+      "tokens": 6144,
       "thumb": {
         "light": "thumbs/hsr-march7.light.webp",
         "dark": "thumbs/hsr-march7.dark.webp"
@@ -1218,8 +1219,7 @@
       "preview": {
         "light": "previews/hsr-march7.light.webp",
         "dark": "previews/hsr-march7.dark.webp"
-      },
-      "description": "星夜冰晶里的粉发快门少女（含昼夜双模式）"
+      }
     },
     {
       "id": "hsr-silverwolf",
@@ -1235,8 +1235,9 @@
       "bodyAttr": "data-dsh-hsr-silverwolf",
       "author": "aionui-themes",
       "tagline": "银白浅紫的像素故障网吧白昼",
+      "description": "像素故障与紫蓝霓虹的黑客空间（含昼夜双模式）",
       "order": 48,
-      "tokens": 5762,
+      "tokens": 6301,
       "thumb": {
         "light": "thumbs/hsr-silverwolf.light.webp",
         "dark": "thumbs/hsr-silverwolf.dark.webp"
@@ -1244,8 +1245,7 @@
       "preview": {
         "light": "previews/hsr-silverwolf.light.webp",
         "dark": "previews/hsr-silverwolf.dark.webp"
-      },
-      "description": "像素故障与紫蓝霓虹的黑客空间（含昼夜双模式）"
+      }
     },
     {
       "id": "hsr-sparkle",
@@ -1261,8 +1261,9 @@
       "bodyAttr": "data-dsh-hsr-sparkle",
       "author": "aionui-themes",
       "tagline": "红金狐面昼场，烟花落入白昼",
+      "description": "红金狐面剧场，烟花绽于夜幕（含昼夜双模式）",
       "order": 49,
-      "tokens": 5527,
+      "tokens": 6203,
       "thumb": {
         "light": "thumbs/hsr-sparkle.light.webp",
         "dark": "thumbs/hsr-sparkle.dark.webp"
@@ -1270,8 +1271,7 @@
       "preview": {
         "light": "previews/hsr-sparkle.light.webp",
         "dark": "previews/hsr-sparkle.dark.webp"
-      },
-      "description": "红金狐面剧场，烟花绽于夜幕（含昼夜双模式）"
+      }
     },
     {
       "id": "kanagawa",
@@ -1287,8 +1287,9 @@
       "bodyAttr": "data-dsh-kanagawa",
       "author": "aionui-themes",
       "tagline": "葛饰北斋浮世绘，米纸白莲昼卷",
+      "description": "葛饰北斋浮世绘，神奈川深海浪蓝（含昼夜双模式）",
       "order": 50,
-      "tokens": 5123,
+      "tokens": 5922,
       "thumb": {
         "light": "thumbs/kanagawa.light.webp",
         "dark": "thumbs/kanagawa.dark.webp"
@@ -1296,8 +1297,7 @@
       "preview": {
         "light": "previews/kanagawa.light.webp",
         "dark": "previews/kanagawa.dark.webp"
-      },
-      "description": "葛饰北斋浮世绘，神奈川深海浪蓝（含昼夜双模式）"
+      }
     },
     {
       "id": "mario",
@@ -1313,8 +1313,9 @@
       "bodyAttr": "data-dsh-mario",
       "author": "aionui-themes",
       "tagline": "帽衫红、工装蓝与金币黄的蘑菇王国",
+      "description": "夜幕蘑菇王国的红帽与金币辉光（含昼夜双模式）",
       "order": 51,
-      "tokens": 5234,
+      "tokens": 5895,
       "thumb": {
         "light": "thumbs/mario.light.webp",
         "dark": "thumbs/mario.dark.webp"
@@ -1322,8 +1323,7 @@
       "preview": {
         "light": "previews/mario.light.webp",
         "dark": "previews/mario.dark.webp"
-      },
-      "description": "夜幕蘑菇王国的红帽与金币辉光（含昼夜双模式）"
+      }
     },
     {
       "id": "mario-bowser",
@@ -1339,8 +1339,9 @@
       "bodyAttr": "data-dsh-mario-bowser",
       "author": "aionui-themes",
       "tagline": "日光下的橙黄刺壳与绿壳城堡",
+      "description": "熔岩城堡里的橙黄刺壳魔王（含昼夜双模式）",
       "order": 52,
-      "tokens": 5520,
+      "tokens": 6129,
       "thumb": {
         "light": "thumbs/mario-bowser.light.webp",
         "dark": "thumbs/mario-bowser.dark.webp"
@@ -1348,8 +1349,7 @@
       "preview": {
         "light": "previews/mario-bowser.light.webp",
         "dark": "previews/mario-bowser.dark.webp"
-      },
-      "description": "熔岩城堡里的橙黄刺壳魔王（含昼夜双模式）"
+      }
     },
     {
       "id": "mario-luigi",
@@ -1365,8 +1365,9 @@
       "bodyAttr": "data-dsh-mario-luigi",
       "author": "aionui-themes",
       "tagline": "绿帽L与幽灵吸尘器的白昼冒险",
+      "description": "洋馆暗夜里闪着绿光的吸尘器（含昼夜双模式）",
       "order": 53,
-      "tokens": 5584,
+      "tokens": 6168,
       "thumb": {
         "light": "thumbs/mario-luigi.light.webp",
         "dark": "thumbs/mario-luigi.dark.webp"
@@ -1374,8 +1375,7 @@
       "preview": {
         "light": "previews/mario-luigi.light.webp",
         "dark": "previews/mario-luigi.dark.webp"
-      },
-      "description": "洋馆暗夜里闪着绿光的吸尘器（含昼夜双模式）"
+      }
     },
     {
       "id": "mario-peach",
@@ -1391,8 +1391,9 @@
       "bodyAttr": "data-dsh-mario-peach",
       "author": "aionui-themes",
       "tagline": "粉色城堡与皇冠的甜心主题",
+      "description": "夜幕城堡下的桃粉皇冠（含昼夜双模式）",
       "order": 54,
-      "tokens": 5640,
+      "tokens": 6267,
       "thumb": {
         "light": "thumbs/mario-peach.light.webp",
         "dark": "thumbs/mario-peach.dark.webp"
@@ -1400,8 +1401,7 @@
       "preview": {
         "light": "previews/mario-peach.light.webp",
         "dark": "previews/mario-peach.dark.webp"
-      },
-      "description": "夜幕城堡下的桃粉皇冠（含昼夜双模式）"
+      }
     },
     {
       "id": "mario-toad",
@@ -1417,8 +1417,9 @@
       "bodyAttr": "data-dsh-mario-toad",
       "author": "aionui-themes",
       "tagline": "白底红点蘑菇头与蓝马甲的寻宝之旅",
+      "description": "夜幕下头灯照亮红蘑菇的寻宝之旅（含昼夜双模式）",
       "order": 55,
-      "tokens": 5455,
+      "tokens": 6095,
       "thumb": {
         "light": "thumbs/mario-toad.light.webp",
         "dark": "thumbs/mario-toad.dark.webp"
@@ -1426,8 +1427,7 @@
       "preview": {
         "light": "previews/mario-toad.light.webp",
         "dark": "previews/mario-toad.dark.webp"
-      },
-      "description": "夜幕下头灯照亮红蘑菇的寻宝之旅（含昼夜双模式）"
+      }
     },
     {
       "id": "mario-yoshi",
@@ -1443,8 +1443,9 @@
       "bodyAttr": "data-dsh-mario-yoshi",
       "author": "aionui-themes",
       "tagline": "耀西绿蛋壳白，斑点蛋童话手绘",
+      "description": "夜色耀西绿，斑点蛋微光（含昼夜双模式）",
       "order": 56,
-      "tokens": 5510,
+      "tokens": 6150,
       "thumb": {
         "light": "thumbs/mario-yoshi.light.webp",
         "dark": "thumbs/mario-yoshi.dark.webp"
@@ -1452,8 +1453,7 @@
       "preview": {
         "light": "previews/mario-yoshi.light.webp",
         "dark": "previews/mario-yoshi.dark.webp"
-      },
-      "description": "夜色耀西绿，斑点蛋微光（含昼夜双模式）"
+      }
     },
     {
       "id": "mickey-mouse",
@@ -1469,8 +1469,9 @@
       "bodyAttr": "data-dsh-mickey-mouse",
       "author": "aionui-themes",
       "tagline": "红短裤黑圆耳黄鞋的复古胶片",
+      "description": "午夜影院里的红短裤黑圆耳（含昼夜双模式）",
       "order": 57,
-      "tokens": 5807,
+      "tokens": 6563,
       "thumb": {
         "light": "thumbs/mickey-mouse.light.webp",
         "dark": "thumbs/mickey-mouse.dark.webp"
@@ -1478,8 +1479,7 @@
       "preview": {
         "light": "previews/mickey-mouse.light.webp",
         "dark": "previews/mickey-mouse.dark.webp"
-      },
-      "description": "午夜影院里的红短裤黑圆耳（含昼夜双模式）"
+      }
     },
     {
       "id": "monokai",
@@ -1495,8 +1495,9 @@
       "bodyAttr": "data-dsh-monokai",
       "author": "aionui-themes",
       "tagline": "Monokai 语法色的纸面浅色演绎",
+      "description": "Sublime 原版暗色，粉绿橙高饱和语法色（含昼夜双模式）",
       "order": 58,
-      "tokens": 4902,
+      "tokens": 5785,
       "thumb": {
         "light": "thumbs/monokai.light.webp",
         "dark": "thumbs/monokai.dark.webp"
@@ -1504,8 +1505,7 @@
       "preview": {
         "light": "previews/monokai.light.webp",
         "dark": "previews/monokai.dark.webp"
-      },
-      "description": "Sublime 原版暗色，粉绿橙高饱和语法色（含昼夜双模式）"
+      }
     },
     {
       "id": "night-owl",
@@ -1521,8 +1521,9 @@
       "bodyAttr": "data-dsh-night-owl",
       "author": "aionui-themes",
       "tagline": "Light Owl 白日版，清爽蓝青",
+      "description": "深夜蓝底，为夜猫子而生（含昼夜双模式）",
       "order": 59,
-      "tokens": 4911,
+      "tokens": 5853,
       "thumb": {
         "light": "thumbs/night-owl.light.webp",
         "dark": "thumbs/night-owl.dark.webp"
@@ -1530,8 +1531,7 @@
       "preview": {
         "light": "previews/night-owl.light.webp",
         "dark": "previews/night-owl.dark.webp"
-      },
-      "description": "深夜蓝底，为夜猫子而生（含昼夜双模式）"
+      }
     },
     {
       "id": "nord",
@@ -1547,8 +1547,9 @@
       "bodyAttr": "data-dsh-nord",
       "author": "aionui-themes",
       "tagline": "Snow Storm 雪原昼色，Frost 冰蓝点缀",
+      "description": "极地蓝灰夜色，Frost 冰蓝与 Aurora 极光点缀（含昼夜双模式）",
       "order": 60,
-      "tokens": 4962,
+      "tokens": 5917,
       "thumb": {
         "light": "thumbs/nord.light.webp",
         "dark": "thumbs/nord.dark.webp"
@@ -1556,8 +1557,7 @@
       "preview": {
         "light": "previews/nord.light.webp",
         "dark": "previews/nord.dark.webp"
-      },
-      "description": "极地蓝灰夜色，Frost 冰蓝与 Aurora 极光点缀（含昼夜双模式）"
+      }
     },
     {
       "id": "one",
@@ -1573,8 +1573,9 @@
       "bodyAttr": "data-dsh-one",
       "author": "aionui-themes",
       "tagline": "Atom 经典浅色，清爽日间语法色",
+      "description": "Atom 经典深色，蓝紫语法光（含昼夜双模式）",
       "order": 61,
-      "tokens": 4911,
+      "tokens": 5844,
       "thumb": {
         "light": "thumbs/one.light.webp",
         "dark": "thumbs/one.dark.webp"
@@ -1582,8 +1583,7 @@
       "preview": {
         "light": "previews/one.light.webp",
         "dark": "previews/one.dark.webp"
-      },
-      "description": "Atom 经典深色，蓝紫语法光（含昼夜双模式）"
+      }
     },
     {
       "id": "os-aero",
@@ -1599,8 +1599,9 @@
       "bodyAttr": "data-dsh-os-aero",
       "author": "aionui-themes",
       "tagline": "白昼毛玻璃里的极光缎带",
+      "description": "黑玻璃窗框与极光绿光晕缎带（含昼夜双模式）",
       "order": 62,
-      "tokens": 5709,
+      "tokens": 6327,
       "thumb": {
         "light": "thumbs/os-aero.light.webp",
         "dark": "thumbs/os-aero.dark.webp"
@@ -1608,8 +1609,7 @@
       "preview": {
         "light": "previews/os-aero.light.webp",
         "dark": "previews/os-aero.dark.webp"
-      },
-      "description": "黑玻璃窗框与极光绿光晕缎带（含昼夜双模式）"
+      }
     },
     {
       "id": "os-bliss",
@@ -1625,8 +1625,9 @@
       "bodyAttr": "data-dsh-os-bliss",
       "author": "aionui-themes",
       "tagline": "蓝天白云绿地与 Luna 蓝主题",
+      "description": "夜幕下的 Bliss 山丘与星光（含昼夜双模式）",
       "order": 63,
-      "tokens": 5756,
+      "tokens": 6330,
       "thumb": {
         "light": "thumbs/os-bliss.light.webp",
         "dark": "thumbs/os-bliss.dark.webp"
@@ -1634,8 +1635,7 @@
       "preview": {
         "light": "previews/os-bliss.light.webp",
         "dark": "previews/os-bliss.dark.webp"
-      },
-      "description": "夜幕下的 Bliss 山丘与星光（含昼夜双模式）"
+      }
     },
     {
       "id": "os-fc",
@@ -1653,8 +1653,9 @@
       "bodyAttr": "data-dsh-os-fc",
       "author": "aionui-themes",
       "tagline": "红白机身配卡带金手指，像素硬边",
+      "description": "关灯后的 CRT 磷光与待机红点（含昼夜双模式）",
       "order": 64,
-      "tokens": 5589,
+      "tokens": 5990,
       "thumb": {
         "light": "thumbs/os-fc.light.webp",
         "dark": "thumbs/os-fc.dark.webp"
@@ -1662,8 +1663,7 @@
       "preview": {
         "light": "previews/os-fc.light.webp",
         "dark": "previews/os-fc.dark.webp"
-      },
-      "description": "关灯后的 CRT 磷光与待机红点（含昼夜双模式）"
+      }
     },
     {
       "id": "os-gameboy",
@@ -1680,8 +1680,9 @@
       "bodyAttr": "data-dsh-os-gameboy",
       "author": "aionui-themes",
       "tagline": "四阶绿灰点阵屏与轻微扫描线",
+      "description": "背光改装机的深夜磷光绿屏（含昼夜双模式）",
       "order": 65,
-      "tokens": 5655,
+      "tokens": 6142,
       "thumb": {
         "light": "thumbs/os-gameboy.light.webp",
         "dark": "thumbs/os-gameboy.dark.webp"
@@ -1689,8 +1690,7 @@
       "preview": {
         "light": "previews/os-gameboy.light.webp",
         "dark": "previews/os-gameboy.dark.webp"
-      },
-      "description": "背光改装机的深夜磷光绿屏（含昼夜双模式）"
+      }
     },
     {
       "id": "os-ios",
@@ -1706,8 +1706,9 @@
       "bodyAttr": "data-dsh-os-ios",
       "author": "aionui-themes",
       "tagline": "系统蓝毛玻璃与灵动岛",
+      "description": "深色模式纯黑与夜间蓝（含昼夜双模式）",
       "order": 66,
-      "tokens": 5162,
+      "tokens": 6073,
       "thumb": {
         "light": "thumbs/os-ios.light.webp",
         "dark": "thumbs/os-ios.dark.webp"
@@ -1715,8 +1716,7 @@
       "preview": {
         "light": "previews/os-ios.light.webp",
         "dark": "previews/os-ios.dark.webp"
-      },
-      "description": "深色模式纯黑与夜间蓝（含昼夜双模式）"
+      }
     },
     {
       "id": "os-luna",
@@ -1732,8 +1732,9 @@
       "bodyAttr": "data-dsh-os-luna",
       "author": "aionui-themes",
       "tagline": "蓝天草地与绿色开始按钮",
+      "description": "夜幕 Bliss 下的深蓝标题栏（含昼夜双模式）",
       "order": 67,
-      "tokens": 6064,
+      "tokens": 6380,
       "thumb": {
         "light": "thumbs/os-luna.light.webp",
         "dark": "thumbs/os-luna.dark.webp"
@@ -1741,8 +1742,7 @@
       "preview": {
         "light": "previews/os-luna.light.webp",
         "dark": "previews/os-luna.dark.webp"
-      },
-      "description": "夜幕 Bliss 下的深蓝标题栏（含昼夜双模式）"
+      }
     },
     {
       "id": "os-macos-aqua",
@@ -1758,8 +1758,9 @@
       "bodyAttr": "data-dsh-os-macos-aqua",
       "author": "aionui-themes",
       "tagline": "千禧年水蓝凝胶与拉丝金属",
+      "description": "夜幕下的水蓝凝胶与石墨金属（含昼夜双模式）",
       "order": 68,
-      "tokens": 5797,
+      "tokens": 6216,
       "thumb": {
         "light": "thumbs/os-macos-aqua.light.webp",
         "dark": "thumbs/os-macos-aqua.dark.webp"
@@ -1767,8 +1768,7 @@
       "preview": {
         "light": "previews/os-macos-aqua.light.webp",
         "dark": "previews/os-macos-aqua.dark.webp"
-      },
-      "description": "夜幕下的水蓝凝胶与石墨金属（含昼夜双模式）"
+      }
     },
     {
       "id": "os-msdos",
@@ -1784,8 +1784,9 @@
       "bodyAttr": "data-dsh-os-msdos",
       "author": "aionui-themes",
       "tagline": "假如 DOS 有白昼纸白屏",
+      "description": "海军蓝屏黄字与灰对话框（含昼夜双模式）",
       "order": 69,
-      "tokens": 5694,
+      "tokens": 6302,
       "thumb": {
         "light": "thumbs/os-msdos.light.webp",
         "dark": "thumbs/os-msdos.dark.webp"
@@ -1793,8 +1794,7 @@
       "preview": {
         "light": "previews/os-msdos.light.webp",
         "dark": "previews/os-msdos.dark.webp"
-      },
-      "description": "海军蓝屏黄字与灰对话框（含昼夜双模式）"
+      }
     },
     {
       "id": "os-win95",
@@ -1810,8 +1810,9 @@
       "bodyAttr": "data-dsh-os-win95",
       "author": "aionui-themes",
       "tagline": "浮雕灰窗口与蓝色标题栏的 95 记忆",
+      "description": "假如 Win95 也有夜间模式（含昼夜双模式）",
       "order": 70,
-      "tokens": 5494,
+      "tokens": 6127,
       "thumb": {
         "light": "thumbs/os-win95.light.webp",
         "dark": "thumbs/os-win95.dark.webp"
@@ -1819,8 +1820,7 @@
       "preview": {
         "light": "previews/os-win95.light.webp",
         "dark": "previews/os-win95.dark.webp"
-      },
-      "description": "假如 Win95 也有夜间模式（含昼夜双模式）"
+      }
     },
     {
       "id": "os-winamp",
@@ -1836,8 +1836,9 @@
       "bodyAttr": "data-dsh-os-winamp",
       "author": "aionui-themes",
       "tagline": "假如 Winamp 有昼间银色皮肤",
+      "description": "黑绿播放器，均衡器彻夜跳动（含昼夜双模式）",
       "order": 71,
-      "tokens": 6178,
+      "tokens": 6581,
       "thumb": {
         "light": "thumbs/os-winamp.light.webp",
         "dark": "thumbs/os-winamp.dark.webp"
@@ -1845,8 +1846,7 @@
       "preview": {
         "light": "previews/os-winamp.light.webp",
         "dark": "previews/os-winamp.dark.webp"
-      },
-      "description": "黑绿播放器，均衡器彻夜跳动（含昼夜双模式）"
+      }
     },
     {
       "id": "palenight",
@@ -1862,8 +1862,9 @@
       "bodyAttr": "data-dsh-palenight",
       "author": "aionui-themes",
       "tagline": "紫调浅昼，Lighter 官方色板",
+      "description": "紫灰夜幕下的 Material 经典（含昼夜双模式）",
       "order": 72,
-      "tokens": 5197,
+      "tokens": 6038,
       "thumb": {
         "light": "thumbs/palenight.light.webp",
         "dark": "thumbs/palenight.dark.webp"
@@ -1871,8 +1872,7 @@
       "preview": {
         "light": "previews/palenight.light.webp",
         "dark": "previews/palenight.dark.webp"
-      },
-      "description": "紫灰夜幕下的 Material 经典（含昼夜双模式）"
+      }
     },
     {
       "id": "pikachu",
@@ -1888,8 +1888,9 @@
       "bodyAttr": "data-dsh-pikachu",
       "author": "aionui-themes",
       "tagline": "电气黄配脸颊红的十万伏特",
+      "description": "深夜电气黄配脸颊红的十万伏特（含昼夜双模式）",
       "order": 73,
-      "tokens": 4551,
+      "tokens": 5874,
       "thumb": {
         "light": "thumbs/pikachu.light.webp",
         "dark": "thumbs/pikachu.dark.webp"
@@ -1897,8 +1898,7 @@
       "preview": {
         "light": "previews/pikachu.light.webp",
         "dark": "previews/pikachu.dark.webp"
-      },
-      "description": "深夜电气黄配脸颊红的十万伏特（含昼夜双模式）"
+      }
     },
     {
       "id": "pokemon-charizard",
@@ -1914,8 +1914,9 @@
       "bodyAttr": "data-dsh-pokemon-charizard",
       "author": "aionui-themes",
       "tagline": "橙色天空下喷火龙展开龙翼，尾焰不熄",
+      "description": "夜幕熔岩间喷火龙尾焰长明（含昼夜双模式）",
       "order": 74,
-      "tokens": 5603,
+      "tokens": 6163,
       "thumb": {
         "light": "thumbs/pokemon-charizard.light.webp",
         "dark": "thumbs/pokemon-charizard.dark.webp"
@@ -1923,8 +1924,7 @@
       "preview": {
         "light": "previews/pokemon-charizard.light.webp",
         "dark": "previews/pokemon-charizard.dark.webp"
-      },
-      "description": "夜幕熔岩间喷火龙尾焰长明（含昼夜双模式）"
+      }
     },
     {
       "id": "pokemon-eevee",
@@ -1941,8 +1941,9 @@
       "bodyAttr": "data-dsh-pokemon-eevee",
       "author": "aionui-themes",
       "tagline": "棕绒奶油领结，进化之光",
+      "description": "夜色棕绒，领结沐着进化微光（含昼夜双模式）",
       "order": 75,
-      "tokens": 5781,
+      "tokens": 6402,
       "thumb": {
         "light": "thumbs/pokemon-eevee.light.webp",
         "dark": "thumbs/pokemon-eevee.dark.webp"
@@ -1950,8 +1951,7 @@
       "preview": {
         "light": "previews/pokemon-eevee.light.webp",
         "dark": "previews/pokemon-eevee.dark.webp"
-      },
-      "description": "夜色棕绒，领结沐着进化微光（含昼夜双模式）"
+      }
     },
     {
       "id": "pokemon-gengar",
@@ -1967,8 +1967,9 @@
       "bodyAttr": "data-dsh-pokemon-gengar",
       "author": "aionui-themes",
       "tagline": "薄雾薰衣草色里的紫影坏笑",
+      "description": "紫影坏笑与幽蓝鬼火的夜行者（含昼夜双模式）",
       "order": 76,
-      "tokens": 5615,
+      "tokens": 6239,
       "thumb": {
         "light": "thumbs/pokemon-gengar.light.webp",
         "dark": "thumbs/pokemon-gengar.dark.webp"
@@ -1976,8 +1977,7 @@
       "preview": {
         "light": "previews/pokemon-gengar.light.webp",
         "dark": "previews/pokemon-gengar.dark.webp"
-      },
-      "description": "紫影坏笑与幽蓝鬼火的夜行者（含昼夜双模式）"
+      }
     },
     {
       "id": "pokemon-mewtwo",
@@ -1994,8 +1994,9 @@
       "bodyAttr": "data-dsh-pokemon-mewtwo",
       "author": "aionui-themes",
       "tagline": "白昼实验室里的紫白超能力波",
+      "description": "培养舱深处的紫色念力光纹（含昼夜双模式）",
       "order": 77,
-      "tokens": 5598,
+      "tokens": 6186,
       "thumb": {
         "light": "thumbs/pokemon-mewtwo.light.webp",
         "dark": "thumbs/pokemon-mewtwo.dark.webp"
@@ -2003,8 +2004,7 @@
       "preview": {
         "light": "previews/pokemon-mewtwo.light.webp",
         "dark": "previews/pokemon-mewtwo.dark.webp"
-      },
-      "description": "培养舱深处的紫色念力光纹（含昼夜双模式）"
+      }
     },
     {
       "id": "pokemon-mimikyu",
@@ -2020,8 +2020,9 @@
       "bodyAttr": "data-dsh-pokemon-mimikyu",
       "author": "aionui-themes",
       "tagline": "破布涂鸦在日光下晾着暗影",
+      "description": "破布伪装下的暗影爪与涂鸦脸（含昼夜双模式）",
       "order": 78,
-      "tokens": 5562,
+      "tokens": 6146,
       "thumb": {
         "light": "thumbs/pokemon-mimikyu.light.webp",
         "dark": "thumbs/pokemon-mimikyu.dark.webp"
@@ -2029,8 +2030,7 @@
       "preview": {
         "light": "previews/pokemon-mimikyu.light.webp",
         "dark": "previews/pokemon-mimikyu.dark.webp"
-      },
-      "description": "破布伪装下的暗影爪与涂鸦脸（含昼夜双模式）"
+      }
     },
     {
       "id": "pokemon-snorlax",
@@ -2046,8 +2046,9 @@
       "bodyAttr": "data-dsh-pokemon-snorlax",
       "author": "aionui-themes",
       "tagline": "树荫下午睡的蓝绿大肚与奶油肚皮",
+      "description": "月光树荫下卡比兽抱着肚子熟睡（含昼夜双模式）",
       "order": 79,
-      "tokens": 5685,
+      "tokens": 6209,
       "thumb": {
         "light": "thumbs/pokemon-snorlax.light.webp",
         "dark": "thumbs/pokemon-snorlax.dark.webp"
@@ -2055,8 +2056,7 @@
       "preview": {
         "light": "previews/pokemon-snorlax.light.webp",
         "dark": "previews/pokemon-snorlax.dark.webp"
-      },
-      "description": "月光树荫下卡比兽抱着肚子熟睡（含昼夜双模式）"
+      }
     },
     {
       "id": "pokemon-umbreon",
@@ -2072,8 +2072,9 @@
       "bodyAttr": "data-dsh-pokemon-umbreon",
       "author": "aionui-themes",
       "tagline": "月光晒成的暖金清晨",
+      "description": "黑金光环的月夜行者（含昼夜双模式）",
       "order": 80,
-      "tokens": 5485,
+      "tokens": 6093,
       "thumb": {
         "light": "thumbs/pokemon-umbreon.light.webp",
         "dark": "thumbs/pokemon-umbreon.dark.webp"
@@ -2081,8 +2082,7 @@
       "preview": {
         "light": "previews/pokemon-umbreon.light.webp",
         "dark": "previews/pokemon-umbreon.dark.webp"
-      },
-      "description": "黑金光环的月夜行者（含昼夜双模式）"
+      }
     },
     {
       "id": "retro-terminal",
@@ -2098,8 +2098,9 @@
       "bodyAttr": "data-dsh-retro-terminal",
       "author": "aionui-themes",
       "tagline": "P3 琥珀磷光终端的亮屏",
+      "description": "P1 绿磷光 CRT 终端（含昼夜双模式）",
       "order": 81,
-      "tokens": 4925,
+      "tokens": 5829,
       "thumb": {
         "light": "thumbs/retro-terminal.light.webp",
         "dark": "thumbs/retro-terminal.dark.webp"
@@ -2107,8 +2108,7 @@
       "preview": {
         "light": "previews/retro-terminal.light.webp",
         "dark": "previews/retro-terminal.dark.webp"
-      },
-      "description": "P1 绿磷光 CRT 终端（含昼夜双模式）"
+      }
     },
     {
       "id": "rose-pine",
@@ -2124,8 +2124,9 @@
       "bodyAttr": "data-dsh-rose-pine",
       "author": "aionui-themes",
       "tagline": "晨光里的玫瑰金与松木绿",
+      "description": "玫瑰与松木的深夜低饱和松林（含昼夜双模式）",
       "order": 82,
-      "tokens": 5097,
+      "tokens": 5937,
       "thumb": {
         "light": "thumbs/rose-pine.light.webp",
         "dark": "thumbs/rose-pine.dark.webp"
@@ -2133,8 +2134,7 @@
       "preview": {
         "light": "previews/rose-pine.light.webp",
         "dark": "previews/rose-pine.dark.webp"
-      },
-      "description": "玫瑰与松木的深夜低饱和松林（含昼夜双模式）"
+      }
     },
     {
       "id": "solarized",
@@ -2150,8 +2150,9 @@
       "bodyAttr": "data-dsh-solarized",
       "author": "aionui-themes",
       "tagline": "米色纸底与精确Lab对比度的经典配色",
+      "description": "精确Lab对比度的深青底经典配色（含昼夜双模式）",
       "order": 83,
-      "tokens": 5039,
+      "tokens": 5925,
       "thumb": {
         "light": "thumbs/solarized.light.webp",
         "dark": "thumbs/solarized.dark.webp"
@@ -2159,8 +2160,7 @@
       "preview": {
         "light": "previews/solarized.light.webp",
         "dark": "previews/solarized.dark.webp"
-      },
-      "description": "精确Lab对比度的深青底经典配色（含昼夜双模式）"
+      }
     },
     {
       "id": "street-fighter",
@@ -2176,8 +2176,9 @@
       "bodyAttr": "data-dsh-street-fighter",
       "author": "aionui-themes",
       "tagline": "阳光道场里的红头带与波动拳蓝焰",
+      "description": "街机厅暗场里的红头带与波动拳蓝焰（含昼夜双模式）",
       "order": 84,
-      "tokens": 4667,
+      "tokens": 5914,
       "thumb": {
         "light": "thumbs/street-fighter.light.webp",
         "dark": "thumbs/street-fighter.dark.webp"
@@ -2185,8 +2186,7 @@
       "preview": {
         "light": "previews/street-fighter.light.webp",
         "dark": "previews/street-fighter.dark.webp"
-      },
-      "description": "街机厅暗场里的红头带与波动拳蓝焰（含昼夜双模式）"
+      }
     },
     {
       "id": "style-art-deco",
@@ -2202,8 +2202,9 @@
       "bodyAttr": "data-dsh-style-art-deco",
       "author": "aionui-themes",
       "tagline": "象牙纸面上的金墨几何与太阳放射线",
+      "description": "金黑几何与放射太阳线的二十年代奢华（含昼夜双模式）",
       "order": 85,
-      "tokens": 5744,
+      "tokens": 6152,
       "thumb": {
         "light": "thumbs/style-art-deco.light.webp",
         "dark": "thumbs/style-art-deco.dark.webp"
@@ -2211,8 +2212,7 @@
       "preview": {
         "light": "previews/style-art-deco.light.webp",
         "dark": "previews/style-art-deco.dark.webp"
-      },
-      "description": "金黑几何与放射太阳线的二十年代奢华（含昼夜双模式）"
+      }
     },
     {
       "id": "style-bauhaus",
@@ -2229,8 +2229,9 @@
       "bodyAttr": "data-dsh-style-bauhaus",
       "author": "aionui-themes",
       "tagline": "红黄蓝三原色，圆方三角的理性构成",
+      "description": "红黄蓝三原色，圆方三角的理性构成（含昼夜双模式）",
       "order": 86,
-      "tokens": 5705,
+      "tokens": 6216,
       "thumb": {
         "light": "thumbs/style-bauhaus.light.webp",
         "dark": "thumbs/style-bauhaus.dark.webp"
@@ -2238,8 +2239,7 @@
       "preview": {
         "light": "previews/style-bauhaus.light.webp",
         "dark": "previews/style-bauhaus.dark.webp"
-      },
-      "description": "红黄蓝三原色，圆方三角的理性构成（含昼夜双模式）"
+      }
     },
     {
       "id": "style-cottagecore",
@@ -2255,8 +2255,9 @@
       "bodyAttr": "data-dsh-style-cottagecore",
       "author": "aionui-themes",
       "tagline": "奶油亚麻、小碎花与午后阳光",
+      "description": "月光下的鼠尾草与萤火（含昼夜双模式）",
       "order": 87,
-      "tokens": 6029,
+      "tokens": 6416,
       "thumb": {
         "light": "thumbs/style-cottagecore.light.webp",
         "dark": "thumbs/style-cottagecore.dark.webp"
@@ -2264,8 +2265,7 @@
       "preview": {
         "light": "previews/style-cottagecore.light.webp",
         "dark": "previews/style-cottagecore.dark.webp"
-      },
-      "description": "月光下的鼠尾草与萤火（含昼夜双模式）"
+      }
     },
     {
       "id": "style-dark-academia",
@@ -2281,8 +2281,9 @@
       "bodyAttr": "data-dsh-style-dark-academia",
       "author": "aionui-themes",
       "tagline": "羊皮纸晨光里的黄铜与旧皮革",
+      "description": "深棕皮革、黄铜与羊皮纸的哥特书房（含昼夜双模式）",
       "order": 88,
-      "tokens": 6180,
+      "tokens": 6668,
       "thumb": {
         "light": "thumbs/style-dark-academia.light.webp",
         "dark": "thumbs/style-dark-academia.dark.webp"
@@ -2290,8 +2291,7 @@
       "preview": {
         "light": "previews/style-dark-academia.light.webp",
         "dark": "previews/style-dark-academia.dark.webp"
-      },
-      "description": "深棕皮革、黄铜与羊皮纸的哥特书房（含昼夜双模式）"
+      }
     },
     {
       "id": "style-doodle",
@@ -2307,8 +2307,9 @@
       "bodyAttr": "data-dsh-style-doodle",
       "author": "aionui-themes",
       "tagline": "马克笔涂鸦手账，格纹贴纸与手绘星星",
+      "description": "夜幕书桌上发光的荧光笔涂鸦（含昼夜双模式）",
       "order": 89,
-      "tokens": 6053,
+      "tokens": 6465,
       "thumb": {
         "light": "thumbs/style-doodle.light.webp",
         "dark": "thumbs/style-doodle.dark.webp"
@@ -2316,8 +2317,7 @@
       "preview": {
         "light": "previews/style-doodle.light.webp",
         "dark": "previews/style-doodle.dark.webp"
-      },
-      "description": "夜幕书桌上发光的荧光笔涂鸦（含昼夜双模式）"
+      }
     },
     {
       "id": "style-dunhuang",
@@ -2333,8 +2333,9 @@
       "bodyAttr": "data-dsh-style-dunhuang",
       "author": "aionui-themes",
       "tagline": "赭石石绿石青，飞天藻井千年壁色",
+      "description": "赭石石绿石青，飞天藻井千年壁色（含昼夜双模式）",
       "order": 90,
-      "tokens": 5665,
+      "tokens": 6234,
       "thumb": {
         "light": "thumbs/style-dunhuang.light.webp",
         "dark": "thumbs/style-dunhuang.dark.webp"
@@ -2342,8 +2343,7 @@
       "preview": {
         "light": "previews/style-dunhuang.light.webp",
         "dark": "previews/style-dunhuang.dark.webp"
-      },
-      "description": "赭石石绿石青，飞天藻井千年壁色（含昼夜双模式）"
+      }
     },
     {
       "id": "style-galaxy",
@@ -2358,8 +2358,9 @@
       "bodyAttr": "data-dsh-style-galaxy",
       "author": "aionui-themes",
       "tagline": "白昼星云，淡紫天光里的星尘",
+      "description": "深空紫蓝星云，星点闪烁流星划过（含昼夜双模式）",
       "order": 91,
-      "tokens": 6099,
+      "tokens": 6557,
       "thumb": {
         "light": "thumbs/style-galaxy.light.webp",
         "dark": "thumbs/style-galaxy.dark.webp"
@@ -2367,8 +2368,7 @@
       "preview": {
         "light": "previews/style-galaxy.light.webp",
         "dark": "previews/style-galaxy.dark.webp"
-      },
-      "description": "深空紫蓝星云，星点闪烁流星划过（含昼夜双模式）"
+      }
     },
     {
       "id": "style-glassmorphism",
@@ -2383,8 +2383,9 @@
       "bodyAttr": "data-dsh-style-glassmorphism",
       "author": "aionui-themes",
       "tagline": "毛玻璃悬浮卡片与柔光渐变",
+      "description": "暗夜毛玻璃与极光霓虹光晕（含昼夜双模式）",
       "order": 92,
-      "tokens": 6009,
+      "tokens": 6339,
       "thumb": {
         "light": "thumbs/style-glassmorphism.light.webp",
         "dark": "thumbs/style-glassmorphism.dark.webp"
@@ -2392,8 +2393,7 @@
       "preview": {
         "light": "previews/style-glassmorphism.light.webp",
         "dark": "previews/style-glassmorphism.dark.webp"
-      },
-      "description": "暗夜毛玻璃与极光霓虹光晕（含昼夜双模式）"
+      }
     },
     {
       "id": "style-glitch",
@@ -2409,8 +2409,9 @@
       "bodyAttr": "data-dsh-style-glitch",
       "author": "aionui-themes",
       "tagline": "白昼信号干扰下的色散崩坏",
+      "description": "RGB色散与信号噪点的数字崩坏（含昼夜双模式）",
       "order": 93,
-      "tokens": 6035,
+      "tokens": 6363,
       "thumb": {
         "light": "thumbs/style-glitch.light.webp",
         "dark": "thumbs/style-glitch.dark.webp"
@@ -2418,8 +2419,7 @@
       "preview": {
         "light": "previews/style-glitch.light.webp",
         "dark": "previews/style-glitch.dark.webp"
-      },
-      "description": "RGB色散与信号噪点的数字崩坏（含昼夜双模式）"
+      }
     },
     {
       "id": "style-ink-wash",
@@ -2435,8 +2435,9 @@
       "bodyAttr": "data-dsh-style-ink-wash",
       "author": "aionui-themes",
       "tagline": "宣纸米白上墨色晕染与朱砂印章",
+      "description": "墨夜深处一纸暖光与朱砂落款（含昼夜双模式）",
       "order": 94,
-      "tokens": 6003,
+      "tokens": 6370,
       "thumb": {
         "light": "thumbs/style-ink-wash.light.webp",
         "dark": "thumbs/style-ink-wash.dark.webp"
@@ -2444,8 +2445,7 @@
       "preview": {
         "light": "previews/style-ink-wash.light.webp",
         "dark": "previews/style-ink-wash.dark.webp"
-      },
-      "description": "墨夜深处一纸暖光与朱砂落款（含昼夜双模式）"
+      }
     },
     {
       "id": "style-macaron",
@@ -2461,8 +2461,9 @@
       "bodyAttr": "data-dsh-style-macaron",
       "author": "aionui-themes",
       "tagline": "法式甜点粉彩，薄荷粉蓝柠檬",
+      "description": "可可夜色里的法式粉彩甜点（含昼夜双模式）",
       "order": 95,
-      "tokens": 6085,
+      "tokens": 6329,
       "thumb": {
         "light": "thumbs/style-macaron.light.webp",
         "dark": "thumbs/style-macaron.dark.webp"
@@ -2470,8 +2471,7 @@
       "preview": {
         "light": "previews/style-macaron.light.webp",
         "dark": "previews/style-macaron.dark.webp"
-      },
-      "description": "可可夜色里的法式粉彩甜点（含昼夜双模式）"
+      }
     },
     {
       "id": "style-memphis",
@@ -2487,8 +2487,9 @@
       "bodyAttr": "data-dsh-style-memphis",
       "author": "aionui-themes",
       "tagline": "80年代撞色几何与波浪锯齿",
+      "description": "80年代撞色几何的深夜舞池（含昼夜双模式）",
       "order": 96,
-      "tokens": 5876,
+      "tokens": 6380,
       "thumb": {
         "light": "thumbs/style-memphis.light.webp",
         "dark": "thumbs/style-memphis.dark.webp"
@@ -2496,8 +2497,7 @@
       "preview": {
         "light": "previews/style-memphis.light.webp",
         "dark": "previews/style-memphis.dark.webp"
-      },
-      "description": "80年代撞色几何的深夜舞池（含昼夜双模式）"
+      }
     },
     {
       "id": "style-morandi",
@@ -2513,8 +2513,9 @@
       "bodyAttr": "data-dsh-style-morandi",
       "author": "aionui-themes",
       "tagline": "高级灰静物，雾粉燕麦柔光",
+      "description": "夜色高级灰，静物柔光不熄（含昼夜双模式）",
       "order": 97,
-      "tokens": 5731,
+      "tokens": 6279,
       "thumb": {
         "light": "thumbs/style-morandi.light.webp",
         "dark": "thumbs/style-morandi.dark.webp"
@@ -2522,8 +2523,7 @@
       "preview": {
         "light": "previews/style-morandi.light.webp",
         "dark": "previews/style-morandi.dark.webp"
-      },
-      "description": "夜色高级灰，静物柔光不熄（含昼夜双模式）"
+      }
     },
     {
       "id": "style-neo-chinese",
@@ -2539,8 +2539,9 @@
       "bodyAttr": "data-dsh-style-neo-chinese",
       "author": "aionui-themes",
       "tagline": "月白黛蓝，窗棂祥云飞白",
+      "description": "黛墨夜色，月白飞白印章（含昼夜双模式）",
       "order": 98,
-      "tokens": 5868,
+      "tokens": 6271,
       "thumb": {
         "light": "thumbs/style-neo-chinese.light.webp",
         "dark": "thumbs/style-neo-chinese.dark.webp"
@@ -2548,8 +2549,7 @@
       "preview": {
         "light": "previews/style-neo-chinese.light.webp",
         "dark": "previews/style-neo-chinese.dark.webp"
-      },
-      "description": "黛墨夜色，月白飞白印章（含昼夜双模式）"
+      }
     },
     {
       "id": "style-paper-minimal",
@@ -2565,8 +2565,9 @@
       "bodyAttr": "data-dsh-style-paper-minimal",
       "author": "aionui-themes",
       "tagline": "大量留白与一根红线的印刷排版",
+      "description": "夜色纸面上的黑墨与一根红线（含昼夜双模式）",
       "order": 99,
-      "tokens": 5833,
+      "tokens": 6369,
       "thumb": {
         "light": "thumbs/style-paper-minimal.light.webp",
         "dark": "thumbs/style-paper-minimal.dark.webp"
@@ -2574,8 +2575,7 @@
       "preview": {
         "light": "previews/style-paper-minimal.light.webp",
         "dark": "previews/style-paper-minimal.dark.webp"
-      },
-      "description": "夜色纸面上的黑墨与一根红线（含昼夜双模式）"
+      }
     },
     {
       "id": "style-pixel-art",
@@ -2592,8 +2592,9 @@
       "bodyAttr": "data-dsh-style-pixel-art",
       "author": "aionui-themes",
       "tagline": "卡带纸色的8bit硬边像素风",
+      "description": "8bit硬边像素与抖动纹理夜色（含昼夜双模式）",
       "order": 100,
-      "tokens": 5845,
+      "tokens": 6214,
       "thumb": {
         "light": "thumbs/style-pixel-art.light.webp",
         "dark": "thumbs/style-pixel-art.dark.webp"
@@ -2601,8 +2602,7 @@
       "preview": {
         "light": "previews/style-pixel-art.light.webp",
         "dark": "previews/style-pixel-art.dark.webp"
-      },
-      "description": "8bit硬边像素与抖动纹理夜色（含昼夜双模式）"
+      }
     },
     {
       "id": "style-rococo",
@@ -2618,8 +2618,9 @@
       "bodyAttr": "data-dsh-style-rococo",
       "author": "aionui-themes",
       "tagline": "粉金卷草纹的法式宫廷昼宴",
+      "description": "烛金卷草纹的凡尔赛夜宴（含昼夜双模式）",
       "order": 101,
-      "tokens": 5758,
+      "tokens": 6285,
       "thumb": {
         "light": "thumbs/style-rococo.light.webp",
         "dark": "thumbs/style-rococo.dark.webp"
@@ -2627,8 +2628,7 @@
       "preview": {
         "light": "previews/style-rococo.light.webp",
         "dark": "previews/style-rococo.dark.webp"
-      },
-      "description": "烛金卷草纹的凡尔赛夜宴（含昼夜双模式）"
+      }
     },
     {
       "id": "style-steampunk",
@@ -2644,8 +2644,9 @@
       "bodyAttr": "data-dsh-style-steampunk",
       "author": "aionui-themes",
       "tagline": "羊皮纸上的黄铜齿轮与铜管",
+      "description": "黄铜齿轮与皮革铆钉的工业夜色（含昼夜双模式）",
       "order": 102,
-      "tokens": 5912,
+      "tokens": 6208,
       "thumb": {
         "light": "thumbs/style-steampunk.light.webp",
         "dark": "thumbs/style-steampunk.dark.webp"
@@ -2653,8 +2654,7 @@
       "preview": {
         "light": "previews/style-steampunk.light.webp",
         "dark": "previews/style-steampunk.dark.webp"
-      },
-      "description": "黄铜齿轮与皮革铆钉的工业夜色（含昼夜双模式）"
+      }
     },
     {
       "id": "style-vaporwave",
@@ -2670,8 +2670,9 @@
       "bodyAttr": "data-dsh-style-vaporwave",
       "author": "aionui-themes",
       "tagline": "白昼大理石广场上的粉青霓虹落日",
+      "description": "粉紫青霓虹、大理石雕像与网格落日（含昼夜双模式）",
       "order": 103,
-      "tokens": 5950,
+      "tokens": 6432,
       "thumb": {
         "light": "thumbs/style-vaporwave.light.webp",
         "dark": "thumbs/style-vaporwave.dark.webp"
@@ -2679,8 +2680,7 @@
       "preview": {
         "light": "previews/style-vaporwave.light.webp",
         "dark": "previews/style-vaporwave.dark.webp"
-      },
-      "description": "粉紫青霓虹、大理石雕像与网格落日（含昼夜双模式）"
+      }
     },
     {
       "id": "style-y2k",
@@ -2696,8 +2696,9 @@
       "bodyAttr": "data-dsh-style-y2k",
       "author": "aionui-themes",
       "tagline": "金属银与泡泡糖粉的千禧光泽",
+      "description": "午夜铬银上的荧光泡泡糖（含昼夜双模式）",
       "order": 104,
-      "tokens": 5838,
+      "tokens": 6367,
       "thumb": {
         "light": "thumbs/style-y2k.light.webp",
         "dark": "thumbs/style-y2k.dark.webp"
@@ -2705,8 +2706,7 @@
       "preview": {
         "light": "previews/style-y2k.light.webp",
         "dark": "previews/style-y2k.dark.webp"
-      },
-      "description": "午夜铬银上的荧光泡泡糖（含昼夜双模式）"
+      }
     },
     {
       "id": "synthwave84",
@@ -2722,8 +2722,9 @@
       "bodyAttr": "data-dsh-synthwave84",
       "author": "aionui-themes",
       "tagline": "落日余晖下的霓虹粉紫白夜",
+      "description": "80年代霓虹粉紫与迈阿密夜色（含昼夜双模式）",
       "order": 1,
-      "tokens": 4981,
+      "tokens": 5824,
       "thumb": {
         "light": "thumbs/synthwave84.light.webp",
         "dark": "thumbs/synthwave84.dark.webp"
@@ -2731,8 +2732,7 @@
       "preview": {
         "light": "previews/synthwave84.light.webp",
         "dark": "previews/synthwave84.dark.webp"
-      },
-      "description": "80年代霓虹粉紫与迈阿密夜色（含昼夜双模式）"
+      }
     },
     {
       "id": "tokyo-night",
@@ -2747,8 +2747,9 @@
       "bodyAttr": "data-dsh-tokyo-night",
       "author": "aionui-themes",
       "tagline": "白昼东京的清爽蓝调",
+      "description": "东京夜景的蓝紫霓虹（含昼夜双模式）",
       "order": 106,
-      "tokens": 5078,
+      "tokens": 5958,
       "thumb": {
         "light": "thumbs/tokyo-night.light.webp",
         "dark": "thumbs/tokyo-night.dark.webp"
@@ -2756,8 +2757,7 @@
       "preview": {
         "light": "previews/tokyo-night.light.webp",
         "dark": "previews/tokyo-night.dark.webp"
-      },
-      "description": "东京夜景的蓝紫霓虹（含昼夜双模式）"
+      }
     },
     {
       "id": "vscode-plus",
@@ -2773,8 +2773,9 @@
       "bodyAttr": "data-dsh-vscode-plus",
       "author": "aionui-themes",
       "tagline": "Light+ 白底编辑器与经典蓝调",
+      "description": "Dark+ 深夜编辑器与蓝色状态栏（含昼夜双模式）",
       "order": 107,
-      "tokens": 5200,
+      "tokens": 6109,
       "thumb": {
         "light": "thumbs/vscode-plus.light.webp",
         "dark": "thumbs/vscode-plus.dark.webp"
@@ -2782,8 +2783,7 @@
       "preview": {
         "light": "previews/vscode-plus.light.webp",
         "dark": "previews/vscode-plus.dark.webp"
-      },
-      "description": "Dark+ 深夜编辑器与蓝色状态栏（含昼夜双模式）"
+      }
     },
     {
       "id": "zelda-link",
@@ -2800,8 +2800,9 @@
       "bodyAttr": "data-dsh-zelda-link",
       "author": "aionui-themes",
       "tagline": "海利亚绿、大师剑蓝与三角力量金",
+      "description": "深夜海拉鲁：剑光蓝与三角力量金映海利亚绿（含昼夜双模式）",
       "order": 108,
-      "tokens": 5613,
+      "tokens": 6204,
       "thumb": {
         "light": "thumbs/zelda-link.light.webp",
         "dark": "thumbs/zelda-link.dark.webp"
@@ -2809,8 +2810,7 @@
       "preview": {
         "light": "previews/zelda-link.light.webp",
         "dark": "previews/zelda-link.dark.webp"
-      },
-      "description": "深夜海拉鲁：剑光蓝与三角力量金映海利亚绿（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-alice",
@@ -2826,8 +2826,9 @@
       "bodyAttr": "data-dsh-zzz-alice",
       "author": "aionui-themes",
       "tagline": "金发异色瞳的怪啖屋大小姐",
+      "description": "金发异色瞳大小姐的午夜茶会（含昼夜双模式）",
       "order": 109,
-      "tokens": 5161,
+      "tokens": 6478,
       "thumb": {
         "light": "thumbs/zzz-alice.light.webp",
         "dark": "thumbs/zzz-alice.dark.webp"
@@ -2835,8 +2836,7 @@
       "preview": {
         "light": "previews/zzz-alice.light.webp",
         "dark": "previews/zzz-alice.dark.webp"
-      },
-      "description": "金发异色瞳大小姐的午夜茶会（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-anby",
@@ -2852,8 +2852,9 @@
       "bodyAttr": "data-dsh-zzz-anby",
       "author": "aionui-themes",
       "tagline": "银白浅绿，狡兔屋的清冷刀手",
+      "description": "银白浅绿入夜，狡兔屋的电光刀手（含昼夜双模式）",
       "order": 110,
-      "tokens": 6708,
+      "tokens": 6944,
       "thumb": {
         "light": "thumbs/zzz-anby.light.webp",
         "dark": "thumbs/zzz-anby.dark.webp"
@@ -2861,8 +2862,7 @@
       "preview": {
         "light": "previews/zzz-anby.light.webp",
         "dark": "previews/zzz-anby.dark.webp"
-      },
-      "description": "银白浅绿入夜，狡兔屋的电光刀手（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-anton",
@@ -2879,8 +2879,9 @@
       "bodyAttr": "data-dsh-zzz-anton",
       "author": "aionui-themes",
       "tagline": "白祇重工蓝白工装，钻头兄弟热血轰鸣",
+      "description": "深夜工地的白祇蓝，焊花在墨色钢板上明灭（含昼夜双模式）",
       "order": 111,
-      "tokens": 5611,
+      "tokens": 6107,
       "thumb": {
         "light": "thumbs/zzz-anton.light.webp",
         "dark": "thumbs/zzz-anton.dark.webp"
@@ -2888,8 +2889,7 @@
       "preview": {
         "light": "previews/zzz-anton.light.webp",
         "dark": "previews/zzz-anton.dark.webp"
-      },
-      "description": "深夜工地的白祇蓝，焊花在墨色钢板上明灭（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-astra",
@@ -2906,8 +2906,9 @@
       "bodyAttr": "data-dsh-zzz-astra",
       "author": "aionui-themes",
       "tagline": "丽都歌后的白昼应援舞台与紫金晴光",
+      "description": "丽都歌后的紫金舞台与红裙烟花（含昼夜双模式）",
       "order": 112,
-      "tokens": 5559,
+      "tokens": 6348,
       "thumb": {
         "light": "thumbs/zzz-astra.light.webp",
         "dark": "thumbs/zzz-astra.dark.webp"
@@ -2915,8 +2916,7 @@
       "preview": {
         "light": "previews/zzz-astra.light.webp",
         "dark": "previews/zzz-astra.dark.webp"
-      },
-      "description": "丽都歌后的紫金舞台与红裙烟花（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-banyue",
@@ -2932,8 +2932,9 @@
       "bodyAttr": "data-dsh-zzz-banyue",
       "author": "aionui-themes",
       "tagline": "云岿山晨光里的命破烈焰",
+      "description": "云岿山夜色中的命破烈焰（含昼夜双模式）",
       "order": 113,
-      "tokens": 5204,
+      "tokens": 6218,
       "thumb": {
         "light": "thumbs/zzz-banyue.light.webp",
         "dark": "thumbs/zzz-banyue.dark.webp"
@@ -2941,8 +2942,7 @@
       "preview": {
         "light": "previews/zzz-banyue.light.webp",
         "dark": "previews/zzz-banyue.dark.webp"
-      },
-      "description": "云岿山夜色中的命破烈焰（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-ben",
@@ -2958,8 +2958,9 @@
       "bodyAttr": "data-dsh-zzz-ben",
       "author": "aionui-themes",
       "tagline": "棕熊与安全帽的黄黑工地安全色",
+      "description": "夜色工地里不熄的安全黄警示灯（含昼夜双模式）",
       "order": 114,
-      "tokens": 5106,
+      "tokens": 6176,
       "thumb": {
         "light": "thumbs/zzz-ben.light.webp",
         "dark": "thumbs/zzz-ben.dark.webp"
@@ -2967,8 +2968,7 @@
       "preview": {
         "light": "previews/zzz-ben.light.webp",
         "dark": "previews/zzz-ben.dark.webp"
-      },
-      "description": "夜色工地里不熄的安全黄警示灯（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-billy",
@@ -2985,8 +2985,9 @@
       "bodyAttr": "data-dsh-zzz-billy",
       "author": "aionui-themes",
       "tagline": "红铬骑士与银色盔甲的星徽枪手",
+      "description": "午夜铬甲下依旧炽热的星徽枪手（含昼夜双模式）",
       "order": 115,
-      "tokens": 5346,
+      "tokens": 6094,
       "thumb": {
         "light": "thumbs/zzz-billy.light.webp",
         "dark": "thumbs/zzz-billy.dark.webp"
@@ -2994,8 +2995,7 @@
       "preview": {
         "light": "previews/zzz-billy.light.webp",
         "dark": "previews/zzz-billy.dark.webp"
-      },
-      "description": "午夜铬甲下依旧炽热的星徽枪手（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-burnice",
@@ -3012,8 +3012,9 @@
       "bodyAttr": "data-dsh-zzz-burnice",
       "author": "aionui-themes",
       "tagline": "日光吧台与燃油火焰的午后狂欢",
+      "description": "燃油火焰与吧台霓虹的狂欢（含昼夜双模式）",
       "order": 116,
-      "tokens": 5040,
+      "tokens": 6365,
       "thumb": {
         "light": "thumbs/zzz-burnice.light.webp",
         "dark": "thumbs/zzz-burnice.dark.webp"
@@ -3021,8 +3022,7 @@
       "preview": {
         "light": "previews/zzz-burnice.light.webp",
         "dark": "previews/zzz-burnice.dark.webp"
-      },
-      "description": "燃油火焰与吧台霓虹的狂欢（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-caesar",
@@ -3038,8 +3038,9 @@
       "bodyAttr": "data-dsh-zzz-caesar",
       "author": "aionui-themes",
       "tagline": "红黑机车霸主，披风燃于正午荒原",
+      "description": "红黑机车霸主，火焰披风燃夜（含昼夜双模式）",
       "order": 117,
-      "tokens": 5222,
+      "tokens": 6398,
       "thumb": {
         "light": "thumbs/zzz-caesar.light.webp",
         "dark": "thumbs/zzz-caesar.dark.webp"
@@ -3047,8 +3048,7 @@
       "preview": {
         "light": "previews/zzz-caesar.light.webp",
         "dark": "previews/zzz-caesar.dark.webp"
-      },
-      "description": "红黑机车霸主，火焰披风燃夜（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-corin",
@@ -3065,8 +3065,9 @@
       "bodyAttr": "data-dsh-zzz-corin",
       "author": "aionui-themes",
       "tagline": "抹茶绿小女仆，白围裙藏着电锯",
+      "description": "深夜值勤的小女仆，抹茶光里藏着电锯（含昼夜双模式）",
       "order": 118,
-      "tokens": 4717,
+      "tokens": 5914,
       "thumb": {
         "light": "thumbs/zzz-corin.light.webp",
         "dark": "thumbs/zzz-corin.dark.webp"
@@ -3074,8 +3075,7 @@
       "preview": {
         "light": "previews/zzz-corin.light.webp",
         "dark": "previews/zzz-corin.dark.webp"
-      },
-      "description": "深夜值勤的小女仆，抹茶光里藏着电锯（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-ellen",
@@ -3091,8 +3091,9 @@
       "bodyAttr": "data-dsh-zzz-ellen",
       "author": "aionui-themes",
       "tagline": "鲨鱼女仆的白围裙与晨光红丝带",
+      "description": "鲨鱼女仆的红丝带与深夜黑裙（含昼夜双模式）",
       "order": 119,
-      "tokens": 5448,
+      "tokens": 6110,
       "thumb": {
         "light": "thumbs/zzz-ellen.light.webp",
         "dark": "thumbs/zzz-ellen.dark.webp"
@@ -3100,8 +3101,7 @@
       "preview": {
         "light": "previews/zzz-ellen.light.webp",
         "dark": "previews/zzz-ellen.dark.webp"
-      },
-      "description": "鲨鱼女仆的红丝带与深夜黑裙（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-evelyn",
@@ -3117,8 +3117,9 @@
       "bodyAttr": "data-dsh-zzz-evelyn",
       "author": "aionui-themes",
       "tagline": "白昼纸面上的炽红特工密令",
+      "description": "黑红特工皮衣与谍影迷城夜色（含昼夜双模式）",
       "order": 120,
-      "tokens": 4621,
+      "tokens": 5894,
       "thumb": {
         "light": "thumbs/zzz-evelyn.light.webp",
         "dark": "thumbs/zzz-evelyn.dark.webp"
@@ -3126,8 +3127,7 @@
       "preview": {
         "light": "previews/zzz-evelyn.light.webp",
         "dark": "previews/zzz-evelyn.dark.webp"
-      },
-      "description": "黑红特工皮衣与谍影迷城夜色（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-grace",
@@ -3144,8 +3144,9 @@
       "bodyAttr": "data-dsh-zzz-grace",
       "author": "aionui-themes",
       "tagline": "白祇重工橙白工装与蓝屏仪光",
+      "description": "夜班车间的安全橙与蓝图荧光（含昼夜双模式）",
       "order": 121,
-      "tokens": 5827,
+      "tokens": 6929,
       "thumb": {
         "light": "thumbs/zzz-grace.light.webp",
         "dark": "thumbs/zzz-grace.dark.webp"
@@ -3153,8 +3154,7 @@
       "preview": {
         "light": "previews/zzz-grace.light.webp",
         "dark": "previews/zzz-grace.dark.webp"
-      },
-      "description": "夜班车间的安全橙与蓝图荧光（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-harumasa",
@@ -3170,8 +3170,9 @@
       "bodyAttr": "data-dsh-zzz-harumasa",
       "author": "aionui-themes",
       "tagline": "白金弓手，薄荷清风",
+      "description": "夜巡弓手，薄荷冷月（含昼夜双模式）",
       "order": 122,
-      "tokens": 5838,
+      "tokens": 6226,
       "thumb": {
         "light": "thumbs/zzz-harumasa.light.webp",
         "dark": "thumbs/zzz-harumasa.dark.webp"
@@ -3179,8 +3180,7 @@
       "preview": {
         "light": "previews/zzz-harumasa.light.webp",
         "dark": "previews/zzz-harumasa.dark.webp"
-      },
-      "description": "夜巡弓手，薄荷冷月（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-hugo",
@@ -3196,8 +3196,9 @@
       "bodyAttr": "data-dsh-zzz-hugo",
       "author": "aionui-themes",
       "tagline": "白昼怪盗的冰蓝信笺与扑克绯红",
+      "description": "反舌鸟怪盗的冰蓝与扑克绯红（含昼夜双模式）",
       "order": 123,
-      "tokens": 4650,
+      "tokens": 5945,
       "thumb": {
         "light": "thumbs/zzz-hugo.light.webp",
         "dark": "thumbs/zzz-hugo.dark.webp"
@@ -3205,8 +3206,7 @@
       "preview": {
         "light": "previews/zzz-hugo.light.webp",
         "dark": "previews/zzz-hugo.dark.webp"
-      },
-      "description": "反舌鸟怪盗的冰蓝与扑克绯红（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-jane",
@@ -3222,8 +3222,9 @@
       "bodyAttr": "data-dsh-zzz-jane",
       "author": "aionui-themes",
       "tagline": "鼠希人灰粉与白昼刑侦暖灰调",
+      "description": "鼠希人灰粉与暗夜潜行冷灰调（含昼夜双模式）",
       "order": 124,
-      "tokens": 4351,
+      "tokens": 5898,
       "thumb": {
         "light": "thumbs/zzz-jane.light.webp",
         "dark": "thumbs/zzz-jane.dark.webp"
@@ -3231,8 +3232,7 @@
       "preview": {
         "light": "previews/zzz-jane.light.webp",
         "dark": "previews/zzz-jane.dark.webp"
-      },
-      "description": "鼠希人灰粉与暗夜潜行冷灰调（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-jufufu",
@@ -3249,8 +3249,9 @@
       "bodyAttr": "data-dsh-zzz-jufufu",
       "author": "aionui-themes",
       "tagline": "云岿山小猛虎的橘色火锅蒸汽",
+      "description": "深夜锅气里的小猛虎暖光（含昼夜双模式）",
       "order": 125,
-      "tokens": 5570,
+      "tokens": 6574,
       "thumb": {
         "light": "thumbs/zzz-jufufu.light.webp",
         "dark": "thumbs/zzz-jufufu.dark.webp"
@@ -3258,8 +3259,7 @@
       "preview": {
         "light": "previews/zzz-jufufu.light.webp",
         "dark": "previews/zzz-jufufu.dark.webp"
-      },
-      "description": "深夜锅气里的小猛虎暖光（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-koleda",
@@ -3275,8 +3275,9 @@
       "bodyAttr": "data-dsh-zzz-koleda",
       "author": "aionui-themes",
       "tagline": "白祇重工社长，白红战衣配警示条纹",
+      "description": "夜班工地，白祇红钢在深海黑里发光（含昼夜双模式）",
       "order": 126,
-      "tokens": 4756,
+      "tokens": 5945,
       "thumb": {
         "light": "thumbs/zzz-koleda.light.webp",
         "dark": "thumbs/zzz-koleda.dark.webp"
@@ -3284,8 +3285,7 @@
       "preview": {
         "light": "previews/zzz-koleda.light.webp",
         "dark": "previews/zzz-koleda.dark.webp"
-      },
-      "description": "夜班工地，白祇红钢在深海黑里发光（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-lighter",
@@ -3301,8 +3301,9 @@
       "bodyAttr": "data-dsh-zzz-lighter",
       "author": "aionui-themes",
       "tagline": "白昼擂台上的赤红金拳冠军",
+      "description": "赤红围巾与金拳套的常胜冠军（含昼夜双模式）",
       "order": 127,
-      "tokens": 4832,
+      "tokens": 6140,
       "thumb": {
         "light": "thumbs/zzz-lighter.light.webp",
         "dark": "thumbs/zzz-lighter.dark.webp"
@@ -3310,8 +3311,7 @@
       "preview": {
         "light": "previews/zzz-lighter.light.webp",
         "dark": "previews/zzz-lighter.dark.webp"
-      },
-      "description": "赤红围巾与金拳套的常胜冠军（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-lucy",
@@ -3327,8 +3327,9 @@
       "bodyAttr": "data-dsh-zzz-lucy",
       "author": "aionui-themes",
       "tagline": "粉金不良少女与野猪暴走族",
+      "description": "粉金不良少女的午夜暴走（含昼夜双模式）",
       "order": 128,
-      "tokens": 5677,
+      "tokens": 6882,
       "thumb": {
         "light": "thumbs/zzz-lucy.light.webp",
         "dark": "thumbs/zzz-lucy.dark.webp"
@@ -3336,8 +3337,7 @@
       "preview": {
         "light": "previews/zzz-lucy.light.webp",
         "dark": "previews/zzz-lucy.dark.webp"
-      },
-      "description": "粉金不良少女的午夜暴走（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-lycaon",
@@ -3353,8 +3353,9 @@
       "bodyAttr": "data-dsh-zzz-lycaon",
       "author": "aionui-themes",
       "tagline": "白昼执事：霜白礼服上的冰蓝银辉",
+      "description": "黑白狼执事的冰蓝禁欲优雅（含昼夜双模式）",
       "order": 129,
-      "tokens": 5601,
+      "tokens": 6670,
       "thumb": {
         "light": "thumbs/zzz-lycaon.light.webp",
         "dark": "thumbs/zzz-lycaon.dark.webp"
@@ -3362,8 +3363,7 @@
       "preview": {
         "light": "previews/zzz-lycaon.light.webp",
         "dark": "previews/zzz-lycaon.dark.webp"
-      },
-      "description": "黑白狼执事的冰蓝禁欲优雅（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-miyabi",
@@ -3379,8 +3379,9 @@
       "bodyAttr": "data-dsh-zzz-miyabi",
       "author": "aionui-themes",
       "tagline": "白昼雪原上的冰蓝太刀寒光",
+      "description": "狐耳课长的冰蓝太刀寒光（含昼夜双模式）",
       "order": 130,
-      "tokens": 5296,
+      "tokens": 6314,
       "thumb": {
         "light": "thumbs/zzz-miyabi.light.webp",
         "dark": "thumbs/zzz-miyabi.dark.webp"
@@ -3388,8 +3389,7 @@
       "preview": {
         "light": "previews/zzz-miyabi.light.webp",
         "dark": "previews/zzz-miyabi.dark.webp"
-      },
-      "description": "狐耳课长的冰蓝太刀寒光（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-nekomata",
@@ -3405,8 +3405,9 @@
       "bodyAttr": "data-dsh-zzz-nekomata",
       "author": "aionui-themes",
       "tagline": "白昼黑猫，赤红围巾与暖阳金币",
+      "description": "黑猫夜行，赤红围巾与狡兔屋（含昼夜双模式）",
       "order": 131,
-      "tokens": 6232,
+      "tokens": 6889,
       "thumb": {
         "light": "thumbs/zzz-nekomata.light.webp",
         "dark": "thumbs/zzz-nekomata.dark.webp"
@@ -3414,8 +3415,7 @@
       "preview": {
         "light": "previews/zzz-nekomata.light.webp",
         "dark": "previews/zzz-nekomata.dark.webp"
-      },
-      "description": "黑猫夜行，赤红围巾与狡兔屋（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-nicole",
@@ -3432,8 +3432,9 @@
       "bodyAttr": "data-dsh-zzz-nicole",
       "author": "aionui-themes",
       "tagline": "粉发双马尾的狡兔屋甜辣老大",
+      "description": "粉发双马尾的狡兔屋甜辣老大·夜巷版（含昼夜双模式）",
       "order": 132,
-      "tokens": 5585,
+      "tokens": 6447,
       "thumb": {
         "light": "thumbs/zzz-nicole.light.webp",
         "dark": "thumbs/zzz-nicole.dark.webp"
@@ -3441,8 +3442,7 @@
       "preview": {
         "light": "previews/zzz-nicole.light.webp",
         "dark": "previews/zzz-nicole.dark.webp"
-      },
-      "description": "粉发双马尾的狡兔屋甜辣老大·夜巷版（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-orphie",
@@ -3458,8 +3458,9 @@
       "bodyAttr": "data-dsh-zzz-orphie",
       "author": "aionui-themes",
       "tagline": "白昼军服上的焰橙与晴空磷火",
+      "description": "鬼火尾刃与橙发的暗夜军服（含昼夜双模式）",
       "order": 133,
-      "tokens": 5243,
+      "tokens": 6324,
       "thumb": {
         "light": "thumbs/zzz-orphie.light.webp",
         "dark": "thumbs/zzz-orphie.dark.webp"
@@ -3467,8 +3468,7 @@
       "preview": {
         "light": "previews/zzz-orphie.light.webp",
         "dark": "previews/zzz-orphie.dark.webp"
-      },
-      "description": "鬼火尾刃与橙发的暗夜军服（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-panyinhu",
@@ -3485,8 +3485,9 @@
       "bodyAttr": "data-dsh-zzz-panyinhu",
       "author": "aionui-themes",
       "tagline": "熊猫大侠的竹绿茶馆闲趣",
+      "description": "深夜茶馆,竹影灯下的麻将局（含昼夜双模式）",
       "order": 134,
-      "tokens": 4651,
+      "tokens": 6024,
       "thumb": {
         "light": "thumbs/zzz-panyinhu.light.webp",
         "dark": "thumbs/zzz-panyinhu.dark.webp"
@@ -3494,8 +3495,7 @@
       "preview": {
         "light": "previews/zzz-panyinhu.light.webp",
         "dark": "previews/zzz-panyinhu.dark.webp"
-      },
-      "description": "深夜茶馆,竹影灯下的麻将局（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-piper",
@@ -3512,8 +3512,9 @@
       "bodyAttr": "data-dsh-zzz-piper",
       "author": "aionui-themes",
       "tagline": "沙漠黄昏黄与卡车工装的慵懒公路",
+      "description": "夜色公路与车灯琥珀的慵懒巡航（含昼夜双模式）",
       "order": 135,
-      "tokens": 6064,
+      "tokens": 6920,
       "thumb": {
         "light": "thumbs/zzz-piper.light.webp",
         "dark": "thumbs/zzz-piper.dark.webp"
@@ -3521,8 +3522,7 @@
       "preview": {
         "light": "previews/zzz-piper.light.webp",
         "dark": "previews/zzz-piper.dark.webp"
-      },
-      "description": "夜色公路与车灯琥珀的慵懒巡航（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-pulchra",
@@ -3538,8 +3538,9 @@
       "bodyAttr": "data-dsh-zzz-pulchra",
       "author": "aionui-themes",
       "tagline": "黄黑虎纹的元气佣兵大猫",
+      "description": "夜巡虎猫的墨底琥珀微光（含昼夜双模式）",
       "order": 136,
-      "tokens": 5181,
+      "tokens": 6388,
       "thumb": {
         "light": "thumbs/zzz-pulchra.light.webp",
         "dark": "thumbs/zzz-pulchra.dark.webp"
@@ -3547,8 +3548,7 @@
       "preview": {
         "light": "previews/zzz-pulchra.light.webp",
         "dark": "previews/zzz-pulchra.dark.webp"
-      },
-      "description": "夜巡虎猫的墨底琥珀微光（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-qingyi",
@@ -3565,8 +3565,9 @@
       "bodyAttr": "data-dsh-zzz-qingyi",
       "author": "aionui-themes",
       "tagline": "青花瓷白底，青绿纹路绕机娘关节",
+      "description": "墨夜瓷底，青绿电光映描金关节（含昼夜双模式）",
       "order": 137,
-      "tokens": 6521,
+      "tokens": 6951,
       "thumb": {
         "light": "thumbs/zzz-qingyi.light.webp",
         "dark": "thumbs/zzz-qingyi.dark.webp"
@@ -3574,8 +3575,7 @@
       "preview": {
         "light": "previews/zzz-qingyi.light.webp",
         "dark": "previews/zzz-qingyi.dark.webp"
-      },
-      "description": "墨夜瓷底，青绿电光映描金关节（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-rina",
@@ -3592,8 +3592,9 @@
       "bodyAttr": "data-dsh-zzz-rina",
       "author": "aionui-themes",
       "tagline": "幽灵女仆的午后茶会与淡紫微光",
+      "description": "幽灵女仆的幽紫电光之夜（含昼夜双模式）",
       "order": 138,
-      "tokens": 4909,
+      "tokens": 5836,
       "thumb": {
         "light": "thumbs/zzz-rina.light.webp",
         "dark": "thumbs/zzz-rina.dark.webp"
@@ -3601,8 +3602,7 @@
       "preview": {
         "light": "previews/zzz-rina.light.webp",
         "dark": "previews/zzz-rina.dark.webp"
-      },
-      "description": "幽灵女仆的幽紫电光之夜（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-seed",
@@ -3619,8 +3619,9 @@
       "bodyAttr": "data-dsh-zzz-seed",
       "author": "aionui-themes",
       "tagline": "白昼钢甲与电弧黄的白色恶魔",
+      "description": "蓝灰机甲与电光黄的白色恶魔（含昼夜双模式）",
       "order": 139,
-      "tokens": 5058,
+      "tokens": 6084,
       "thumb": {
         "light": "thumbs/zzz-seed.light.webp",
         "dark": "thumbs/zzz-seed.dark.webp"
@@ -3628,8 +3629,7 @@
       "preview": {
         "light": "previews/zzz-seed.light.webp",
         "dark": "previews/zzz-seed.dark.webp"
-      },
-      "description": "蓝灰机甲与电光黄的白色恶魔（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-seth",
@@ -3646,8 +3646,9 @@
       "bodyAttr": "data-dsh-zzz-seth",
       "author": "aionui-themes",
       "tagline": "白蓝猫警官的治安局制式清爽风",
+      "description": "白蓝猫警官的治安局夜班巡逻风（含昼夜双模式）",
       "order": 140,
-      "tokens": 4342,
+      "tokens": 5802,
       "thumb": {
         "light": "thumbs/zzz-seth.light.webp",
         "dark": "thumbs/zzz-seth.dark.webp"
@@ -3655,8 +3656,7 @@
       "preview": {
         "light": "previews/zzz-seth.light.webp",
         "dark": "previews/zzz-seth.dark.webp"
-      },
-      "description": "白蓝猫警官的治安局夜班巡逻风（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-soldier11",
@@ -3673,8 +3673,9 @@
       "bodyAttr": "data-dsh-zzz-soldier11",
       "author": "aionui-themes",
       "tagline": "白昼阅兵场的白红信号旗",
+      "description": "白红士兵与护目镜的军武冷调（含昼夜双模式）",
       "order": 141,
-      "tokens": 5458,
+      "tokens": 6233,
       "thumb": {
         "light": "thumbs/zzz-soldier11.light.webp",
         "dark": "thumbs/zzz-soldier11.dark.webp"
@@ -3682,8 +3683,7 @@
       "preview": {
         "light": "previews/zzz-soldier11.light.webp",
         "dark": "previews/zzz-soldier11.dark.webp"
-      },
-      "description": "白红士兵与护目镜的军武冷调（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-soukaku",
@@ -3699,8 +3699,9 @@
       "bodyAttr": "data-dsh-zzz-soukaku",
       "author": "aionui-themes",
       "tagline": "蓝肤鬼族的雪原白昼冰蓝幻想",
+      "description": "蓝肤鬼族的深夜冰蓝幻想（含昼夜双模式）",
       "order": 142,
-      "tokens": 5947,
+      "tokens": 6634,
       "thumb": {
         "light": "thumbs/zzz-soukaku.light.webp",
         "dark": "thumbs/zzz-soukaku.dark.webp"
@@ -3708,8 +3709,7 @@
       "preview": {
         "light": "previews/zzz-soukaku.light.webp",
         "dark": "previews/zzz-soukaku.dark.webp"
-      },
-      "description": "蓝肤鬼族的深夜冰蓝幻想（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-trigger",
@@ -3726,8 +3726,9 @@
       "bodyAttr": "data-dsh-zzz-trigger",
       "author": "aionui-themes",
       "tagline": "军绿狙击与白昼战术目镜的清晰锁定",
+      "description": "军绿狙击与战术目镜的冷峻锁定（含昼夜双模式）",
       "order": 143,
-      "tokens": 4844,
+      "tokens": 6106,
       "thumb": {
         "light": "thumbs/zzz-trigger.light.webp",
         "dark": "thumbs/zzz-trigger.dark.webp"
@@ -3735,8 +3736,7 @@
       "preview": {
         "light": "previews/zzz-trigger.light.webp",
         "dark": "previews/zzz-trigger.dark.webp"
-      },
-      "description": "军绿狙击与战术目镜的冷峻锁定（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-vivian",
@@ -3753,8 +3753,9 @@
       "bodyAttr": "data-dsh-zzz-vivian",
       "author": "aionui-themes",
       "tagline": "晨光下的紫罗兰花园",
+      "description": "紫罗兰哥特裙与夜色花园（含昼夜双模式）",
       "order": 144,
-      "tokens": 5097,
+      "tokens": 6187,
       "thumb": {
         "light": "thumbs/zzz-vivian.light.webp",
         "dark": "thumbs/zzz-vivian.dark.webp"
@@ -3762,8 +3763,7 @@
       "preview": {
         "light": "previews/zzz-vivian.light.webp",
         "dark": "previews/zzz-vivian.dark.webp"
-      },
-      "description": "紫罗兰哥特裙与夜色花园（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-yanagi",
@@ -3780,8 +3780,9 @@
       "bodyAttr": "data-dsh-zzz-yanagi",
       "author": "aionui-themes",
       "tagline": "粉紫发丝与紫瞳的六课副课长",
+      "description": "粉紫发丝没入夜色，紫瞳映着刀光（含昼夜双模式）",
       "order": 145,
-      "tokens": 6772,
+      "tokens": 6780,
       "thumb": {
         "light": "thumbs/zzz-yanagi.light.webp",
         "dark": "thumbs/zzz-yanagi.dark.webp"
@@ -3789,8 +3790,7 @@
       "preview": {
         "light": "previews/zzz-yanagi.light.webp",
         "dark": "previews/zzz-yanagi.dark.webp"
-      },
-      "description": "粉紫发丝没入夜色，紫瞳映着刀光（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-yeshunguang",
@@ -3807,8 +3807,9 @@
       "bodyAttr": "data-dsh-zzz-yeshunguang",
       "author": "aionui-themes",
       "tagline": "白昼楼群间的红绫与银青剑光",
+      "description": "青溟剑主的红绫与银青剑光（含昼夜双模式）",
       "order": 146,
-      "tokens": 5155,
+      "tokens": 6346,
       "thumb": {
         "light": "thumbs/zzz-yeshunguang.light.webp",
         "dark": "thumbs/zzz-yeshunguang.dark.webp"
@@ -3816,8 +3817,7 @@
       "preview": {
         "light": "previews/zzz-yeshunguang.light.webp",
         "dark": "previews/zzz-yeshunguang.dark.webp"
-      },
-      "description": "青溟剑主的红绫与银青剑光（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-yidhari",
@@ -3834,8 +3834,9 @@
       "bodyAttr": "data-dsh-zzz-yidhari",
       "author": "aionui-themes",
       "tagline": "触手紫与冰青的白昼浅海",
+      "description": "触手紫与冰青的深海诡梦（含昼夜双模式）",
       "order": 147,
-      "tokens": 5940,
+      "tokens": 6539,
       "thumb": {
         "light": "thumbs/zzz-yidhari.light.webp",
         "dark": "thumbs/zzz-yidhari.dark.webp"
@@ -3843,8 +3844,7 @@
       "preview": {
         "light": "previews/zzz-yidhari.light.webp",
         "dark": "previews/zzz-yidhari.dark.webp"
-      },
-      "description": "触手紫与冰青的深海诡梦（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-yixuan",
@@ -3860,8 +3860,9 @@
       "bodyAttr": "data-dsh-zzz-yixuan",
       "author": "aionui-themes",
       "tagline": "宣纸云白，鎏金朱砂的虚狩宗师",
+      "description": "金黑云岿，符箓朱砂的虚狩宗师（含昼夜双模式）",
       "order": 148,
-      "tokens": 5586,
+      "tokens": 6241,
       "thumb": {
         "light": "thumbs/zzz-yixuan.light.webp",
         "dark": "thumbs/zzz-yixuan.dark.webp"
@@ -3869,8 +3870,7 @@
       "preview": {
         "light": "previews/zzz-yixuan.light.webp",
         "dark": "previews/zzz-yixuan.dark.webp"
-      },
-      "description": "金黑云岿，符箓朱砂的虚狩宗师（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-yuzuha",
@@ -3887,8 +3887,9 @@
       "bodyAttr": "data-dsh-zzz-yuzuha",
       "author": "aionui-themes",
       "tagline": "狸猫绿棕的夏夜怪谈收藏屋",
+      "description": "狸猫绿棕的深夜怪谈收藏屋（含昼夜双模式）",
       "order": 149,
-      "tokens": 5146,
+      "tokens": 6145,
       "thumb": {
         "light": "thumbs/zzz-yuzuha.light.webp",
         "dark": "thumbs/zzz-yuzuha.dark.webp"
@@ -3896,8 +3897,7 @@
       "preview": {
         "light": "previews/zzz-yuzuha.light.webp",
         "dark": "previews/zzz-yuzuha.dark.webp"
-      },
-      "description": "狸猫绿棕的深夜怪谈收藏屋（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-zhao",
@@ -3913,8 +3913,9 @@
       "bodyAttr": "data-dsh-zzz-zhao",
       "author": "aionui-themes",
       "tagline": "粉发兔耳裁决官的糖果审判",
+      "description": "粉发兔耳裁决官的夜幕审判（含昼夜双模式）",
       "order": 150,
-      "tokens": 5253,
+      "tokens": 6176,
       "thumb": {
         "light": "thumbs/zzz-zhao.light.webp",
         "dark": "thumbs/zzz-zhao.dark.webp"
@@ -3922,8 +3923,7 @@
       "preview": {
         "light": "previews/zzz-zhao.light.webp",
         "dark": "previews/zzz-zhao.dark.webp"
-      },
-      "description": "粉发兔耳裁决官的夜幕审判（含昼夜双模式）"
+      }
     },
     {
       "id": "zzz-zhuyuan",
@@ -3939,8 +3939,9 @@
       "bodyAttr": "data-dsh-zzz-zhuyuan",
       "author": "aionui-themes",
       "tagline": "晨光卷宗上的藏青墨与朱红绳结",
+      "description": "藏青警服与朱红绳结的治安官正气（含昼夜双模式）",
       "order": 151,
-      "tokens": 6398,
+      "tokens": 6593,
       "thumb": {
         "light": "thumbs/zzz-zhuyuan.light.webp",
         "dark": "thumbs/zzz-zhuyuan.dark.webp"
@@ -3948,8 +3949,7 @@
       "preview": {
         "light": "previews/zzz-zhuyuan.light.webp",
         "dark": "previews/zzz-zhuyuan.dark.webp"
-      },
-      "description": "藏青警服与朱红绳结的治安官正气（含昼夜双模式）"
+      }
     }
   ]
 }

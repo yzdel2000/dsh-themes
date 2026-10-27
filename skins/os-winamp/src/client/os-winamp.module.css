@@ -1,87 +1,8 @@
-/* os-winamp — Winamp | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-os-winamp], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-os-winamp] {
+/* os-winamp — Winamp | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-os-winamp],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-os-winamp]{
   --dsw-font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #161c17;
-  background-color: #eef0f2;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] {
-  color: #d9ffd9;
-  background-color: #070a07;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-os-winamp] {
-  --color-primary: #0a8a34;
-  --primary: #0a8a34;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 10, 138, 52;
-  --color-primary-light-1: #12a843;
-  --color-primary-light-2: #2fc45f;
-  --color-primary-light-3: #6fdd93;
-  --color-primary-dark-1: #066627;
-  --brand: #0a8a34;
-  --brand-light: #dff3e4;
-  --brand-hover: #12a843;
-  --color-brand-fill: #0a8a34;
-  --color-brand-bg: #dff3e4;
-  --aou-1: #e4f6e9;
-  --aou-2: #c6ecd0;
-  --aou-3: #9fdfb2;
-  --aou-4: #6fce8f;
-  --aou-5: #3fbc6a;
-  --aou-6: #12a843;
-  --aou-7: #0a8a34;
-  --aou-8: #076d29;
-  --aou-9: #055420;
-  --aou-10: #033615;
-  --bg-base: #eef0f2;
-  --bg-1: #f7f8f9;
-  --bg-2: #e4e7ea;
-  --bg-3: #d8dce0;
-  --bg-4: #cbd0d6;
-  --bg-5: #bcc2ca;
-  --bg-6: #a9b0ba;
-  --bg-8: #7e8792;
-  --bg-9: #5c646e;
-  --bg-10: #363c44;
-  --color-bg-1: #f7f8f9;
-  --color-bg-2: #e4e7ea;
-  --color-bg-3: #d8dce0;
-  --color-bg-4: #cbd0d6;
-  --bg-hover: #e0e9e3;
-  --bg-active: #cdeeda;
-  --text-primary: #161c17;
-  --text-secondary: #46564b;
-  --text-disabled: #a3ada6;
-  --text-0: #0a0f0b;
-  --text-white: #ffffff;
-  --color-text-1: #161c17;
-  --color-text-2: #46564b;
-  --color-text-3: #6b7a70;
-  --color-text-4: #a3ada6;
-  --border-base: #c3c9cf;
-  --border-light: #d9dde1;
-  --border-special: #0a8a34;
-  --color-border: #c3c9cf;
-  --color-border-1: #c3c9cf;
-  --color-border-2: #d9dde1;
-  --fill: #e4e7ea;
-  --color-fill: #e4e7ea;
-  --fill-0: #f7f8f9;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #f2f4f5;
-  --inverse: #161c17;
-  --success: #0a8a34;
-  --warning: #b3620a;
-  --danger: #c92a2a;
-  --info: #1668b0;
-  --message-user-bg: #35d05e;
-  --message-tips-bg: #e4e7ea;
-  --workspace-btn-bg: #dff3e4;
-  --color-guid-agent-bar: #e8ebee;
   --w-led: #0a4a20;
   --w-led-bright: #0f7a33;
   --w-amber: #b35400;
@@ -90,89 +11,132 @@ body[data-dsh-os-winamp] {
   --w-silver: #d3d8dd;
   --w-silver-lo: #a9b0b8;
   --w-screen: #f4f6f0;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-os-winamp][data-ds-dark-theme] {
-  --color-primary: #00cc44;
-  --primary: #00cc44;
-  --primary-rgb: 0, 204, 68;
-  --color-primary-light-1: #2bdb6a;
-  --color-primary-light-2: #57e88d;
-  --color-primary-light-3: #8cf2b2;
-  --color-primary-dark-1: #00a336;
-  --brand: #00cc44;
-  --brand-light: #0a2e16;
-  --brand-hover: #2bdb6a;
-  --color-brand-fill: #00cc44;
-  --color-brand-bg: #0a2e16;
-  --aou-1: #031207;
-  --aou-2: #062a10;
-  --aou-3: #0a421a;
-  --aou-4: #0e5c25;
-  --aou-5: #127731;
-  --aou-6: #189a40;
-  --aou-7: #27bd52;
-  --aou-8: #4dd874;
-  --aou-9: #83e9a2;
-  --aou-10: #c2f7d2;
-  --bg-base: #070a07;
-  --bg-1: #0c110c;
-  --bg-2: #121812;
-  --bg-3: #182018;
-  --bg-4: #1f291f;
-  --bg-5: #283428;
-  --bg-6: #334133;
-  --bg-8: #526452;
-  --bg-9: #7a917a;
-  --bg-10: #b2ccb2;
-  --color-bg-1: #0c110c;
-  --color-bg-2: #121812;
-  --color-bg-3: #182018;
-  --color-bg-4: #1f291f;
-  --bg-hover: #141c14;
-  --bg-active: #0a2e16;
-  --text-primary: #d9ffd9;
-  --text-secondary: #8fcf8f;
-  --text-disabled: #455845;
-  --text-0: #f2fff2;
-  --text-white: #ffffff;
-  --color-text-1: #d9ffd9;
-  --color-text-2: #8fcf8f;
-  --color-text-3: #6aa86a;
-  --color-text-4: #455845;
-  --border-base: #223022;
-  --border-light: #16201a;
-  --border-special: #00cc44;
-  --color-border: #223022;
-  --color-border-1: #223022;
-  --color-border-2: #16201a;
-  --fill: #121812;
-  --color-fill: #121812;
-  --fill-0: #0c110c;
-  --fill-white-to-black: #070a07;
-  --dialog-fill-0: #0e140e;
-  --inverse: #d9ffd9;
-  --success: #33e06a;
-  --warning: #ffaa00;
-  --danger: #ff4444;
-  --info: #4dc3ff;
-  --message-user-bg: #00c844;
-  --message-tips-bg: #121812;
-  --workspace-btn-bg: #0a2e16;
-  --color-guid-agent-bar: #0c110c;
-  --w-led: #33ff55;
-  --w-led-dim: #0f5c22;
-  --w-amber: #ffaa00;
-  --w-peak: #ff5533;
-  --w-metal-hi: #3a443a;
-  --w-metal: #232b23;
-  --w-metal-lo: #111611;
-  --w-black: #050805;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-os-winamp] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #eef0f2;
+  --dsw-alias-bg-l1: #f7f8f9;
+  --dsw-alias-bg-l2: #e4e7ea;
+  --dsw-alias-bg-layer-1: #f7f8f9;
+  --dsw-alias-bg-layer-2: #e4e7ea;
+  --dsw-alias-bg-layer-3: #d8dce0;
+  --dsw-alias-bg-layer-4: #cbd0d6;
+  --dsw-alias-bg-overlay: #f2f4f5;
+  --dsw-alias-bg-module-platform: #e4e7ea;
+  --dsw-alias-bg-multi-select: #cdeeda;
+  --dsw-alias-bg-skeleton: #d8dce0;
+  --dsw-alias-bg-document-preview: #f7f8f9;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #0a8a34 30%, transparent);
+  --dsw-alias-label-primary: #161c17;
+  --dsw-alias-label-secondary: #46564b;
+  --dsw-alias-label-tertiary: #6b7a70;
+  --dsw-alias-label-quaternary: #a3ada6;
+  --dsw-alias-label-caption: #0a0f0b;
+  --dsw-alias-label-dimmed: #a3ada6;
+  --dsw-alias-label-primary-dimmed: #46564b;
+  --dsw-alias-label-primary-bluish: #161c17;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #161c17;
+  --dsw-alias-label-error: #c92a2a;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #161c17 30%, transparent);
+  --dsw-alias-label-deep-diving: #1668b0;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #1668b0 55%, transparent);
+  --dsw-alias-link: #0a8a34;
+  --dsw-alias-border-l1: #d9dde1;
+  --dsw-alias-border-l2: #c3c9cf;
+  --dsw-alias-border-l2-darkmode-thin: #d9dde1;
+  --dsw-alias-border-l3: #0a8a34;
+  --dsw-alias-border-l4: #0a8a34;
+  --dsw-alias-border-inverted: #161c17;
+  --dsw-alias-border-inverted2: #161c17;
+  --dsw-alias-separator-primary: #d9dde1;
+  --dsw-alias-brand-primary: #0a8a34;
+  --dsw-alias-brand-primary-invert: #161c17;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #0a8a34;
+  --dsw-alias-markdown-citation: #12a843;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #0a8a34 14%, transparent);
+  --dsw-alias-markdown-inline-code: #e4e7ea;
+  --dsw-alias-markdown-code-block: #f7f8f9;
+  --dsw-alias-markdown-code-block-banner: #e4e7ea;
+  --dsw-alias-markdown-code-segment-selected: #d8dce0;
+  --dsw-alias-markdown-code-segment-unselected: #f7f8f9;
+  --dsw-alias-markdown-placeholder: #a3ada6;
+  --dsw-alias-fill-l1: #e4e7ea;
+  --dsw-alias-fill-l2: #f7f8f9;
+  --dsw-alias-fill-tertiary: #d8dce0;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #161c17 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #e0e9e3;
+  --dsw-alias-interactive-bg-active: #cdeeda;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #0a8a34 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #c92a2a 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #d8dce0;
+  --dsw-alias-state-error-primary: #c92a2a;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #c92a2a 15%, transparent);
+  --dsw-alias-state-success-primary: #0a8a34;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #0a8a34 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #0a8a34 8%, transparent);
+  --dsw-alias-state-warn-primary: #b3620a;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #b3620a 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #b3620a 8%, transparent);
+  --dsw-alias-state-warn-label: #b3620a;
+  --dsw-alias-state-business-primary: #1668b0;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #1668b0 10%, transparent);
+  --dsw-alias-state-idle-primary: #a3ada6;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #0a8a34 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #c92a2a 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #46564b 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #0a8a34 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #0a8a34 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #0a8a34 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #c92a2a 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #c92a2a 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #c92a2a 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #46564b 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #f7f8f9;
+  --dsw-alias-scrollbar-bg-l2: #e4e7ea;
+  --dsw-alias-scrollbar-hover-l1: #e0e9e3;
+  --dsw-alias-scrollbar-hover-l2: #e0e9e3;
+  --dsw-alias-menu-icon: #46564b;
+  --dsw-alias-menu-group-header-fill: #e4e7ea;
+  --dsw-alias-tooltip-bg: #161c17;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #d8dce0;
+  --dsw-alias-toast-label: #161c17;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #46564b;
+  --dsw-alias-turn-trigger-bg: #e4e7ea;
+  --dsw-alias-turn-trigger-bg-hover: #d8dce0;
+  --dsw-alias-button-primary-fill: #0a8a34;
+  --dsw-alias-button-primary-hover: #066627;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #0a8a34 45%, transparent);
+  --dsw-alias-button-contrast-fill: #066627;
+  --dsw-alias-button-elevated-fill: #f7f8f9;
+  --dsw-alias-button-floating-fill: #e4e7ea;
+  --dsw-alias-button-floating-hover: #e0e9e3;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #0a8a34 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #2fc45f;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #0a8a34 24%, transparent);
+  --dsw-alias-button-info-fill: #1668b0;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #1668b0 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #e4e7ea;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #e0e9e3;
+  --dsw-alias-onboarding-card-fill: #f7f8f9;
+  --dsw-alias-onboarding-secondary-fill: #e4e7ea;
+  --dsw-alias-onboarding-checkbox-border: #c3c9cf;
+  --dsw-alias-settings-card-fill: #e4e7ea;
+  --dsw-alias-settings-card-stroke: #c3c9cf;
+  --dsw-specific-bubble: #e4e7ea;
+  --dsw-specific-bubble-highlight: #35d05e;
+  --dsw-specific-input-major: #f2f4f5;
+  --dsw-specific-login-input: #f7f8f9;
+  --dsw-specific-menu: #f7f8f9;
+  --dsw-specific-selector: #e4e7ea;
+  --dsw-specific-sidebar-fill: #f7f8f9;
+  --dsw-specific-sidebar-nav-item-active: #cdeeda;
+  --dsw-specific-sidebar-nav-item-active-accent: #0a8a34;
+  --dsw-specific-sidebar-nav-item-hover: #e0e9e3;
+  --dsw-specific-tip: #d8dce0;
   --dsw-static-deepseek-50: #e4f6e9;
   --dsw-static-blue-50: #e4f6e9;
   --dsw-static-deepseek-50p: #c6ecd0;
@@ -260,10 +224,145 @@ body[data-dsh-os-winamp] {
   --dsw-static-red-500: #c92a2a;
   --dsw-static-red-600: color-mix(in srgb, #c92a2a 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #c92a2a 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-os-winamp][data-ds-dark-theme] {
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-os-winamp][data-ds-dark-theme]{
+  color: #d9ffd9;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 0, 204, 68;
+  --w-led: #33ff55;
+  --w-led-dim: #0f5c22;
+  --w-amber: #ffaa00;
+  --w-peak: #ff5533;
+  --w-metal-hi: #3a443a;
+  --w-metal: #232b23;
+  --w-metal-lo: #111611;
+  --w-black: #050805;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #070a07;
+  --dsw-alias-bg-l1: #0c110c;
+  --dsw-alias-bg-l2: #121812;
+  --dsw-alias-bg-layer-1: #0c110c;
+  --dsw-alias-bg-layer-2: #121812;
+  --dsw-alias-bg-layer-3: #182018;
+  --dsw-alias-bg-layer-4: #1f291f;
+  --dsw-alias-bg-overlay: #0e140e;
+  --dsw-alias-bg-module-platform: #121812;
+  --dsw-alias-bg-multi-select: #0a2e16;
+  --dsw-alias-bg-skeleton: #182018;
+  --dsw-alias-bg-document-preview: #0c110c;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #00cc44 30%, transparent);
+  --dsw-alias-label-primary: #d9ffd9;
+  --dsw-alias-label-secondary: #8fcf8f;
+  --dsw-alias-label-tertiary: #6aa86a;
+  --dsw-alias-label-quaternary: #455845;
+  --dsw-alias-label-caption: #f2fff2;
+  --dsw-alias-label-dimmed: #455845;
+  --dsw-alias-label-primary-dimmed: #8fcf8f;
+  --dsw-alias-label-primary-bluish: #d9ffd9;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #d9ffd9;
+  --dsw-alias-label-error: #ff4444;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #d9ffd9 30%, transparent);
+  --dsw-alias-label-deep-diving: #4dc3ff;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #4dc3ff 55%, transparent);
+  --dsw-alias-link: #00cc44;
+  --dsw-alias-border-l1: #16201a;
+  --dsw-alias-border-l2: #223022;
+  --dsw-alias-border-l2-darkmode-thin: #16201a;
+  --dsw-alias-border-l3: #00cc44;
+  --dsw-alias-border-l4: #00cc44;
+  --dsw-alias-border-inverted: #d9ffd9;
+  --dsw-alias-border-inverted2: #d9ffd9;
+  --dsw-alias-separator-primary: #16201a;
+  --dsw-alias-brand-primary: #00cc44;
+  --dsw-alias-brand-primary-invert: #d9ffd9;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #00cc44;
+  --dsw-alias-markdown-citation: #2bdb6a;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #00cc44 14%, transparent);
+  --dsw-alias-markdown-inline-code: #121812;
+  --dsw-alias-markdown-code-block: #0c110c;
+  --dsw-alias-markdown-code-block-banner: #121812;
+  --dsw-alias-markdown-code-segment-selected: #182018;
+  --dsw-alias-markdown-code-segment-unselected: #0c110c;
+  --dsw-alias-markdown-placeholder: #455845;
+  --dsw-alias-fill-l1: #121812;
+  --dsw-alias-fill-l2: #0c110c;
+  --dsw-alias-fill-tertiary: #182018;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #d9ffd9 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #141c14;
+  --dsw-alias-interactive-bg-active: #0a2e16;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #00cc44 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #ff4444 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #182018;
+  --dsw-alias-state-error-primary: #ff4444;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #ff4444 15%, transparent);
+  --dsw-alias-state-success-primary: #33e06a;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #33e06a 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #33e06a 8%, transparent);
+  --dsw-alias-state-warn-primary: #ffaa00;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #ffaa00 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #ffaa00 8%, transparent);
+  --dsw-alias-state-warn-label: #ffaa00;
+  --dsw-alias-state-business-primary: #4dc3ff;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #4dc3ff 10%, transparent);
+  --dsw-alias-state-idle-primary: #455845;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #33e06a 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #ff4444 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #8fcf8f 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #33e06a 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #33e06a 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #33e06a 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #ff4444 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #ff4444 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #ff4444 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #8fcf8f 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #0c110c;
+  --dsw-alias-scrollbar-bg-l2: #121812;
+  --dsw-alias-scrollbar-hover-l1: #141c14;
+  --dsw-alias-scrollbar-hover-l2: #141c14;
+  --dsw-alias-menu-icon: #8fcf8f;
+  --dsw-alias-menu-group-header-fill: #121812;
+  --dsw-alias-tooltip-bg: #d9ffd9;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #182018;
+  --dsw-alias-toast-label: #d9ffd9;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #8fcf8f;
+  --dsw-alias-turn-trigger-bg: #121812;
+  --dsw-alias-turn-trigger-bg-hover: #182018;
+  --dsw-alias-button-primary-fill: #00cc44;
+  --dsw-alias-button-primary-hover: #00a336;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #00cc44 45%, transparent);
+  --dsw-alias-button-contrast-fill: #00a336;
+  --dsw-alias-button-elevated-fill: #0c110c;
+  --dsw-alias-button-floating-fill: #121812;
+  --dsw-alias-button-floating-hover: #141c14;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #00cc44 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #57e88d;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #00cc44 24%, transparent);
+  --dsw-alias-button-info-fill: #4dc3ff;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #4dc3ff 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #121812;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #141c14;
+  --dsw-alias-onboarding-card-fill: #0c110c;
+  --dsw-alias-onboarding-secondary-fill: #121812;
+  --dsw-alias-onboarding-checkbox-border: #223022;
+  --dsw-alias-settings-card-fill: #121812;
+  --dsw-alias-settings-card-stroke: #223022;
+  --dsw-specific-bubble: #121812;
+  --dsw-specific-bubble-highlight: #00c844;
+  --dsw-specific-input-major: #0e140e;
+  --dsw-specific-login-input: #0c110c;
+  --dsw-specific-menu: #0c110c;
+  --dsw-specific-selector: #121812;
+  --dsw-specific-sidebar-fill: #0c110c;
+  --dsw-specific-sidebar-nav-item-active: #0a2e16;
+  --dsw-specific-sidebar-nav-item-active-accent: #00cc44;
+  --dsw-specific-sidebar-nav-item-hover: #141c14;
+  --dsw-specific-tip: #182018;
   --dsw-static-deepseek-50: #031207;
   --dsw-static-blue-50: #031207;
   --dsw-static-deepseek-50p: #062a10;
@@ -351,69 +450,8 @@ body[data-dsh-os-winamp][data-ds-dark-theme] {
   --dsw-static-red-500: #ff4444;
   --dsw-static-red-600: color-mix(in srgb, #ff4444 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #ff4444 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-os-winamp] {
-  --dsw-alias-button-primary-fill: #0a8a34;
-  --dsw-alias-button-primary-hover: #12a843;
-  --dsw-alias-button-primary-dimmed: #c6ecd0;
-  --dsw-alias-button-info-fill: #0a8a34;
-  --dsw-alias-button-info-hover: #12a843;
-  --dsw-alias-button-contrast-fill: #0a8a34;
-  --dsw-alias-button-ghost-active-fill: #dff3e4;
-  --dsw-alias-button-ghost-active-hover: #c6ecd0;
-  --dsw-alias-button-ghost-active-border: #6fce8f;
-  --dsw-alias-button-elevated-fill: #f7f8f9;
-  --dsw-alias-button-floating-fill: #f7f8f9;
-  --dsw-alias-button-floating-hover: #e0e9e3;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(10, 138, 52, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(10, 138, 52, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(10, 138, 52, 0.6);
-  --dsw-specific-bubble: #35d05e;
-  --dsw-specific-bubble-highlight: #9fdfb2;
-  --dsw-specific-input-major: #f7f8f9;
-  --dsw-specific-login-input: #f7f8f9;
-  --dsw-specific-sidebar-fill: #0a8a34;
-  --dsw-specific-sidebar-nav-item-active: #c6ecd0;
-  --dsw-specific-sidebar-nav-item-hover: #e0e9e3;
-  --dsw-specific-sidebar-nav-item-active-accent: #6fce8f;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-os-winamp][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #00cc44;
-  --dsw-alias-button-primary-hover: #2bdb6a;
-  --dsw-alias-button-primary-dimmed: #062a10;
-  --dsw-alias-button-info-fill: #00cc44;
-  --dsw-alias-button-info-hover: #2bdb6a;
-  --dsw-alias-button-contrast-fill: #27bd52;
-  --dsw-alias-button-ghost-active-fill: #0a2e16;
-  --dsw-alias-button-ghost-active-hover: #062a10;
-  --dsw-alias-button-ghost-active-border: #0e5c25;
-  --dsw-alias-button-elevated-fill: #0c110c;
-  --dsw-alias-button-floating-fill: #0c110c;
-  --dsw-alias-button-floating-hover: #141c14;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(0, 204, 68, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(0, 204, 68, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(0, 204, 68, 0.6);
-  --dsw-specific-bubble: #00c844;
-  --dsw-specific-bubble-highlight: #0a421a;
-  --dsw-specific-input-major: #0c110c;
-  --dsw-specific-login-input: #0c110c;
-  --dsw-specific-sidebar-fill: #00cc44;
-  --dsw-specific-sidebar-nav-item-active: #062a10;
-  --dsw-specific-sidebar-nav-item-hover: #141c14;
-  --dsw-specific-sidebar-nav-item-active-accent: #0e5c25;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-os-winamp] {
-  background-color: var(--bg-base) !important;
-    font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-os-winamp]::before {
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-os-winamp]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -428,9 +466,7 @@ body[data-dsh-os-winamp]::before {
     background-position: left bottom, left bottom, left bottom;
     background-repeat: repeat-x, repeat-x, repeat-x;
     animation: os-winamp-winamp-eq-bounce-l 3.2s steps(8) infinite;
-}
-
-body[data-dsh-os-winamp]::after {
+}body[data-dsh-os-winamp]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -443,117 +479,37 @@ body[data-dsh-os-winamp]::after {
       repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0 1px, transparent 1px 7px);
     background-size: 6px 6px, 100% 3px, 7px 100%;
     animation: os-winamp-winamp-crt-breathe-l 4s ease-in-out infinite;
-}
-
-body[data-dsh-os-winamp] [class*='sider'] [class*='item'] {
-  border-radius: 0;
-    font-family: 'Courier New', 'Consolas', monospace;
-    transition: background-color 0.12s ease, box-shadow 0.12s ease;
-}
-
-body[data-dsh-os-winamp] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 2px 0 0 0 var(--w-led-bright);
-    color: var(--w-led) !important;
-}
-
-body[data-dsh-os-winamp] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-os-winamp] [class*='sider'] [class*='item'][class*='selected'] {
-  background: linear-gradient(90deg, var(--message-user-bg) 0%, rgba(53, 208, 94, 0.55) 100%) !important;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(10, 74, 32, 0.35);
-    color: #06280f !important;
-    font-weight: 700;
-}
-
-body[data-dsh-os-winamp] button[class*='primary'],
-body[data-dsh-os-winamp] button[class*='primary']:not(.arco-btn-disabled) {
-  background:
-      repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.55) 0 1px, transparent 1px 3px),
-      linear-gradient(180deg, var(--w-silver-hi) 0%, var(--w-silver) 55%, var(--w-silver-lo) 100%) !important;
-    border: 1px solid #6b7480 !important;
-    border-radius: 2px !important;
-    color: var(--w-led) !important;
-    font-family: 'Courier New', 'Consolas', monospace;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85), 0 0 5px rgba(18, 168, 67, 0.4);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.9),
-      inset 0 -1px 0 rgba(60, 70, 80, 0.35),
-      inset 1px 0 0 rgba(255, 255, 255, 0.5),
-      inset -1px 0 0 rgba(60, 70, 80, 0.2),
-      0 2px 4px rgba(60, 70, 80, 0.3);
-    transition: filter 0.15s ease, box-shadow 0.15s ease;
-}
-
-body[data-dsh-os-winamp] button[class*='primary']:hover,
-body[data-dsh-os-winamp] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.04);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.95),
-      inset 0 -1px 0 rgba(60, 70, 80, 0.35),
-      0 0 10px rgba(18, 168, 67, 0.4),
-      0 2px 5px rgba(60, 70, 80, 0.3);
-}
-
-body[data-dsh-os-winamp] button[class*='primary']:active,
-body[data-dsh-os-winamp] button[class*='primary']:not(.arco-btn-disabled):active {
-  filter: brightness(0.96);
-    box-shadow:
-      inset 0 2px 5px rgba(60, 70, 80, 0.4),
-      inset 0 -1px 0 rgba(255, 255, 255, 0.7);
-}
-
-body[data-dsh-os-winamp] pre,
-body[data-dsh-os-winamp] .markdown-body pre {
+}body[data-dsh-os-winamp] pre{
   background:
       radial-gradient(circle, rgba(10, 74, 32, 0.06) 0 1px, transparent 1.7px),
       var(--w-screen) !important;
     background-size: 6px 6px, 100% 100% !important;
-    border: 1px solid var(--border-base) !important;
-    border-top: 3px solid var(--brand) !important;
+    border: 1px solid var(--dsw-alias-border-l2) !important;
+    border-top: 3px solid var(--dsw-alias-brand-primary) !important;
     border-radius: 2px !important;
     box-shadow:
       inset 0 2px 6px rgba(60, 70, 80, 0.18),
       0 1px 4px rgba(60, 70, 80, 0.15);
-}
-
-body[data-dsh-os-winamp] pre code,
-body[data-dsh-os-winamp] .markdown-body pre code {
+}body[data-dsh-os-winamp] pre code{
   background: transparent !important;
     color: #0a4a20 !important;
     border: none;
     padding: 0;
     font-family: 'Courier New', 'Consolas', monospace;
     text-shadow: none;
-}
-
-body[data-dsh-os-winamp] code,
-body[data-dsh-os-winamp] .markdown-body code {
-  background-color: var(--brand-light);
+}body[data-dsh-os-winamp] code{
+  background-color: var(--dsw-alias-markdown-citation);
     color: var(--w-led);
     border: 1px solid #9fdfb2;
     border-radius: 2px;
     padding: 0.1em 0.35em;
     font-family: 'Courier New', 'Consolas', monospace;
-}
-
-body[data-dsh-os-winamp] [class*='agent-bar'],
-body[data-dsh-os-winamp] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(10, 138, 52, 0.35);
-}
-
-body[data-dsh-os-winamp] .markdown-body blockquote {
+}body[data-dsh-os-winamp] blockquote{
   background-color: rgba(179, 84, 0, 0.07);
     border-left: 3px solid var(--w-amber);
     border-radius: 0 3px 3px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-os-winamp] .markdown-body hr,
-body[data-dsh-os-winamp] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-os-winamp] hr{
   border: none;
     height: 6px;
     background-image:
@@ -562,59 +518,29 @@ body[data-dsh-os-winamp] hr {
     background-position: 0 2px;
     background-repeat: no-repeat;
     opacity: 0.6;
-}
-
-body[data-dsh-os-winamp] .markdown-body a,
-body[data-dsh-os-winamp] a {
-  color: var(--color-primary-dark-1);
-}
-
-body[data-dsh-os-winamp] .markdown-body a:hover,
-body[data-dsh-os-winamp] a:hover {
-  color: var(--color-primary);
+}body[data-dsh-os-winamp] a{
+  color: var(--dsw-alias-button-primary-hover);
+}body[data-dsh-os-winamp] a:hover{
+  color: var(--dsw-alias-brand-primary);
     text-decoration: underline;
-}
-
-body[data-dsh-os-winamp] .arco-btn:not(button[class*='primary']):hover {
-  color: var(--w-led) !important;
-    border-color: var(--brand) !important;
-    background-color: rgba(10, 138, 52, 0.08) !important;
-}
-
-body[data-dsh-os-winamp]::selection {
-  background: color-mix(in srgb, var(--brand) 28%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-os-winamp]::-webkit-scrollbar {
+}body[data-dsh-os-winamp]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 28%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-os-winamp]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-os-winamp]::-webkit-scrollbar-thumb {
+}body[data-dsh-os-winamp]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--w-silver-hi), var(--w-silver-lo));
     border-radius: 2px;
     border: 1px solid #8a929c;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-body[data-dsh-os-winamp]::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--color-primary-light-2), var(--color-primary-dark-1));
+}body[data-dsh-os-winamp]::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(180deg, var(--dsw-alias-markdown-tag), var(--dsw-alias-button-primary-hover));
     box-shadow: 0 0 6px rgba(18, 168, 67, 0.45);
-}
-
-body[data-dsh-os-winamp]::-webkit-scrollbar-track {
-  background: var(--bg-2);
+}body[data-dsh-os-winamp]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-2);
     box-shadow: inset 1px 0 0 rgba(60, 70, 80, 0.15);
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-os-winamp][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme]::before {
+}body[data-dsh-os-winamp][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -629,9 +555,7 @@ body[data-dsh-os-winamp][data-ds-dark-theme]::before {
     background-position: left bottom, left bottom, left bottom;
     background-repeat: repeat-x, repeat-x, repeat-x;
     animation: os-winamp-winamp-eq-bounce 3.2s steps(8) infinite;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme]::after {
+}body[data-dsh-os-winamp][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -643,117 +567,37 @@ body[data-dsh-os-winamp][data-ds-dark-theme]::after {
       repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0 1px, transparent 1px 4px);
     background-size: 5px 5px, 100% 4px;
     animation: os-winamp-winamp-crt-flicker 4s ease-in-out infinite;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 0;
-    font-family: 'Courier New', 'Consolas', monospace;
-    transition: background-color 0.12s ease, box-shadow 0.12s ease;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 2px 0 0 0 var(--w-led);
-    color: var(--w-led) !important;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-os-winamp][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background: linear-gradient(90deg, var(--message-user-bg) 0%, rgba(0, 200, 68, 0.55) 100%) !important;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
-    color: #04140a !important;
-    font-weight: 700;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-os-winamp][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background:
-      repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 3px),
-      linear-gradient(180deg, var(--w-metal-hi) 0%, var(--w-metal) 55%, var(--w-metal-lo) 100%) !important;
-    border: 1px solid #000000 !important;
-    border-radius: 2px !important;
-    color: var(--w-led) !important;
-    font-family: 'Courier New', 'Consolas', monospace;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-shadow: 0 0 6px rgba(51, 255, 85, 0.8);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.22),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.7),
-      inset 1px 0 0 rgba(255, 255, 255, 0.08),
-      inset -1px 0 0 rgba(0, 0, 0, 0.5),
-      0 2px 5px rgba(0, 0, 0, 0.6);
-    transition: filter 0.15s ease, box-shadow 0.15s ease;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-os-winamp][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.2);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.3),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.7),
-      0 0 12px rgba(51, 255, 85, 0.45),
-      0 2px 6px rgba(0, 0, 0, 0.6);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] button[class*='primary']:active,
-body[data-dsh-os-winamp][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):active {
-  filter: brightness(0.92);
-    box-shadow:
-      inset 0 2px 6px rgba(0, 0, 0, 0.75),
-      inset 0 -1px 0 rgba(255, 255, 255, 0.1);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] pre,
-body[data-dsh-os-winamp][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-os-winamp][data-ds-dark-theme] pre{
   background:
       radial-gradient(circle, rgba(51, 255, 85, 0.06) 0 1px, transparent 1.7px),
       var(--w-black) !important;
     background-size: 5px 5px, 100% 100% !important;
-    border: 1px solid var(--border-base) !important;
-    border-top: 3px solid var(--brand) !important;
+    border: 1px solid var(--dsw-alias-border-l2) !important;
+    border-top: 3px solid var(--dsw-alias-brand-primary) !important;
     border-radius: 2px !important;
     box-shadow:
       inset 0 2px 8px rgba(0, 0, 0, 0.8),
       0 0 10px rgba(0, 204, 68, 0.12);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] pre code,
-body[data-dsh-os-winamp][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-os-winamp][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #7dff9a !important;
     border: none;
     padding: 0;
     font-family: 'Courier New', 'Consolas', monospace;
     text-shadow: 0 0 5px rgba(51, 255, 85, 0.45);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] code,
-body[data-dsh-os-winamp][data-ds-dark-theme] .markdown-body code {
-  background-color: var(--brand-light);
+}body[data-dsh-os-winamp][data-ds-dark-theme] code{
+  background-color: var(--dsw-alias-markdown-citation);
     color: var(--w-led);
     border: 1px solid var(--w-led-dim);
     border-radius: 2px;
     padding: 0.1em 0.35em;
     font-family: 'Courier New', 'Consolas', monospace;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-os-winamp][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(0, 204, 68, 0.4);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-os-winamp][data-ds-dark-theme] blockquote{
   background-color: rgba(255, 170, 0, 0.07);
     border-left: 3px solid var(--w-amber);
     border-radius: 0 3px 3px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-os-winamp][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-os-winamp][data-ds-dark-theme] hr{
   border: none;
     height: 6px;
     background-image:
@@ -762,111 +606,50 @@ body[data-dsh-os-winamp][data-ds-dark-theme] hr {
     background-position: 0 2px;
     background-repeat: no-repeat;
     opacity: 0.6;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-os-winamp][data-ds-dark-theme] a {
-  color: var(--color-primary-light-1);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-os-winamp][data-ds-dark-theme] a:hover {
+}body[data-dsh-os-winamp][data-ds-dark-theme] a{
+  color: var(--dsw-alias-markdown-citation);
+}body[data-dsh-os-winamp][data-ds-dark-theme] a:hover{
   color: var(--w-led);
     text-shadow: 0 0 8px rgba(51, 255, 85, 0.6);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: var(--w-led) !important;
-    border-color: var(--brand) !important;
-    background-color: rgba(0, 204, 68, 0.12) !important;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 40%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-os-winamp][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 40%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-os-winamp][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-os-winamp][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--w-metal-hi), var(--w-metal));
     border-radius: 2px;
     border: 1px solid #000000;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--brand), #007a29);
+}body[data-dsh-os-winamp][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(180deg, var(--dsw-alias-brand-primary), #007a29);
     box-shadow: 0 0 8px rgba(51, 255, 85, 0.5);
-}
-
-body[data-dsh-os-winamp][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
+}body[data-dsh-os-winamp][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
     box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.6);
 }
 
 /* --- keyframes --- */
-@keyframes os-winamp-winamp-eq-bounce-l {
-  0% { background-size: 100% 66px, 100% 50px, 100% 38px; }
-  20% { background-size: 100% 100px, 100% 40px, 100% 56px; }
-  40% { background-size: 100% 50px, 100% 76px, 100% 30px; }
-  60% { background-size: 100% 116px, 100% 60px, 100% 82px; }
-  80% { background-size: 100% 58px, 100% 90px, 100% 44px; }
-  100% { background-size: 100% 66px, 100% 50px, 100% 38px; }
+@keyframes os-winamp-winamp-eq-bounce-l {0%{ background-size: 100% 66px, 100% 50px, 100% 38px; }20%{ background-size: 100% 100px, 100% 40px, 100% 56px; }40%{ background-size: 100% 50px, 100% 76px, 100% 30px; }60%{ background-size: 100% 116px, 100% 60px, 100% 82px; }80%{ background-size: 100% 58px, 100% 90px, 100% 44px; }100%{ background-size: 100% 66px, 100% 50px, 100% 38px; }
 }
 
-@keyframes os-winamp-winamp-crt-breathe-l {
-  0%, 100% { opacity: 0.05; }
-  50% { opacity: 0.1; }
+@keyframes os-winamp-winamp-crt-breathe-l {0%,100%{ opacity: 0.05; }50%{ opacity: 0.1; }
 }
 
-@keyframes os-winamp-winamp-titlebar-scan-l {
-  0% { left: -18%; }
-  100% { left: 108%; }
+
+
+
+
+
+
+@keyframes os-winamp-winamp-eq-bounce {0%{ background-size: 100% 72px, 100% 54px, 100% 40px; }20%{ background-size: 100% 108px, 100% 44px, 100% 60px; }40%{ background-size: 100% 56px, 100% 82px, 100% 34px; }60%{ background-size: 100% 124px, 100% 66px, 100% 88px; }80%{ background-size: 100% 64px, 100% 96px, 100% 48px; }100%{ background-size: 100% 72px, 100% 54px, 100% 40px; }
 }
 
-@keyframes os-winamp-winamp-bubble-eq-l {
-  0% { background-size: 100% 100%, 100% 70%, 100% 50%; }
-  30% { background-size: 100% 62%, 100% 100%, 100% 78%; }
-  60% { background-size: 100% 88%, 100% 52%, 100% 100%; }
-  100% { background-size: 100% 100%, 100% 70%, 100% 50%; }
+@keyframes os-winamp-winamp-crt-flicker {0%,100%{ opacity: 0.04; }50%{ opacity: 0.08; }
 }
 
-@keyframes os-winamp-winamp-input-flow-l {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
-}
-
-@keyframes os-winamp-winamp-eq-bounce {
-  0% { background-size: 100% 72px, 100% 54px, 100% 40px; }
-  20% { background-size: 100% 108px, 100% 44px, 100% 60px; }
-  40% { background-size: 100% 56px, 100% 82px, 100% 34px; }
-  60% { background-size: 100% 124px, 100% 66px, 100% 88px; }
-  80% { background-size: 100% 64px, 100% 96px, 100% 48px; }
-  100% { background-size: 100% 72px, 100% 54px, 100% 40px; }
-}
-
-@keyframes os-winamp-winamp-crt-flicker {
-  0%, 100% { opacity: 0.04; }
-  50% { opacity: 0.08; }
-}
-
-@keyframes os-winamp-winamp-titlebar-scan {
-  0% { left: -18%; }
-  100% { left: 108%; }
-}
-
-@keyframes os-winamp-winamp-bubble-eq {
-  0% { background-size: 100% 100%, 100% 70%, 100% 50%; }
-  30% { background-size: 100% 62%, 100% 100%, 100% 78%; }
-  60% { background-size: 100% 88%, 100% 52%, 100% 100%; }
-  100% { background-size: 100% 100%, 100% 70%, 100% 50%; }
-}
-
-@keyframes os-winamp-winamp-input-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-os-winamp]{
+  --dsh-windows-content-radius: 4px;
 }

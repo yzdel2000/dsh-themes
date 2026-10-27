@@ -1,172 +1,139 @@
-/* pokemon-mimikyu — 宝可梦 · 谜拟丘 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-pokemon-mimikyu], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-pokemon-mimikyu] {
+/* pokemon-mimikyu — 宝可梦 · 谜拟丘 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-pokemon-mimikyu],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-pokemon-mimikyu]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #2b2533;
-  background-color: #f3eee2;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] {
-  color: #f0ecf7;
-  background-color: #0e0b14;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-pokemon-mimikyu] {
-  --color-primary: #6f4fb3;
-  --primary: #6f4fb3;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 111, 79, 179;
-  --color-primary-light-1: #8f6bd8;
-  --color-primary-light-2: #ab8ee6;
-  --color-primary-light-3: #cbb7ec;
-  --color-primary-dark-1: #523784;
-  --brand: #6f4fb3;
-  --brand-light: #efe8fa;
-  --brand-hover: #5a3f96;
-  --color-brand-fill: #6f4fb3;
-  --color-brand-bg: #e8dff7;
-  --aou-1: #f2ebfb;
-  --aou-2: #e3d6f6;
-  --aou-3: #cfbcea;
-  --aou-4: #b8a0dd;
-  --aou-5: #9c7fd0;
-  --aou-6: #8262c2;
-  --aou-7: #6f4fb3;
-  --aou-8: #583d90;
-  --aou-9: #422d6d;
-  --aou-10: #2c1e49;
-  --bg-base: #f3eee2;
-  --bg-1: #ece5d4;
-  --bg-2: #e3dac3;
-  --bg-3: #d9cdae;
-  --bg-4: #cdc0a0;
-  --bg-5: #bcb089;
-  --bg-6: #a89a74;
-  --bg-8: #837655;
-  --bg-9: #60563c;
-  --bg-10: #3e3727;
-  --color-bg-1: #ece5d4;
-  --color-bg-2: #e3dac3;
-  --color-bg-3: #d9cdae;
-  --color-bg-4: #cdc0a0;
-  --bg-hover: #e6ddc8;
-  --bg-active: #dcd1b4;
-  --text-primary: #2b2533;
-  --text-secondary: #5d5470;
-  --text-disabled: #a89f8c;
-  --text-0: #171320;
-  --text-white: #ffffff;
-  --color-text-1: #2b2533;
-  --color-text-2: #5d5470;
-  --color-text-3: #7d7488;
-  --color-text-4: #a89f8c;
-  --border-base: #c9bc9c;
-  --border-light: #d9cfb6;
-  --border-special: #9c7fd0;
-  --color-border: #c9bc9c;
-  --color-border-1: #c9bc9c;
-  --color-border-2: #d9cfb6;
-  --fill: #e3dac3;
-  --color-fill: #e3dac3;
-  --fill-0: #ece5d4;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #faf6ec;
-  --inverse: #2b2533;
-  --success: #2e9e66;
-  --warning: #cf8a1d;
-  --danger: #cf3a4c;
-  --info: #3a6ec9;
-  --message-user-bg: #2a2338;
-  --message-tips-bg: #e9e1f2;
-  --workspace-btn-bg: #e8dff7;
-  --color-guid-agent-bar: #eae4d5;
   --mimi-rag: #d6c8a4;
   --mimi-rag-dark: #a99a76;
   --mimi-shadow: #6f4fb3;
   --mimi-ink: #2b2533;
   --mimi-pink: #c96a9c;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] {
-  --color-primary: #8f6bd8;
-  --primary: #8f6bd8;
-  --primary-rgb: 143, 107, 216;
-  --color-primary-light-1: #ab8ee6;
-  --color-primary-light-2: #c7b3f0;
-  --color-primary-light-3: #e2d6f9;
-  --color-primary-dark-1: #6b4a9c;
-  --brand: #8f6bd8;
-  --brand-light: #241a38;
-  --brand-hover: #a586e6;
-  --color-brand-fill: #8f6bd8;
-  --color-brand-bg: #201631;
-  --aou-1: #1a1127;
-  --aou-2: #281a3c;
-  --aou-3: #372452;
-  --aou-4: #472f69;
-  --aou-5: #583c81;
-  --aou-6: #6b4a9c;
-  --aou-7: #8f6bd8;
-  --aou-8: #ab8ee6;
-  --aou-9: #c7b3f0;
-  --aou-10: #e4daf8;
-  --bg-base: #0e0b14;
-  --bg-1: #14101d;
-  --bg-2: #1a1526;
-  --bg-3: #211b30;
-  --bg-4: #29223b;
-  --bg-5: #332b48;
-  --bg-6: #413759;
-  --bg-8: #5f5480;
-  --bg-9: #8a7fa6;
-  --bg-10: #bdb3d1;
-  --color-bg-1: #14101d;
-  --color-bg-2: #1a1526;
-  --color-bg-3: #211b30;
-  --color-bg-4: #29223b;
-  --bg-hover: #1f1930;
-  --bg-active: #28213c;
-  --text-primary: #f0ecf7;
-  --text-secondary: #b0a8c4;
-  --text-disabled: #5d5670;
-  --text-0: #f8f6fc;
-  --text-white: #ffffff;
-  --color-text-1: #f0ecf7;
-  --color-text-2: #b0a8c4;
-  --color-text-3: #847a9c;
-  --color-text-4: #5d5670;
-  --border-base: #352c4a;
-  --border-light: #28213a;
-  --border-special: #6b4a9c;
-  --color-border: #352c4a;
-  --color-border-1: #352c4a;
-  --color-border-2: #28213a;
-  --fill: #1a1526;
-  --color-fill: #1a1526;
-  --fill-0: #14101d;
-  --fill-white-to-black: #0e0b14;
-  --dialog-fill-0: #161220;
-  --inverse: #f0ecf7;
-  --success: #57b98a;
-  --warning: #e0a94e;
-  --danger: #e05f6e;
-  --info: #7f9fe0;
-  --message-user-bg: #d6c8a4;
-  --message-tips-bg: #1d1830;
-  --workspace-btn-bg: #201631;
-  --color-guid-agent-bar: #161122;
-  --mimi-rag: #d6c8a4;
-  --mimi-rag-dark: #a99a76;
-  --mimi-shadow: #8f6bd8;
-  --mimi-ink: #241f2e;
-  --mimi-pink: #d685ad;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-pokemon-mimikyu] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #f3eee2;
+  --dsw-alias-bg-l1: #ece5d4;
+  --dsw-alias-bg-l2: #e3dac3;
+  --dsw-alias-bg-layer-1: #ece5d4;
+  --dsw-alias-bg-layer-2: #e3dac3;
+  --dsw-alias-bg-layer-3: #d9cdae;
+  --dsw-alias-bg-layer-4: #cdc0a0;
+  --dsw-alias-bg-overlay: #faf6ec;
+  --dsw-alias-bg-module-platform: #e3dac3;
+  --dsw-alias-bg-multi-select: #dcd1b4;
+  --dsw-alias-bg-skeleton: #d9cdae;
+  --dsw-alias-bg-document-preview: #ece5d4;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #6f4fb3 30%, transparent);
+  --dsw-alias-label-primary: #2b2533;
+  --dsw-alias-label-secondary: #5d5470;
+  --dsw-alias-label-tertiary: #7d7488;
+  --dsw-alias-label-quaternary: #a89f8c;
+  --dsw-alias-label-caption: #171320;
+  --dsw-alias-label-dimmed: #a89f8c;
+  --dsw-alias-label-primary-dimmed: #5d5470;
+  --dsw-alias-label-primary-bluish: #2b2533;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #2b2533;
+  --dsw-alias-label-error: #cf3a4c;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #2b2533 30%, transparent);
+  --dsw-alias-label-deep-diving: #3a6ec9;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #3a6ec9 55%, transparent);
+  --dsw-alias-link: #6f4fb3;
+  --dsw-alias-border-l1: #d9cfb6;
+  --dsw-alias-border-l2: #c9bc9c;
+  --dsw-alias-border-l2-darkmode-thin: #d9cfb6;
+  --dsw-alias-border-l3: #9c7fd0;
+  --dsw-alias-border-l4: #9c7fd0;
+  --dsw-alias-border-inverted: #2b2533;
+  --dsw-alias-border-inverted2: #2b2533;
+  --dsw-alias-separator-primary: #d9cfb6;
+  --dsw-alias-brand-primary: #6f4fb3;
+  --dsw-alias-brand-primary-invert: #2b2533;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #6f4fb3;
+  --dsw-alias-markdown-citation: #8f6bd8;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #6f4fb3 14%, transparent);
+  --dsw-alias-markdown-inline-code: #e3dac3;
+  --dsw-alias-markdown-code-block: #ece5d4;
+  --dsw-alias-markdown-code-block-banner: #e3dac3;
+  --dsw-alias-markdown-code-segment-selected: #d9cdae;
+  --dsw-alias-markdown-code-segment-unselected: #ece5d4;
+  --dsw-alias-markdown-placeholder: #a89f8c;
+  --dsw-alias-fill-l1: #e3dac3;
+  --dsw-alias-fill-l2: #ece5d4;
+  --dsw-alias-fill-tertiary: #d9cdae;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #2b2533 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #e6ddc8;
+  --dsw-alias-interactive-bg-active: #dcd1b4;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #6f4fb3 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #cf3a4c 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #d9cdae;
+  --dsw-alias-state-error-primary: #cf3a4c;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #cf3a4c 15%, transparent);
+  --dsw-alias-state-success-primary: #2e9e66;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #2e9e66 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #2e9e66 8%, transparent);
+  --dsw-alias-state-warn-primary: #cf8a1d;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #cf8a1d 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #cf8a1d 8%, transparent);
+  --dsw-alias-state-warn-label: #cf8a1d;
+  --dsw-alias-state-business-primary: #3a6ec9;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #3a6ec9 10%, transparent);
+  --dsw-alias-state-idle-primary: #a89f8c;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #2e9e66 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #cf3a4c 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #5d5470 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #2e9e66 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #2e9e66 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #2e9e66 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #cf3a4c 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #cf3a4c 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #cf3a4c 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #5d5470 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #ece5d4;
+  --dsw-alias-scrollbar-bg-l2: #e3dac3;
+  --dsw-alias-scrollbar-hover-l1: #e6ddc8;
+  --dsw-alias-scrollbar-hover-l2: #e6ddc8;
+  --dsw-alias-menu-icon: #5d5470;
+  --dsw-alias-menu-group-header-fill: #e3dac3;
+  --dsw-alias-tooltip-bg: #2b2533;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #d9cdae;
+  --dsw-alias-toast-label: #2b2533;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #5d5470;
+  --dsw-alias-turn-trigger-bg: #e3dac3;
+  --dsw-alias-turn-trigger-bg-hover: #d9cdae;
+  --dsw-alias-button-primary-fill: #6f4fb3;
+  --dsw-alias-button-primary-hover: #523784;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #6f4fb3 45%, transparent);
+  --dsw-alias-button-contrast-fill: #523784;
+  --dsw-alias-button-elevated-fill: #ece5d4;
+  --dsw-alias-button-floating-fill: #e3dac3;
+  --dsw-alias-button-floating-hover: #e6ddc8;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #6f4fb3 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #ab8ee6;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #6f4fb3 24%, transparent);
+  --dsw-alias-button-info-fill: #3a6ec9;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #3a6ec9 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #e3dac3;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #e6ddc8;
+  --dsw-alias-onboarding-card-fill: #ece5d4;
+  --dsw-alias-onboarding-secondary-fill: #e3dac3;
+  --dsw-alias-onboarding-checkbox-border: #c9bc9c;
+  --dsw-alias-settings-card-fill: #e3dac3;
+  --dsw-alias-settings-card-stroke: #c9bc9c;
+  --dsw-specific-bubble: #e3dac3;
+  --dsw-specific-bubble-highlight: #2a2338;
+  --dsw-specific-input-major: #faf6ec;
+  --dsw-specific-login-input: #ece5d4;
+  --dsw-specific-menu: #ece5d4;
+  --dsw-specific-selector: #e3dac3;
+  --dsw-specific-sidebar-fill: #ece5d4;
+  --dsw-specific-sidebar-nav-item-active: #dcd1b4;
+  --dsw-specific-sidebar-nav-item-active-accent: #6f4fb3;
+  --dsw-specific-sidebar-nav-item-hover: #e6ddc8;
+  --dsw-specific-tip: #d9cdae;
   --dsw-static-deepseek-50: #f2ebfb;
   --dsw-static-blue-50: #f2ebfb;
   --dsw-static-deepseek-50p: #e3d6f6;
@@ -254,10 +221,142 @@ body[data-dsh-pokemon-mimikyu] {
   --dsw-static-red-500: #cf3a4c;
   --dsw-static-red-600: color-mix(in srgb, #cf3a4c 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #cf3a4c 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]{
+  color: #f0ecf7;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 143, 107, 216;
+  --mimi-rag: #d6c8a4;
+  --mimi-rag-dark: #a99a76;
+  --mimi-shadow: #8f6bd8;
+  --mimi-ink: #241f2e;
+  --mimi-pink: #d685ad;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #0e0b14;
+  --dsw-alias-bg-l1: #14101d;
+  --dsw-alias-bg-l2: #1a1526;
+  --dsw-alias-bg-layer-1: #14101d;
+  --dsw-alias-bg-layer-2: #1a1526;
+  --dsw-alias-bg-layer-3: #211b30;
+  --dsw-alias-bg-layer-4: #29223b;
+  --dsw-alias-bg-overlay: #161220;
+  --dsw-alias-bg-module-platform: #1a1526;
+  --dsw-alias-bg-multi-select: #28213c;
+  --dsw-alias-bg-skeleton: #211b30;
+  --dsw-alias-bg-document-preview: #14101d;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #8f6bd8 30%, transparent);
+  --dsw-alias-label-primary: #f0ecf7;
+  --dsw-alias-label-secondary: #b0a8c4;
+  --dsw-alias-label-tertiary: #847a9c;
+  --dsw-alias-label-quaternary: #5d5670;
+  --dsw-alias-label-caption: #f8f6fc;
+  --dsw-alias-label-dimmed: #5d5670;
+  --dsw-alias-label-primary-dimmed: #b0a8c4;
+  --dsw-alias-label-primary-bluish: #f0ecf7;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #f0ecf7;
+  --dsw-alias-label-error: #e05f6e;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #f0ecf7 30%, transparent);
+  --dsw-alias-label-deep-diving: #7f9fe0;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #7f9fe0 55%, transparent);
+  --dsw-alias-link: #8f6bd8;
+  --dsw-alias-border-l1: #28213a;
+  --dsw-alias-border-l2: #352c4a;
+  --dsw-alias-border-l2-darkmode-thin: #28213a;
+  --dsw-alias-border-l3: #6b4a9c;
+  --dsw-alias-border-l4: #6b4a9c;
+  --dsw-alias-border-inverted: #f0ecf7;
+  --dsw-alias-border-inverted2: #f0ecf7;
+  --dsw-alias-separator-primary: #28213a;
+  --dsw-alias-brand-primary: #8f6bd8;
+  --dsw-alias-brand-primary-invert: #f0ecf7;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #8f6bd8;
+  --dsw-alias-markdown-citation: #ab8ee6;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #8f6bd8 14%, transparent);
+  --dsw-alias-markdown-inline-code: #1a1526;
+  --dsw-alias-markdown-code-block: #14101d;
+  --dsw-alias-markdown-code-block-banner: #1a1526;
+  --dsw-alias-markdown-code-segment-selected: #211b30;
+  --dsw-alias-markdown-code-segment-unselected: #14101d;
+  --dsw-alias-markdown-placeholder: #5d5670;
+  --dsw-alias-fill-l1: #1a1526;
+  --dsw-alias-fill-l2: #14101d;
+  --dsw-alias-fill-tertiary: #211b30;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #f0ecf7 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #1f1930;
+  --dsw-alias-interactive-bg-active: #28213c;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #8f6bd8 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #e05f6e 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #211b30;
+  --dsw-alias-state-error-primary: #e05f6e;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #e05f6e 15%, transparent);
+  --dsw-alias-state-success-primary: #57b98a;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #57b98a 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #57b98a 8%, transparent);
+  --dsw-alias-state-warn-primary: #e0a94e;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #e0a94e 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #e0a94e 8%, transparent);
+  --dsw-alias-state-warn-label: #e0a94e;
+  --dsw-alias-state-business-primary: #7f9fe0;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #7f9fe0 10%, transparent);
+  --dsw-alias-state-idle-primary: #5d5670;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #57b98a 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #e05f6e 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #b0a8c4 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #57b98a 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #57b98a 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #57b98a 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #e05f6e 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #e05f6e 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #e05f6e 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #b0a8c4 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #14101d;
+  --dsw-alias-scrollbar-bg-l2: #1a1526;
+  --dsw-alias-scrollbar-hover-l1: #1f1930;
+  --dsw-alias-scrollbar-hover-l2: #1f1930;
+  --dsw-alias-menu-icon: #b0a8c4;
+  --dsw-alias-menu-group-header-fill: #1a1526;
+  --dsw-alias-tooltip-bg: #f0ecf7;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #211b30;
+  --dsw-alias-toast-label: #f0ecf7;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #b0a8c4;
+  --dsw-alias-turn-trigger-bg: #1a1526;
+  --dsw-alias-turn-trigger-bg-hover: #211b30;
+  --dsw-alias-button-primary-fill: #8f6bd8;
+  --dsw-alias-button-primary-hover: #6b4a9c;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #8f6bd8 45%, transparent);
+  --dsw-alias-button-contrast-fill: #6b4a9c;
+  --dsw-alias-button-elevated-fill: #14101d;
+  --dsw-alias-button-floating-fill: #1a1526;
+  --dsw-alias-button-floating-hover: #1f1930;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #8f6bd8 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #c7b3f0;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #8f6bd8 24%, transparent);
+  --dsw-alias-button-info-fill: #7f9fe0;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #7f9fe0 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #1a1526;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #1f1930;
+  --dsw-alias-onboarding-card-fill: #14101d;
+  --dsw-alias-onboarding-secondary-fill: #1a1526;
+  --dsw-alias-onboarding-checkbox-border: #352c4a;
+  --dsw-alias-settings-card-fill: #1a1526;
+  --dsw-alias-settings-card-stroke: #352c4a;
+  --dsw-specific-bubble: #1a1526;
+  --dsw-specific-bubble-highlight: #d6c8a4;
+  --dsw-specific-input-major: #161220;
+  --dsw-specific-login-input: #14101d;
+  --dsw-specific-menu: #14101d;
+  --dsw-specific-selector: #1a1526;
+  --dsw-specific-sidebar-fill: #14101d;
+  --dsw-specific-sidebar-nav-item-active: #28213c;
+  --dsw-specific-sidebar-nav-item-active-accent: #8f6bd8;
+  --dsw-specific-sidebar-nav-item-hover: #1f1930;
+  --dsw-specific-tip: #211b30;
   --dsw-static-deepseek-50: #1a1127;
   --dsw-static-blue-50: #1a1127;
   --dsw-static-deepseek-50p: #281a3c;
@@ -345,69 +444,8 @@ body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] {
   --dsw-static-red-500: #e05f6e;
   --dsw-static-red-600: color-mix(in srgb, #e05f6e 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #e05f6e 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-pokemon-mimikyu] {
-  --dsw-alias-button-primary-fill: #6f4fb3;
-  --dsw-alias-button-primary-hover: #5a3f96;
-  --dsw-alias-button-primary-dimmed: #e3d6f6;
-  --dsw-alias-button-info-fill: #6f4fb3;
-  --dsw-alias-button-info-hover: #5a3f96;
-  --dsw-alias-button-contrast-fill: #6f4fb3;
-  --dsw-alias-button-ghost-active-fill: #efe8fa;
-  --dsw-alias-button-ghost-active-hover: #e3d6f6;
-  --dsw-alias-button-ghost-active-border: #b8a0dd;
-  --dsw-alias-button-elevated-fill: #ece5d4;
-  --dsw-alias-button-floating-fill: #ece5d4;
-  --dsw-alias-button-floating-hover: #e6ddc8;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(111, 79, 179, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(111, 79, 179, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(111, 79, 179, 0.6);
-  --dsw-specific-bubble: #2a2338;
-  --dsw-specific-bubble-highlight: #cfbcea;
-  --dsw-specific-input-major: #ece5d4;
-  --dsw-specific-login-input: #ece5d4;
-  --dsw-specific-sidebar-fill: #6f4fb3;
-  --dsw-specific-sidebar-nav-item-active: #e3d6f6;
-  --dsw-specific-sidebar-nav-item-hover: #e6ddc8;
-  --dsw-specific-sidebar-nav-item-active-accent: #b8a0dd;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #8f6bd8;
-  --dsw-alias-button-primary-hover: #a586e6;
-  --dsw-alias-button-primary-dimmed: #281a3c;
-  --dsw-alias-button-info-fill: #8f6bd8;
-  --dsw-alias-button-info-hover: #a586e6;
-  --dsw-alias-button-contrast-fill: #8f6bd8;
-  --dsw-alias-button-ghost-active-fill: #241a38;
-  --dsw-alias-button-ghost-active-hover: #281a3c;
-  --dsw-alias-button-ghost-active-border: #472f69;
-  --dsw-alias-button-elevated-fill: #14101d;
-  --dsw-alias-button-floating-fill: #14101d;
-  --dsw-alias-button-floating-hover: #1f1930;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(143, 107, 216, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(143, 107, 216, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(143, 107, 216, 0.6);
-  --dsw-specific-bubble: #d6c8a4;
-  --dsw-specific-bubble-highlight: #372452;
-  --dsw-specific-input-major: #14101d;
-  --dsw-specific-login-input: #14101d;
-  --dsw-specific-sidebar-fill: #8f6bd8;
-  --dsw-specific-sidebar-nav-item-active: #281a3c;
-  --dsw-specific-sidebar-nav-item-hover: #1f1930;
-  --dsw-specific-sidebar-nav-item-active-accent: #472f69;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-pokemon-mimikyu] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-pokemon-mimikyu]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-pokemon-mimikyu]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -421,9 +459,7 @@ body[data-dsh-pokemon-mimikyu]::before {
       radial-gradient(ellipse at 8% 92%, rgba(111, 79, 179, 0.05) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 500px 500px, 100% 100%, 100% 100%;
     opacity: 0.7;
-}
-
-body[data-dsh-pokemon-mimikyu]::after {
+}body[data-dsh-pokemon-mimikyu]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -435,128 +471,45 @@ body[data-dsh-pokemon-mimikyu]::after {
     background-size: 220px 220px, 260px 260px;
     opacity: 0.05;
     animation: pokemon-mimikyu-mimi-scribble-drift 26s linear infinite;
-}
-
-body[data-dsh-pokemon-mimikyu] [class*='sider'] [class*='session'],
-body[data-dsh-pokemon-mimikyu] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-pokemon-mimikyu] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(169, 154, 118, 0.22);
-    box-shadow: inset 3px 0 0 0 rgba(169, 154, 118, 0.85);
-}
-
-body[data-dsh-pokemon-mimikyu] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-pokemon-mimikyu] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(111, 79, 179, 0.2), rgba(111, 79, 179, 0.06) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 #6f4fb3;
-}
-
-body[data-dsh-pokemon-mimikyu] button[class*='primary'],
-body[data-dsh-pokemon-mimikyu] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #583d90 0%, #6f4fb3 55%, #8262c2 100%) !important;
-    border: 1px solid #cfbcea !important;
-    color: var(--text-white) !important;
-    box-shadow: 0 2px 8px rgba(111, 79, 179, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
-    text-shadow: 0 1px 2px rgba(40, 25, 70, 0.55);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-pokemon-mimikyu] button[class*='primary']:hover,
-body[data-dsh-pokemon-mimikyu] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.07);
-    box-shadow: 0 3px 14px rgba(111, 79, 179, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.32);
-    animation: pokemon-mimikyu-mimi-claw-glow 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-pokemon-mimikyu] pre,
-body[data-dsh-pokemon-mimikyu] .markdown-body pre {
+}body[data-dsh-pokemon-mimikyu] pre{
   background: linear-gradient(180deg, #2c2440 0%, #241d34 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #8f6bd8 !important;
     border-radius: 8px;
     box-shadow: inset 0 0 20px rgba(111, 79, 179, 0.2);
-}
-
-body[data-dsh-pokemon-mimikyu] pre code,
-body[data-dsh-pokemon-mimikyu] .markdown-body pre code {
+}body[data-dsh-pokemon-mimikyu] pre code{
   background: transparent !important;
     color: #e2daf2 !important;
     text-shadow: none;
-}
-
-body[data-dsh-pokemon-mimikyu] code,
-body[data-dsh-pokemon-mimikyu] .markdown-body code {
+}body[data-dsh-pokemon-mimikyu] code{
   background: rgba(111, 79, 179, 0.12);
     color: #583d90;
     border: 1px solid rgba(111, 79, 179, 0.32);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-pokemon-mimikyu]::selection {
-  background: color-mix(in srgb, var(--brand) 25%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-pokemon-mimikyu] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 6px rgba(62, 55, 39, 0.08), 0 0 0 1px rgba(111, 79, 179, 0.14);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-pokemon-mimikyu] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-pokemon-mimikyu] [class*='agent-bar'],
-body[data-dsh-pokemon-mimikyu] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(201, 106, 156, 0.4);
-}
-
-body[data-dsh-pokemon-mimikyu]::-webkit-scrollbar {
+}body[data-dsh-pokemon-mimikyu]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 25%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-pokemon-mimikyu]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-pokemon-mimikyu]::-webkit-scrollbar-thumb {
+}body[data-dsh-pokemon-mimikyu]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #8262c2, #422d6d);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-pokemon-mimikyu]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-pokemon-mimikyu]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #9c7fd0, #583d90);
-}
-
-body[data-dsh-pokemon-mimikyu]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-pokemon-mimikyu] .markdown-body a,
-body[data-dsh-pokemon-mimikyu] a {
+}body[data-dsh-pokemon-mimikyu]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-pokemon-mimikyu] a{
   color: #5a3f96;
-}
-
-body[data-dsh-pokemon-mimikyu] .markdown-body a:hover,
-body[data-dsh-pokemon-mimikyu] a:hover {
+}body[data-dsh-pokemon-mimikyu] a:hover{
   color: #6f4fb3;
-}
-
-body[data-dsh-pokemon-mimikyu] .markdown-body blockquote {
+}body[data-dsh-pokemon-mimikyu] blockquote{
   border-left: 3px solid #6f4fb3;
     background: rgba(111, 79, 179, 0.08);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-pokemon-mimikyu] .markdown-body hr,
-body[data-dsh-pokemon-mimikyu] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-pokemon-mimikyu] hr{
   border: none;
     height: 8px;
     background-image:
@@ -566,21 +519,7 @@ body[data-dsh-pokemon-mimikyu] hr {
     background-repeat: repeat-x;
     background-position: 0 1px, 7px 1px;
     opacity: 0.55;
-}
-
-body[data-dsh-pokemon-mimikyu] .arco-btn:not(button[class*='primary']):hover {
-  color: #523784 !important;
-    border-color: rgba(111, 79, 179, 0.5) !important;
-    background-color: rgba(111, 79, 179, 0.1) !important;
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::before {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -594,9 +533,7 @@ body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::before {
       radial-gradient(ellipse at 8% 92%, rgba(214, 200, 164, 0.06) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 500px 500px, 100% 100%, 100% 100%;
     opacity: 0.9;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::after {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -608,128 +545,45 @@ body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::after {
     background-size: 220px 220px, 260px 260px;
     opacity: 0.06;
     animation: pokemon-mimikyu-mimi-scribble-drift 26s linear infinite;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] [class*='sider'] [class*='session'],
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(214, 200, 164, 0.1);
-    box-shadow: inset 3px 0 0 0 rgba(214, 200, 164, 0.55);
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(143, 107, 216, 0.3), rgba(143, 107, 216, 0.08) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 #8f6bd8;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #6b4a9c 0%, #8f6bd8 55%, #a586e6 100%) !important;
-    border: 1px solid #c7b3f0 !important;
-    color: var(--text-white) !important;
-    box-shadow: 0 2px 8px rgba(143, 107, 216, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.22);
-    text-shadow: 0 1px 2px rgba(40, 25, 70, 0.6);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.12);
-    box-shadow: 0 3px 16px rgba(143, 107, 216, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    animation: pokemon-mimikyu-mimi-claw-glow 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] pre,
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #141020 0%, #100c1a 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #8f6bd8 !important;
     border-radius: 8px;
     box-shadow: inset 0 0 24px rgba(55, 36, 82, 0.4);
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] pre code,
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #ddd4ee !important;
     text-shadow: none;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] code,
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] .markdown-body code {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] code{
   background: rgba(143, 107, 216, 0.18);
     color: #c7b3f0;
     border: 1px solid rgba(143, 107, 216, 0.35);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 45%, transparent);
-    color: var(--text-white);
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 8px rgba(6, 4, 10, 0.5), 0 0 0 1px rgba(143, 107, 216, 0.15);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(214, 133, 173, 0.4);
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 45%, transparent);
+    color: var(--dsw-alias-label-primary-inverted);
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #8f6bd8, #472f69);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #a586e6, #583c81);
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] a {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] a{
   color: #b89ceb;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] a:hover {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] a:hover{
   color: #d0bdf3;
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] blockquote{
   border-left: 3px solid #8f6bd8;
     background: rgba(143, 107, 216, 0.1);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] hr{
   border: none;
     height: 8px;
     background-image:
@@ -741,29 +595,11 @@ body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] hr {
     opacity: 0.6;
 }
 
-body[data-dsh-pokemon-mimikyu][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: #c7b3f0 !important;
-    border-color: rgba(143, 107, 216, 0.55) !important;
-    background-color: rgba(143, 107, 216, 0.12) !important;
-}
-
 /* --- keyframes --- */
-@keyframes pokemon-mimikyu-mimi-scribble-drift {
-  0% { background-position: 0 0, 0 0; }
-  100% { background-position: 220px 110px, -260px 130px; }
+@keyframes pokemon-mimikyu-mimi-scribble-drift {0%{ background-position: 0 0, 0 0; }100%{ background-position: 220px 110px, -260px 130px; }
 }
 
-@keyframes pokemon-mimikyu-mimi-shadow-breathe {
-  0%, 100% { box-shadow: 0 2px 8px rgba(111, 79, 179, 0.14); }
-  50% { box-shadow: 0 2px 14px rgba(111, 79, 179, 0.32); }
-}
-
-@keyframes pokemon-mimikyu-mimi-claw-glow {
-  0%, 100% { box-shadow: 0 3px 12px rgba(111, 79, 179, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3); }
-  50% { box-shadow: 0 3px 18px rgba(111, 79, 179, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.36); }
-}
-
-@keyframes pokemon-mimikyu-mimi-scribble-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-pokemon-mimikyu]{
+  --dsh-windows-content-radius: 6px;
 }

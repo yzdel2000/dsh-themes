@@ -1,164 +1,136 @@
-/* festival-dragonboat — 端午 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-festival-dragonboat], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-festival-dragonboat] {
+/* festival-dragonboat — 端午 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-festival-dragonboat],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-festival-dragonboat]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #1a2b21;
-  background-color: #f2f6ef;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] {
-  color: #e6f0e9;
-  background-color: #0a120d;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-festival-dragonboat] {
-  --color-primary: #2e7d4f;
-  --primary: #2e7d4f;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 46, 125, 79;
-  --color-primary-light-1: #4b9468;
-  --color-primary-light-2: #71b189;
-  --color-primary-light-3: #a8d2b8;
-  --color-primary-dark-1: #1f5c38;
-  --brand: #2e7d4f;
-  --brand-light: #e2f1e7;
-  --brand-hover: #3f9163;
-  --color-brand-fill: #2e7d4f;
-  --color-brand-bg: #e2f1e7;
-  --aou-1: #e8f4ec;
-  --aou-2: #d2e9da;
-  --aou-3: #b5dcc2;
-  --aou-4: #8fc7a3;
-  --aou-5: #62ab7e;
-  --aou-6: #2e7d4f;
   --aou-7: #256b42;
-  --aou-8: #1f5c38;
-  --aou-9: #17452b;
-  --aou-10: #0f301d;
-  --bg-base: #f2f6ef;
-  --bg-1: #fafcf8;
-  --bg-2: #eef4ea;
-  --bg-3: #e3ecdd;
-  --bg-4: #d5e2cc;
-  --bg-5: #c2d4b6;
-  --bg-6: #a8bf9a;
-  --bg-8: #6f8a63;
-  --bg-9: #4a6242;
-  --bg-10: #2c3f28;
-  --color-bg-1: #fafcf8;
-  --color-bg-2: #eef4ea;
-  --color-bg-3: #e3ecdd;
-  --color-bg-4: #d5e2cc;
-  --bg-hover: #e7f0e1;
-  --bg-active: #dae7d0;
-  --text-primary: #1a2b21;
-  --text-secondary: #48614f;
-  --text-disabled: #93a693;
-  --text-0: #0e1a12;
-  --text-white: #ffffff;
-  --color-text-1: #1a2b21;
-  --color-text-2: #48614f;
-  --color-text-3: #6c846f;
-  --color-text-4: #93a693;
-  --border-base: #ccd9c2;
-  --border-light: #dde6d4;
-  --border-special: #d8a49c;
-  --color-border: #ccd9c2;
-  --color-border-1: #ccd9c2;
-  --color-border-2: #dde6d4;
-  --fill: #eef4ea;
-  --color-fill: #eef4ea;
-  --fill-0: #fafcf8;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #fbfdf9;
-  --inverse: #1a2b21;
-  --success: #2e7d4f;
-  --warning: #c98a1b;
-  --danger: #c0392b;
-  --info: #3a6fc4;
-  --message-user-bg: #fdf3ec;
-  --message-tips-bg: #f6e9dd;
-  --workspace-btn-bg: #e2f1e7;
-  --color-guid-agent-bar: #eef4ea;
   --db-lacquer-hi: #e05244;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] {
-  --color-primary: #58b386;
-  --primary: #58b386;
-  --primary-rgb: 88, 179, 134;
-  --color-primary-light-1: #74c39a;
-  --color-primary-light-2: #93d2b2;
-  --color-primary-light-3: #bce5cf;
-  --color-primary-dark-1: #3f9168;
-  --brand: #58b386;
-  --brand-light: #15281e;
-  --brand-hover: #74c39a;
-  --color-brand-fill: #58b386;
-  --color-brand-bg: #15281e;
-  --aou-1: #10241a;
-  --aou-2: #163625;
-  --aou-3: #1f4c33;
-  --aou-4: #2a6644;
-  --aou-5: #388258;
-  --aou-6: #4ba272;
-  --aou-7: #58b386;
-  --aou-8: #7fc7a2;
-  --aou-9: #abdfc4;
-  --aou-10: #dcf3e6;
-  --bg-base: #0a120d;
-  --bg-1: #101a14;
-  --bg-2: #16231b;
-  --bg-3: #1d2d23;
-  --bg-4: #26392d;
-  --bg-5: #314739;
-  --bg-6: #405949;
-  --bg-8: #5f7a67;
-  --bg-9: #8ba390;
-  --bg-10: #c2d3c6;
-  --color-bg-1: #101a14;
-  --color-bg-2: #16231b;
-  --color-bg-3: #1d2d23;
-  --color-bg-4: #26392d;
-  --bg-hover: #1b2a21;
-  --bg-active: #24382c;
-  --text-primary: #e6f0e9;
-  --text-secondary: #a3b8a9;
-  --text-disabled: #526358;
-  --text-0: #f4faf6;
-  --text-white: #ffffff;
-  --color-text-1: #e6f0e9;
-  --color-text-2: #a3b8a9;
-  --color-text-3: #7b8f81;
-  --color-text-4: #526358;
-  --border-base: #2b3d31;
-  --border-light: #203027;
-  --border-special: #6e342c;
-  --color-border: #2b3d31;
-  --color-border-1: #2b3d31;
-  --color-border-2: #203027;
-  --fill: #16231b;
-  --color-fill: #16231b;
-  --fill-0: #101a14;
-  --fill-white-to-black: #0a120d;
-  --dialog-fill-0: #131f17;
-  --inverse: #e6f0e9;
-  --success: #58b386;
-  --warning: #e0a92e;
-  --danger: #e05244;
-  --info: #6f9be0;
-  --message-user-bg: #3a1f1a;
-  --message-tips-bg: #1a2a20;
-  --workspace-btn-bg: #15281e;
-  --color-guid-agent-bar: #131f17;
-  --db-lacquer-hi: #f0715f;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-festival-dragonboat] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #f2f6ef;
+  --dsw-alias-bg-l1: #fafcf8;
+  --dsw-alias-bg-l2: #eef4ea;
+  --dsw-alias-bg-layer-1: #fafcf8;
+  --dsw-alias-bg-layer-2: #eef4ea;
+  --dsw-alias-bg-layer-3: #e3ecdd;
+  --dsw-alias-bg-layer-4: #d5e2cc;
+  --dsw-alias-bg-overlay: #fbfdf9;
+  --dsw-alias-bg-module-platform: #eef4ea;
+  --dsw-alias-bg-multi-select: #dae7d0;
+  --dsw-alias-bg-skeleton: #e3ecdd;
+  --dsw-alias-bg-document-preview: #fafcf8;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #2e7d4f 30%, transparent);
+  --dsw-alias-label-primary: #1a2b21;
+  --dsw-alias-label-secondary: #48614f;
+  --dsw-alias-label-tertiary: #6c846f;
+  --dsw-alias-label-quaternary: #93a693;
+  --dsw-alias-label-caption: #0e1a12;
+  --dsw-alias-label-dimmed: #93a693;
+  --dsw-alias-label-primary-dimmed: #48614f;
+  --dsw-alias-label-primary-bluish: #1a2b21;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #1a2b21;
+  --dsw-alias-label-error: #c0392b;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #1a2b21 30%, transparent);
+  --dsw-alias-label-deep-diving: #3a6fc4;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #3a6fc4 55%, transparent);
+  --dsw-alias-link: #2e7d4f;
+  --dsw-alias-border-l1: #dde6d4;
+  --dsw-alias-border-l2: #ccd9c2;
+  --dsw-alias-border-l2-darkmode-thin: #dde6d4;
+  --dsw-alias-border-l3: #d8a49c;
+  --dsw-alias-border-l4: #d8a49c;
+  --dsw-alias-border-inverted: #1a2b21;
+  --dsw-alias-border-inverted2: #1a2b21;
+  --dsw-alias-separator-primary: #dde6d4;
+  --dsw-alias-brand-primary: #2e7d4f;
+  --dsw-alias-brand-primary-invert: #1a2b21;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #2e7d4f;
+  --dsw-alias-markdown-citation: #4b9468;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #2e7d4f 14%, transparent);
+  --dsw-alias-markdown-inline-code: #eef4ea;
+  --dsw-alias-markdown-code-block: #fafcf8;
+  --dsw-alias-markdown-code-block-banner: #eef4ea;
+  --dsw-alias-markdown-code-segment-selected: #e3ecdd;
+  --dsw-alias-markdown-code-segment-unselected: #fafcf8;
+  --dsw-alias-markdown-placeholder: #93a693;
+  --dsw-alias-fill-l1: #eef4ea;
+  --dsw-alias-fill-l2: #fafcf8;
+  --dsw-alias-fill-tertiary: #e3ecdd;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #1a2b21 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #e7f0e1;
+  --dsw-alias-interactive-bg-active: #dae7d0;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #2e7d4f 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #c0392b 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #e3ecdd;
+  --dsw-alias-state-error-primary: #c0392b;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #c0392b 15%, transparent);
+  --dsw-alias-state-success-primary: #2e7d4f;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #2e7d4f 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #2e7d4f 8%, transparent);
+  --dsw-alias-state-warn-primary: #c98a1b;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #c98a1b 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #c98a1b 8%, transparent);
+  --dsw-alias-state-warn-label: #c98a1b;
+  --dsw-alias-state-business-primary: #3a6fc4;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #3a6fc4 10%, transparent);
+  --dsw-alias-state-idle-primary: #93a693;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #2e7d4f 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #c0392b 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #48614f 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #2e7d4f 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #2e7d4f 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #2e7d4f 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #c0392b 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #c0392b 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #c0392b 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #48614f 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #fafcf8;
+  --dsw-alias-scrollbar-bg-l2: #eef4ea;
+  --dsw-alias-scrollbar-hover-l1: #e7f0e1;
+  --dsw-alias-scrollbar-hover-l2: #e7f0e1;
+  --dsw-alias-menu-icon: #48614f;
+  --dsw-alias-menu-group-header-fill: #eef4ea;
+  --dsw-alias-tooltip-bg: #1a2b21;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #e3ecdd;
+  --dsw-alias-toast-label: #1a2b21;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #48614f;
+  --dsw-alias-turn-trigger-bg: #eef4ea;
+  --dsw-alias-turn-trigger-bg-hover: #e3ecdd;
+  --dsw-alias-button-primary-fill: #2e7d4f;
+  --dsw-alias-button-primary-hover: #1f5c38;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #2e7d4f 45%, transparent);
+  --dsw-alias-button-contrast-fill: #1f5c38;
+  --dsw-alias-button-elevated-fill: #fafcf8;
+  --dsw-alias-button-floating-fill: #eef4ea;
+  --dsw-alias-button-floating-hover: #e7f0e1;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #2e7d4f 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #71b189;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #2e7d4f 24%, transparent);
+  --dsw-alias-button-info-fill: #3a6fc4;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #3a6fc4 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #eef4ea;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #e7f0e1;
+  --dsw-alias-onboarding-card-fill: #fafcf8;
+  --dsw-alias-onboarding-secondary-fill: #eef4ea;
+  --dsw-alias-onboarding-checkbox-border: #ccd9c2;
+  --dsw-alias-settings-card-fill: #eef4ea;
+  --dsw-alias-settings-card-stroke: #ccd9c2;
+  --dsw-specific-bubble: #eef4ea;
+  --dsw-specific-bubble-highlight: #fdf3ec;
+  --dsw-specific-input-major: #fbfdf9;
+  --dsw-specific-login-input: #fafcf8;
+  --dsw-specific-menu: #fafcf8;
+  --dsw-specific-selector: #eef4ea;
+  --dsw-specific-sidebar-fill: #fafcf8;
+  --dsw-specific-sidebar-nav-item-active: #dae7d0;
+  --dsw-specific-sidebar-nav-item-active-accent: #2e7d4f;
+  --dsw-specific-sidebar-nav-item-hover: #e7f0e1;
+  --dsw-specific-tip: #e3ecdd;
   --dsw-static-deepseek-50: #e8f4ec;
   --dsw-static-blue-50: #e8f4ec;
   --dsw-static-deepseek-50p: #d2e9da;
@@ -246,10 +218,149 @@ body[data-dsh-festival-dragonboat] {
   --dsw-static-red-500: #c0392b;
   --dsw-static-red-600: color-mix(in srgb, #c0392b 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #c0392b 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --db-leaf: var(--dsw-alias-brand-primary);
+  --db-leaf-vein: var(--dsw-alias-brand-primary);
+  --db-river: var(--dsw-alias-brand-primary);
+  --db-mugwort: var(--dsw-alias-brand-primary);
+  --db-lacquer: var(--dsw-alias-brand-primary);
+  --db-cord-red: var(--dsw-alias-brand-primary);
+  --db-cord-yellow: var(--dsw-alias-brand-primary);
+  --db-cord-blue: var(--dsw-alias-brand-primary);
+  --db-cord-green: var(--dsw-alias-brand-primary);
+  --db-cord-white: var(--dsw-alias-brand-primary);
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme]{
+  color: #e6f0e9;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 88, 179, 134;
+  --aou-7: #58b386;
+  --db-lacquer-hi: #f0715f;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #0a120d;
+  --dsw-alias-bg-l1: #101a14;
+  --dsw-alias-bg-l2: #16231b;
+  --dsw-alias-bg-layer-1: #101a14;
+  --dsw-alias-bg-layer-2: #16231b;
+  --dsw-alias-bg-layer-3: #1d2d23;
+  --dsw-alias-bg-layer-4: #26392d;
+  --dsw-alias-bg-overlay: #131f17;
+  --dsw-alias-bg-module-platform: #16231b;
+  --dsw-alias-bg-multi-select: #24382c;
+  --dsw-alias-bg-skeleton: #1d2d23;
+  --dsw-alias-bg-document-preview: #101a14;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #58b386 30%, transparent);
+  --dsw-alias-label-primary: #e6f0e9;
+  --dsw-alias-label-secondary: #a3b8a9;
+  --dsw-alias-label-tertiary: #7b8f81;
+  --dsw-alias-label-quaternary: #526358;
+  --dsw-alias-label-caption: #f4faf6;
+  --dsw-alias-label-dimmed: #526358;
+  --dsw-alias-label-primary-dimmed: #a3b8a9;
+  --dsw-alias-label-primary-bluish: #e6f0e9;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #e6f0e9;
+  --dsw-alias-label-error: #e05244;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #e6f0e9 30%, transparent);
+  --dsw-alias-label-deep-diving: #6f9be0;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #6f9be0 55%, transparent);
+  --dsw-alias-link: #58b386;
+  --dsw-alias-border-l1: #203027;
+  --dsw-alias-border-l2: #2b3d31;
+  --dsw-alias-border-l2-darkmode-thin: #203027;
+  --dsw-alias-border-l3: #6e342c;
+  --dsw-alias-border-l4: #6e342c;
+  --dsw-alias-border-inverted: #e6f0e9;
+  --dsw-alias-border-inverted2: #e6f0e9;
+  --dsw-alias-separator-primary: #203027;
+  --dsw-alias-brand-primary: #58b386;
+  --dsw-alias-brand-primary-invert: #e6f0e9;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #58b386;
+  --dsw-alias-markdown-citation: #74c39a;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #58b386 14%, transparent);
+  --dsw-alias-markdown-inline-code: #16231b;
+  --dsw-alias-markdown-code-block: #101a14;
+  --dsw-alias-markdown-code-block-banner: #16231b;
+  --dsw-alias-markdown-code-segment-selected: #1d2d23;
+  --dsw-alias-markdown-code-segment-unselected: #101a14;
+  --dsw-alias-markdown-placeholder: #526358;
+  --dsw-alias-fill-l1: #16231b;
+  --dsw-alias-fill-l2: #101a14;
+  --dsw-alias-fill-tertiary: #1d2d23;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #e6f0e9 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #1b2a21;
+  --dsw-alias-interactive-bg-active: #24382c;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #58b386 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #e05244 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #1d2d23;
+  --dsw-alias-state-error-primary: #e05244;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #e05244 15%, transparent);
+  --dsw-alias-state-success-primary: #58b386;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #58b386 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #58b386 8%, transparent);
+  --dsw-alias-state-warn-primary: #e0a92e;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #e0a92e 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #e0a92e 8%, transparent);
+  --dsw-alias-state-warn-label: #e0a92e;
+  --dsw-alias-state-business-primary: #6f9be0;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #6f9be0 10%, transparent);
+  --dsw-alias-state-idle-primary: #526358;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #58b386 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #e05244 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #a3b8a9 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #58b386 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #58b386 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #58b386 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #e05244 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #e05244 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #e05244 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #a3b8a9 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #101a14;
+  --dsw-alias-scrollbar-bg-l2: #16231b;
+  --dsw-alias-scrollbar-hover-l1: #1b2a21;
+  --dsw-alias-scrollbar-hover-l2: #1b2a21;
+  --dsw-alias-menu-icon: #a3b8a9;
+  --dsw-alias-menu-group-header-fill: #16231b;
+  --dsw-alias-tooltip-bg: #e6f0e9;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #1d2d23;
+  --dsw-alias-toast-label: #e6f0e9;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #a3b8a9;
+  --dsw-alias-turn-trigger-bg: #16231b;
+  --dsw-alias-turn-trigger-bg-hover: #1d2d23;
+  --dsw-alias-button-primary-fill: #58b386;
+  --dsw-alias-button-primary-hover: #3f9168;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #58b386 45%, transparent);
+  --dsw-alias-button-contrast-fill: #3f9168;
+  --dsw-alias-button-elevated-fill: #101a14;
+  --dsw-alias-button-floating-fill: #16231b;
+  --dsw-alias-button-floating-hover: #1b2a21;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #58b386 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #93d2b2;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #58b386 24%, transparent);
+  --dsw-alias-button-info-fill: #6f9be0;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #6f9be0 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #16231b;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #1b2a21;
+  --dsw-alias-onboarding-card-fill: #101a14;
+  --dsw-alias-onboarding-secondary-fill: #16231b;
+  --dsw-alias-onboarding-checkbox-border: #2b3d31;
+  --dsw-alias-settings-card-fill: #16231b;
+  --dsw-alias-settings-card-stroke: #2b3d31;
+  --dsw-specific-bubble: #16231b;
+  --dsw-specific-bubble-highlight: #3a1f1a;
+  --dsw-specific-input-major: #131f17;
+  --dsw-specific-login-input: #101a14;
+  --dsw-specific-menu: #101a14;
+  --dsw-specific-selector: #16231b;
+  --dsw-specific-sidebar-fill: #101a14;
+  --dsw-specific-sidebar-nav-item-active: #24382c;
+  --dsw-specific-sidebar-nav-item-active-accent: #58b386;
+  --dsw-specific-sidebar-nav-item-hover: #1b2a21;
+  --dsw-specific-tip: #1d2d23;
   --dsw-static-deepseek-50: #10241a;
   --dsw-static-blue-50: #10241a;
   --dsw-static-deepseek-50p: #163625;
@@ -337,69 +448,8 @@ body[data-dsh-festival-dragonboat][data-ds-dark-theme] {
   --dsw-static-red-500: #e05244;
   --dsw-static-red-600: color-mix(in srgb, #e05244 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #e05244 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-festival-dragonboat] {
-  --dsw-alias-button-primary-fill: #2e7d4f;
-  --dsw-alias-button-primary-hover: #3f9163;
-  --dsw-alias-button-primary-dimmed: #d2e9da;
-  --dsw-alias-button-info-fill: #2e7d4f;
-  --dsw-alias-button-info-hover: #3f9163;
-  --dsw-alias-button-contrast-fill: #256b42;
-  --dsw-alias-button-ghost-active-fill: #e2f1e7;
-  --dsw-alias-button-ghost-active-hover: #d2e9da;
-  --dsw-alias-button-ghost-active-border: #8fc7a3;
-  --dsw-alias-button-elevated-fill: #fafcf8;
-  --dsw-alias-button-floating-fill: #fafcf8;
-  --dsw-alias-button-floating-hover: #e7f0e1;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(46, 125, 79, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(46, 125, 79, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(46, 125, 79, 0.6);
-  --dsw-specific-bubble: #fdf3ec;
-  --dsw-specific-bubble-highlight: #b5dcc2;
-  --dsw-specific-input-major: #fafcf8;
-  --dsw-specific-login-input: #fafcf8;
-  --dsw-specific-sidebar-fill: #2e7d4f;
-  --dsw-specific-sidebar-nav-item-active: #d2e9da;
-  --dsw-specific-sidebar-nav-item-hover: #e7f0e1;
-  --dsw-specific-sidebar-nav-item-active-accent: #8fc7a3;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #58b386;
-  --dsw-alias-button-primary-hover: #74c39a;
-  --dsw-alias-button-primary-dimmed: #163625;
-  --dsw-alias-button-info-fill: #58b386;
-  --dsw-alias-button-info-hover: #74c39a;
-  --dsw-alias-button-contrast-fill: #58b386;
-  --dsw-alias-button-ghost-active-fill: #15281e;
-  --dsw-alias-button-ghost-active-hover: #163625;
-  --dsw-alias-button-ghost-active-border: #2a6644;
-  --dsw-alias-button-elevated-fill: #101a14;
-  --dsw-alias-button-floating-fill: #101a14;
-  --dsw-alias-button-floating-hover: #1b2a21;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(88, 179, 134, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(88, 179, 134, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(88, 179, 134, 0.6);
-  --dsw-specific-bubble: #3a1f1a;
-  --dsw-specific-bubble-highlight: #1f4c33;
-  --dsw-specific-input-major: #101a14;
-  --dsw-specific-login-input: #101a14;
-  --dsw-specific-sidebar-fill: #58b386;
-  --dsw-specific-sidebar-nav-item-active: #163625;
-  --dsw-specific-sidebar-nav-item-hover: #1b2a21;
-  --dsw-specific-sidebar-nav-item-active-accent: #2a6644;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-festival-dragonboat] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-festival-dragonboat]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-festival-dragonboat]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -410,9 +460,7 @@ body[data-dsh-festival-dragonboat]::before {
       repeating-linear-gradient(58deg, var(--db-leaf) 0 1.5px, transparent 1.5px 14px),
       repeating-linear-gradient(-58deg, var(--db-leaf-vein) 0 1px, transparent 1px 14px);
     background-size: 220px 220px, 220px 220px;
-}
-
-body[data-dsh-festival-dragonboat]::after {
+}body[data-dsh-festival-dragonboat]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -425,100 +473,32 @@ body[data-dsh-festival-dragonboat]::after {
     background-size: 42px 20px, 42px 20px;
     background-position: 0 0, 21px 10px;
     animation: festival-dragonboat-db-wave-drift 14s linear infinite;
-}
-
-body[data-dsh-festival-dragonboat] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.22s ease, box-shadow 0.22s ease;
-}
-
-body[data-dsh-festival-dragonboat] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 3px 0 0 0 var(--db-leaf-vein);
-}
-
-body[data-dsh-festival-dragonboat] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-festival-dragonboat] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(46, 125, 79, 0.2), rgba(46, 125, 79, 0.05) 62%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--db-mugwort), inset 6px 0 0 0 var(--db-lacquer);
-    font-weight: 600;
-}
-
-body[data-dsh-festival-dragonboat] button[class*='primary'],
-body[data-dsh-festival-dragonboat] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #9c2b1f 0%, var(--db-lacquer) 55%, var(--db-lacquer-hi) 100%) !important;
-    border: 1px solid #e58a80 !important;
-    color: var(--text-white) !important;
-    box-shadow: 0 2px 8px rgba(192, 57, 43, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.25);
-    text-shadow: 0 1px 2px rgba(90, 16, 10, 0.5);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-festival-dragonboat] button[class*='primary']:hover,
-body[data-dsh-festival-dragonboat] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.1);
-    animation: festival-dragonboat-db-drum-beat 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-festival-dragonboat] pre,
-body[data-dsh-festival-dragonboat] .markdown-body pre {
+}body[data-dsh-festival-dragonboat] pre{
   background: linear-gradient(180deg, #14301f 0%, #0f2618 100%) !important;
-    border: 1px solid var(--border-base) !important;
+    border: 1px solid var(--dsw-alias-border-l2) !important;
     border-left: 3px solid var(--db-lacquer) !important;
     border-radius: 8px;
     box-shadow: inset 0 2px 12px rgba(8, 20, 12, 0.55);
-}
-
-body[data-dsh-festival-dragonboat] pre code,
-body[data-dsh-festival-dragonboat] .markdown-body pre code {
+}body[data-dsh-festival-dragonboat] pre code{
   background: transparent !important;
     color: #d9ecdf !important;
     border: none;
     text-shadow: none;
-}
-
-body[data-dsh-festival-dragonboat] code,
-body[data-dsh-festival-dragonboat] .markdown-body code {
-  background-color: var(--brand-light);
+}body[data-dsh-festival-dragonboat] code{
+  background-color: var(--dsw-alias-markdown-citation);
     color: var(--db-leaf);
     border: 1px solid rgba(46, 125, 79, 0.35);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-festival-dragonboat]::selection {
-  background: color-mix(in srgb, var(--brand) 28%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-festival-dragonboat] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 6px rgba(31, 92, 56, 0.08), 0 0 0 1px rgba(46, 125, 79, 0.08);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-festival-dragonboat] [class*='guidInputCard']:hover {
-  border-color: var(--db-leaf-vein) !important;
-}
-
-body[data-dsh-festival-dragonboat] [class*='agent-bar'],
-body[data-dsh-festival-dragonboat] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(192, 57, 43, 0.4);
-}
-
-body[data-dsh-festival-dragonboat] .markdown-body blockquote {
+}body[data-dsh-festival-dragonboat]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 28%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-festival-dragonboat] blockquote{
   border-left: 3px solid var(--db-mugwort);
     background: rgba(46, 125, 79, 0.08);
     border-radius: 0 8px 8px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-festival-dragonboat] .markdown-body hr,
-body[data-dsh-festival-dragonboat] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-festival-dragonboat] hr{
   border: none;
     height: 6px;
     border-radius: 3px;
@@ -529,50 +509,22 @@ body[data-dsh-festival-dragonboat] hr {
     background-size: 60px 100%;
     background-repeat: repeat-x;
     opacity: 0.75;
-}
-
-body[data-dsh-festival-dragonboat] .markdown-body a,
-body[data-dsh-festival-dragonboat] a {
+}body[data-dsh-festival-dragonboat] a{
   color: var(--aou-7);
-}
-
-body[data-dsh-festival-dragonboat] .markdown-body a:hover,
-body[data-dsh-festival-dragonboat] a:hover {
+}body[data-dsh-festival-dragonboat] a:hover{
   color: var(--db-lacquer);
-}
-
-body[data-dsh-festival-dragonboat] .arco-btn:not(button[class*='primary']):hover {
-  color: var(--db-lacquer) !important;
-    border-color: rgba(192, 57, 43, 0.5) !important;
-    background-color: rgba(192, 57, 43, 0.08) !important;
-}
-
-body[data-dsh-festival-dragonboat]::-webkit-scrollbar {
+}body[data-dsh-festival-dragonboat]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-festival-dragonboat]::-webkit-scrollbar-thumb {
+}body[data-dsh-festival-dragonboat]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--db-leaf-vein), var(--db-leaf));
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-festival-dragonboat]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-festival-dragonboat]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, var(--db-lacquer-hi), var(--db-lacquer));
-}
-
-body[data-dsh-festival-dragonboat]::-webkit-scrollbar-track {
-  background: var(--bg-2);
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme]::before {
+}body[data-dsh-festival-dragonboat]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-2);
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -583,9 +535,7 @@ body[data-dsh-festival-dragonboat][data-ds-dark-theme]::before {
       repeating-linear-gradient(58deg, var(--db-leaf-vein) 0 1.5px, transparent 1.5px 14px),
       repeating-linear-gradient(-58deg, var(--db-mugwort) 0 1px, transparent 1px 14px);
     background-size: 220px 220px, 220px 220px;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme]::after {
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -598,100 +548,32 @@ body[data-dsh-festival-dragonboat][data-ds-dark-theme]::after {
     background-size: 42px 20px, 42px 20px;
     background-position: 0 0, 21px 10px;
     animation: festival-dragonboat-db-night-wave 14s linear infinite;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.22s ease, box-shadow 0.22s ease;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 3px 0 0 0 var(--db-leaf-vein);
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(88, 179, 134, 0.24), rgba(88, 179, 134, 0.06) 62%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--db-mugwort), inset 6px 0 0 0 var(--db-lacquer);
-    font-weight: 600;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #a33327 0%, var(--db-lacquer) 55%, var(--db-lacquer-hi) 100%) !important;
-    border: 1px solid #f0928a !important;
-    color: var(--text-white) !important;
-    box-shadow: 0 2px 10px rgba(224, 82, 68, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.24);
-    text-shadow: 0 1px 2px rgba(80, 12, 8, 0.6);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.12);
-    animation: festival-dragonboat-db-night-drum 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] pre,
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #0c1811 0%, #081209 100%) !important;
-    border: 1px solid var(--border-base) !important;
+    border: 1px solid var(--dsw-alias-border-l2) !important;
     border-left: 3px solid var(--db-lacquer) !important;
     border-radius: 8px;
     box-shadow: inset 0 2px 14px rgba(0, 0, 0, 0.6);
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] pre code,
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #cfe6d8 !important;
     border: none;
     text-shadow: none;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] code,
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] .markdown-body code {
-  background-color: var(--brand-light);
-    color: var(--color-primary-light-2);
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme] code{
+  background-color: var(--dsw-alias-markdown-citation);
+    color: var(--dsw-alias-markdown-tag);
     border: 1px solid rgba(88, 179, 134, 0.35);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 40%, transparent);
-    color: var(--text-white);
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 8px rgba(3, 8, 5, 0.55), 0 0 0 1px rgba(88, 179, 134, 0.1);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] [class*='guidInputCard']:hover {
-  border-color: var(--db-leaf-vein) !important;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(224, 82, 68, 0.4);
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 40%, transparent);
+    color: var(--dsw-alias-label-primary-inverted);
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme] blockquote{
   border-left: 3px solid var(--db-mugwort);
     background: rgba(88, 179, 134, 0.09);
     border-radius: 0 8px 8px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme] hr{
   border: none;
     height: 6px;
     border-radius: 3px;
@@ -702,84 +584,37 @@ body[data-dsh-festival-dragonboat][data-ds-dark-theme] hr {
     background-size: 60px 100%;
     background-repeat: repeat-x;
     opacity: 0.7;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] a {
-  color: var(--color-primary-light-1);
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] a:hover {
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme] a{
+  color: var(--dsw-alias-markdown-citation);
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme] a:hover{
   color: var(--db-lacquer-hi);
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: var(--db-lacquer-hi) !important;
-    border-color: rgba(224, 82, 68, 0.5) !important;
-    background-color: rgba(224, 82, 68, 0.1) !important;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--db-leaf-vein), var(--db-leaf));
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, var(--db-lacquer-hi), #a33327);
-}
-
-body[data-dsh-festival-dragonboat][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
+}body[data-dsh-festival-dragonboat][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
 }
 
 /* --- keyframes --- */
-@keyframes festival-dragonboat-db-wave-drift {
-  0% { background-position: 0 0, 21px 10px; }
-  100% { background-position: 42px 20px, 63px 30px; }
+@keyframes festival-dragonboat-db-wave-drift {0%{ background-position: 0 0, 21px 10px; }100%{ background-position: 42px 20px, 63px 30px; }
 }
 
-@keyframes festival-dragonboat-db-zongzi-sway {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(1.2px); }
+
+
+
+
+
+
+@keyframes festival-dragonboat-db-night-wave {0%{ background-position: 0 0, 21px 10px; }100%{ background-position: 42px 20px, 63px 30px; }
 }
 
-@keyframes festival-dragonboat-db-drum-beat {
-  0%, 100% { box-shadow: 0 2px 10px rgba(192, 57, 43, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.28); }
-  30% { box-shadow: 0 3px 20px rgba(192, 57, 43, 0.68), 0 0 12px rgba(224, 169, 46, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.34); }
-  55% { box-shadow: 0 2px 12px rgba(192, 57, 43, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.28); }
-  80% { box-shadow: 0 3px 18px rgba(192, 57, 43, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.32); }
-}
-
-@keyframes festival-dragonboat-db-cord-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
-}
-
-@keyframes festival-dragonboat-db-night-wave {
-  0% { background-position: 0 0, 21px 10px; }
-  100% { background-position: 42px 20px, 63px 30px; }
-}
-
-@keyframes festival-dragonboat-db-night-zongzi-sway {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(1.2px); }
-}
-
-@keyframes festival-dragonboat-db-night-drum {
-  0%, 100% { box-shadow: 0 2px 12px rgba(224, 82, 68, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.26); }
-  30% { box-shadow: 0 3px 24px rgba(224, 82, 68, 0.75), 0 0 14px rgba(232, 187, 78, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.34); }
-  55% { box-shadow: 0 2px 14px rgba(224, 82, 68, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.26); }
-  80% { box-shadow: 0 3px 20px rgba(224, 82, 68, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.3); }
-}
-
-@keyframes festival-dragonboat-db-night-cord-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-festival-dragonboat]{
+  --dsh-windows-content-radius: 4px;
 }

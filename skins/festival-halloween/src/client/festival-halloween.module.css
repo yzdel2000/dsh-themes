@@ -1,172 +1,139 @@
-/* festival-halloween — 万圣节 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-festival-halloween], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-festival-halloween] {
+/* festival-halloween — 万圣节 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-festival-halloween],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-festival-halloween]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #2b1e3c;
-  background-color: #faf3e6;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] {
-  color: #f2ecf7;
-  background-color: #0d0a14;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-festival-halloween] {
-  --color-primary: #c2571a;
-  --primary: #c2571a;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 194, 87, 26;
-  --color-primary-light-1: #d96113;
-  --color-primary-light-2: #f5822a;
-  --color-primary-light-3: #ffa25e;
-  --color-primary-dark-1: #8c3d0b;
-  --brand: #c2571a;
-  --brand-light: #ffe0c4;
-  --brand-hover: #d96113;
-  --color-brand-fill: #c2571a;
-  --color-brand-bg: #ffe8d2;
-  --aou-1: #fff1e3;
-  --aou-2: #ffe0c4;
-  --aou-3: #ffc494;
-  --aou-4: #ffa25e;
-  --aou-5: #f5822a;
-  --aou-6: #d96113;
-  --aou-7: #c2571a;
-  --aou-8: #8c3d0b;
-  --aou-9: #662c08;
-  --aou-10: #451e06;
-  --bg-base: #faf3e6;
-  --bg-1: #f2e7d2;
-  --bg-2: #e9dabf;
-  --bg-3: #decaa6;
-  --bg-4: #d2b98e;
-  --bg-5: #c4a677;
-  --bg-6: #b49262;
-  --bg-8: #93744a;
-  --bg-9: #6b5230;
-  --bg-10: #46351c;
-  --color-bg-1: #f2e7d2;
-  --color-bg-2: #e9dabf;
-  --color-bg-3: #decaa6;
-  --color-bg-4: #d2b98e;
-  --bg-hover: #eee0c8;
-  --bg-active: #e4d2b2;
-  --text-primary: #2b1e3c;
-  --text-secondary: #5f4f78;
-  --text-disabled: #a292b5;
-  --text-0: #1c1229;
-  --text-white: #ffffff;
-  --color-text-1: #2b1e3c;
-  --color-text-2: #5f4f78;
-  --color-text-3: #847696;
-  --color-text-4: #a292b5;
-  --border-base: #d9c4a0;
-  --border-light: #e6d6ba;
-  --border-special: #c98f4a;
-  --color-border: #d9c4a0;
-  --color-border-1: #d9c4a0;
-  --color-border-2: #e6d6ba;
-  --fill: #e9dabf;
-  --color-fill: #e9dabf;
-  --fill-0: #f2e7d2;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #fdf8ee;
-  --inverse: #2b1e3c;
-  --success: #1e9e4a;
-  --warning: #d96113;
-  --danger: #d33a46;
-  --info: #6a4fc0;
-  --message-user-bg: #ffd9ae;
-  --message-tips-bg: #f0e4cd;
-  --workspace-btn-bg: #ffe0c4;
-  --color-guid-agent-bar: #f2e7d2;
   --hw-pumpkin: #d96113;
   --hw-pumpkin-deep: #8c3d0b;
   --hw-purple: #5f3a9e;
   --hw-ghost: #1e9e4a;
   --hw-cream: #faf3e6;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-festival-halloween][data-ds-dark-theme] {
-  --color-primary: #ff7518;
-  --primary: #ff7518;
-  --primary-rgb: 255, 117, 24;
-  --color-primary-light-1: #ff9448;
-  --color-primary-light-2: #ffb884;
-  --color-primary-light-3: #ffe0c4;
-  --color-primary-dark-1: #b34e0f;
-  --brand: #ff7518;
-  --brand-light: #38200c;
-  --brand-hover: #ff9448;
-  --color-brand-fill: #ff7518;
-  --color-brand-bg: #2e1a08;
-  --aou-1: #2a1204;
-  --aou-2: #451e06;
-  --aou-3: #662c08;
-  --aou-4: #8c3d0b;
-  --aou-5: #b34e0f;
-  --aou-6: #d96113;
-  --aou-7: #ff7518;
-  --aou-8: #ff9448;
-  --aou-9: #ffb884;
-  --aou-10: #ffe0c4;
-  --bg-base: #0d0a14;
-  --bg-1: #141020;
-  --bg-2: #1b1529;
-  --bg-3: #231b33;
-  --bg-4: #2c2240;
-  --bg-5: #37294e;
-  --bg-6: #44325c;
-  --bg-8: #5f4680;
-  --bg-9: #8a6fae;
-  --bg-10: #c3b3d8;
-  --color-bg-1: #141020;
-  --color-bg-2: #1b1529;
-  --color-bg-3: #231b33;
-  --color-bg-4: #2c2240;
-  --bg-hover: #211a32;
-  --bg-active: #2a2140;
-  --text-primary: #f2ecf7;
-  --text-secondary: #b3a6c4;
-  --text-disabled: #5c5070;
-  --text-0: #faf7fd;
-  --text-white: #ffffff;
-  --color-text-1: #f2ecf7;
-  --color-text-2: #b3a6c4;
-  --color-text-3: #847696;
-  --color-text-4: #5c5070;
-  --border-base: #352a4a;
-  --border-light: #2a2138;
-  --border-special: #6b4a1e;
-  --color-border: #352a4a;
-  --color-border-1: #352a4a;
-  --color-border-2: #2a2138;
-  --fill: #1b1529;
-  --color-fill: #1b1529;
-  --fill-0: #141020;
-  --fill-white-to-black: #0d0a14;
-  --dialog-fill-0: #171226;
-  --inverse: #f2ecf7;
-  --success: #4fd675;
-  --warning: #ff9448;
-  --danger: #f0505c;
-  --info: #8a7aff;
-  --message-user-bg: #662c08;
-  --message-tips-bg: #1b1529;
-  --workspace-btn-bg: #2e1a08;
-  --color-guid-agent-bar: #141020;
-  --hw-pumpkin: #ff7518;
-  --hw-pumpkin-deep: #c2571a;
-  --hw-purple: #7a4fc0;
-  --hw-ghost: #7cff6b;
-  --hw-night: #0d0a14;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-festival-halloween] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #faf3e6;
+  --dsw-alias-bg-l1: #f2e7d2;
+  --dsw-alias-bg-l2: #e9dabf;
+  --dsw-alias-bg-layer-1: #f2e7d2;
+  --dsw-alias-bg-layer-2: #e9dabf;
+  --dsw-alias-bg-layer-3: #decaa6;
+  --dsw-alias-bg-layer-4: #d2b98e;
+  --dsw-alias-bg-overlay: #fdf8ee;
+  --dsw-alias-bg-module-platform: #e9dabf;
+  --dsw-alias-bg-multi-select: #e4d2b2;
+  --dsw-alias-bg-skeleton: #decaa6;
+  --dsw-alias-bg-document-preview: #f2e7d2;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #c2571a 30%, transparent);
+  --dsw-alias-label-primary: #2b1e3c;
+  --dsw-alias-label-secondary: #5f4f78;
+  --dsw-alias-label-tertiary: #847696;
+  --dsw-alias-label-quaternary: #a292b5;
+  --dsw-alias-label-caption: #1c1229;
+  --dsw-alias-label-dimmed: #a292b5;
+  --dsw-alias-label-primary-dimmed: #5f4f78;
+  --dsw-alias-label-primary-bluish: #2b1e3c;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #2b1e3c;
+  --dsw-alias-label-error: #d33a46;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #2b1e3c 30%, transparent);
+  --dsw-alias-label-deep-diving: #6a4fc0;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #6a4fc0 55%, transparent);
+  --dsw-alias-link: #c2571a;
+  --dsw-alias-border-l1: #e6d6ba;
+  --dsw-alias-border-l2: #d9c4a0;
+  --dsw-alias-border-l2-darkmode-thin: #e6d6ba;
+  --dsw-alias-border-l3: #c98f4a;
+  --dsw-alias-border-l4: #c98f4a;
+  --dsw-alias-border-inverted: #2b1e3c;
+  --dsw-alias-border-inverted2: #2b1e3c;
+  --dsw-alias-separator-primary: #e6d6ba;
+  --dsw-alias-brand-primary: #c2571a;
+  --dsw-alias-brand-primary-invert: #2b1e3c;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #c2571a;
+  --dsw-alias-markdown-citation: #d96113;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #c2571a 14%, transparent);
+  --dsw-alias-markdown-inline-code: #e9dabf;
+  --dsw-alias-markdown-code-block: #f2e7d2;
+  --dsw-alias-markdown-code-block-banner: #e9dabf;
+  --dsw-alias-markdown-code-segment-selected: #decaa6;
+  --dsw-alias-markdown-code-segment-unselected: #f2e7d2;
+  --dsw-alias-markdown-placeholder: #a292b5;
+  --dsw-alias-fill-l1: #e9dabf;
+  --dsw-alias-fill-l2: #f2e7d2;
+  --dsw-alias-fill-tertiary: #decaa6;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #2b1e3c 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #eee0c8;
+  --dsw-alias-interactive-bg-active: #e4d2b2;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #c2571a 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #d33a46 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #decaa6;
+  --dsw-alias-state-error-primary: #d33a46;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #d33a46 15%, transparent);
+  --dsw-alias-state-success-primary: #1e9e4a;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #1e9e4a 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #1e9e4a 8%, transparent);
+  --dsw-alias-state-warn-primary: #d96113;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #d96113 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #d96113 8%, transparent);
+  --dsw-alias-state-warn-label: #d96113;
+  --dsw-alias-state-business-primary: #6a4fc0;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #6a4fc0 10%, transparent);
+  --dsw-alias-state-idle-primary: #a292b5;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #1e9e4a 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #d33a46 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #5f4f78 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #1e9e4a 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #1e9e4a 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #1e9e4a 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #d33a46 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #d33a46 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #d33a46 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #5f4f78 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #f2e7d2;
+  --dsw-alias-scrollbar-bg-l2: #e9dabf;
+  --dsw-alias-scrollbar-hover-l1: #eee0c8;
+  --dsw-alias-scrollbar-hover-l2: #eee0c8;
+  --dsw-alias-menu-icon: #5f4f78;
+  --dsw-alias-menu-group-header-fill: #e9dabf;
+  --dsw-alias-tooltip-bg: #2b1e3c;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #decaa6;
+  --dsw-alias-toast-label: #2b1e3c;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #5f4f78;
+  --dsw-alias-turn-trigger-bg: #e9dabf;
+  --dsw-alias-turn-trigger-bg-hover: #decaa6;
+  --dsw-alias-button-primary-fill: #c2571a;
+  --dsw-alias-button-primary-hover: #8c3d0b;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #c2571a 45%, transparent);
+  --dsw-alias-button-contrast-fill: #8c3d0b;
+  --dsw-alias-button-elevated-fill: #f2e7d2;
+  --dsw-alias-button-floating-fill: #e9dabf;
+  --dsw-alias-button-floating-hover: #eee0c8;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #c2571a 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #f5822a;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #c2571a 24%, transparent);
+  --dsw-alias-button-info-fill: #6a4fc0;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #6a4fc0 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #e9dabf;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #eee0c8;
+  --dsw-alias-onboarding-card-fill: #f2e7d2;
+  --dsw-alias-onboarding-secondary-fill: #e9dabf;
+  --dsw-alias-onboarding-checkbox-border: #d9c4a0;
+  --dsw-alias-settings-card-fill: #e9dabf;
+  --dsw-alias-settings-card-stroke: #d9c4a0;
+  --dsw-specific-bubble: #e9dabf;
+  --dsw-specific-bubble-highlight: #ffd9ae;
+  --dsw-specific-input-major: #fdf8ee;
+  --dsw-specific-login-input: #f2e7d2;
+  --dsw-specific-menu: #f2e7d2;
+  --dsw-specific-selector: #e9dabf;
+  --dsw-specific-sidebar-fill: #f2e7d2;
+  --dsw-specific-sidebar-nav-item-active: #e4d2b2;
+  --dsw-specific-sidebar-nav-item-active-accent: #c2571a;
+  --dsw-specific-sidebar-nav-item-hover: #eee0c8;
+  --dsw-specific-tip: #decaa6;
   --dsw-static-deepseek-50: #fff1e3;
   --dsw-static-blue-50: #fff1e3;
   --dsw-static-deepseek-50p: #ffe0c4;
@@ -254,10 +221,142 @@ body[data-dsh-festival-halloween] {
   --dsw-static-red-500: #d33a46;
   --dsw-static-red-600: color-mix(in srgb, #d33a46 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #d33a46 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-festival-halloween][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-festival-halloween][data-ds-dark-theme]{
+  color: #f2ecf7;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 255, 117, 24;
+  --hw-pumpkin: #ff7518;
+  --hw-pumpkin-deep: #c2571a;
+  --hw-purple: #7a4fc0;
+  --hw-ghost: #7cff6b;
+  --hw-night: #0d0a14;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #0d0a14;
+  --dsw-alias-bg-l1: #141020;
+  --dsw-alias-bg-l2: #1b1529;
+  --dsw-alias-bg-layer-1: #141020;
+  --dsw-alias-bg-layer-2: #1b1529;
+  --dsw-alias-bg-layer-3: #231b33;
+  --dsw-alias-bg-layer-4: #2c2240;
+  --dsw-alias-bg-overlay: #171226;
+  --dsw-alias-bg-module-platform: #1b1529;
+  --dsw-alias-bg-multi-select: #2a2140;
+  --dsw-alias-bg-skeleton: #231b33;
+  --dsw-alias-bg-document-preview: #141020;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #ff7518 30%, transparent);
+  --dsw-alias-label-primary: #f2ecf7;
+  --dsw-alias-label-secondary: #b3a6c4;
+  --dsw-alias-label-tertiary: #847696;
+  --dsw-alias-label-quaternary: #5c5070;
+  --dsw-alias-label-caption: #faf7fd;
+  --dsw-alias-label-dimmed: #5c5070;
+  --dsw-alias-label-primary-dimmed: #b3a6c4;
+  --dsw-alias-label-primary-bluish: #f2ecf7;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #f2ecf7;
+  --dsw-alias-label-error: #f0505c;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #f2ecf7 30%, transparent);
+  --dsw-alias-label-deep-diving: #8a7aff;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #8a7aff 55%, transparent);
+  --dsw-alias-link: #ff7518;
+  --dsw-alias-border-l1: #2a2138;
+  --dsw-alias-border-l2: #352a4a;
+  --dsw-alias-border-l2-darkmode-thin: #2a2138;
+  --dsw-alias-border-l3: #6b4a1e;
+  --dsw-alias-border-l4: #6b4a1e;
+  --dsw-alias-border-inverted: #f2ecf7;
+  --dsw-alias-border-inverted2: #f2ecf7;
+  --dsw-alias-separator-primary: #2a2138;
+  --dsw-alias-brand-primary: #ff7518;
+  --dsw-alias-brand-primary-invert: #f2ecf7;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #ff7518;
+  --dsw-alias-markdown-citation: #ff9448;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #ff7518 14%, transparent);
+  --dsw-alias-markdown-inline-code: #1b1529;
+  --dsw-alias-markdown-code-block: #141020;
+  --dsw-alias-markdown-code-block-banner: #1b1529;
+  --dsw-alias-markdown-code-segment-selected: #231b33;
+  --dsw-alias-markdown-code-segment-unselected: #141020;
+  --dsw-alias-markdown-placeholder: #5c5070;
+  --dsw-alias-fill-l1: #1b1529;
+  --dsw-alias-fill-l2: #141020;
+  --dsw-alias-fill-tertiary: #231b33;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #f2ecf7 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #211a32;
+  --dsw-alias-interactive-bg-active: #2a2140;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #ff7518 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #f0505c 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #231b33;
+  --dsw-alias-state-error-primary: #f0505c;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #f0505c 15%, transparent);
+  --dsw-alias-state-success-primary: #4fd675;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #4fd675 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #4fd675 8%, transparent);
+  --dsw-alias-state-warn-primary: #ff9448;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #ff9448 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #ff9448 8%, transparent);
+  --dsw-alias-state-warn-label: #ff9448;
+  --dsw-alias-state-business-primary: #8a7aff;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #8a7aff 10%, transparent);
+  --dsw-alias-state-idle-primary: #5c5070;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #4fd675 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #f0505c 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #b3a6c4 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #4fd675 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #4fd675 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #4fd675 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #f0505c 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #f0505c 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #f0505c 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #b3a6c4 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #141020;
+  --dsw-alias-scrollbar-bg-l2: #1b1529;
+  --dsw-alias-scrollbar-hover-l1: #211a32;
+  --dsw-alias-scrollbar-hover-l2: #211a32;
+  --dsw-alias-menu-icon: #b3a6c4;
+  --dsw-alias-menu-group-header-fill: #1b1529;
+  --dsw-alias-tooltip-bg: #f2ecf7;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #231b33;
+  --dsw-alias-toast-label: #f2ecf7;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #b3a6c4;
+  --dsw-alias-turn-trigger-bg: #1b1529;
+  --dsw-alias-turn-trigger-bg-hover: #231b33;
+  --dsw-alias-button-primary-fill: #ff7518;
+  --dsw-alias-button-primary-hover: #b34e0f;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #ff7518 45%, transparent);
+  --dsw-alias-button-contrast-fill: #b34e0f;
+  --dsw-alias-button-elevated-fill: #141020;
+  --dsw-alias-button-floating-fill: #1b1529;
+  --dsw-alias-button-floating-hover: #211a32;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #ff7518 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #ffb884;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #ff7518 24%, transparent);
+  --dsw-alias-button-info-fill: #8a7aff;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #8a7aff 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #1b1529;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #211a32;
+  --dsw-alias-onboarding-card-fill: #141020;
+  --dsw-alias-onboarding-secondary-fill: #1b1529;
+  --dsw-alias-onboarding-checkbox-border: #352a4a;
+  --dsw-alias-settings-card-fill: #1b1529;
+  --dsw-alias-settings-card-stroke: #352a4a;
+  --dsw-specific-bubble: #1b1529;
+  --dsw-specific-bubble-highlight: #662c08;
+  --dsw-specific-input-major: #171226;
+  --dsw-specific-login-input: #141020;
+  --dsw-specific-menu: #141020;
+  --dsw-specific-selector: #1b1529;
+  --dsw-specific-sidebar-fill: #141020;
+  --dsw-specific-sidebar-nav-item-active: #2a2140;
+  --dsw-specific-sidebar-nav-item-active-accent: #ff7518;
+  --dsw-specific-sidebar-nav-item-hover: #211a32;
+  --dsw-specific-tip: #231b33;
   --dsw-static-deepseek-50: #2a1204;
   --dsw-static-blue-50: #2a1204;
   --dsw-static-deepseek-50p: #451e06;
@@ -345,69 +444,8 @@ body[data-dsh-festival-halloween][data-ds-dark-theme] {
   --dsw-static-red-500: #f0505c;
   --dsw-static-red-600: color-mix(in srgb, #f0505c 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #f0505c 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-festival-halloween] {
-  --dsw-alias-button-primary-fill: #c2571a;
-  --dsw-alias-button-primary-hover: #d96113;
-  --dsw-alias-button-primary-dimmed: #ffe0c4;
-  --dsw-alias-button-info-fill: #c2571a;
-  --dsw-alias-button-info-hover: #d96113;
-  --dsw-alias-button-contrast-fill: #c2571a;
-  --dsw-alias-button-ghost-active-fill: #ffe0c4;
-  --dsw-alias-button-ghost-active-hover: #ffe0c4;
-  --dsw-alias-button-ghost-active-border: #ffa25e;
-  --dsw-alias-button-elevated-fill: #f2e7d2;
-  --dsw-alias-button-floating-fill: #f2e7d2;
-  --dsw-alias-button-floating-hover: #eee0c8;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(194, 87, 26, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(194, 87, 26, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(194, 87, 26, 0.6);
-  --dsw-specific-bubble: #ffd9ae;
-  --dsw-specific-bubble-highlight: #ffc494;
-  --dsw-specific-input-major: #f2e7d2;
-  --dsw-specific-login-input: #f2e7d2;
-  --dsw-specific-sidebar-fill: #c2571a;
-  --dsw-specific-sidebar-nav-item-active: #ffe0c4;
-  --dsw-specific-sidebar-nav-item-hover: #eee0c8;
-  --dsw-specific-sidebar-nav-item-active-accent: #ffa25e;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-festival-halloween][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #ff7518;
-  --dsw-alias-button-primary-hover: #ff9448;
-  --dsw-alias-button-primary-dimmed: #451e06;
-  --dsw-alias-button-info-fill: #ff7518;
-  --dsw-alias-button-info-hover: #ff9448;
-  --dsw-alias-button-contrast-fill: #ff7518;
-  --dsw-alias-button-ghost-active-fill: #38200c;
-  --dsw-alias-button-ghost-active-hover: #451e06;
-  --dsw-alias-button-ghost-active-border: #8c3d0b;
-  --dsw-alias-button-elevated-fill: #141020;
-  --dsw-alias-button-floating-fill: #141020;
-  --dsw-alias-button-floating-hover: #211a32;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(255, 117, 24, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(255, 117, 24, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(255, 117, 24, 0.6);
-  --dsw-specific-bubble: #662c08;
-  --dsw-specific-bubble-highlight: #662c08;
-  --dsw-specific-input-major: #141020;
-  --dsw-specific-login-input: #141020;
-  --dsw-specific-sidebar-fill: #ff7518;
-  --dsw-specific-sidebar-nav-item-active: #451e06;
-  --dsw-specific-sidebar-nav-item-hover: #211a32;
-  --dsw-specific-sidebar-nav-item-active-accent: #8c3d0b;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-festival-halloween] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-festival-halloween]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-festival-halloween]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -422,9 +460,7 @@ body[data-dsh-festival-halloween]::before {
     background-size: 300px 300px, 300px 300px, 240px 240px, 240px 240px;
     background-position: right top, right top, left bottom, left bottom;
     background-repeat: no-repeat;
-}
-
-body[data-dsh-festival-halloween]::after {
+}body[data-dsh-festival-halloween]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -439,102 +475,33 @@ body[data-dsh-festival-halloween]::after {
       radial-gradient(circle at 34% 84%, var(--hw-purple) 0 2px, transparent 4px);
     background-size: 560px 560px, 640px 640px, 520px 520px, 700px 700px, 480px 480px;
     animation: festival-halloween-hwl-candy-drift 26s ease-in-out infinite alternate;
-}
-
-body[data-dsh-festival-halloween] [class*='sider'] [class*='item'] {
-  border-radius: 10px;
-    transition: background-color 0.22s ease, box-shadow 0.22s ease;
-}
-
-body[data-dsh-festival-halloween] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 3px 0 0 0 var(--hw-purple), 3px 0 10px rgba(95, 58, 158, 0.12);
-}
-
-body[data-dsh-festival-halloween] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-festival-halloween] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(217, 97, 19, 0.2), rgba(217, 97, 19, 0.05) 62%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--hw-pumpkin), 3px 0 12px rgba(217, 97, 19, 0.18);
-    font-weight: 600;
-}
-
-body[data-dsh-festival-halloween] button[class*='primary'],
-body[data-dsh-festival-halloween] button[class*='primary']:not(.arco-btn-disabled) {
-  background-image:
-      linear-gradient(#3d7a20, #3d7a20),
-      repeating-linear-gradient(90deg, rgba(80, 30, 0, 0.22) 0 2px, transparent 2px 14px),
-      radial-gradient(ellipse 70% 90% at 50% 115%, rgba(255, 216, 130, 0.5), transparent 60%),
-      linear-gradient(135deg, #a04a10 0%, var(--hw-pumpkin) 55%, #f5822a 100%) !important;
-    background-size: 12px 5px, auto, auto, auto !important;
-    background-position: center top, 0 0, 0 0, 0 0 !important;
-    background-repeat: no-repeat, repeat, no-repeat, no-repeat !important;
-    border: 1px solid #8c3d0b !important;
-    border-radius: 10px !important;
-    color: #fff7ec !important;
-    font-weight: 700;
-    text-shadow: 0 1px 2px rgba(80, 30, 0, 0.45);
-    box-shadow: 0 2px 10px rgba(194, 87, 26, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.28);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-festival-halloween] button[class*='primary']:hover,
-body[data-dsh-festival-halloween] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.06);
-    animation: festival-halloween-hwl-candle-flicker 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-festival-halloween] pre,
-body[data-dsh-festival-halloween] .markdown-body pre {
+}body[data-dsh-festival-halloween] pre{
   background: linear-gradient(180deg, #221735 0%, #1a1129 100%) !important;
-    border: 1px solid var(--border-special) !important;
+    border: 1px solid var(--dsw-alias-border-l3) !important;
     border-left: 4px solid var(--hw-pumpkin) !important;
     border-radius: 10px !important;
     box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.4), 0 2px 10px rgba(95, 58, 158, 0.18);
-}
-
-body[data-dsh-festival-halloween] pre code,
-body[data-dsh-festival-halloween] .markdown-body pre code {
+}body[data-dsh-festival-halloween] pre code{
   background: transparent !important;
     color: #ece4f8 !important;
     border: none;
     padding: 0;
     text-shadow: none;
-}
-
-body[data-dsh-festival-halloween] code,
-body[data-dsh-festival-halloween] .markdown-body code {
-  background-color: var(--brand-light);
+}body[data-dsh-festival-halloween] code{
+  background-color: var(--dsw-alias-markdown-citation);
     color: var(--hw-purple);
-    border: 1px solid var(--border-special);
+    border: 1px solid var(--dsw-alias-border-l3);
     border-radius: 5px;
     padding: 0.1em 0.35em;
-}
-
-body[data-dsh-festival-halloween]::selection {
-  background: color-mix(in srgb, var(--brand) 30%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-festival-halloween] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-festival-halloween] [class*='agent-bar'],
-body[data-dsh-festival-halloween] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(194, 87, 26, 0.3);
-}
-
-body[data-dsh-festival-halloween] .markdown-body blockquote {
+}body[data-dsh-festival-halloween]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 30%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-festival-halloween] blockquote{
   border-left: 3px solid var(--hw-purple);
     background: rgba(95, 58, 158, 0.07);
     border-radius: 0 10px 10px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-festival-halloween] .markdown-body hr,
-body[data-dsh-festival-halloween] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-festival-halloween] hr{
   border: none;
     height: 10px;
     background-image:
@@ -544,52 +511,24 @@ body[data-dsh-festival-halloween] hr {
     background-repeat: repeat-x;
     background-position: 0 1px, 8px 1px;
     opacity: 0.55;
-}
-
-body[data-dsh-festival-halloween] .markdown-body a,
-body[data-dsh-festival-halloween] a {
-  color: var(--color-primary-dark-1);
-}
-
-body[data-dsh-festival-halloween] .markdown-body a:hover,
-body[data-dsh-festival-halloween] a:hover {
+}body[data-dsh-festival-halloween] a{
+  color: var(--dsw-alias-button-primary-hover);
+}body[data-dsh-festival-halloween] a:hover{
   color: var(--hw-pumpkin);
     text-shadow: 0 0 8px rgba(217, 97, 19, 0.35);
-}
-
-body[data-dsh-festival-halloween] .arco-btn:not(button[class*='primary']):hover {
-  color: var(--color-primary-dark-1) !important;
-    border-color: rgba(194, 87, 26, 0.5) !important;
-    background-color: rgba(194, 87, 26, 0.08) !important;
-}
-
-body[data-dsh-festival-halloween]::-webkit-scrollbar {
+}body[data-dsh-festival-halloween]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-festival-halloween]::-webkit-scrollbar-thumb {
+}body[data-dsh-festival-halloween]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--hw-pumpkin), #a04a10);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-festival-halloween]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-festival-halloween]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, var(--hw-purple), var(--hw-pumpkin));
     box-shadow: 0 0 8px rgba(194, 87, 26, 0.4);
-}
-
-body[data-dsh-festival-halloween]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-festival-halloween][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme]::before {
+}body[data-dsh-festival-halloween]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-festival-halloween][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -604,9 +543,7 @@ body[data-dsh-festival-halloween][data-ds-dark-theme]::before {
     background-size: 300px 300px, 300px 300px, 240px 240px, 240px 240px;
     background-position: right top, right top, left bottom, left bottom;
     background-repeat: no-repeat;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme]::after {
+}body[data-dsh-festival-halloween][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -621,101 +558,33 @@ body[data-dsh-festival-halloween][data-ds-dark-theme]::after {
       radial-gradient(circle at 34% 84%, var(--hw-pumpkin) 0 2px, transparent 4px);
     background-size: 560px 560px, 640px 640px, 520px 520px, 700px 700px, 480px 480px;
     animation: festival-halloween-hw-wisp-drift 24s ease-in-out infinite alternate;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 10px;
-    transition: background-color 0.22s ease, box-shadow 0.22s ease;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 3px 0 0 0 var(--hw-purple), 3px 0 10px rgba(122, 79, 192, 0.18);
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-festival-halloween][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(255, 117, 24, 0.26), rgba(255, 117, 24, 0.07) 62%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--hw-pumpkin), 3px 0 12px rgba(255, 117, 24, 0.26);
-    font-weight: 600;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-festival-halloween][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background-image:
-      linear-gradient(#4a8c26, #4a8c26),
-      repeating-linear-gradient(90deg, rgba(122, 46, 0, 0.28) 0 2px, transparent 2px 14px),
-      radial-gradient(ellipse 70% 90% at 50% 115%, rgba(255, 216, 130, 0.55), transparent 60%),
-      linear-gradient(135deg, #c2571a 0%, var(--hw-pumpkin) 55%, #ffa040 100%) !important;
-    background-size: 12px 5px, auto, auto, auto !important;
-    background-position: center top, 0 0, 0 0, 0 0 !important;
-    background-repeat: no-repeat, repeat, no-repeat, no-repeat !important;
-    border: 1px solid #ffb884 !important;
-    border-radius: 10px !important;
-    color: #2a1204 !important;
-    font-weight: 700;
-    box-shadow: 0 0 12px rgba(255, 117, 24, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-festival-halloween][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.08);
-    animation: festival-halloween-hw-candle-flicker 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] pre,
-body[data-dsh-festival-halloween][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-festival-halloween][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #120e1e 0%, var(--hw-night) 100%) !important;
-    border: 1px solid var(--border-base) !important;
+    border: 1px solid var(--dsw-alias-border-l2) !important;
     border-left: 4px solid var(--hw-pumpkin) !important;
     border-radius: 10px !important;
     box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.55), 0 0 14px rgba(255, 117, 24, 0.1);
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] pre code,
-body[data-dsh-festival-halloween][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-festival-halloween][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #ece4f8 !important;
     border: none;
     padding: 0;
     text-shadow: none;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] code,
-body[data-dsh-festival-halloween][data-ds-dark-theme] .markdown-body code {
-  background-color: var(--brand-light);
+}body[data-dsh-festival-halloween][data-ds-dark-theme] code{
+  background-color: var(--dsw-alias-markdown-citation);
     color: var(--hw-ghost);
-    border: 1px solid var(--border-special);
+    border: 1px solid var(--dsw-alias-border-l3);
     border-radius: 5px;
     padding: 0.1em 0.35em;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 40%, transparent);
-    color: var(--text-white);
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-festival-halloween][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(255, 117, 24, 0.35);
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-festival-halloween][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 40%, transparent);
+    color: var(--dsw-alias-label-primary-inverted);
+}body[data-dsh-festival-halloween][data-ds-dark-theme] blockquote{
   border-left: 3px solid var(--hw-ghost);
     background: rgba(124, 255, 107, 0.06);
     border-radius: 0 10px 10px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-festival-halloween][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-festival-halloween][data-ds-dark-theme] hr{
   border: none;
     height: 10px;
     background-image:
@@ -725,96 +594,39 @@ body[data-dsh-festival-halloween][data-ds-dark-theme] hr {
     background-repeat: repeat-x;
     background-position: 0 1px, 8px 1px;
     opacity: 0.55;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-festival-halloween][data-ds-dark-theme] a {
-  color: var(--color-primary-light-1);
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-festival-halloween][data-ds-dark-theme] a:hover {
-  color: var(--color-primary-light-2);
+}body[data-dsh-festival-halloween][data-ds-dark-theme] a{
+  color: var(--dsw-alias-markdown-citation);
+}body[data-dsh-festival-halloween][data-ds-dark-theme] a:hover{
+  color: var(--dsw-alias-markdown-tag);
     text-shadow: 0 0 8px rgba(255, 117, 24, 0.5);
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: var(--color-primary-light-2) !important;
-    border-color: rgba(255, 117, 24, 0.5) !important;
-    background-color: rgba(255, 117, 24, 0.1) !important;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-festival-halloween][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-festival-halloween][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--hw-pumpkin), #662c08);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-festival-halloween][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, var(--hw-ghost), var(--hw-pumpkin));
     box-shadow: 0 0 8px rgba(255, 117, 24, 0.5);
-}
-
-body[data-dsh-festival-halloween][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
+}body[data-dsh-festival-halloween][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
 }
 
 /* --- keyframes --- */
-@keyframes festival-halloween-hwl-candy-drift {
-  0% { background-position: 0 0, 0 0, 0 0, 0 0, 0 0; opacity: 0.05; }
-  50% { opacity: 0.11; }
-  100% { background-position: 40px -60px, -50px 40px, 60px 30px, -40px -50px, 30px 55px; opacity: 0.05; }
+@keyframes festival-halloween-hwl-candy-drift {0%{ background-position: 0 0, 0 0, 0 0, 0 0, 0 0; opacity: 0.05; }50%{ opacity: 0.11; }100%{ background-position: 40px -60px, -50px 40px, 60px 30px, -40px -50px, 30px 55px; opacity: 0.05; }
 }
 
-@keyframes festival-halloween-hwl-bat-flight {
-  0% { left: -12%; top: 30%; opacity: 0; }
-  4% { opacity: 1; }
-  15% { top: 18%; }
-  28% { top: 42%; }
-  38% { left: 108%; top: 24%; opacity: 1; }
-  42%, 100% { left: 112%; top: 24%; opacity: 0; }
+
+
+
+
+
+
+@keyframes festival-halloween-hw-wisp-drift {0%{ background-position: 0 0, 0 0, 0 0, 0 0, 0 0; opacity: 0.05; }50%{ opacity: 0.11; }100%{ background-position: 40px -60px, -50px 40px, 60px 30px, -40px -50px, 30px 55px; opacity: 0.05; }
 }
 
-@keyframes festival-halloween-hwl-candle-flicker {
-  0%, 100% { box-shadow: 0 2px 12px rgba(194, 87, 26, 0.4), 0 0 22px rgba(255, 180, 60, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.3); }
-  30% { box-shadow: 0 2px 16px rgba(194, 87, 26, 0.55), 0 0 34px rgba(255, 180, 60, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.36); }
-  55% { box-shadow: 0 2px 13px rgba(194, 87, 26, 0.45), 0 0 26px rgba(255, 180, 60, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.32); }
-  80% { box-shadow: 0 2px 18px rgba(194, 87, 26, 0.6), 0 0 40px rgba(255, 180, 60, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.4); }
-}
-
-@keyframes festival-halloween-hwl-ring-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
-}
-
-@keyframes festival-halloween-hw-wisp-drift {
-  0% { background-position: 0 0, 0 0, 0 0, 0 0, 0 0; opacity: 0.05; }
-  50% { opacity: 0.11; }
-  100% { background-position: 40px -60px, -50px 40px, 60px 30px, -40px -50px, 30px 55px; opacity: 0.05; }
-}
-
-@keyframes festival-halloween-hw-bat-flight {
-  0% { left: -12%; top: 30%; opacity: 0; }
-  4% { opacity: 1; }
-  15% { top: 18%; }
-  28% { top: 42%; }
-  38% { left: 108%; top: 24%; opacity: 1; }
-  42%, 100% { left: 112%; top: 24%; opacity: 0; }
-}
-
-@keyframes festival-halloween-hw-candle-flicker {
-  0%, 100% { box-shadow: 0 0 14px rgba(255, 117, 24, 0.55), 0 0 28px rgba(255, 180, 60, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.32); }
-  30% { box-shadow: 0 0 20px rgba(255, 117, 24, 0.75), 0 0 40px rgba(255, 180, 60, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.38); }
-  55% { box-shadow: 0 0 16px rgba(255, 117, 24, 0.6), 0 0 30px rgba(255, 180, 60, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.34); }
-  80% { box-shadow: 0 0 24px rgba(255, 117, 24, 0.85), 0 0 46px rgba(255, 180, 60, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.42); }
-}
-
-@keyframes festival-halloween-hw-ring-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-festival-halloween]{
+  --dsh-windows-content-radius: 6px;
 }

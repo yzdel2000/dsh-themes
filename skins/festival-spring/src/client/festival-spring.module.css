@@ -1,172 +1,139 @@
-/* festival-spring — 春节 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-festival-spring], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-festival-spring] {
+/* festival-spring — 春节 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-festival-spring],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-festival-spring]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #4a1712;
-  background-color: #fdf6ea;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] {
-  color: #f7ecdc;
-  background-color: #130708;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-festival-spring] {
-  --color-primary: #c81e10;
-  --primary: #c81e10;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 200, 30, 16;
-  --color-primary-light-1: #d94a3e;
-  --color-primary-light-2: #e2776c;
-  --color-primary-light-3: #eeaaa2;
-  --color-primary-dark-1: #93120a;
-  --brand: #c81e10;
-  --brand-light: #fbe3d4;
-  --brand-hover: #d94a3e;
-  --color-brand-fill: #c81e10;
-  --color-brand-bg: #f9dcc8;
-  --aou-1: #fdeee6;
-  --aou-2: #fadcc9;
-  --aou-3: #f4bfa8;
-  --aou-4: #ec9a7e;
-  --aou-5: #e2704f;
-  --aou-6: #c81e10;
-  --aou-7: #aa1f12;
-  --aou-8: #82170c;
-  --aou-9: #5c0f07;
-  --aou-10: #380701;
-  --bg-base: #fdf6ea;
-  --bg-1: #faf1de;
-  --bg-2: #f5e9d0;
-  --bg-3: #efe0c2;
-  --bg-4: #e8d5b2;
-  --bg-5: #dcc7a0;
-  --bg-6: #cdb488;
-  --bg-8: #a08a63;
-  --bg-9: #7d6a4a;
-  --bg-10: #54452e;
-  --color-bg-1: #faf1de;
-  --color-bg-2: #f5e9d0;
-  --color-bg-3: #efe0c2;
-  --color-bg-4: #e8d5b2;
-  --bg-hover: #f6ecd6;
-  --bg-active: #f0e2c2;
-  --text-primary: #4a1712;
-  --text-secondary: #7d5040;
-  --text-disabled: #b5987f;
-  --text-0: #2e0c07;
-  --text-white: #ffffff;
-  --color-text-1: #4a1712;
-  --color-text-2: #7d5040;
-  --color-text-3: #a07a63;
-  --color-text-4: #b5987f;
-  --border-base: #e3d2ae;
-  --border-light: #ecdfc0;
-  --border-special: #c9922e;
-  --color-border: #e3d2ae;
-  --color-border-1: #e3d2ae;
-  --color-border-2: #ecdfc0;
-  --fill: #f5e9d0;
-  --color-fill: #f5e9d0;
-  --fill-0: #faf1de;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #fffaf0;
-  --inverse: #4a1712;
-  --success: #3d8a52;
-  --warning: #a87808;
-  --danger: #c81e10;
-  --info: #3a7ca5;
-  --message-user-bg: #c81e10;
-  --message-tips-bg: #f8eed7;
-  --workspace-btn-bg: #f9dcc8;
-  --color-guid-agent-bar: #faf1de;
   --spring-red: #c81e10;
   --spring-red-deep: #8f120a;
   --spring-gold: #c9922e;
   --spring-gold-bright: #e8b64a;
   --spring-rice: #fffaf0;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-festival-spring][data-ds-dark-theme] {
-  --color-primary: #e03a2c;
-  --primary: #e03a2c;
-  --primary-rgb: 224, 58, 44;
-  --color-primary-light-1: #ec6a5c;
-  --color-primary-light-2: #f19488;
-  --color-primary-light-3: #f8beb8;
-  --color-primary-dark-1: #a81f14;
-  --brand: #e03a2c;
-  --brand-light: #3a0f0b;
-  --brand-hover: #f0523f;
-  --color-brand-fill: #e03a2c;
-  --color-brand-bg: #320d0a;
-  --aou-1: #2b0b08;
-  --aou-2: #42110c;
-  --aou-3: #5c1810;
-  --aou-4: #7a2015;
-  --aou-5: #9c2a1b;
-  --aou-6: #c03325;
-  --aou-7: #e03a2c;
-  --aou-8: #ec6a5c;
-  --aou-9: #f4a89c;
-  --aou-10: #fce4de;
-  --bg-base: #130708;
-  --bg-1: #1b0b0d;
-  --bg-2: #241012;
-  --bg-3: #2d1518;
-  --bg-4: #381b1f;
-  --bg-5: #45232a;
-  --bg-6: #552d35;
-  --bg-8: #7a4450;
-  --bg-9: #a06a74;
-  --bg-10: #cfa5aa;
-  --color-bg-1: #1b0b0d;
-  --color-bg-2: #241012;
-  --color-bg-3: #2d1518;
-  --color-bg-4: #381b1f;
-  --bg-hover: #2a1215;
-  --bg-active: #33181c;
-  --text-primary: #f7ecdc;
-  --text-secondary: #c9a89f;
-  --text-disabled: #6b4b48;
-  --text-0: #ffffff;
-  --text-white: #ffffff;
-  --color-text-1: #f7ecdc;
-  --color-text-2: #c9a89f;
-  --color-text-3: #9c7d76;
-  --color-text-4: #6b4b48;
-  --border-base: #3f2026;
-  --border-light: #2e171b;
-  --border-special: #8a5a1e;
-  --color-border: #3f2026;
-  --color-border-1: #3f2026;
-  --color-border-2: #2e171b;
-  --fill: #241012;
-  --color-fill: #241012;
-  --fill-0: #1b0b0d;
-  --fill-white-to-black: #130708;
-  --dialog-fill-0: #1e0d10;
-  --inverse: #f7ecdc;
-  --success: #57b57a;
-  --warning: #f2b84b;
-  --danger: #e03a2c;
-  --info: #d9a63f;
-  --message-user-bg: #b32a1e;
-  --message-tips-bg: #241012;
-  --workspace-btn-bg: #320d0a;
-  --color-guid-agent-bar: #1a0b0d;
-  --spring-red: #e03a2c;
-  --spring-red-deep: #8c1a10;
-  --spring-gold: #f2b84b;
-  --spring-gold-deep: #c9922e;
-  --spring-rice: #f7ecdc;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-festival-spring] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #fdf6ea;
+  --dsw-alias-bg-l1: #faf1de;
+  --dsw-alias-bg-l2: #f5e9d0;
+  --dsw-alias-bg-layer-1: #faf1de;
+  --dsw-alias-bg-layer-2: #f5e9d0;
+  --dsw-alias-bg-layer-3: #efe0c2;
+  --dsw-alias-bg-layer-4: #e8d5b2;
+  --dsw-alias-bg-overlay: #fffaf0;
+  --dsw-alias-bg-module-platform: #f5e9d0;
+  --dsw-alias-bg-multi-select: #f0e2c2;
+  --dsw-alias-bg-skeleton: #efe0c2;
+  --dsw-alias-bg-document-preview: #faf1de;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #c81e10 30%, transparent);
+  --dsw-alias-label-primary: #4a1712;
+  --dsw-alias-label-secondary: #7d5040;
+  --dsw-alias-label-tertiary: #a07a63;
+  --dsw-alias-label-quaternary: #b5987f;
+  --dsw-alias-label-caption: #2e0c07;
+  --dsw-alias-label-dimmed: #b5987f;
+  --dsw-alias-label-primary-dimmed: #7d5040;
+  --dsw-alias-label-primary-bluish: #4a1712;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #4a1712;
+  --dsw-alias-label-error: #c81e10;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #4a1712 30%, transparent);
+  --dsw-alias-label-deep-diving: #3a7ca5;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #3a7ca5 55%, transparent);
+  --dsw-alias-link: #c81e10;
+  --dsw-alias-border-l1: #ecdfc0;
+  --dsw-alias-border-l2: #e3d2ae;
+  --dsw-alias-border-l2-darkmode-thin: #ecdfc0;
+  --dsw-alias-border-l3: #c9922e;
+  --dsw-alias-border-l4: #c9922e;
+  --dsw-alias-border-inverted: #4a1712;
+  --dsw-alias-border-inverted2: #4a1712;
+  --dsw-alias-separator-primary: #ecdfc0;
+  --dsw-alias-brand-primary: #c81e10;
+  --dsw-alias-brand-primary-invert: #4a1712;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #c81e10;
+  --dsw-alias-markdown-citation: #d94a3e;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #c81e10 14%, transparent);
+  --dsw-alias-markdown-inline-code: #f5e9d0;
+  --dsw-alias-markdown-code-block: #faf1de;
+  --dsw-alias-markdown-code-block-banner: #f5e9d0;
+  --dsw-alias-markdown-code-segment-selected: #efe0c2;
+  --dsw-alias-markdown-code-segment-unselected: #faf1de;
+  --dsw-alias-markdown-placeholder: #b5987f;
+  --dsw-alias-fill-l1: #f5e9d0;
+  --dsw-alias-fill-l2: #faf1de;
+  --dsw-alias-fill-tertiary: #efe0c2;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #4a1712 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #f6ecd6;
+  --dsw-alias-interactive-bg-active: #f0e2c2;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #c81e10 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #c81e10 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #efe0c2;
+  --dsw-alias-state-error-primary: #c81e10;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #c81e10 15%, transparent);
+  --dsw-alias-state-success-primary: #3d8a52;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #3d8a52 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #3d8a52 8%, transparent);
+  --dsw-alias-state-warn-primary: #a87808;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #a87808 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #a87808 8%, transparent);
+  --dsw-alias-state-warn-label: #a87808;
+  --dsw-alias-state-business-primary: #3a7ca5;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #3a7ca5 10%, transparent);
+  --dsw-alias-state-idle-primary: #b5987f;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #3d8a52 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #c81e10 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #7d5040 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #3d8a52 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #3d8a52 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #3d8a52 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #c81e10 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #c81e10 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #c81e10 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #7d5040 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #faf1de;
+  --dsw-alias-scrollbar-bg-l2: #f5e9d0;
+  --dsw-alias-scrollbar-hover-l1: #f6ecd6;
+  --dsw-alias-scrollbar-hover-l2: #f6ecd6;
+  --dsw-alias-menu-icon: #7d5040;
+  --dsw-alias-menu-group-header-fill: #f5e9d0;
+  --dsw-alias-tooltip-bg: #4a1712;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #efe0c2;
+  --dsw-alias-toast-label: #4a1712;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #7d5040;
+  --dsw-alias-turn-trigger-bg: #f5e9d0;
+  --dsw-alias-turn-trigger-bg-hover: #efe0c2;
+  --dsw-alias-button-primary-fill: #c81e10;
+  --dsw-alias-button-primary-hover: #93120a;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #c81e10 45%, transparent);
+  --dsw-alias-button-contrast-fill: #93120a;
+  --dsw-alias-button-elevated-fill: #faf1de;
+  --dsw-alias-button-floating-fill: #f5e9d0;
+  --dsw-alias-button-floating-hover: #f6ecd6;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #c81e10 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #e2776c;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #c81e10 24%, transparent);
+  --dsw-alias-button-info-fill: #3a7ca5;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #3a7ca5 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #f5e9d0;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #f6ecd6;
+  --dsw-alias-onboarding-card-fill: #faf1de;
+  --dsw-alias-onboarding-secondary-fill: #f5e9d0;
+  --dsw-alias-onboarding-checkbox-border: #e3d2ae;
+  --dsw-alias-settings-card-fill: #f5e9d0;
+  --dsw-alias-settings-card-stroke: #e3d2ae;
+  --dsw-specific-bubble: #f5e9d0;
+  --dsw-specific-bubble-highlight: #c81e10;
+  --dsw-specific-input-major: #fffaf0;
+  --dsw-specific-login-input: #faf1de;
+  --dsw-specific-menu: #faf1de;
+  --dsw-specific-selector: #f5e9d0;
+  --dsw-specific-sidebar-fill: #faf1de;
+  --dsw-specific-sidebar-nav-item-active: #f0e2c2;
+  --dsw-specific-sidebar-nav-item-active-accent: #c81e10;
+  --dsw-specific-sidebar-nav-item-hover: #f6ecd6;
+  --dsw-specific-tip: #efe0c2;
   --dsw-static-deepseek-50: #fdeee6;
   --dsw-static-blue-50: #fdeee6;
   --dsw-static-deepseek-50p: #fadcc9;
@@ -254,10 +221,142 @@ body[data-dsh-festival-spring] {
   --dsw-static-red-500: #c81e10;
   --dsw-static-red-600: color-mix(in srgb, #c81e10 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #c81e10 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-festival-spring][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-festival-spring][data-ds-dark-theme]{
+  color: #f7ecdc;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 224, 58, 44;
+  --spring-red: #e03a2c;
+  --spring-red-deep: #8c1a10;
+  --spring-gold: #f2b84b;
+  --spring-gold-deep: #c9922e;
+  --spring-rice: #f7ecdc;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #130708;
+  --dsw-alias-bg-l1: #1b0b0d;
+  --dsw-alias-bg-l2: #241012;
+  --dsw-alias-bg-layer-1: #1b0b0d;
+  --dsw-alias-bg-layer-2: #241012;
+  --dsw-alias-bg-layer-3: #2d1518;
+  --dsw-alias-bg-layer-4: #381b1f;
+  --dsw-alias-bg-overlay: #1e0d10;
+  --dsw-alias-bg-module-platform: #241012;
+  --dsw-alias-bg-multi-select: #33181c;
+  --dsw-alias-bg-skeleton: #2d1518;
+  --dsw-alias-bg-document-preview: #1b0b0d;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #e03a2c 30%, transparent);
+  --dsw-alias-label-primary: #f7ecdc;
+  --dsw-alias-label-secondary: #c9a89f;
+  --dsw-alias-label-tertiary: #9c7d76;
+  --dsw-alias-label-quaternary: #6b4b48;
+  --dsw-alias-label-caption: #ffffff;
+  --dsw-alias-label-dimmed: #6b4b48;
+  --dsw-alias-label-primary-dimmed: #c9a89f;
+  --dsw-alias-label-primary-bluish: #f7ecdc;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #f7ecdc;
+  --dsw-alias-label-error: #e03a2c;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #f7ecdc 30%, transparent);
+  --dsw-alias-label-deep-diving: #d9a63f;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #d9a63f 55%, transparent);
+  --dsw-alias-link: #e03a2c;
+  --dsw-alias-border-l1: #2e171b;
+  --dsw-alias-border-l2: #3f2026;
+  --dsw-alias-border-l2-darkmode-thin: #2e171b;
+  --dsw-alias-border-l3: #8a5a1e;
+  --dsw-alias-border-l4: #8a5a1e;
+  --dsw-alias-border-inverted: #f7ecdc;
+  --dsw-alias-border-inverted2: #f7ecdc;
+  --dsw-alias-separator-primary: #2e171b;
+  --dsw-alias-brand-primary: #e03a2c;
+  --dsw-alias-brand-primary-invert: #f7ecdc;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #e03a2c;
+  --dsw-alias-markdown-citation: #ec6a5c;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #e03a2c 14%, transparent);
+  --dsw-alias-markdown-inline-code: #241012;
+  --dsw-alias-markdown-code-block: #1b0b0d;
+  --dsw-alias-markdown-code-block-banner: #241012;
+  --dsw-alias-markdown-code-segment-selected: #2d1518;
+  --dsw-alias-markdown-code-segment-unselected: #1b0b0d;
+  --dsw-alias-markdown-placeholder: #6b4b48;
+  --dsw-alias-fill-l1: #241012;
+  --dsw-alias-fill-l2: #1b0b0d;
+  --dsw-alias-fill-tertiary: #2d1518;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #f7ecdc 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #2a1215;
+  --dsw-alias-interactive-bg-active: #33181c;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #e03a2c 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #e03a2c 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #2d1518;
+  --dsw-alias-state-error-primary: #e03a2c;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #e03a2c 15%, transparent);
+  --dsw-alias-state-success-primary: #57b57a;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #57b57a 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #57b57a 8%, transparent);
+  --dsw-alias-state-warn-primary: #f2b84b;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #f2b84b 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #f2b84b 8%, transparent);
+  --dsw-alias-state-warn-label: #f2b84b;
+  --dsw-alias-state-business-primary: #d9a63f;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #d9a63f 10%, transparent);
+  --dsw-alias-state-idle-primary: #6b4b48;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #57b57a 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #e03a2c 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #c9a89f 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #57b57a 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #57b57a 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #57b57a 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #e03a2c 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #e03a2c 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #e03a2c 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #c9a89f 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #1b0b0d;
+  --dsw-alias-scrollbar-bg-l2: #241012;
+  --dsw-alias-scrollbar-hover-l1: #2a1215;
+  --dsw-alias-scrollbar-hover-l2: #2a1215;
+  --dsw-alias-menu-icon: #c9a89f;
+  --dsw-alias-menu-group-header-fill: #241012;
+  --dsw-alias-tooltip-bg: #f7ecdc;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #2d1518;
+  --dsw-alias-toast-label: #f7ecdc;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #c9a89f;
+  --dsw-alias-turn-trigger-bg: #241012;
+  --dsw-alias-turn-trigger-bg-hover: #2d1518;
+  --dsw-alias-button-primary-fill: #e03a2c;
+  --dsw-alias-button-primary-hover: #a81f14;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #e03a2c 45%, transparent);
+  --dsw-alias-button-contrast-fill: #a81f14;
+  --dsw-alias-button-elevated-fill: #1b0b0d;
+  --dsw-alias-button-floating-fill: #241012;
+  --dsw-alias-button-floating-hover: #2a1215;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #e03a2c 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #f19488;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #e03a2c 24%, transparent);
+  --dsw-alias-button-info-fill: #d9a63f;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #d9a63f 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #241012;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #2a1215;
+  --dsw-alias-onboarding-card-fill: #1b0b0d;
+  --dsw-alias-onboarding-secondary-fill: #241012;
+  --dsw-alias-onboarding-checkbox-border: #3f2026;
+  --dsw-alias-settings-card-fill: #241012;
+  --dsw-alias-settings-card-stroke: #3f2026;
+  --dsw-specific-bubble: #241012;
+  --dsw-specific-bubble-highlight: #b32a1e;
+  --dsw-specific-input-major: #1e0d10;
+  --dsw-specific-login-input: #1b0b0d;
+  --dsw-specific-menu: #1b0b0d;
+  --dsw-specific-selector: #241012;
+  --dsw-specific-sidebar-fill: #1b0b0d;
+  --dsw-specific-sidebar-nav-item-active: #33181c;
+  --dsw-specific-sidebar-nav-item-active-accent: #e03a2c;
+  --dsw-specific-sidebar-nav-item-hover: #2a1215;
+  --dsw-specific-tip: #2d1518;
   --dsw-static-deepseek-50: #2b0b08;
   --dsw-static-blue-50: #2b0b08;
   --dsw-static-deepseek-50p: #42110c;
@@ -345,69 +444,8 @@ body[data-dsh-festival-spring][data-ds-dark-theme] {
   --dsw-static-red-500: #e03a2c;
   --dsw-static-red-600: color-mix(in srgb, #e03a2c 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #e03a2c 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-festival-spring] {
-  --dsw-alias-button-primary-fill: #c81e10;
-  --dsw-alias-button-primary-hover: #d94a3e;
-  --dsw-alias-button-primary-dimmed: #fadcc9;
-  --dsw-alias-button-info-fill: #c81e10;
-  --dsw-alias-button-info-hover: #d94a3e;
-  --dsw-alias-button-contrast-fill: #aa1f12;
-  --dsw-alias-button-ghost-active-fill: #fbe3d4;
-  --dsw-alias-button-ghost-active-hover: #fadcc9;
-  --dsw-alias-button-ghost-active-border: #ec9a7e;
-  --dsw-alias-button-elevated-fill: #faf1de;
-  --dsw-alias-button-floating-fill: #faf1de;
-  --dsw-alias-button-floating-hover: #f6ecd6;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(200, 30, 16, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(200, 30, 16, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(200, 30, 16, 0.6);
-  --dsw-specific-bubble: #c81e10;
-  --dsw-specific-bubble-highlight: #f4bfa8;
-  --dsw-specific-input-major: #faf1de;
-  --dsw-specific-login-input: #faf1de;
-  --dsw-specific-sidebar-fill: #c81e10;
-  --dsw-specific-sidebar-nav-item-active: #fadcc9;
-  --dsw-specific-sidebar-nav-item-hover: #f6ecd6;
-  --dsw-specific-sidebar-nav-item-active-accent: #ec9a7e;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-festival-spring][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #e03a2c;
-  --dsw-alias-button-primary-hover: #f0523f;
-  --dsw-alias-button-primary-dimmed: #42110c;
-  --dsw-alias-button-info-fill: #e03a2c;
-  --dsw-alias-button-info-hover: #f0523f;
-  --dsw-alias-button-contrast-fill: #e03a2c;
-  --dsw-alias-button-ghost-active-fill: #3a0f0b;
-  --dsw-alias-button-ghost-active-hover: #42110c;
-  --dsw-alias-button-ghost-active-border: #7a2015;
-  --dsw-alias-button-elevated-fill: #1b0b0d;
-  --dsw-alias-button-floating-fill: #1b0b0d;
-  --dsw-alias-button-floating-hover: #2a1215;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(224, 58, 44, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(224, 58, 44, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(224, 58, 44, 0.6);
-  --dsw-specific-bubble: #b32a1e;
-  --dsw-specific-bubble-highlight: #5c1810;
-  --dsw-specific-input-major: #1b0b0d;
-  --dsw-specific-login-input: #1b0b0d;
-  --dsw-specific-sidebar-fill: #e03a2c;
-  --dsw-specific-sidebar-nav-item-active: #42110c;
-  --dsw-specific-sidebar-nav-item-hover: #2a1215;
-  --dsw-specific-sidebar-nav-item-active-accent: #7a2015;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-festival-spring] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-festival-spring]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-festival-spring]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -424,9 +462,7 @@ body[data-dsh-festival-spring]::before {
       radial-gradient(ellipse 40% 30% at 10% 88%, rgba(201, 146, 46, 0.3) 0%, transparent 70%);
     background-size: 520px 520px, 640px 640px, 480px 480px, 580px 580px, 500px 500px, 100% 100%, 100% 100%;
     animation: festival-spring-spring-ember-glow 4.6s ease-in-out infinite;
-}
-
-body[data-dsh-festival-spring]::after {
+}body[data-dsh-festival-spring]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -438,105 +474,33 @@ body[data-dsh-festival-spring]::after {
       linear-gradient(-45deg, rgba(200, 30, 16, 0.5) 1px, transparent 1px);
     background-size: 44px 44px;
     animation: festival-spring-spring-lattice-drift 40s linear infinite;
-}
-
-body[data-dsh-festival-spring] [class*='sider'] [class*='item'] {
-  border-radius: 10px;
-    transition: background-color 0.22s ease, box-shadow 0.22s ease;
-}
-
-body[data-dsh-festival-spring] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 3px 0 0 0 var(--spring-red), 3px 0 10px rgba(200, 30, 16, 0.12);
-}
-
-body[data-dsh-festival-spring] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-festival-spring] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(200, 30, 16, 0.16), rgba(200, 30, 16, 0.05) 62%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--spring-gold), 3px 0 12px rgba(201, 146, 46, 0.25);
-    font-weight: 600;
-}
-
-body[data-dsh-festival-spring] button[class*='primary'],
-body[data-dsh-festival-spring] button[class*='primary']:not(.arco-btn-disabled) {
-  background:
-      radial-gradient(circle at 82% 16%, rgba(255, 233, 184, 0.6) 0 2px, transparent 3.5px),
-      linear-gradient(135deg, var(--spring-red-deep) 0%, var(--spring-red) 55%, #e8553f 100%) !important;
-    border: 1px solid var(--spring-gold) !important;
-    border-radius: 10px !important;
-    color: var(--text-white) !important;
-    font-weight: 700;
-    box-shadow: 0 2px 10px rgba(200, 30, 16, 0.35), inset 0 1px 0 rgba(232, 182, 74, 0.5);
-    text-shadow: 0 1px 2px rgba(90, 10, 6, 0.5);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-festival-spring] button[class*='primary']:hover,
-body[data-dsh-festival-spring] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.1);
-    animation: festival-spring-spring-btn-spark 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-festival-spring] pre,
-body[data-dsh-festival-spring] .markdown-body pre {
+}body[data-dsh-festival-spring] pre{
   background: linear-gradient(180deg, #fff8ea 0%, #faf0da 100%) !important;
-    border: 1px solid var(--border-base) !important;
+    border: 1px solid var(--dsw-alias-border-l2) !important;
     border-left: 4px solid var(--spring-gold) !important;
     border-radius: 10px !important;
     box-shadow: inset 0 2px 8px rgba(201, 146, 46, 0.1), 0 0 12px rgba(200, 30, 16, 0.06);
-}
-
-body[data-dsh-festival-spring] pre code,
-body[data-dsh-festival-spring] .markdown-body pre code {
+}body[data-dsh-festival-spring] pre code{
   background: transparent !important;
     color: #3d1410 !important;
     border: none;
     padding: 0;
     text-shadow: none;
-}
-
-body[data-dsh-festival-spring] code,
-body[data-dsh-festival-spring] .markdown-body code {
-  background-color: var(--brand-light);
+}body[data-dsh-festival-spring] code{
+  background-color: var(--dsw-alias-markdown-citation);
     color: var(--spring-red-deep);
     border: 1px solid rgba(201, 146, 46, 0.5);
     border-radius: 5px;
     padding: 0.1em 0.35em;
-}
-
-body[data-dsh-festival-spring]::selection {
-  background: color-mix(in srgb, var(--brand) 30%, transparent);
-    color: var(--text-primary);
-}
-
-body[data-dsh-festival-spring] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 6px rgba(160, 120, 60, 0.1), 0 0 0 1px rgba(201, 146, 46, 0.15);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-festival-spring] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-festival-spring] [class*='agent-bar'],
-body[data-dsh-festival-spring] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(201, 146, 46, 0.45);
-}
-
-body[data-dsh-festival-spring] .markdown-body blockquote {
+}body[data-dsh-festival-spring]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 30%, transparent);
+    color: var(--dsw-alias-label-primary);
+}body[data-dsh-festival-spring] blockquote{
   border-left: 3px solid var(--spring-gold);
     background: rgba(200, 30, 16, 0.05);
     border-radius: 0 10px 10px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-festival-spring] .markdown-body hr,
-body[data-dsh-festival-spring] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-festival-spring] hr{
   border: none;
     height: 8px;
     background-image:
@@ -546,52 +510,24 @@ body[data-dsh-festival-spring] hr {
     background-position: 0 1px, 0 4px;
     background-repeat: repeat-x, no-repeat;
     opacity: 0.75;
-}
-
-body[data-dsh-festival-spring] .markdown-body a,
-body[data-dsh-festival-spring] a {
+}body[data-dsh-festival-spring] a{
   color: var(--spring-red);
-}
-
-body[data-dsh-festival-spring] .markdown-body a:hover,
-body[data-dsh-festival-spring] a:hover {
+}body[data-dsh-festival-spring] a:hover{
   color: var(--spring-red-deep);
     text-shadow: 0 0 6px rgba(200, 30, 16, 0.25);
-}
-
-body[data-dsh-festival-spring] .arco-btn:not(button[class*='primary']):hover {
-  color: var(--spring-red-deep) !important;
-    border-color: rgba(200, 30, 16, 0.45) !important;
-    background-color: rgba(200, 30, 16, 0.07) !important;
-}
-
-body[data-dsh-festival-spring]::-webkit-scrollbar {
+}body[data-dsh-festival-spring]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-festival-spring]::-webkit-scrollbar-thumb {
+}body[data-dsh-festival-spring]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--spring-red), var(--spring-red-deep));
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-festival-spring]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-festival-spring]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, var(--spring-gold-bright), var(--spring-red));
     box-shadow: 0 0 8px rgba(200, 30, 16, 0.35);
-}
-
-body[data-dsh-festival-spring]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-festival-spring][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme]::before {
+}body[data-dsh-festival-spring]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-festival-spring][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -608,9 +544,7 @@ body[data-dsh-festival-spring][data-ds-dark-theme]::before {
       radial-gradient(ellipse 40% 30% at 10% 88%, rgba(242, 184, 75, 0.4) 0%, transparent 70%);
     background-size: 520px 520px, 640px 640px, 480px 480px, 580px 580px, 500px 500px, 100% 100%, 100% 100%;
     animation: festival-spring-spring-ember-glow 4.6s ease-in-out infinite;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme]::after {
+}body[data-dsh-festival-spring][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -622,105 +556,33 @@ body[data-dsh-festival-spring][data-ds-dark-theme]::after {
       linear-gradient(-45deg, rgba(242, 184, 75, 0.55) 1px, transparent 1px);
     background-size: 44px 44px;
     animation: festival-spring-spring-lattice-drift 40s linear infinite;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 10px;
-    transition: background-color 0.22s ease, box-shadow 0.22s ease;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    box-shadow: inset 3px 0 0 0 var(--spring-red), 3px 0 10px rgba(224, 58, 44, 0.18);
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-festival-spring][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(224, 58, 44, 0.3), rgba(224, 58, 44, 0.08) 62%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--spring-gold), 3px 0 12px rgba(242, 184, 75, 0.28);
-    font-weight: 600;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-festival-spring][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background:
-      radial-gradient(circle at 82% 16%, rgba(247, 236, 220, 0.5) 0 2px, transparent 3.5px),
-      linear-gradient(135deg, var(--spring-red-deep) 0%, var(--spring-red) 55%, #f0603f 100%) !important;
-    border: 1px solid var(--spring-gold) !important;
-    border-radius: 10px !important;
-    color: var(--text-white) !important;
-    font-weight: 700;
-    box-shadow: 0 2px 10px rgba(224, 58, 44, 0.4), inset 0 1px 0 rgba(242, 184, 75, 0.4);
-    text-shadow: 0 1px 2px rgba(90, 10, 8, 0.5);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-festival-spring][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.12);
-    animation: festival-spring-spring-btn-spark 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] pre,
-body[data-dsh-festival-spring][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-festival-spring][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #180a0b 0%, #120607 100%) !important;
-    border: 1px solid var(--border-base) !important;
+    border: 1px solid var(--dsw-alias-border-l2) !important;
     border-left: 4px solid var(--spring-gold) !important;
     border-radius: 10px !important;
     box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.6), 0 0 14px rgba(242, 184, 75, 0.08);
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] pre code,
-body[data-dsh-festival-spring][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-festival-spring][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #f2e6d2 !important;
     border: none;
     padding: 0;
     text-shadow: none;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] code,
-body[data-dsh-festival-spring][data-ds-dark-theme] .markdown-body code {
-  background-color: var(--brand-light);
+}body[data-dsh-festival-spring][data-ds-dark-theme] code{
+  background-color: var(--dsw-alias-markdown-citation);
     color: var(--spring-gold);
-    border: 1px solid var(--border-special);
+    border: 1px solid var(--dsw-alias-border-l3);
     border-radius: 5px;
     padding: 0.1em 0.35em;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 45%, transparent);
-    color: var(--text-white);
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 8px rgba(8, 3, 4, 0.55), 0 0 0 1px rgba(242, 184, 75, 0.12);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-festival-spring][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(242, 184, 75, 0.4);
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-festival-spring][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 45%, transparent);
+    color: var(--dsw-alias-label-primary-inverted);
+}body[data-dsh-festival-spring][data-ds-dark-theme] blockquote{
   border-left: 3px solid var(--spring-gold);
     background: rgba(224, 58, 44, 0.1);
     border-radius: 0 10px 10px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-festival-spring][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-festival-spring][data-ds-dark-theme] hr{
   border: none;
     height: 8px;
     background-image:
@@ -730,72 +592,33 @@ body[data-dsh-festival-spring][data-ds-dark-theme] hr {
     background-position: 0 1px, 0 4px;
     background-repeat: repeat-x, no-repeat;
     opacity: 0.7;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-festival-spring][data-ds-dark-theme] a {
+}body[data-dsh-festival-spring][data-ds-dark-theme] a{
   color: var(--spring-gold);
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-festival-spring][data-ds-dark-theme] a:hover {
+}body[data-dsh-festival-spring][data-ds-dark-theme] a:hover{
   color: #ffd98a;
     text-shadow: 0 0 8px rgba(242, 184, 75, 0.5);
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: var(--color-primary-light-2) !important;
-    border-color: rgba(242, 184, 75, 0.5) !important;
-    background-color: rgba(224, 58, 44, 0.12) !important;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-festival-spring][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-festival-spring][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--spring-red), var(--spring-red-deep));
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-festival-spring][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, var(--spring-gold), var(--spring-red));
     box-shadow: 0 0 8px rgba(242, 184, 75, 0.5);
-}
-
-body[data-dsh-festival-spring][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
+}body[data-dsh-festival-spring][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
 }
 
 /* --- keyframes --- */
-@keyframes festival-spring-spring-ember-glow {
-  0%, 100% { opacity: 0.05; }
-  50% { opacity: 0.11; }
+@keyframes festival-spring-spring-ember-glow {0%,100%{ opacity: 0.05; }50%{ opacity: 0.11; }
 }
 
-@keyframes festival-spring-spring-lattice-drift {
-  0% { background-position: 0 0, 0 0; }
-  100% { background-position: 44px 44px, -44px 44px; }
+@keyframes festival-spring-spring-lattice-drift {0%{ background-position: 0 0, 0 0; }100%{ background-position: 44px 44px, -44px 44px; }
 }
 
-@keyframes festival-spring-spring-lantern-sway {
-  0%, 100% { background-position: 0 0, 0 0, 0 11px; }
-  50% { background-position: 4px 0, 4px 0, 5px 11px; }
-}
-
-@keyframes festival-spring-spring-btn-spark {
-  0%, 100% { box-shadow: 0 2px 14px rgba(200, 30, 16, 0.45), 0 0 26px rgba(232, 182, 74, 0.2), inset 0 1px 0 rgba(232, 182, 74, 0.5); }
-  50% { box-shadow: 0 2px 20px rgba(200, 30, 16, 0.65), 0 0 40px rgba(232, 182, 74, 0.4), inset 0 1px 0 rgba(232, 182, 74, 0.6); }
-}
-
-@keyframes festival-spring-spring-gold-flow {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 220% 50%; }
-}
-
-@keyframes festival-spring-spring-border-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-festival-spring]{
+  --dsh-windows-content-radius: 6px;
 }

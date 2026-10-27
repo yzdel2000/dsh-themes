@@ -1,172 +1,139 @@
-/* game-eldenring — 艾尔登法环 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-game-eldenring], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-game-eldenring] {
+/* game-eldenring — 艾尔登法环 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-game-eldenring],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-game-eldenring]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #2b2417;
-  background-color: #f4efe2;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] {
-  color: #ece5d2;
-  background-color: #0d0d0a;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-game-eldenring] {
-  --color-primary: #a07c2a;
-  --primary: #a07c2a;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 160, 124, 42;
-  --color-primary-light-1: #b8943f;
-  --color-primary-light-2: #cfae62;
-  --color-primary-light-3: #e3cb94;
-  --color-primary-dark-1: #75591c;
-  --brand: #a07c2a;
-  --brand-light: #f3ead2;
-  --brand-hover: #85661f;
-  --color-brand-fill: #a07c2a;
-  --color-brand-bg: #efe3c6;
-  --aou-1: #f6efd9;
-  --aou-2: #ecdfc0;
-  --aou-3: #dfc997;
-  --aou-4: #d0b06a;
-  --aou-5: #bd9a44;
-  --aou-6: #a07c2a;
-  --aou-7: #85661f;
-  --aou-8: #6a5117;
-  --aou-9: #4f3c10;
-  --aou-10: #352708;
-  --bg-base: #f4efe2;
-  --bg-1: #ece6d5;
-  --bg-2: #e3dcc8;
-  --bg-3: #d9d0b8;
-  --bg-4: #cdc2a6;
-  --bg-5: #bdb196;
-  --bg-6: #a89b7e;
-  --bg-8: #867a5f;
-  --bg-9: #615843;
-  --bg-10: #3c372b;
-  --color-bg-1: #ece6d5;
-  --color-bg-2: #e3dcc8;
-  --color-bg-3: #d9d0b8;
-  --color-bg-4: #cdc2a6;
-  --bg-hover: #e6dfcc;
-  --bg-active: #dcd4bd;
-  --text-primary: #2b2417;
-  --text-secondary: #5f5642;
-  --text-disabled: #a79a80;
-  --text-0: #171207;
-  --text-white: #ffffff;
-  --color-text-1: #2b2417;
-  --color-text-2: #5f5642;
-  --color-text-3: #837758;
-  --color-text-4: #a79a80;
-  --border-base: #cfc3a5;
-  --border-light: #ded5c0;
-  --border-special: #b08d3e;
-  --color-border: #cfc3a5;
-  --color-border-1: #cfc3a5;
-  --color-border-2: #ded5c0;
-  --fill: #e3dcc8;
-  --color-fill: #e3dcc8;
-  --fill-0: #ece6d5;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #faf6ea;
-  --inverse: #2b2417;
-  --success: #2f9159;
-  --warning: #c07f1a;
-  --danger: #b8402f;
-  --info: #3a6ea8;
-  --message-user-bg: #39424a;
-  --message-tips-bg: #e9e3d2;
-  --workspace-btn-bg: #efe3c6;
-  --color-guid-agent-bar: #e8e1cd;
   --er-gold: #a07c2a;
   --er-gold-soft: rgba(160, 124, 42, 0.3);
   --er-tarnished: #39424a;
   --er-tarnished-hi: #5a6772;
   --er-crimson: #9c4437;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-game-eldenring][data-ds-dark-theme] {
-  --color-primary: #d4a84f;
-  --primary: #d4a84f;
-  --primary-rgb: 212, 168, 79;
-  --color-primary-light-1: #e0bd72;
-  --color-primary-light-2: #ebd095;
-  --color-primary-light-3: #f3e3bd;
-  --color-primary-dark-1: #a87f33;
-  --brand: #d4a84f;
-  --brand-light: #2e2414;
-  --brand-hover: #e2bb63;
-  --color-brand-fill: #d4a84f;
-  --color-brand-bg: #241c0f;
-  --aou-1: #1d160a;
-  --aou-2: #37290f;
-  --aou-3: #513d17;
-  --aou-4: #6e5220;
-  --aou-5: #916d2b;
-  --aou-6: #b78b38;
-  --aou-7: #d4a84f;
-  --aou-8: #e0bd72;
-  --aou-9: #ebd095;
-  --aou-10: #f6ead0;
-  --bg-base: #0d0d0a;
-  --bg-1: #14140f;
-  --bg-2: #1a1a13;
-  --bg-3: #212118;
-  --bg-4: #29291e;
-  --bg-5: #323226;
-  --bg-6: #3d3d2e;
-  --bg-8: #55553f;
-  --bg-9: #75755a;
-  --bg-10: #a3a385;
-  --color-bg-1: #14140f;
-  --color-bg-2: #1a1a13;
-  --color-bg-3: #212118;
-  --color-bg-4: #29291e;
-  --bg-hover: #1f1f16;
-  --bg-active: #28281d;
-  --text-primary: #ece5d2;
-  --text-secondary: #b0a98f;
-  --text-disabled: #5c584a;
-  --text-0: #f8f4e8;
-  --text-white: #ffffff;
-  --color-text-1: #ece5d2;
-  --color-text-2: #b0a98f;
-  --color-text-3: #8a8570;
-  --color-text-4: #5c584a;
-  --border-base: #36321e;
-  --border-light: #26251a;
-  --border-special: #6e5220;
-  --color-border: #36321e;
-  --color-border-1: #36321e;
-  --color-border-2: #26251a;
-  --fill: #1a1a13;
-  --color-fill: #1a1a13;
-  --fill-0: #14140f;
-  --fill-white-to-black: #0d0d0a;
-  --dialog-fill-0: #181710;
-  --inverse: #ece5d2;
-  --success: #5a9e6f;
-  --warning: #d99a3d;
-  --danger: #c94f45;
-  --info: #5d85b8;
-  --message-user-bg: #252a30;
-  --message-tips-bg: #1c1f24;
-  --workspace-btn-bg: #241c0f;
-  --color-guid-agent-bar: #16150f;
-  --er-gold: #d4a84f;
-  --er-gold-soft: rgba(212, 168, 79, 0.35);
-  --er-tarnished: #2b3238;
-  --er-tarnished-hi: #48525a;
-  --er-crimson: #8e3a32;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-game-eldenring] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #f4efe2;
+  --dsw-alias-bg-l1: #ece6d5;
+  --dsw-alias-bg-l2: #e3dcc8;
+  --dsw-alias-bg-layer-1: #ece6d5;
+  --dsw-alias-bg-layer-2: #e3dcc8;
+  --dsw-alias-bg-layer-3: #d9d0b8;
+  --dsw-alias-bg-layer-4: #cdc2a6;
+  --dsw-alias-bg-overlay: #faf6ea;
+  --dsw-alias-bg-module-platform: #e3dcc8;
+  --dsw-alias-bg-multi-select: #dcd4bd;
+  --dsw-alias-bg-skeleton: #d9d0b8;
+  --dsw-alias-bg-document-preview: #ece6d5;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #a07c2a 30%, transparent);
+  --dsw-alias-label-primary: #2b2417;
+  --dsw-alias-label-secondary: #5f5642;
+  --dsw-alias-label-tertiary: #837758;
+  --dsw-alias-label-quaternary: #a79a80;
+  --dsw-alias-label-caption: #171207;
+  --dsw-alias-label-dimmed: #a79a80;
+  --dsw-alias-label-primary-dimmed: #5f5642;
+  --dsw-alias-label-primary-bluish: #2b2417;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #2b2417;
+  --dsw-alias-label-error: #b8402f;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #2b2417 30%, transparent);
+  --dsw-alias-label-deep-diving: #3a6ea8;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #3a6ea8 55%, transparent);
+  --dsw-alias-link: #a07c2a;
+  --dsw-alias-border-l1: #ded5c0;
+  --dsw-alias-border-l2: #cfc3a5;
+  --dsw-alias-border-l2-darkmode-thin: #ded5c0;
+  --dsw-alias-border-l3: #b08d3e;
+  --dsw-alias-border-l4: #b08d3e;
+  --dsw-alias-border-inverted: #2b2417;
+  --dsw-alias-border-inverted2: #2b2417;
+  --dsw-alias-separator-primary: #ded5c0;
+  --dsw-alias-brand-primary: #a07c2a;
+  --dsw-alias-brand-primary-invert: #2b2417;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #a07c2a;
+  --dsw-alias-markdown-citation: #b8943f;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #a07c2a 14%, transparent);
+  --dsw-alias-markdown-inline-code: #e3dcc8;
+  --dsw-alias-markdown-code-block: #ece6d5;
+  --dsw-alias-markdown-code-block-banner: #e3dcc8;
+  --dsw-alias-markdown-code-segment-selected: #d9d0b8;
+  --dsw-alias-markdown-code-segment-unselected: #ece6d5;
+  --dsw-alias-markdown-placeholder: #a79a80;
+  --dsw-alias-fill-l1: #e3dcc8;
+  --dsw-alias-fill-l2: #ece6d5;
+  --dsw-alias-fill-tertiary: #d9d0b8;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #2b2417 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #e6dfcc;
+  --dsw-alias-interactive-bg-active: #dcd4bd;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #a07c2a 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #b8402f 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #d9d0b8;
+  --dsw-alias-state-error-primary: #b8402f;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #b8402f 15%, transparent);
+  --dsw-alias-state-success-primary: #2f9159;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #2f9159 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #2f9159 8%, transparent);
+  --dsw-alias-state-warn-primary: #c07f1a;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #c07f1a 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #c07f1a 8%, transparent);
+  --dsw-alias-state-warn-label: #c07f1a;
+  --dsw-alias-state-business-primary: #3a6ea8;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #3a6ea8 10%, transparent);
+  --dsw-alias-state-idle-primary: #a79a80;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #2f9159 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #b8402f 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #5f5642 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #2f9159 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #2f9159 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #2f9159 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #b8402f 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #b8402f 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #b8402f 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #5f5642 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #ece6d5;
+  --dsw-alias-scrollbar-bg-l2: #e3dcc8;
+  --dsw-alias-scrollbar-hover-l1: #e6dfcc;
+  --dsw-alias-scrollbar-hover-l2: #e6dfcc;
+  --dsw-alias-menu-icon: #5f5642;
+  --dsw-alias-menu-group-header-fill: #e3dcc8;
+  --dsw-alias-tooltip-bg: #2b2417;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #d9d0b8;
+  --dsw-alias-toast-label: #2b2417;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #5f5642;
+  --dsw-alias-turn-trigger-bg: #e3dcc8;
+  --dsw-alias-turn-trigger-bg-hover: #d9d0b8;
+  --dsw-alias-button-primary-fill: #a07c2a;
+  --dsw-alias-button-primary-hover: #75591c;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #a07c2a 45%, transparent);
+  --dsw-alias-button-contrast-fill: #75591c;
+  --dsw-alias-button-elevated-fill: #ece6d5;
+  --dsw-alias-button-floating-fill: #e3dcc8;
+  --dsw-alias-button-floating-hover: #e6dfcc;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #a07c2a 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #cfae62;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #a07c2a 24%, transparent);
+  --dsw-alias-button-info-fill: #3a6ea8;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #3a6ea8 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #e3dcc8;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #e6dfcc;
+  --dsw-alias-onboarding-card-fill: #ece6d5;
+  --dsw-alias-onboarding-secondary-fill: #e3dcc8;
+  --dsw-alias-onboarding-checkbox-border: #cfc3a5;
+  --dsw-alias-settings-card-fill: #e3dcc8;
+  --dsw-alias-settings-card-stroke: #cfc3a5;
+  --dsw-specific-bubble: #e3dcc8;
+  --dsw-specific-bubble-highlight: #39424a;
+  --dsw-specific-input-major: #faf6ea;
+  --dsw-specific-login-input: #ece6d5;
+  --dsw-specific-menu: #ece6d5;
+  --dsw-specific-selector: #e3dcc8;
+  --dsw-specific-sidebar-fill: #ece6d5;
+  --dsw-specific-sidebar-nav-item-active: #dcd4bd;
+  --dsw-specific-sidebar-nav-item-active-accent: #a07c2a;
+  --dsw-specific-sidebar-nav-item-hover: #e6dfcc;
+  --dsw-specific-tip: #d9d0b8;
   --dsw-static-deepseek-50: #f6efd9;
   --dsw-static-blue-50: #f6efd9;
   --dsw-static-deepseek-50p: #ecdfc0;
@@ -254,10 +221,142 @@ body[data-dsh-game-eldenring] {
   --dsw-static-red-500: #b8402f;
   --dsw-static-red-600: color-mix(in srgb, #b8402f 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #b8402f 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-game-eldenring][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-game-eldenring][data-ds-dark-theme]{
+  color: #ece5d2;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 212, 168, 79;
+  --er-gold: #d4a84f;
+  --er-gold-soft: rgba(212, 168, 79, 0.35);
+  --er-tarnished: #2b3238;
+  --er-tarnished-hi: #48525a;
+  --er-crimson: #8e3a32;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #0d0d0a;
+  --dsw-alias-bg-l1: #14140f;
+  --dsw-alias-bg-l2: #1a1a13;
+  --dsw-alias-bg-layer-1: #14140f;
+  --dsw-alias-bg-layer-2: #1a1a13;
+  --dsw-alias-bg-layer-3: #212118;
+  --dsw-alias-bg-layer-4: #29291e;
+  --dsw-alias-bg-overlay: #181710;
+  --dsw-alias-bg-module-platform: #1a1a13;
+  --dsw-alias-bg-multi-select: #28281d;
+  --dsw-alias-bg-skeleton: #212118;
+  --dsw-alias-bg-document-preview: #14140f;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #d4a84f 30%, transparent);
+  --dsw-alias-label-primary: #ece5d2;
+  --dsw-alias-label-secondary: #b0a98f;
+  --dsw-alias-label-tertiary: #8a8570;
+  --dsw-alias-label-quaternary: #5c584a;
+  --dsw-alias-label-caption: #f8f4e8;
+  --dsw-alias-label-dimmed: #5c584a;
+  --dsw-alias-label-primary-dimmed: #b0a98f;
+  --dsw-alias-label-primary-bluish: #ece5d2;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #ece5d2;
+  --dsw-alias-label-error: #c94f45;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #ece5d2 30%, transparent);
+  --dsw-alias-label-deep-diving: #5d85b8;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #5d85b8 55%, transparent);
+  --dsw-alias-link: #d4a84f;
+  --dsw-alias-border-l1: #26251a;
+  --dsw-alias-border-l2: #36321e;
+  --dsw-alias-border-l2-darkmode-thin: #26251a;
+  --dsw-alias-border-l3: #6e5220;
+  --dsw-alias-border-l4: #6e5220;
+  --dsw-alias-border-inverted: #ece5d2;
+  --dsw-alias-border-inverted2: #ece5d2;
+  --dsw-alias-separator-primary: #26251a;
+  --dsw-alias-brand-primary: #d4a84f;
+  --dsw-alias-brand-primary-invert: #ece5d2;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #d4a84f;
+  --dsw-alias-markdown-citation: #e0bd72;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #d4a84f 14%, transparent);
+  --dsw-alias-markdown-inline-code: #1a1a13;
+  --dsw-alias-markdown-code-block: #14140f;
+  --dsw-alias-markdown-code-block-banner: #1a1a13;
+  --dsw-alias-markdown-code-segment-selected: #212118;
+  --dsw-alias-markdown-code-segment-unselected: #14140f;
+  --dsw-alias-markdown-placeholder: #5c584a;
+  --dsw-alias-fill-l1: #1a1a13;
+  --dsw-alias-fill-l2: #14140f;
+  --dsw-alias-fill-tertiary: #212118;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #ece5d2 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #1f1f16;
+  --dsw-alias-interactive-bg-active: #28281d;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #d4a84f 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #c94f45 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #212118;
+  --dsw-alias-state-error-primary: #c94f45;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #c94f45 15%, transparent);
+  --dsw-alias-state-success-primary: #5a9e6f;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #5a9e6f 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #5a9e6f 8%, transparent);
+  --dsw-alias-state-warn-primary: #d99a3d;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #d99a3d 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #d99a3d 8%, transparent);
+  --dsw-alias-state-warn-label: #d99a3d;
+  --dsw-alias-state-business-primary: #5d85b8;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #5d85b8 10%, transparent);
+  --dsw-alias-state-idle-primary: #5c584a;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #5a9e6f 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #c94f45 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #b0a98f 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #5a9e6f 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #5a9e6f 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #5a9e6f 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #c94f45 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #c94f45 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #c94f45 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #b0a98f 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #14140f;
+  --dsw-alias-scrollbar-bg-l2: #1a1a13;
+  --dsw-alias-scrollbar-hover-l1: #1f1f16;
+  --dsw-alias-scrollbar-hover-l2: #1f1f16;
+  --dsw-alias-menu-icon: #b0a98f;
+  --dsw-alias-menu-group-header-fill: #1a1a13;
+  --dsw-alias-tooltip-bg: #ece5d2;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #212118;
+  --dsw-alias-toast-label: #ece5d2;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #b0a98f;
+  --dsw-alias-turn-trigger-bg: #1a1a13;
+  --dsw-alias-turn-trigger-bg-hover: #212118;
+  --dsw-alias-button-primary-fill: #d4a84f;
+  --dsw-alias-button-primary-hover: #a87f33;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #d4a84f 45%, transparent);
+  --dsw-alias-button-contrast-fill: #a87f33;
+  --dsw-alias-button-elevated-fill: #14140f;
+  --dsw-alias-button-floating-fill: #1a1a13;
+  --dsw-alias-button-floating-hover: #1f1f16;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #d4a84f 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #ebd095;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #d4a84f 24%, transparent);
+  --dsw-alias-button-info-fill: #5d85b8;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #5d85b8 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #1a1a13;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #1f1f16;
+  --dsw-alias-onboarding-card-fill: #14140f;
+  --dsw-alias-onboarding-secondary-fill: #1a1a13;
+  --dsw-alias-onboarding-checkbox-border: #36321e;
+  --dsw-alias-settings-card-fill: #1a1a13;
+  --dsw-alias-settings-card-stroke: #36321e;
+  --dsw-specific-bubble: #1a1a13;
+  --dsw-specific-bubble-highlight: #252a30;
+  --dsw-specific-input-major: #181710;
+  --dsw-specific-login-input: #14140f;
+  --dsw-specific-menu: #14140f;
+  --dsw-specific-selector: #1a1a13;
+  --dsw-specific-sidebar-fill: #14140f;
+  --dsw-specific-sidebar-nav-item-active: #28281d;
+  --dsw-specific-sidebar-nav-item-active-accent: #d4a84f;
+  --dsw-specific-sidebar-nav-item-hover: #1f1f16;
+  --dsw-specific-tip: #212118;
   --dsw-static-deepseek-50: #1d160a;
   --dsw-static-blue-50: #1d160a;
   --dsw-static-deepseek-50p: #37290f;
@@ -345,69 +444,8 @@ body[data-dsh-game-eldenring][data-ds-dark-theme] {
   --dsw-static-red-500: #c94f45;
   --dsw-static-red-600: color-mix(in srgb, #c94f45 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #c94f45 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-game-eldenring] {
-  --dsw-alias-button-primary-fill: #a07c2a;
-  --dsw-alias-button-primary-hover: #85661f;
-  --dsw-alias-button-primary-dimmed: #ecdfc0;
-  --dsw-alias-button-info-fill: #a07c2a;
-  --dsw-alias-button-info-hover: #85661f;
-  --dsw-alias-button-contrast-fill: #85661f;
-  --dsw-alias-button-ghost-active-fill: #f3ead2;
-  --dsw-alias-button-ghost-active-hover: #ecdfc0;
-  --dsw-alias-button-ghost-active-border: #d0b06a;
-  --dsw-alias-button-elevated-fill: #ece6d5;
-  --dsw-alias-button-floating-fill: #ece6d5;
-  --dsw-alias-button-floating-hover: #e6dfcc;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(160, 124, 42, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(160, 124, 42, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(160, 124, 42, 0.6);
-  --dsw-specific-bubble: #39424a;
-  --dsw-specific-bubble-highlight: #dfc997;
-  --dsw-specific-input-major: #ece6d5;
-  --dsw-specific-login-input: #ece6d5;
-  --dsw-specific-sidebar-fill: #a07c2a;
-  --dsw-specific-sidebar-nav-item-active: #ecdfc0;
-  --dsw-specific-sidebar-nav-item-hover: #e6dfcc;
-  --dsw-specific-sidebar-nav-item-active-accent: #d0b06a;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-game-eldenring][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #d4a84f;
-  --dsw-alias-button-primary-hover: #e2bb63;
-  --dsw-alias-button-primary-dimmed: #37290f;
-  --dsw-alias-button-info-fill: #d4a84f;
-  --dsw-alias-button-info-hover: #e2bb63;
-  --dsw-alias-button-contrast-fill: #d4a84f;
-  --dsw-alias-button-ghost-active-fill: #2e2414;
-  --dsw-alias-button-ghost-active-hover: #37290f;
-  --dsw-alias-button-ghost-active-border: #6e5220;
-  --dsw-alias-button-elevated-fill: #14140f;
-  --dsw-alias-button-floating-fill: #14140f;
-  --dsw-alias-button-floating-hover: #1f1f16;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(212, 168, 79, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(212, 168, 79, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(212, 168, 79, 0.6);
-  --dsw-specific-bubble: #252a30;
-  --dsw-specific-bubble-highlight: #513d17;
-  --dsw-specific-input-major: #14140f;
-  --dsw-specific-login-input: #14140f;
-  --dsw-specific-sidebar-fill: #d4a84f;
-  --dsw-specific-sidebar-nav-item-active: #37290f;
-  --dsw-specific-sidebar-nav-item-hover: #1f1f16;
-  --dsw-specific-sidebar-nav-item-active-accent: #6e5220;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-game-eldenring] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-game-eldenring]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-game-eldenring]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -421,9 +459,7 @@ body[data-dsh-game-eldenring]::before {
       radial-gradient(ellipse at 88% 88%, rgba(156, 68, 55, 0.06) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 500px 500px, 100% 100%, 100% 100%;
     opacity: 0.75;
-}
-
-body[data-dsh-game-eldenring]::after {
+}body[data-dsh-game-eldenring]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -436,129 +472,45 @@ body[data-dsh-game-eldenring]::after {
     background-position: 0 0, 28px 28px;
     opacity: 0.05;
     animation: game-eldenring-erd-ring-drift 30s linear infinite;
-}
-
-body[data-dsh-game-eldenring] [class*='sider'] [class*='session'],
-body[data-dsh-game-eldenring] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-game-eldenring] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(160, 124, 42, 0.1);
-    box-shadow: inset 3px 0 0 0 rgba(160, 124, 42, 0.5);
-}
-
-body[data-dsh-game-eldenring] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-game-eldenring] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(160, 124, 42, 0.2), rgba(160, 124, 42, 0.05) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 #a07c2a;
-}
-
-body[data-dsh-game-eldenring] button[class*='primary'],
-body[data-dsh-game-eldenring] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #85661f 0%, #a07c2a 55%, #bd9a44 100%) !important;
-    border: 1px solid #dfc997 !important;
-    color: #fffaf0 !important;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(160, 124, 42, 0.3), inset 0 1px 0 rgba(255, 250, 235, 0.3);
-    text-shadow: 0 1px 2px rgba(53, 39, 8, 0.45);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-game-eldenring] button[class*='primary']:hover,
-body[data-dsh-game-eldenring] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.07);
-    box-shadow: 0 3px 14px rgba(160, 124, 42, 0.45), inset 0 1px 0 rgba(255, 250, 235, 0.4);
-    animation: game-eldenring-erd-btn-glow 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-game-eldenring] pre,
-body[data-dsh-game-eldenring] .markdown-body pre {
+}body[data-dsh-game-eldenring] pre{
   background: linear-gradient(180deg, #2e3338 0%, #272c30 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #a07c2a !important;
     border-radius: 8px;
     box-shadow: inset 0 0 20px rgba(160, 124, 42, 0.12);
-}
-
-body[data-dsh-game-eldenring] pre code,
-body[data-dsh-game-eldenring] .markdown-body pre code {
+}body[data-dsh-game-eldenring] pre code{
   background: transparent !important;
     color: #e8e2cf !important;
     text-shadow: none;
-}
-
-body[data-dsh-game-eldenring] code,
-body[data-dsh-game-eldenring] .markdown-body code {
+}body[data-dsh-game-eldenring] code{
   background: rgba(160, 124, 42, 0.14);
     color: #85661f;
     border: 1px solid rgba(160, 124, 42, 0.32);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-game-eldenring]::selection {
-  background: color-mix(in srgb, var(--brand) 28%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-game-eldenring] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 6px rgba(60, 55, 43, 0.08), 0 0 0 1px rgba(160, 124, 42, 0.12);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-game-eldenring] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-game-eldenring] [class*='agent-bar'],
-body[data-dsh-game-eldenring] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(160, 124, 42, 0.35);
-}
-
-body[data-dsh-game-eldenring]::-webkit-scrollbar {
+}body[data-dsh-game-eldenring]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 28%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-game-eldenring]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-game-eldenring]::-webkit-scrollbar-thumb {
+}body[data-dsh-game-eldenring]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #bd9a44, #6a5117);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-game-eldenring]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-game-eldenring]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #d0b06a, #4f3c10);
-}
-
-body[data-dsh-game-eldenring]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-game-eldenring] .markdown-body a,
-body[data-dsh-game-eldenring] a {
+}body[data-dsh-game-eldenring]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-game-eldenring] a{
   color: #85661f;
-}
-
-body[data-dsh-game-eldenring] .markdown-body a:hover,
-body[data-dsh-game-eldenring] a:hover {
+}body[data-dsh-game-eldenring] a:hover{
   color: #a07c2a;
-}
-
-body[data-dsh-game-eldenring] .markdown-body blockquote {
+}body[data-dsh-game-eldenring] blockquote{
   border-left: 3px solid #a07c2a;
     background: rgba(160, 124, 42, 0.09);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-game-eldenring] .markdown-body hr,
-body[data-dsh-game-eldenring] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-game-eldenring] hr{
   border: none;
     height: 10px;
     background-image:
@@ -568,21 +520,7 @@ body[data-dsh-game-eldenring] hr {
     background-repeat: repeat-x;
     background-position: 0 0, 8px 0;
     opacity: 0.6;
-}
-
-body[data-dsh-game-eldenring] .arco-btn:not(button[class*='primary']):hover {
-  color: #85661f !important;
-    border-color: rgba(160, 124, 42, 0.5) !important;
-    background-color: rgba(160, 124, 42, 0.09) !important;
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-game-eldenring][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme]::before {
+}body[data-dsh-game-eldenring][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -596,9 +534,7 @@ body[data-dsh-game-eldenring][data-ds-dark-theme]::before {
       radial-gradient(ellipse at 88% 88%, rgba(142, 58, 50, 0.08) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 500px 500px, 100% 100%, 100% 100%;
     opacity: 0.9;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme]::after {
+}body[data-dsh-game-eldenring][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -611,128 +547,45 @@ body[data-dsh-game-eldenring][data-ds-dark-theme]::after {
     background-position: 0 0, 28px 28px;
     opacity: 0.06;
     animation: game-eldenring-erd-ring-drift 30s linear infinite;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] [class*='sider'] [class*='session'],
-body[data-dsh-game-eldenring][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(212, 168, 79, 0.1);
-    box-shadow: inset 3px 0 0 0 rgba(212, 168, 79, 0.55);
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-game-eldenring][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(212, 168, 79, 0.26), rgba(212, 168, 79, 0.07) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 #d4a84f;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-game-eldenring][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #a87f33 0%, #d4a84f 55%, #e2bb63 100%) !important;
-    border: 1px solid #ebd095 !important;
-    color: #241c0f !important;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(212, 168, 79, 0.3), inset 0 1px 0 rgba(255, 245, 220, 0.4);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-game-eldenring][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.1);
-    box-shadow: 0 3px 16px rgba(212, 168, 79, 0.55), inset 0 1px 0 rgba(255, 245, 220, 0.5);
-    animation: game-eldenring-erd-btn-glow 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] pre,
-body[data-dsh-game-eldenring][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-game-eldenring][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #13130e 0%, #0f0f0b 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #d4a84f !important;
     border-radius: 8px;
     box-shadow: inset 0 0 24px rgba(212, 168, 79, 0.06);
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] pre code,
-body[data-dsh-game-eldenring][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-game-eldenring][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #e6ddc4 !important;
     text-shadow: none;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] code,
-body[data-dsh-game-eldenring][data-ds-dark-theme] .markdown-body code {
+}body[data-dsh-game-eldenring][data-ds-dark-theme] code{
   background: rgba(212, 168, 79, 0.14);
     color: #ebd095;
     border: 1px solid rgba(212, 168, 79, 0.3);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 40%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 8px rgba(6, 6, 4, 0.5), 0 0 0 1px rgba(212, 168, 79, 0.1);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-game-eldenring][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(212, 168, 79, 0.35);
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-game-eldenring][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 40%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-game-eldenring][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-game-eldenring][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #d4a84f, #6e5220);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-game-eldenring][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #e2bb63, #916d2b);
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-game-eldenring][data-ds-dark-theme] a {
+}body[data-dsh-game-eldenring][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-game-eldenring][data-ds-dark-theme] a{
   color: #e0bd72;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-game-eldenring][data-ds-dark-theme] a:hover {
+}body[data-dsh-game-eldenring][data-ds-dark-theme] a:hover{
   color: #ebd095;
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-game-eldenring][data-ds-dark-theme] blockquote{
   border-left: 3px solid #d4a84f;
     background: rgba(212, 168, 79, 0.08);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-game-eldenring][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-game-eldenring][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-game-eldenring][data-ds-dark-theme] hr{
   border: none;
     height: 10px;
     background-image:
@@ -744,29 +597,11 @@ body[data-dsh-game-eldenring][data-ds-dark-theme] hr {
     opacity: 0.65;
 }
 
-body[data-dsh-game-eldenring][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: #ebd095 !important;
-    border-color: rgba(212, 168, 79, 0.55) !important;
-    background-color: rgba(212, 168, 79, 0.12) !important;
-}
-
 /* --- keyframes --- */
-@keyframes game-eldenring-erd-ring-drift {
-  0% { background-position: 0 0, 28px 28px; }
-  100% { background-position: 56px 28px, 84px 56px; }
+@keyframes game-eldenring-erd-ring-drift {0%{ background-position: 0 0, 28px 28px; }100%{ background-position: 56px 28px, 84px 56px; }
 }
 
-@keyframes game-eldenring-erd-grace-breathe {
-  0%, 100% { box-shadow: 0 2px 8px rgba(160, 124, 42, 0.14); }
-  50% { box-shadow: 0 2px 15px rgba(160, 124, 42, 0.3); }
-}
-
-@keyframes game-eldenring-erd-btn-glow {
-  0%, 100% { box-shadow: 0 3px 12px rgba(160, 124, 42, 0.38), inset 0 1px 0 rgba(255, 250, 235, 0.35); }
-  50% { box-shadow: 0 3px 20px rgba(160, 124, 42, 0.58), inset 0 1px 0 rgba(255, 250, 235, 0.45); }
-}
-
-@keyframes game-eldenring-erd-halo-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-game-eldenring]{
+  --dsh-windows-content-radius: 6px;
 }

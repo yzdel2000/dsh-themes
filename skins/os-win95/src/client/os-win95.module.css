@@ -1,87 +1,8 @@
-/* os-win95 — Windows 95 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-os-win95], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-os-win95] {
+/* os-win95 — Windows 95 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-os-win95],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-os-win95]{
   --dsw-font-family: Tahoma, 'MS Sans Serif', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  color: #000000;
-  background-color: #c0c0c0;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] {
-  color: #f0f0f0;
-  background-color: #1a1a1c;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-os-win95] {
-  --color-primary: #000080;
-  --primary: #000080;
+  color: var(--dsw-alias-label-primary);
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 0, 0, 128;
-  --color-primary-light-1: #3333a0;
-  --color-primary-light-2: #6a6ac0;
-  --color-primary-light-3: #a8a8e0;
-  --color-primary-dark-1: #000058;
-  --brand: #000080;
-  --brand-light: #e2e6f5;
-  --brand-hover: #1084d0;
-  --color-brand-fill: #000080;
-  --color-brand-bg: #e2e6f5;
-  --aou-1: #e6eaff;
-  --aou-2: #ccd3f2;
-  --aou-3: #aab6e4;
-  --aou-4: #8696d4;
-  --aou-5: #5f72c0;
-  --aou-6: #3a4fa8;
-  --aou-7: #1e3290;
-  --aou-8: #0c1c78;
-  --aou-9: #040f58;
-  --aou-10: #000038;
-  --bg-base: #c0c0c0;
-  --bg-1: #bbbbbb;
-  --bg-2: #b4b4b4;
-  --bg-3: #acacac;
-  --bg-4: #a2a2a2;
-  --bg-5: #989898;
-  --bg-6: #8c8c8c;
-  --bg-8: #707070;
-  --bg-9: #525252;
-  --bg-10: #333333;
-  --color-bg-1: #bbbbbb;
-  --color-bg-2: #b4b4b4;
-  --color-bg-3: #acacac;
-  --color-bg-4: #a2a2a2;
-  --bg-hover: #d0d0d0;
-  --bg-active: #000080;
-  --text-primary: #000000;
-  --text-secondary: #2b2b2b;
-  --text-disabled: #6e6e6e;
-  --text-0: #000000;
-  --text-white: #ffffff;
-  --color-text-1: #000000;
-  --color-text-2: #2b2b2b;
-  --color-text-3: #4a4a4a;
-  --color-text-4: #6e6e6e;
-  --border-base: #808080;
-  --border-light: #dfdfdf;
-  --border-special: #000080;
-  --color-border: #808080;
-  --color-border-1: #808080;
-  --color-border-2: #dfdfdf;
-  --fill: #c0c0c0;
-  --color-fill: #c0c0c0;
-  --fill-0: #d6d6d6;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #c6c6c6;
-  --inverse: #000000;
-  --success: #008000;
-  --warning: #808000;
-  --danger: #c00000;
-  --info: #1084d0;
-  --message-user-bg: #000080;
-  --message-tips-bg: #ffffe1;
-  --workspace-btn-bg: #c0c0c0;
-  --color-guid-agent-bar: #c0c0c0;
   --w95-face: #c0c0c0;
   --w95-light: #dfdfdf;
   --w95-hilight: #ffffff;
@@ -91,90 +12,132 @@ body[data-dsh-os-win95] {
   --w95-title2: #1084d0;
   --w95-teal: #008080;
   --w95-tooltip: #ffffe1;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-os-win95][data-ds-dark-theme] {
-  --color-primary: #4a90e2;
-  --primary: #4a90e2;
-  --primary-rgb: 74, 144, 226;
-  --color-primary-light-1: #6aa8ec;
-  --color-primary-light-2: #8fc2f4;
-  --color-primary-light-3: #bcdcfb;
-  --color-primary-dark-1: #2f6fc0;
-  --brand: #4a90e2;
-  --brand-light: #14203c;
-  --brand-hover: #6aa8ec;
-  --color-brand-fill: #4a90e2;
-  --color-brand-bg: #14203c;
-  --aou-1: #04041a;
-  --aou-2: #0a0a33;
-  --aou-3: #10104d;
-  --aou-4: #17176b;
-  --aou-5: #1e1e8a;
-  --aou-6: #2e2ea8;
-  --aou-7: #4a4ac0;
-  --aou-8: #7070d4;
-  --aou-9: #a0a0e6;
-  --aou-10: #d0d0f5;
-  --bg-base: #1a1a1c;
-  --bg-1: #222226;
-  --bg-2: #2a2a2e;
-  --bg-3: #323236;
-  --bg-4: #3a3a40;
-  --bg-5: #46464c;
-  --bg-6: #525258;
-  --bg-8: #70707a;
-  --bg-9: #96969e;
-  --bg-10: #c0c0c8;
-  --color-bg-1: #222226;
-  --color-bg-2: #2a2a2e;
-  --color-bg-3: #323236;
-  --color-bg-4: #3a3a40;
-  --bg-hover: #3a3a40;
-  --bg-active: #12245e;
-  --text-primary: #f0f0f0;
-  --text-secondary: #c4c4c4;
-  --text-disabled: #6e6e6e;
-  --text-0: #ffffff;
-  --text-white: #ffffff;
-  --color-text-1: #f0f0f0;
-  --color-text-2: #c4c4c4;
-  --color-text-3: #9a9a9a;
-  --color-text-4: #6e6e6e;
-  --border-base: #16161a;
-  --border-light: #54545a;
-  --border-special: #4a90e2;
-  --color-border: #16161a;
-  --color-border-1: #16161a;
-  --color-border-2: #54545a;
-  --fill: #2a2a2e;
-  --color-fill: #2a2a2e;
-  --fill-0: #222226;
-  --fill-white-to-black: #121214;
-  --dialog-fill-0: #26262a;
-  --inverse: #f0f0f0;
-  --success: #4cc26a;
-  --warning: #d6c44a;
-  --danger: #e05555;
-  --info: #4a90e2;
-  --message-user-bg: #1a2f6e;
-  --message-tips-bg: #3a3620;
-  --workspace-btn-bg: #3c3c40;
-  --color-guid-agent-bar: #26262a;
-  --w95-face: #3c3c40;
-  --w95-light: #54545a;
-  --w95-hilight: #6a6a72;
-  --w95-shadow: #16161a;
-  --w95-dark: #000000;
-  --w95-navy: #000040;
-  --w95-title2: #0a5aa8;
-  --w95-teal: #1a9c9c;
-  --w95-tooltip: #3a3620;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-os-win95] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #c0c0c0;
+  --dsw-alias-bg-l1: #bbbbbb;
+  --dsw-alias-bg-l2: #b4b4b4;
+  --dsw-alias-bg-layer-1: #bbbbbb;
+  --dsw-alias-bg-layer-2: #b4b4b4;
+  --dsw-alias-bg-layer-3: #acacac;
+  --dsw-alias-bg-layer-4: #a2a2a2;
+  --dsw-alias-bg-overlay: #c6c6c6;
+  --dsw-alias-bg-module-platform: #b4b4b4;
+  --dsw-alias-bg-multi-select: #000080;
+  --dsw-alias-bg-skeleton: #acacac;
+  --dsw-alias-bg-document-preview: #bbbbbb;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #000080 30%, transparent);
+  --dsw-alias-label-primary: #000000;
+  --dsw-alias-label-secondary: #2b2b2b;
+  --dsw-alias-label-tertiary: #4a4a4a;
+  --dsw-alias-label-quaternary: #6e6e6e;
+  --dsw-alias-label-caption: #000000;
+  --dsw-alias-label-dimmed: #6e6e6e;
+  --dsw-alias-label-primary-dimmed: #2b2b2b;
+  --dsw-alias-label-primary-bluish: #000000;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #000000;
+  --dsw-alias-label-error: #c00000;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #000000 30%, transparent);
+  --dsw-alias-label-deep-diving: #1084d0;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #1084d0 55%, transparent);
+  --dsw-alias-link: #000080;
+  --dsw-alias-border-l1: #dfdfdf;
+  --dsw-alias-border-l2: #808080;
+  --dsw-alias-border-l2-darkmode-thin: #dfdfdf;
+  --dsw-alias-border-l3: #000080;
+  --dsw-alias-border-l4: #000080;
+  --dsw-alias-border-inverted: #000000;
+  --dsw-alias-border-inverted2: #000000;
+  --dsw-alias-separator-primary: #dfdfdf;
+  --dsw-alias-brand-primary: #000080;
+  --dsw-alias-brand-primary-invert: #000000;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #000080;
+  --dsw-alias-markdown-citation: #3333a0;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #000080 14%, transparent);
+  --dsw-alias-markdown-inline-code: #c0c0c0;
+  --dsw-alias-markdown-code-block: #bbbbbb;
+  --dsw-alias-markdown-code-block-banner: #b4b4b4;
+  --dsw-alias-markdown-code-segment-selected: #acacac;
+  --dsw-alias-markdown-code-segment-unselected: #bbbbbb;
+  --dsw-alias-markdown-placeholder: #6e6e6e;
+  --dsw-alias-fill-l1: #c0c0c0;
+  --dsw-alias-fill-l2: #d6d6d6;
+  --dsw-alias-fill-tertiary: #acacac;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #000000 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #d0d0d0;
+  --dsw-alias-interactive-bg-active: #000080;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #000080 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #c00000 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #acacac;
+  --dsw-alias-state-error-primary: #c00000;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #c00000 15%, transparent);
+  --dsw-alias-state-success-primary: #008000;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #008000 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #008000 8%, transparent);
+  --dsw-alias-state-warn-primary: #808000;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #808000 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #808000 8%, transparent);
+  --dsw-alias-state-warn-label: #808000;
+  --dsw-alias-state-business-primary: #1084d0;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #1084d0 10%, transparent);
+  --dsw-alias-state-idle-primary: #6e6e6e;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #008000 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #c00000 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #2b2b2b 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #008000 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #008000 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #008000 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #c00000 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #c00000 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #c00000 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #2b2b2b 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #bbbbbb;
+  --dsw-alias-scrollbar-bg-l2: #b4b4b4;
+  --dsw-alias-scrollbar-hover-l1: #d0d0d0;
+  --dsw-alias-scrollbar-hover-l2: #d0d0d0;
+  --dsw-alias-menu-icon: #2b2b2b;
+  --dsw-alias-menu-group-header-fill: #b4b4b4;
+  --dsw-alias-tooltip-bg: #000000;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #acacac;
+  --dsw-alias-toast-label: #000000;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #2b2b2b;
+  --dsw-alias-turn-trigger-bg: #b4b4b4;
+  --dsw-alias-turn-trigger-bg-hover: #acacac;
+  --dsw-alias-button-primary-fill: #000080;
+  --dsw-alias-button-primary-hover: #000058;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #000080 45%, transparent);
+  --dsw-alias-button-contrast-fill: #000058;
+  --dsw-alias-button-elevated-fill: #bbbbbb;
+  --dsw-alias-button-floating-fill: #b4b4b4;
+  --dsw-alias-button-floating-hover: #d0d0d0;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #000080 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #6a6ac0;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #000080 24%, transparent);
+  --dsw-alias-button-info-fill: #1084d0;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #1084d0 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #b4b4b4;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #d0d0d0;
+  --dsw-alias-onboarding-card-fill: #bbbbbb;
+  --dsw-alias-onboarding-secondary-fill: #b4b4b4;
+  --dsw-alias-onboarding-checkbox-border: #808080;
+  --dsw-alias-settings-card-fill: #b4b4b4;
+  --dsw-alias-settings-card-stroke: #808080;
+  --dsw-specific-bubble: #b4b4b4;
+  --dsw-specific-bubble-highlight: #000080;
+  --dsw-specific-input-major: #c6c6c6;
+  --dsw-specific-login-input: #bbbbbb;
+  --dsw-specific-menu: #bbbbbb;
+  --dsw-specific-selector: #b4b4b4;
+  --dsw-specific-sidebar-fill: #bbbbbb;
+  --dsw-specific-sidebar-nav-item-active: #000080;
+  --dsw-specific-sidebar-nav-item-active-accent: #000080;
+  --dsw-specific-sidebar-nav-item-hover: #d0d0d0;
+  --dsw-specific-tip: #acacac;
   --dsw-static-deepseek-50: #e6eaff;
   --dsw-static-blue-50: #e6eaff;
   --dsw-static-deepseek-50p: #ccd3f2;
@@ -262,10 +225,146 @@ body[data-dsh-os-win95] {
   --dsw-static-red-500: #c00000;
   --dsw-static-red-600: color-mix(in srgb, #c00000 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #c00000 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-os-win95][data-ds-dark-theme] {
+  font-family: Tahoma, 'MS Sans Serif', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-os-win95][data-ds-dark-theme]{
+  color: var(--dsw-alias-label-primary);
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 74, 144, 226;
+  --w95-face: #3c3c40;
+  --w95-light: #54545a;
+  --w95-hilight: #6a6a72;
+  --w95-shadow: #16161a;
+  --w95-dark: #000000;
+  --w95-navy: #000040;
+  --w95-title2: #0a5aa8;
+  --w95-teal: #1a9c9c;
+  --w95-tooltip: #3a3620;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #1a1a1c;
+  --dsw-alias-bg-l1: #222226;
+  --dsw-alias-bg-l2: #2a2a2e;
+  --dsw-alias-bg-layer-1: #222226;
+  --dsw-alias-bg-layer-2: #2a2a2e;
+  --dsw-alias-bg-layer-3: #323236;
+  --dsw-alias-bg-layer-4: #3a3a40;
+  --dsw-alias-bg-overlay: #26262a;
+  --dsw-alias-bg-module-platform: #2a2a2e;
+  --dsw-alias-bg-multi-select: #12245e;
+  --dsw-alias-bg-skeleton: #323236;
+  --dsw-alias-bg-document-preview: #222226;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #4a90e2 30%, transparent);
+  --dsw-alias-label-primary: #f0f0f0;
+  --dsw-alias-label-secondary: #c4c4c4;
+  --dsw-alias-label-tertiary: #9a9a9a;
+  --dsw-alias-label-quaternary: #6e6e6e;
+  --dsw-alias-label-caption: #ffffff;
+  --dsw-alias-label-dimmed: #6e6e6e;
+  --dsw-alias-label-primary-dimmed: #c4c4c4;
+  --dsw-alias-label-primary-bluish: #f0f0f0;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #f0f0f0;
+  --dsw-alias-label-error: #e05555;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #f0f0f0 30%, transparent);
+  --dsw-alias-label-deep-diving: #4a90e2;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #4a90e2 55%, transparent);
+  --dsw-alias-link: #4a90e2;
+  --dsw-alias-border-l1: #54545a;
+  --dsw-alias-border-l2: #16161a;
+  --dsw-alias-border-l2-darkmode-thin: #54545a;
+  --dsw-alias-border-l3: #4a90e2;
+  --dsw-alias-border-l4: #4a90e2;
+  --dsw-alias-border-inverted: #f0f0f0;
+  --dsw-alias-border-inverted2: #f0f0f0;
+  --dsw-alias-separator-primary: #54545a;
+  --dsw-alias-brand-primary: #4a90e2;
+  --dsw-alias-brand-primary-invert: #f0f0f0;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #4a90e2;
+  --dsw-alias-markdown-citation: #6aa8ec;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #4a90e2 14%, transparent);
+  --dsw-alias-markdown-inline-code: #2a2a2e;
+  --dsw-alias-markdown-code-block: #222226;
+  --dsw-alias-markdown-code-block-banner: #2a2a2e;
+  --dsw-alias-markdown-code-segment-selected: #323236;
+  --dsw-alias-markdown-code-segment-unselected: #222226;
+  --dsw-alias-markdown-placeholder: #6e6e6e;
+  --dsw-alias-fill-l1: #2a2a2e;
+  --dsw-alias-fill-l2: #222226;
+  --dsw-alias-fill-tertiary: #323236;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #f0f0f0 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #3a3a40;
+  --dsw-alias-interactive-bg-active: #12245e;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #4a90e2 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #e05555 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #323236;
+  --dsw-alias-state-error-primary: #e05555;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #e05555 15%, transparent);
+  --dsw-alias-state-success-primary: #4cc26a;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #4cc26a 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #4cc26a 8%, transparent);
+  --dsw-alias-state-warn-primary: #d6c44a;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #d6c44a 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #d6c44a 8%, transparent);
+  --dsw-alias-state-warn-label: #d6c44a;
+  --dsw-alias-state-business-primary: #4a90e2;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #4a90e2 10%, transparent);
+  --dsw-alias-state-idle-primary: #6e6e6e;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #4cc26a 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #e05555 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #c4c4c4 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #4cc26a 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #4cc26a 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #4cc26a 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #e05555 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #e05555 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #e05555 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #c4c4c4 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #222226;
+  --dsw-alias-scrollbar-bg-l2: #2a2a2e;
+  --dsw-alias-scrollbar-hover-l1: #3a3a40;
+  --dsw-alias-scrollbar-hover-l2: #3a3a40;
+  --dsw-alias-menu-icon: #c4c4c4;
+  --dsw-alias-menu-group-header-fill: #2a2a2e;
+  --dsw-alias-tooltip-bg: #f0f0f0;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #323236;
+  --dsw-alias-toast-label: #f0f0f0;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #c4c4c4;
+  --dsw-alias-turn-trigger-bg: #2a2a2e;
+  --dsw-alias-turn-trigger-bg-hover: #323236;
+  --dsw-alias-button-primary-fill: #4a90e2;
+  --dsw-alias-button-primary-hover: #2f6fc0;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #4a90e2 45%, transparent);
+  --dsw-alias-button-contrast-fill: #2f6fc0;
+  --dsw-alias-button-elevated-fill: #222226;
+  --dsw-alias-button-floating-fill: #2a2a2e;
+  --dsw-alias-button-floating-hover: #3a3a40;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #4a90e2 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #8fc2f4;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #4a90e2 24%, transparent);
+  --dsw-alias-button-info-fill: #4a90e2;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #4a90e2 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #2a2a2e;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #3a3a40;
+  --dsw-alias-onboarding-card-fill: #222226;
+  --dsw-alias-onboarding-secondary-fill: #2a2a2e;
+  --dsw-alias-onboarding-checkbox-border: #16161a;
+  --dsw-alias-settings-card-fill: #2a2a2e;
+  --dsw-alias-settings-card-stroke: #16161a;
+  --dsw-specific-bubble: #2a2a2e;
+  --dsw-specific-bubble-highlight: #1a2f6e;
+  --dsw-specific-input-major: #26262a;
+  --dsw-specific-login-input: #222226;
+  --dsw-specific-menu: #222226;
+  --dsw-specific-selector: #2a2a2e;
+  --dsw-specific-sidebar-fill: #222226;
+  --dsw-specific-sidebar-nav-item-active: #12245e;
+  --dsw-specific-sidebar-nav-item-active-accent: #4a90e2;
+  --dsw-specific-sidebar-nav-item-hover: #3a3a40;
+  --dsw-specific-tip: #323236;
   --dsw-static-deepseek-50: #04041a;
   --dsw-static-blue-50: #04041a;
   --dsw-static-deepseek-50p: #0a0a33;
@@ -353,70 +452,8 @@ body[data-dsh-os-win95][data-ds-dark-theme] {
   --dsw-static-red-500: #e05555;
   --dsw-static-red-600: color-mix(in srgb, #e05555 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #e05555 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-os-win95] {
-  --dsw-alias-button-primary-fill: #000080;
-  --dsw-alias-button-primary-hover: #1084d0;
-  --dsw-alias-button-primary-dimmed: #ccd3f2;
-  --dsw-alias-button-info-fill: #000080;
-  --dsw-alias-button-info-hover: #1084d0;
-  --dsw-alias-button-contrast-fill: #1e3290;
-  --dsw-alias-button-ghost-active-fill: #e2e6f5;
-  --dsw-alias-button-ghost-active-hover: #ccd3f2;
-  --dsw-alias-button-ghost-active-border: #8696d4;
-  --dsw-alias-button-elevated-fill: #d6d6d6;
-  --dsw-alias-button-floating-fill: #d6d6d6;
-  --dsw-alias-button-floating-hover: #d0d0d0;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(0, 0, 128, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(0, 0, 128, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(0, 0, 128, 0.6);
-  --dsw-specific-bubble: #000080;
-  --dsw-specific-bubble-highlight: #aab6e4;
-  --dsw-specific-input-major: #d6d6d6;
-  --dsw-specific-login-input: #d6d6d6;
-  --dsw-specific-sidebar-fill: #000080;
-  --dsw-specific-sidebar-nav-item-active: #ccd3f2;
-  --dsw-specific-sidebar-nav-item-hover: #d0d0d0;
-  --dsw-specific-sidebar-nav-item-active-accent: #8696d4;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-os-win95][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #4a90e2;
-  --dsw-alias-button-primary-hover: #6aa8ec;
-  --dsw-alias-button-primary-dimmed: #0a0a33;
-  --dsw-alias-button-info-fill: #4a90e2;
-  --dsw-alias-button-info-hover: #6aa8ec;
-  --dsw-alias-button-contrast-fill: #4a4ac0;
-  --dsw-alias-button-ghost-active-fill: #14203c;
-  --dsw-alias-button-ghost-active-hover: #0a0a33;
-  --dsw-alias-button-ghost-active-border: #17176b;
-  --dsw-alias-button-elevated-fill: #222226;
-  --dsw-alias-button-floating-fill: #222226;
-  --dsw-alias-button-floating-hover: #3a3a40;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(74, 144, 226, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(74, 144, 226, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(74, 144, 226, 0.6);
-  --dsw-specific-bubble: #1a2f6e;
-  --dsw-specific-bubble-highlight: #10104d;
-  --dsw-specific-input-major: #222226;
-  --dsw-specific-login-input: #222226;
-  --dsw-specific-sidebar-fill: #4a90e2;
-  --dsw-specific-sidebar-nav-item-active: #0a0a33;
-  --dsw-specific-sidebar-nav-item-hover: #3a3a40;
-  --dsw-specific-sidebar-nav-item-active-accent: #17176b;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-os-win95] {
-  background-color: var(--bg-base) !important;
-    color: var(--text-primary);
-    font-family: Tahoma, 'MS Sans Serif', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-os-win95]::before {
+  font-family: Tahoma, 'MS Sans Serif', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-os-win95]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -427,9 +464,7 @@ body[data-dsh-os-win95]::before {
       repeating-conic-gradient(rgba(0, 128, 128, 0.6) 0% 25%, transparent 0% 50%),
       repeating-linear-gradient(0deg, transparent 0 2px, rgba(0, 0, 0, 0.55) 2px 3px);
     background-size: 4px 4px, 100% 3px;
-}
-
-body[data-dsh-os-win95]::after {
+}body[data-dsh-os-win95]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -442,59 +477,7 @@ body[data-dsh-os-win95]::after {
       radial-gradient(circle at 45% 85%, var(--w95-navy) 0 1.8px, transparent 2.8px);
     background-size: 420px 420px, 560px 560px, 640px 640px;
     animation: os-win95-win95-starfield 9s linear infinite;
-}
-
-body[data-dsh-os-win95] [class*='sider'] [class*='item'] {
-  border-radius: 0;
-    transition: none;
-}
-
-body[data-dsh-os-win95] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    outline: 1px dotted #000000;
-    outline-offset: -2px;
-}
-
-body[data-dsh-os-win95] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-os-win95] [class*='sider'] [class*='item'][class*='selected'] {
-  background-color: var(--bg-active) !important;
-    color: #ffffff !important;
-    font-weight: 700;
-}
-
-body[data-dsh-os-win95] [class*='sider'] [class*='item'][class*='active'] *,
-body[data-dsh-os-win95] [class*='sider'] [class*='item'][class*='selected'] * {
-  color: #ffffff !important;
-}
-
-body[data-dsh-os-win95] button[class*='primary'],
-body[data-dsh-os-win95] button[class*='primary']:not(.arco-btn-disabled) {
-  background: var(--w95-face) !important;
-    border: none !important;
-    border-radius: 0 !important;
-    color: #000000 !important;
-    font-weight: 700;
-    box-shadow:
-      inset -1px -1px var(--w95-dark), inset 1px 1px var(--w95-hilight),
-      inset -2px -2px var(--w95-shadow), inset 2px 2px var(--w95-light) !important;
-}
-
-body[data-dsh-os-win95] button[class*='primary']:hover,
-body[data-dsh-os-win95] button[class*='primary']:not(.arco-btn-disabled):hover {
-  background: #c8c8c8 !important;
-    outline: 1px dotted #000000;
-    outline-offset: -4px;
-}
-
-body[data-dsh-os-win95] button[class*='primary']:active,
-body[data-dsh-os-win95] button[class*='primary']:not(.arco-btn-disabled):active {
-  box-shadow:
-      inset -1px -1px var(--w95-hilight), inset 1px 1px var(--w95-dark),
-      inset -2px -2px var(--w95-light), inset 2px 2px var(--w95-shadow) !important;
-}
-
-body[data-dsh-os-win95] pre,
-body[data-dsh-os-win95] .markdown-body pre {
+}body[data-dsh-os-win95] pre{
   background: #ffffff !important;
     border: none !important;
     border-radius: 0 !important;
@@ -503,104 +486,54 @@ body[data-dsh-os-win95] .markdown-body pre {
       inset -1px -1px var(--w95-hilight), inset 1px 1px var(--w95-dark),
       inset -2px -2px var(--w95-light), inset 2px 2px var(--w95-shadow);
     font-family: 'Courier New', 'Fixedsys', monospace;
-}
-
-body[data-dsh-os-win95] pre code,
-body[data-dsh-os-win95] .markdown-body pre code {
+}body[data-dsh-os-win95] pre code{
   background: transparent !important;
     color: #000000 !important;
     border: none;
     padding: 0;
     text-shadow: none;
-}
-
-body[data-dsh-os-win95] code,
-body[data-dsh-os-win95] .markdown-body code {
+}body[data-dsh-os-win95] code{
   background-color: var(--w95-tooltip);
     color: #000000;
     border: 1px solid var(--w95-shadow);
     border-radius: 0;
     padding: 0.1em 0.35em;
-}
-
-body[data-dsh-os-win95] [class*='agent-bar'],
-body[data-dsh-os-win95] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid var(--w95-shadow);
-    box-shadow: 0 1px 0 var(--w95-hilight) inset;
-}
-
-body[data-dsh-os-win95] .markdown-body blockquote {
+}body[data-dsh-os-win95] blockquote{
   background: var(--w95-tooltip);
     border: 1px solid #000000;
     border-left: 4px solid var(--w95-navy);
     border-radius: 0;
     color: #000000;
-}
-
-body[data-dsh-os-win95] .markdown-body hr,
-body[data-dsh-os-win95] hr {
+}body[data-dsh-os-win95] hr{
   border: none;
     border-top: 1px solid var(--w95-shadow);
     border-bottom: 1px solid var(--w95-hilight);
     height: 0;
-}
-
-body[data-dsh-os-win95] .markdown-body a,
-body[data-dsh-os-win95] a {
+}body[data-dsh-os-win95] a{
   color: var(--w95-navy);
     text-decoration: underline;
-}
-
-body[data-dsh-os-win95] .markdown-body a:hover,
-body[data-dsh-os-win95] a:hover {
+}body[data-dsh-os-win95] a:hover{
   color: var(--w95-title2);
-}
-
-body[data-dsh-os-win95] .arco-btn:not(button[class*='primary']):hover {
-  color: #000000 !important;
-    background-color: var(--bg-hover) !important;
-    outline: 1px dotted #000000;
-    outline-offset: -3px;
-}
-
-body[data-dsh-os-win95]::selection {
-  background: color-mix(in srgb, var(--brand) 100%, transparent);
+}body[data-dsh-os-win95]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 100%, transparent);
     color: #ffffff;
-}
-
-body[data-dsh-os-win95]::-webkit-scrollbar {
+}body[data-dsh-os-win95]::-webkit-scrollbar{
   width: 14px;
     height: 14px;
-}
-
-body[data-dsh-os-win95]::-webkit-scrollbar-thumb {
+}body[data-dsh-os-win95]::-webkit-scrollbar-thumb{
   background: var(--w95-face);
     border-radius: 0;
     border: none;
     box-shadow:
       inset -1px -1px var(--w95-dark), inset 1px 1px var(--w95-hilight),
       inset -2px -2px var(--w95-shadow), inset 2px 2px var(--w95-light);
-}
-
-body[data-dsh-os-win95]::-webkit-scrollbar-thumb:hover {
+}body[data-dsh-os-win95]::-webkit-scrollbar-thumb:hover{
   background: #d0d0d0;
-}
-
-body[data-dsh-os-win95]::-webkit-scrollbar-track {
+}body[data-dsh-os-win95]::-webkit-scrollbar-track{
   background: var(--w95-face);
     background-image: repeating-conic-gradient(var(--w95-light) 0% 25%, var(--w95-hilight) 0% 50%);
     background-size: 2px 2px;
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-os-win95][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    color: var(--text-primary);
-    font-family: Tahoma, 'MS Sans Serif', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme]::before {
+}body[data-dsh-os-win95][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -611,9 +544,7 @@ body[data-dsh-os-win95][data-ds-dark-theme]::before {
       repeating-conic-gradient(rgba(26, 156, 156, 0.5) 0% 25%, transparent 0% 50%),
       repeating-linear-gradient(0deg, transparent 0 2px, rgba(0, 0, 0, 0.6) 2px 3px);
     background-size: 4px 4px, 100% 3px;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme]::after {
+}body[data-dsh-os-win95][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -626,59 +557,7 @@ body[data-dsh-os-win95][data-ds-dark-theme]::after {
       radial-gradient(circle at 45% 85%, #bcdcfb 0 1.8px, transparent 2.8px);
     background-size: 420px 420px, 560px 560px, 640px 640px;
     animation: os-win95-win95-starfield 9s linear infinite;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 0;
-    transition: none;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover) !important;
-    outline: 1px dotted #c4c4c4;
-    outline-offset: -2px;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-os-win95][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background-color: var(--bg-active) !important;
-    color: #ffffff !important;
-    font-weight: 700;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'] *,
-body[data-dsh-os-win95][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] * {
-  color: #ffffff !important;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-os-win95][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background: var(--w95-face) !important;
-    border: none !important;
-    border-radius: 0 !important;
-    color: #f0f0f0 !important;
-    font-weight: 700;
-    box-shadow:
-      inset -1px -1px var(--w95-dark), inset 1px 1px var(--w95-hilight),
-      inset -2px -2px var(--w95-shadow), inset 2px 2px var(--w95-light) !important;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-os-win95][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  background: #46464c !important;
-    outline: 1px dotted #c4c4c4;
-    outline-offset: -4px;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] button[class*='primary']:active,
-body[data-dsh-os-win95][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):active {
-  box-shadow:
-      inset -1px -1px var(--w95-hilight), inset 1px 1px var(--w95-dark),
-      inset -2px -2px var(--w95-light), inset 2px 2px var(--w95-shadow) !important;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] pre,
-body[data-dsh-os-win95][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-os-win95][data-ds-dark-theme] pre{
   background: #141416 !important;
     border: none !important;
     border-radius: 0 !important;
@@ -687,108 +566,60 @@ body[data-dsh-os-win95][data-ds-dark-theme] .markdown-body pre {
       inset -1px -1px var(--w95-hilight), inset 1px 1px var(--w95-dark),
       inset -2px -2px var(--w95-light), inset 2px 2px var(--w95-shadow);
     font-family: 'Courier New', 'Fixedsys', monospace;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] pre code,
-body[data-dsh-os-win95][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-os-win95][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #e8e8e8 !important;
     border: none;
     padding: 0;
     text-shadow: none;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] code,
-body[data-dsh-os-win95][data-ds-dark-theme] .markdown-body code {
+}body[data-dsh-os-win95][data-ds-dark-theme] code{
   background-color: var(--w95-tooltip);
     color: #f0ead0;
     border: 1px solid var(--w95-shadow);
     border-radius: 0;
     padding: 0.1em 0.35em;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-os-win95][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid var(--w95-shadow);
-    box-shadow: 0 1px 0 var(--w95-light) inset;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-os-win95][data-ds-dark-theme] blockquote{
   background: var(--w95-tooltip);
     border: 1px solid #000000;
-    border-left: 4px solid var(--color-primary);
+    border-left: 4px solid var(--dsw-alias-brand-primary);
     border-radius: 0;
     color: #f0ead0;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-os-win95][data-ds-dark-theme] hr {
+}body[data-dsh-os-win95][data-ds-dark-theme] hr{
   border: none;
     border-top: 1px solid var(--w95-shadow);
     border-bottom: 1px solid var(--w95-light);
     height: 0;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-os-win95][data-ds-dark-theme] a {
-  color: var(--color-primary-light-2);
+}body[data-dsh-os-win95][data-ds-dark-theme] a{
+  color: var(--dsw-alias-markdown-tag);
     text-decoration: underline;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-os-win95][data-ds-dark-theme] a:hover {
-  color: var(--color-primary-light-3);
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: #ffffff !important;
-    background-color: var(--bg-hover) !important;
-    outline: 1px dotted #c4c4c4;
-    outline-offset: -3px;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 100%, transparent);
+}body[data-dsh-os-win95][data-ds-dark-theme] a:hover{
+  color: var(--dsw-alias-interactive-bg-hover-accent);
+}body[data-dsh-os-win95][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 100%, transparent);
     color: #ffffff;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-os-win95][data-ds-dark-theme]::-webkit-scrollbar{
   width: 14px;
     height: 14px;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-os-win95][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: var(--w95-face);
     border-radius: 0;
     border: none;
     box-shadow:
       inset -1px -1px var(--w95-dark), inset 1px 1px var(--w95-hilight),
       inset -2px -2px var(--w95-shadow), inset 2px 2px var(--w95-light);
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+}body[data-dsh-os-win95][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: #4a4a50;
-}
-
-body[data-dsh-os-win95][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-2);
-    background-image: repeating-conic-gradient(var(--bg-3) 0% 25%, var(--bg-2) 0% 50%);
+}body[data-dsh-os-win95][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-2);
+    background-image: repeating-conic-gradient(var(--dsw-alias-bg-layer-3) 0% 25%, var(--dsw-alias-bg-layer-2) 0% 50%);
     background-size: 2px 2px;
 }
 
 /* --- keyframes --- */
-@keyframes os-win95-win95-starfield {
-  0% { background-position: 0 0, 60px 90px, 120px 30px; }
-  100% { background-position: 140px 220px, 200px 310px, 260px 190px; }
+@keyframes os-win95-win95-starfield {0%{ background-position: 0 0, 60px 90px, 120px 30px; }100%{ background-position: 140px 220px, 200px 310px, 260px 190px; }
 }
 
-@keyframes os-win95-win95-progress {
-  0% { background-position: 0 0; }
-  100% { background-position: 52px 0; }
-}
-
-@keyframes os-win95-win95-cursor-blink {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-os-win95]{
+  --dsh-windows-content-radius: 0px;
 }

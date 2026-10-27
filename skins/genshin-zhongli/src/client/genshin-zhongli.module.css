@@ -1,172 +1,139 @@
-/* genshin-zhongli — 原神 · 钟离 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-genshin-zhongli], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-genshin-zhongli] {
+/* genshin-zhongli — 原神 · 钟离 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-genshin-zhongli],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-genshin-zhongli]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #2e2416;
-  background-color: #f5f0e4;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] {
-  color: #f2ecdc;
-  background-color: #0f0b06;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-genshin-zhongli] {
-  --color-primary: #9a6b1e;
-  --primary: #9a6b1e;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 154, 107, 30;
-  --color-primary-light-1: #b5842c;
-  --color-primary-light-2: #cfa04a;
-  --color-primary-light-3: #e6c67f;
-  --color-primary-dark-1: #754f12;
-  --brand: #9a6b1e;
-  --brand-light: #f8efd9;
-  --brand-hover: #7e5614;
-  --color-brand-fill: #9a6b1e;
-  --color-brand-bg: #f4e8cc;
-  --aou-1: #faf3e0;
-  --aou-2: #f2e3ba;
-  --aou-3: #e8cf8d;
-  --aou-4: #ddb75c;
-  --aou-5: #c89c3a;
-  --aou-6: #9a6b1e;
-  --aou-7: #7e5614;
-  --aou-8: #63430d;
-  --aou-9: #483008;
-  --aou-10: #2e1e05;
-  --bg-base: #f5f0e4;
-  --bg-1: #eee8d8;
-  --bg-2: #e6ddc8;
-  --bg-3: #dcd0b6;
-  --bg-4: #cfc1a2;
-  --bg-5: #bfae8a;
-  --bg-6: #ab9872;
-  --bg-8: #857252;
-  --bg-9: #5d4f36;
-  --bg-10: #372d1d;
-  --color-bg-1: #eee8d8;
-  --color-bg-2: #e6ddc8;
-  --color-bg-3: #dcd0b6;
-  --color-bg-4: #cfc1a2;
-  --bg-hover: #e4dcc8;
-  --bg-active: #d9cfb4;
-  --text-primary: #2e2416;
-  --text-secondary: #6b5c42;
-  --text-disabled: #b3a586;
-  --text-0: #191207;
-  --text-white: #ffffff;
-  --color-text-1: #2e2416;
-  --color-text-2: #6b5c42;
-  --color-text-3: #93815f;
-  --color-text-4: #b3a586;
-  --border-base: #d3c5a4;
-  --border-light: #e0d6bd;
-  --border-special: #c89c3a;
-  --color-border: #d3c5a4;
-  --color-border-1: #d3c5a4;
-  --color-border-2: #e0d6bd;
-  --fill: #e6ddc8;
-  --color-fill: #e6ddc8;
-  --fill-0: #eee8d8;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #faf6ec;
-  --inverse: #2e2416;
-  --success: #2e8f5a;
-  --warning: #c07f14;
-  --danger: #b5402e;
-  --info: #3a6ec9;
-  --message-user-bg: #2c2110;
-  --message-tips-bg: #e8e0cc;
-  --workspace-btn-bg: #f4e8cc;
-  --color-guid-agent-bar: #ece4d0;
   --zhongli-gold: #9a6b1e;
   --zhongli-gold-soft: rgba(154, 107, 30, 0.28);
   --zhongli-brown: #d8cbaa;
   --zhongli-brown-hi: #b3a276;
   --zhongli-jade: #5d8a70;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] {
-  --color-primary: #d9a648;
-  --primary: #d9a648;
-  --primary-rgb: 217, 166, 72;
-  --color-primary-light-1: #e2b96d;
-  --color-primary-light-2: #ebcd93;
-  --color-primary-light-3: #f4e0ba;
-  --color-primary-dark-1: #a3762a;
-  --brand: #d9a648;
-  --brand-light: #33270f;
-  --brand-hover: #e7bd63;
-  --color-brand-fill: #d9a648;
-  --color-brand-bg: #2b2009;
-  --aou-1: #2b1d09;
-  --aou-2: #472f10;
-  --aou-3: #664315;
-  --aou-4: #8a5a1c;
-  --aou-5: #b07c2c;
-  --aou-6: #d9a648;
-  --aou-7: #e2b96d;
-  --aou-8: #ebcd93;
-  --aou-9: #f4e0ba;
-  --aou-10: #fbf3e2;
-  --bg-base: #0f0b06;
-  --bg-1: #161009;
-  --bg-2: #1d1610;
-  --bg-3: #251c14;
-  --bg-4: #2e2317;
-  --bg-5: #3a2c1c;
-  --bg-6: #483823;
-  --bg-8: #6a5738;
-  --bg-9: #937f5c;
-  --bg-10: #c4b492;
-  --color-bg-1: #161009;
-  --color-bg-2: #1d1610;
-  --color-bg-3: #251c14;
-  --color-bg-4: #2e2317;
-  --bg-hover: #241c12;
-  --bg-active: #2e2417;
-  --text-primary: #f2ecdc;
-  --text-secondary: #b3a68b;
-  --text-disabled: #5c5140;
-  --text-0: #faf6ea;
-  --text-white: #ffffff;
-  --color-text-1: #f2ecdc;
-  --color-text-2: #b3a68b;
-  --color-text-3: #857758;
-  --color-text-4: #5c5140;
-  --border-base: #372b19;
-  --border-light: #2a2114;
-  --border-special: #6a531f;
-  --color-border: #372b19;
-  --color-border-1: #372b19;
-  --color-border-2: #2a2114;
-  --fill: #1d1610;
-  --color-fill: #1d1610;
-  --fill-0: #161009;
-  --fill-white-to-black: #0f0b06;
-  --dialog-fill-0: #181209;
-  --inverse: #f2ecdc;
-  --success: #5cb87a;
-  --warning: #e0a03c;
-  --danger: #c2503c;
-  --info: #6a8fc9;
-  --message-user-bg: #241b0e;
-  --message-tips-bg: #1e1a12;
-  --workspace-btn-bg: #2b2009;
-  --color-guid-agent-bar: #171208;
-  --zhongli-gold: #d9a648;
-  --zhongli-gold-soft: rgba(217, 166, 72, 0.35);
-  --zhongli-brown: #3a2a18;
-  --zhongli-brown-hi: #54401f;
-  --zhongli-jade: #4d7a5f;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-genshin-zhongli] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #f5f0e4;
+  --dsw-alias-bg-l1: #eee8d8;
+  --dsw-alias-bg-l2: #e6ddc8;
+  --dsw-alias-bg-layer-1: #eee8d8;
+  --dsw-alias-bg-layer-2: #e6ddc8;
+  --dsw-alias-bg-layer-3: #dcd0b6;
+  --dsw-alias-bg-layer-4: #cfc1a2;
+  --dsw-alias-bg-overlay: #faf6ec;
+  --dsw-alias-bg-module-platform: #e6ddc8;
+  --dsw-alias-bg-multi-select: #d9cfb4;
+  --dsw-alias-bg-skeleton: #dcd0b6;
+  --dsw-alias-bg-document-preview: #eee8d8;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #9a6b1e 30%, transparent);
+  --dsw-alias-label-primary: #2e2416;
+  --dsw-alias-label-secondary: #6b5c42;
+  --dsw-alias-label-tertiary: #93815f;
+  --dsw-alias-label-quaternary: #b3a586;
+  --dsw-alias-label-caption: #191207;
+  --dsw-alias-label-dimmed: #b3a586;
+  --dsw-alias-label-primary-dimmed: #6b5c42;
+  --dsw-alias-label-primary-bluish: #2e2416;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #2e2416;
+  --dsw-alias-label-error: #b5402e;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #2e2416 30%, transparent);
+  --dsw-alias-label-deep-diving: #3a6ec9;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #3a6ec9 55%, transparent);
+  --dsw-alias-link: #9a6b1e;
+  --dsw-alias-border-l1: #e0d6bd;
+  --dsw-alias-border-l2: #d3c5a4;
+  --dsw-alias-border-l2-darkmode-thin: #e0d6bd;
+  --dsw-alias-border-l3: #c89c3a;
+  --dsw-alias-border-l4: #c89c3a;
+  --dsw-alias-border-inverted: #2e2416;
+  --dsw-alias-border-inverted2: #2e2416;
+  --dsw-alias-separator-primary: #e0d6bd;
+  --dsw-alias-brand-primary: #9a6b1e;
+  --dsw-alias-brand-primary-invert: #2e2416;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #9a6b1e;
+  --dsw-alias-markdown-citation: #b5842c;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #9a6b1e 14%, transparent);
+  --dsw-alias-markdown-inline-code: #e6ddc8;
+  --dsw-alias-markdown-code-block: #eee8d8;
+  --dsw-alias-markdown-code-block-banner: #e6ddc8;
+  --dsw-alias-markdown-code-segment-selected: #dcd0b6;
+  --dsw-alias-markdown-code-segment-unselected: #eee8d8;
+  --dsw-alias-markdown-placeholder: #b3a586;
+  --dsw-alias-fill-l1: #e6ddc8;
+  --dsw-alias-fill-l2: #eee8d8;
+  --dsw-alias-fill-tertiary: #dcd0b6;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #2e2416 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #e4dcc8;
+  --dsw-alias-interactive-bg-active: #d9cfb4;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #9a6b1e 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #b5402e 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #dcd0b6;
+  --dsw-alias-state-error-primary: #b5402e;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #b5402e 15%, transparent);
+  --dsw-alias-state-success-primary: #2e8f5a;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #2e8f5a 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #2e8f5a 8%, transparent);
+  --dsw-alias-state-warn-primary: #c07f14;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #c07f14 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #c07f14 8%, transparent);
+  --dsw-alias-state-warn-label: #c07f14;
+  --dsw-alias-state-business-primary: #3a6ec9;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #3a6ec9 10%, transparent);
+  --dsw-alias-state-idle-primary: #b3a586;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #2e8f5a 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #b5402e 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #6b5c42 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #2e8f5a 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #2e8f5a 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #2e8f5a 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #b5402e 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #b5402e 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #b5402e 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #6b5c42 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #eee8d8;
+  --dsw-alias-scrollbar-bg-l2: #e6ddc8;
+  --dsw-alias-scrollbar-hover-l1: #e4dcc8;
+  --dsw-alias-scrollbar-hover-l2: #e4dcc8;
+  --dsw-alias-menu-icon: #6b5c42;
+  --dsw-alias-menu-group-header-fill: #e6ddc8;
+  --dsw-alias-tooltip-bg: #2e2416;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #dcd0b6;
+  --dsw-alias-toast-label: #2e2416;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #6b5c42;
+  --dsw-alias-turn-trigger-bg: #e6ddc8;
+  --dsw-alias-turn-trigger-bg-hover: #dcd0b6;
+  --dsw-alias-button-primary-fill: #9a6b1e;
+  --dsw-alias-button-primary-hover: #754f12;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #9a6b1e 45%, transparent);
+  --dsw-alias-button-contrast-fill: #754f12;
+  --dsw-alias-button-elevated-fill: #eee8d8;
+  --dsw-alias-button-floating-fill: #e6ddc8;
+  --dsw-alias-button-floating-hover: #e4dcc8;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #9a6b1e 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #cfa04a;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #9a6b1e 24%, transparent);
+  --dsw-alias-button-info-fill: #3a6ec9;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #3a6ec9 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #e6ddc8;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #e4dcc8;
+  --dsw-alias-onboarding-card-fill: #eee8d8;
+  --dsw-alias-onboarding-secondary-fill: #e6ddc8;
+  --dsw-alias-onboarding-checkbox-border: #d3c5a4;
+  --dsw-alias-settings-card-fill: #e6ddc8;
+  --dsw-alias-settings-card-stroke: #d3c5a4;
+  --dsw-specific-bubble: #e6ddc8;
+  --dsw-specific-bubble-highlight: #2c2110;
+  --dsw-specific-input-major: #faf6ec;
+  --dsw-specific-login-input: #eee8d8;
+  --dsw-specific-menu: #eee8d8;
+  --dsw-specific-selector: #e6ddc8;
+  --dsw-specific-sidebar-fill: #eee8d8;
+  --dsw-specific-sidebar-nav-item-active: #d9cfb4;
+  --dsw-specific-sidebar-nav-item-active-accent: #9a6b1e;
+  --dsw-specific-sidebar-nav-item-hover: #e4dcc8;
+  --dsw-specific-tip: #dcd0b6;
   --dsw-static-deepseek-50: #faf3e0;
   --dsw-static-blue-50: #faf3e0;
   --dsw-static-deepseek-50p: #f2e3ba;
@@ -254,10 +221,142 @@ body[data-dsh-genshin-zhongli] {
   --dsw-static-red-500: #b5402e;
   --dsw-static-red-600: color-mix(in srgb, #b5402e 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #b5402e 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme]{
+  color: #f2ecdc;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 217, 166, 72;
+  --zhongli-gold: #d9a648;
+  --zhongli-gold-soft: rgba(217, 166, 72, 0.35);
+  --zhongli-brown: #3a2a18;
+  --zhongli-brown-hi: #54401f;
+  --zhongli-jade: #4d7a5f;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #0f0b06;
+  --dsw-alias-bg-l1: #161009;
+  --dsw-alias-bg-l2: #1d1610;
+  --dsw-alias-bg-layer-1: #161009;
+  --dsw-alias-bg-layer-2: #1d1610;
+  --dsw-alias-bg-layer-3: #251c14;
+  --dsw-alias-bg-layer-4: #2e2317;
+  --dsw-alias-bg-overlay: #181209;
+  --dsw-alias-bg-module-platform: #1d1610;
+  --dsw-alias-bg-multi-select: #2e2417;
+  --dsw-alias-bg-skeleton: #251c14;
+  --dsw-alias-bg-document-preview: #161009;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #d9a648 30%, transparent);
+  --dsw-alias-label-primary: #f2ecdc;
+  --dsw-alias-label-secondary: #b3a68b;
+  --dsw-alias-label-tertiary: #857758;
+  --dsw-alias-label-quaternary: #5c5140;
+  --dsw-alias-label-caption: #faf6ea;
+  --dsw-alias-label-dimmed: #5c5140;
+  --dsw-alias-label-primary-dimmed: #b3a68b;
+  --dsw-alias-label-primary-bluish: #f2ecdc;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #f2ecdc;
+  --dsw-alias-label-error: #c2503c;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #f2ecdc 30%, transparent);
+  --dsw-alias-label-deep-diving: #6a8fc9;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #6a8fc9 55%, transparent);
+  --dsw-alias-link: #d9a648;
+  --dsw-alias-border-l1: #2a2114;
+  --dsw-alias-border-l2: #372b19;
+  --dsw-alias-border-l2-darkmode-thin: #2a2114;
+  --dsw-alias-border-l3: #6a531f;
+  --dsw-alias-border-l4: #6a531f;
+  --dsw-alias-border-inverted: #f2ecdc;
+  --dsw-alias-border-inverted2: #f2ecdc;
+  --dsw-alias-separator-primary: #2a2114;
+  --dsw-alias-brand-primary: #d9a648;
+  --dsw-alias-brand-primary-invert: #f2ecdc;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #d9a648;
+  --dsw-alias-markdown-citation: #e2b96d;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #d9a648 14%, transparent);
+  --dsw-alias-markdown-inline-code: #1d1610;
+  --dsw-alias-markdown-code-block: #161009;
+  --dsw-alias-markdown-code-block-banner: #1d1610;
+  --dsw-alias-markdown-code-segment-selected: #251c14;
+  --dsw-alias-markdown-code-segment-unselected: #161009;
+  --dsw-alias-markdown-placeholder: #5c5140;
+  --dsw-alias-fill-l1: #1d1610;
+  --dsw-alias-fill-l2: #161009;
+  --dsw-alias-fill-tertiary: #251c14;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #f2ecdc 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #241c12;
+  --dsw-alias-interactive-bg-active: #2e2417;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #d9a648 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #c2503c 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #251c14;
+  --dsw-alias-state-error-primary: #c2503c;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #c2503c 15%, transparent);
+  --dsw-alias-state-success-primary: #5cb87a;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #5cb87a 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #5cb87a 8%, transparent);
+  --dsw-alias-state-warn-primary: #e0a03c;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #e0a03c 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #e0a03c 8%, transparent);
+  --dsw-alias-state-warn-label: #e0a03c;
+  --dsw-alias-state-business-primary: #6a8fc9;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #6a8fc9 10%, transparent);
+  --dsw-alias-state-idle-primary: #5c5140;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #5cb87a 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #c2503c 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #b3a68b 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #5cb87a 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #5cb87a 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #5cb87a 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #c2503c 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #c2503c 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #c2503c 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #b3a68b 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #161009;
+  --dsw-alias-scrollbar-bg-l2: #1d1610;
+  --dsw-alias-scrollbar-hover-l1: #241c12;
+  --dsw-alias-scrollbar-hover-l2: #241c12;
+  --dsw-alias-menu-icon: #b3a68b;
+  --dsw-alias-menu-group-header-fill: #1d1610;
+  --dsw-alias-tooltip-bg: #f2ecdc;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #251c14;
+  --dsw-alias-toast-label: #f2ecdc;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #b3a68b;
+  --dsw-alias-turn-trigger-bg: #1d1610;
+  --dsw-alias-turn-trigger-bg-hover: #251c14;
+  --dsw-alias-button-primary-fill: #d9a648;
+  --dsw-alias-button-primary-hover: #a3762a;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #d9a648 45%, transparent);
+  --dsw-alias-button-contrast-fill: #a3762a;
+  --dsw-alias-button-elevated-fill: #161009;
+  --dsw-alias-button-floating-fill: #1d1610;
+  --dsw-alias-button-floating-hover: #241c12;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #d9a648 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #ebcd93;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #d9a648 24%, transparent);
+  --dsw-alias-button-info-fill: #6a8fc9;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #6a8fc9 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #1d1610;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #241c12;
+  --dsw-alias-onboarding-card-fill: #161009;
+  --dsw-alias-onboarding-secondary-fill: #1d1610;
+  --dsw-alias-onboarding-checkbox-border: #372b19;
+  --dsw-alias-settings-card-fill: #1d1610;
+  --dsw-alias-settings-card-stroke: #372b19;
+  --dsw-specific-bubble: #1d1610;
+  --dsw-specific-bubble-highlight: #241b0e;
+  --dsw-specific-input-major: #181209;
+  --dsw-specific-login-input: #161009;
+  --dsw-specific-menu: #161009;
+  --dsw-specific-selector: #1d1610;
+  --dsw-specific-sidebar-fill: #161009;
+  --dsw-specific-sidebar-nav-item-active: #2e2417;
+  --dsw-specific-sidebar-nav-item-active-accent: #d9a648;
+  --dsw-specific-sidebar-nav-item-hover: #241c12;
+  --dsw-specific-tip: #251c14;
   --dsw-static-deepseek-50: #2b1d09;
   --dsw-static-blue-50: #2b1d09;
   --dsw-static-deepseek-50p: #472f10;
@@ -345,69 +444,8 @@ body[data-dsh-genshin-zhongli][data-ds-dark-theme] {
   --dsw-static-red-500: #c2503c;
   --dsw-static-red-600: color-mix(in srgb, #c2503c 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #c2503c 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-genshin-zhongli] {
-  --dsw-alias-button-primary-fill: #9a6b1e;
-  --dsw-alias-button-primary-hover: #7e5614;
-  --dsw-alias-button-primary-dimmed: #f2e3ba;
-  --dsw-alias-button-info-fill: #9a6b1e;
-  --dsw-alias-button-info-hover: #7e5614;
-  --dsw-alias-button-contrast-fill: #7e5614;
-  --dsw-alias-button-ghost-active-fill: #f8efd9;
-  --dsw-alias-button-ghost-active-hover: #f2e3ba;
-  --dsw-alias-button-ghost-active-border: #ddb75c;
-  --dsw-alias-button-elevated-fill: #eee8d8;
-  --dsw-alias-button-floating-fill: #eee8d8;
-  --dsw-alias-button-floating-hover: #e4dcc8;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(154, 107, 30, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(154, 107, 30, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(154, 107, 30, 0.6);
-  --dsw-specific-bubble: #2c2110;
-  --dsw-specific-bubble-highlight: #e8cf8d;
-  --dsw-specific-input-major: #eee8d8;
-  --dsw-specific-login-input: #eee8d8;
-  --dsw-specific-sidebar-fill: #9a6b1e;
-  --dsw-specific-sidebar-nav-item-active: #f2e3ba;
-  --dsw-specific-sidebar-nav-item-hover: #e4dcc8;
-  --dsw-specific-sidebar-nav-item-active-accent: #ddb75c;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #d9a648;
-  --dsw-alias-button-primary-hover: #e7bd63;
-  --dsw-alias-button-primary-dimmed: #472f10;
-  --dsw-alias-button-info-fill: #d9a648;
-  --dsw-alias-button-info-hover: #e7bd63;
-  --dsw-alias-button-contrast-fill: #e2b96d;
-  --dsw-alias-button-ghost-active-fill: #33270f;
-  --dsw-alias-button-ghost-active-hover: #472f10;
-  --dsw-alias-button-ghost-active-border: #8a5a1c;
-  --dsw-alias-button-elevated-fill: #161009;
-  --dsw-alias-button-floating-fill: #161009;
-  --dsw-alias-button-floating-hover: #241c12;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(217, 166, 72, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(217, 166, 72, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(217, 166, 72, 0.6);
-  --dsw-specific-bubble: #241b0e;
-  --dsw-specific-bubble-highlight: #664315;
-  --dsw-specific-input-major: #161009;
-  --dsw-specific-login-input: #161009;
-  --dsw-specific-sidebar-fill: #d9a648;
-  --dsw-specific-sidebar-nav-item-active: #472f10;
-  --dsw-specific-sidebar-nav-item-hover: #241c12;
-  --dsw-specific-sidebar-nav-item-active-accent: #8a5a1c;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-genshin-zhongli] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-genshin-zhongli]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-genshin-zhongli]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -421,9 +459,7 @@ body[data-dsh-genshin-zhongli]::before {
       radial-gradient(ellipse at 10% 88%, rgba(154, 107, 30, 0.06) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 500px 500px, 100% 100%, 100% 100%;
     opacity: 0.75;
-}
-
-body[data-dsh-genshin-zhongli]::after {
+}body[data-dsh-genshin-zhongli]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -434,129 +470,45 @@ body[data-dsh-genshin-zhongli]::after {
       repeating-linear-gradient(-60deg, rgba(154, 107, 30, 0.6) 0 1px, transparent 1px 26px);
     opacity: 0.045;
     animation: genshin-zhongli-zhongli-shield-drift 30s linear infinite;
-}
-
-body[data-dsh-genshin-zhongli] [class*='sider'] [class*='session'],
-body[data-dsh-genshin-zhongli] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-genshin-zhongli] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(154, 107, 30, 0.09);
-    box-shadow: inset 3px 0 0 0 rgba(179, 162, 118, 0.9);
-}
-
-body[data-dsh-genshin-zhongli] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-genshin-zhongli] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(154, 107, 30, 0.18), rgba(154, 107, 30, 0.05) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 #9a6b1e;
-}
-
-body[data-dsh-genshin-zhongli] button[class*='primary'],
-body[data-dsh-genshin-zhongli] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #7e5614 0%, #9a6b1e 55%, #b5842c 100%) !important;
-    border: 1px solid #e8cf8d !important;
-    color: var(--text-white) !important;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(154, 107, 30, 0.3), inset 0 1px 0 rgba(255, 248, 224, 0.35);
-    text-shadow: 0 1px 2px rgba(74, 50, 8, 0.6);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-genshin-zhongli] button[class*='primary']:hover,
-body[data-dsh-genshin-zhongli] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.07);
-    box-shadow: 0 3px 14px rgba(154, 107, 30, 0.45), inset 0 1px 0 rgba(255, 248, 224, 0.45);
-    animation: genshin-zhongli-zhongli-btn-sheen 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-genshin-zhongli] pre,
-body[data-dsh-genshin-zhongli] .markdown-body pre {
+}body[data-dsh-genshin-zhongli] pre{
   background: linear-gradient(180deg, #241a0c 0%, #1b1307 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #c89c3a !important;
     border-radius: 8px;
     box-shadow: inset 0 0 20px rgba(200, 156, 58, 0.1);
-}
-
-body[data-dsh-genshin-zhongli] pre code,
-body[data-dsh-genshin-zhongli] .markdown-body pre code {
+}body[data-dsh-genshin-zhongli] pre code{
   background: transparent !important;
     color: #eadfbe !important;
     text-shadow: none;
-}
-
-body[data-dsh-genshin-zhongli] code,
-body[data-dsh-genshin-zhongli] .markdown-body code {
+}body[data-dsh-genshin-zhongli] code{
   background: rgba(154, 107, 30, 0.12);
     color: #7e5614;
     border: 1px solid rgba(154, 107, 30, 0.3);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-genshin-zhongli]::selection {
-  background: color-mix(in srgb, var(--brand) 25%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-genshin-zhongli] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 6px rgba(55, 45, 29, 0.08), 0 0 0 1px rgba(154, 107, 30, 0.1);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-genshin-zhongli] [class*='guidInputCard']:hover {
-  border-color: var(--zhongli-brown-hi) !important;
-}
-
-body[data-dsh-genshin-zhongli] [class*='agent-bar'],
-body[data-dsh-genshin-zhongli] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(154, 107, 30, 0.35);
-}
-
-body[data-dsh-genshin-zhongli]::-webkit-scrollbar {
+}body[data-dsh-genshin-zhongli]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 25%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-genshin-zhongli]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-genshin-zhongli]::-webkit-scrollbar-thumb {
+}body[data-dsh-genshin-zhongli]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #c89c3a, #7e5614);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-genshin-zhongli]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-genshin-zhongli]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #ddb75c, #63430d);
-}
-
-body[data-dsh-genshin-zhongli]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-genshin-zhongli] .markdown-body a,
-body[data-dsh-genshin-zhongli] a {
+}body[data-dsh-genshin-zhongli]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-genshin-zhongli] a{
   color: #7e5614;
-}
-
-body[data-dsh-genshin-zhongli] .markdown-body a:hover,
-body[data-dsh-genshin-zhongli] a:hover {
+}body[data-dsh-genshin-zhongli] a:hover{
   color: #9a6b1e;
-}
-
-body[data-dsh-genshin-zhongli] .markdown-body blockquote {
+}body[data-dsh-genshin-zhongli] blockquote{
   border-left: 3px solid #9a6b1e;
     background: rgba(93, 138, 112, 0.12);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-genshin-zhongli] .markdown-body hr,
-body[data-dsh-genshin-zhongli] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-genshin-zhongli] hr{
   border: none;
     height: 8px;
     background-image:
@@ -566,21 +518,7 @@ body[data-dsh-genshin-zhongli] hr {
     background-repeat: repeat-x;
     background-position: 0 1px, 0 5px;
     opacity: 0.5;
-}
-
-body[data-dsh-genshin-zhongli] .arco-btn:not(button[class*='primary']):hover {
-  color: #7e5614 !important;
-    border-color: rgba(154, 107, 30, 0.5) !important;
-    background-color: rgba(154, 107, 30, 0.08) !important;
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme]::before {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -594,9 +532,7 @@ body[data-dsh-genshin-zhongli][data-ds-dark-theme]::before {
       radial-gradient(ellipse at 10% 88%, rgba(217, 166, 72, 0.07) 0%, transparent 40%);
     background-size: 560px 560px, 620px 620px, 500px 500px, 100% 100%, 100% 100%;
     opacity: 0.9;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme]::after {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -607,129 +543,45 @@ body[data-dsh-genshin-zhongli][data-ds-dark-theme]::after {
       repeating-linear-gradient(-60deg, rgba(217, 166, 72, 0.6) 0 1px, transparent 1px 26px);
     opacity: 0.05;
     animation: genshin-zhongli-zhongli-shield-drift 30s linear infinite;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] [class*='sider'] [class*='session'],
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: rgba(217, 166, 72, 0.1);
-    box-shadow: inset 3px 0 0 0 rgba(147, 127, 92, 0.85);
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(217, 166, 72, 0.26), rgba(217, 166, 72, 0.07) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 #d9a648;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #a3762a 0%, #d9a648 55%, #e7bd63 100%) !important;
-    border: 1px solid #ebcd93 !important;
-    color: #241a08 !important;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(217, 166, 72, 0.3), inset 0 1px 0 rgba(255, 244, 214, 0.45);
-    text-shadow: 0 1px 1px rgba(255, 244, 214, 0.4);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.1);
-    box-shadow: 0 3px 16px rgba(217, 166, 72, 0.55), inset 0 1px 0 rgba(255, 244, 214, 0.55);
-    animation: genshin-zhongli-zhongli-btn-sheen 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] pre,
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #120d07 0%, #0e0a05 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid #d9a648 !important;
     border-radius: 8px;
     box-shadow: inset 0 0 24px rgba(217, 166, 72, 0.08);
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] pre code,
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #e8dfc8 !important;
     text-shadow: none;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] code,
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] .markdown-body code {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme] code{
   background: rgba(217, 166, 72, 0.14);
     color: #ebcd93;
     border: 1px solid rgba(217, 166, 72, 0.3);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 45%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 8px rgba(8, 5, 2, 0.5), 0 0 0 1px rgba(217, 166, 72, 0.12);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] [class*='guidInputCard']:hover {
-  border-color: var(--zhongli-brown-hi) !important;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(217, 166, 72, 0.4);
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 45%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, #d9a648, #664315);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #e7bd63, #8a5a1c);
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] a {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme] a{
   color: #e2b96d;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] a:hover {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme] a:hover{
   color: #f4e0ba;
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme] blockquote{
   border-left: 3px solid #d9a648;
     background: rgba(77, 122, 95, 0.14);
-    color: var(--text-secondary);
-}
-
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-genshin-zhongli][data-ds-dark-theme] hr{
   border: none;
     height: 8px;
     background-image:
@@ -741,29 +593,11 @@ body[data-dsh-genshin-zhongli][data-ds-dark-theme] hr {
     opacity: 0.55;
 }
 
-body[data-dsh-genshin-zhongli][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: #ebcd93 !important;
-    border-color: rgba(217, 166, 72, 0.5) !important;
-    background-color: rgba(217, 166, 72, 0.1) !important;
-}
-
 /* --- keyframes --- */
-@keyframes genshin-zhongli-zhongli-shield-drift {
-  0% { background-position: 0 0, 0 0; }
-  100% { background-position: 26px 0, -26px 0; }
+@keyframes genshin-zhongli-zhongli-shield-drift {0%{ background-position: 0 0, 0 0; }100%{ background-position: 26px 0, -26px 0; }
 }
 
-@keyframes genshin-zhongli-zhongli-star-breathe {
-  0%, 100% { box-shadow: 0 2px 8px rgba(154, 107, 30, 0.14); }
-  50% { box-shadow: 0 2px 14px rgba(154, 107, 30, 0.3); }
-}
-
-@keyframes genshin-zhongli-zhongli-btn-sheen {
-  0%, 100% { box-shadow: 0 3px 12px rgba(154, 107, 30, 0.38), inset 0 1px 0 rgba(255, 248, 224, 0.4); }
-  50% { box-shadow: 0 3px 18px rgba(154, 107, 30, 0.55), inset 0 1px 0 rgba(255, 248, 224, 0.5); }
-}
-
-@keyframes genshin-zhongli-zhongli-shield-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-genshin-zhongli]{
+  --dsh-windows-content-radius: 6px;
 }

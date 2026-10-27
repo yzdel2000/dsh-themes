@@ -1,172 +1,139 @@
-/* festival-valentine — 情人节 | ported from aionui-themes by dsh-themes converter.
-   Light tokens hang on body[data-dsh-festival-valentine], dark tokens on the same attribute
-   plus [data-ds-dark-theme], so the shell day/night toggle keeps working. */
-
-body[data-dsh-festival-valentine] {
+/* festival-valentine — 情人节 | ported from aionui-themes by dsh-themes converter. Light tokens hang on body[data-dsh-festival-valentine],dark tokens on the same attribute plus [data-ds-dark-theme],so the shell day/night toggle keeps working. */ body[data-dsh-festival-valentine]{
   --dsw-font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #3d1122;
-  background-color: #fff7fa;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] {
-  color: #fbe9f1;
-  background-color: #12070d;
-}
-
-/* --- source palette (scoped): light --- */
-body[data-dsh-festival-valentine] {
-  --color-primary: #d6336c;
-  --primary: #d6336c;
+  background-color: var(--dsw-alias-bg-base) !important;
   --primary-rgb: 214, 51, 108;
-  --color-primary-light-1: #de5c88;
-  --color-primary-light-2: #e887a8;
-  --color-primary-light-3: #f3b7cc;
-  --color-primary-dark-1: #a61e4d;
-  --brand: #d6336c;
-  --brand-light: #fbe4ee;
-  --brand-hover: #e0568b;
-  --color-brand-fill: #d6336c;
-  --color-brand-bg: #fdeef4;
-  --aou-1: #fff0f6;
-  --aou-2: #ffdeeb;
-  --aou-3: #fcc2d7;
-  --aou-4: #faa2c1;
-  --aou-5: #f783ac;
-  --aou-6: #f06595;
-  --aou-7: #e64980;
-  --aou-8: #d6336c;
-  --aou-9: #a61e4d;
-  --aou-10: #751534;
-  --bg-base: #fff7fa;
-  --bg-1: #fdf0f5;
-  --bg-2: #fae8f0;
-  --bg-3: #f5dfeb;
-  --bg-4: #efd3e2;
-  --bg-5: #e6c3d5;
-  --bg-6: #dab0c6;
-  --bg-8: #c48ba6;
-  --bg-9: #a66484;
-  --bg-10: #7d3c5c;
-  --color-bg-1: #fdf0f5;
-  --color-bg-2: #fae8f0;
-  --color-bg-3: #f5dfeb;
-  --color-bg-4: #efd3e2;
-  --bg-hover: #f9e3ee;
-  --bg-active: #f3d3e4;
-  --text-primary: #3d1122;
-  --text-secondary: #7a4a5e;
-  --text-disabled: #b78fa0;
-  --text-0: #2a0a16;
-  --text-white: #ffffff;
-  --color-text-1: #3d1122;
-  --color-text-2: #7a4a5e;
-  --color-text-3: #a06b80;
-  --color-text-4: #b78fa0;
-  --border-base: #ecc6d8;
-  --border-light: #f4dcea;
-  --border-special: #e087ab;
-  --color-border: #ecc6d8;
-  --color-border-1: #ecc6d8;
-  --color-border-2: #f4dcea;
-  --fill: #fae8f0;
-  --color-fill: #fae8f0;
-  --fill-0: #fdf0f5;
-  --fill-white-to-black: #ffffff;
-  --dialog-fill-0: #ffffff;
-  --inverse: #2a0a16;
-  --success: #2f9e6e;
-  --warning: #e8890c;
-  --danger: #e03131;
-  --info: #ae3ec9;
-  --message-user-bg: #fff0f5;
-  --message-tips-bg: #fdeef4;
-  --workspace-btn-bg: #fbe4ee;
-  --color-guid-agent-bar: #fdf0f5;
   --valentine-rose: #d6336c;
   --valentine-pink: #f783ac;
   --valentine-blush: #f3b7cc;
   --valentine-cream: #fff7fa;
   --valentine-wax: #a61e4d;
-}
-
-/* --- source palette (scoped): dark --- */
-body[data-dsh-festival-valentine][data-ds-dark-theme] {
-  --color-primary: #f06595;
-  --primary: #f06595;
-  --primary-rgb: 240, 101, 149;
-  --color-primary-light-1: #f490ae;
-  --color-primary-light-2: #f8bccf;
-  --color-primary-light-3: #fcd9e5;
-  --color-primary-dark-1: #d6336c;
-  --brand: #f06595;
-  --brand-light: #3d1524;
-  --brand-hover: #f783ac;
-  --color-brand-fill: #f06595;
-  --color-brand-bg: #38121f;
-  --aou-1: #2b0d18;
-  --aou-2: #451224;
-  --aou-3: #611831;
-  --aou-4: #80203f;
-  --aou-5: #a12950;
-  --aou-6: #c73866;
-  --aou-7: #f06595;
-  --aou-8: #f490ae;
-  --aou-9: #f9bfd2;
-  --aou-10: #fde4ee;
-  --bg-base: #12070d;
-  --bg-1: #1a0c13;
-  --bg-2: #221019;
-  --bg-3: #2b1521;
-  --bg-4: #351b2a;
-  --bg-5: #412334;
-  --bg-6: #4f2d40;
-  --bg-8: #6f4158;
-  --bg-9: #96607c;
-  --bg-10: #c490a8;
-  --color-bg-1: #1a0c13;
-  --color-bg-2: #221019;
-  --color-bg-3: #2b1521;
-  --color-bg-4: #351b2a;
-  --bg-hover: #2a1420;
-  --bg-active: #351a29;
-  --text-primary: #fbe9f1;
-  --text-secondary: #d0a3b6;
-  --text-disabled: #6f4a5a;
-  --text-0: #fff6fa;
-  --text-white: #ffffff;
-  --color-text-1: #fbe9f1;
-  --color-text-2: #d0a3b6;
-  --color-text-3: #a87a8e;
-  --color-text-4: #6f4a5a;
-  --border-base: #43202f;
-  --border-light: #311623;
-  --border-special: #7a2c48;
-  --color-border: #43202f;
-  --color-border-1: #43202f;
-  --color-border-2: #311623;
-  --fill: #221019;
-  --color-fill: #221019;
-  --fill-0: #1a0c13;
-  --fill-white-to-black: #12070d;
-  --dialog-fill-0: #1e0f17;
-  --inverse: #fbe9f1;
-  --success: #69db7c;
-  --warning: #f0a13d;
-  --danger: #ff6b6b;
-  --info: #da77f2;
-  --message-user-bg: #4d1428;
-  --message-tips-bg: #2b1521;
-  --workspace-btn-bg: #38121f;
-  --color-guid-agent-bar: #1e0f17;
-  --valentine-rose: #f06595;
-  --valentine-pink: #f8a5c2;
-  --valentine-blush: #d6336c;
-  --valentine-candle: #ffd8a8;
-  --valentine-wax: #e64980;
-}
-
-/* --- static palette: light --- */
-body[data-dsh-festival-valentine] {
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #fff7fa;
+  --dsw-alias-bg-l1: #fdf0f5;
+  --dsw-alias-bg-l2: #fae8f0;
+  --dsw-alias-bg-layer-1: #fdf0f5;
+  --dsw-alias-bg-layer-2: #fae8f0;
+  --dsw-alias-bg-layer-3: #f5dfeb;
+  --dsw-alias-bg-layer-4: #efd3e2;
+  --dsw-alias-bg-overlay: #ffffff;
+  --dsw-alias-bg-module-platform: #fae8f0;
+  --dsw-alias-bg-multi-select: #f3d3e4;
+  --dsw-alias-bg-skeleton: #f5dfeb;
+  --dsw-alias-bg-document-preview: #fdf0f5;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #d6336c 30%, transparent);
+  --dsw-alias-label-primary: #3d1122;
+  --dsw-alias-label-secondary: #7a4a5e;
+  --dsw-alias-label-tertiary: #a06b80;
+  --dsw-alias-label-quaternary: #b78fa0;
+  --dsw-alias-label-caption: #2a0a16;
+  --dsw-alias-label-dimmed: #b78fa0;
+  --dsw-alias-label-primary-dimmed: #7a4a5e;
+  --dsw-alias-label-primary-bluish: #3d1122;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #3d1122;
+  --dsw-alias-label-error: #e03131;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #3d1122 30%, transparent);
+  --dsw-alias-label-deep-diving: #ae3ec9;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #ae3ec9 55%, transparent);
+  --dsw-alias-link: #d6336c;
+  --dsw-alias-border-l1: #f4dcea;
+  --dsw-alias-border-l2: #ecc6d8;
+  --dsw-alias-border-l2-darkmode-thin: #f4dcea;
+  --dsw-alias-border-l3: #e087ab;
+  --dsw-alias-border-l4: #e087ab;
+  --dsw-alias-border-inverted: #2a0a16;
+  --dsw-alias-border-inverted2: #2a0a16;
+  --dsw-alias-separator-primary: #f4dcea;
+  --dsw-alias-brand-primary: #d6336c;
+  --dsw-alias-brand-primary-invert: #2a0a16;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #d6336c;
+  --dsw-alias-markdown-citation: #de5c88;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #d6336c 14%, transparent);
+  --dsw-alias-markdown-inline-code: #fae8f0;
+  --dsw-alias-markdown-code-block: #fdf0f5;
+  --dsw-alias-markdown-code-block-banner: #fae8f0;
+  --dsw-alias-markdown-code-segment-selected: #f5dfeb;
+  --dsw-alias-markdown-code-segment-unselected: #fdf0f5;
+  --dsw-alias-markdown-placeholder: #b78fa0;
+  --dsw-alias-fill-l1: #fae8f0;
+  --dsw-alias-fill-l2: #fdf0f5;
+  --dsw-alias-fill-tertiary: #f5dfeb;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #3d1122 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #f9e3ee;
+  --dsw-alias-interactive-bg-active: #f3d3e4;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #d6336c 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #e03131 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #f5dfeb;
+  --dsw-alias-state-error-primary: #e03131;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #e03131 15%, transparent);
+  --dsw-alias-state-success-primary: #2f9e6e;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #2f9e6e 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #2f9e6e 8%, transparent);
+  --dsw-alias-state-warn-primary: #e8890c;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #e8890c 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #e8890c 8%, transparent);
+  --dsw-alias-state-warn-label: #e8890c;
+  --dsw-alias-state-business-primary: #ae3ec9;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #ae3ec9 10%, transparent);
+  --dsw-alias-state-idle-primary: #b78fa0;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #2f9e6e 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #e03131 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #7a4a5e 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #2f9e6e 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #2f9e6e 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #2f9e6e 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #e03131 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #e03131 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #e03131 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #7a4a5e 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #fdf0f5;
+  --dsw-alias-scrollbar-bg-l2: #fae8f0;
+  --dsw-alias-scrollbar-hover-l1: #f9e3ee;
+  --dsw-alias-scrollbar-hover-l2: #f9e3ee;
+  --dsw-alias-menu-icon: #7a4a5e;
+  --dsw-alias-menu-group-header-fill: #fae8f0;
+  --dsw-alias-tooltip-bg: #2a0a16;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #f5dfeb;
+  --dsw-alias-toast-label: #3d1122;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #7a4a5e;
+  --dsw-alias-turn-trigger-bg: #fae8f0;
+  --dsw-alias-turn-trigger-bg-hover: #f5dfeb;
+  --dsw-alias-button-primary-fill: #d6336c;
+  --dsw-alias-button-primary-hover: #a61e4d;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #d6336c 45%, transparent);
+  --dsw-alias-button-contrast-fill: #a61e4d;
+  --dsw-alias-button-elevated-fill: #fdf0f5;
+  --dsw-alias-button-floating-fill: #fae8f0;
+  --dsw-alias-button-floating-hover: #f9e3ee;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #d6336c 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #e887a8;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #d6336c 24%, transparent);
+  --dsw-alias-button-info-fill: #ae3ec9;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #ae3ec9 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #fae8f0;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #f9e3ee;
+  --dsw-alias-onboarding-card-fill: #fdf0f5;
+  --dsw-alias-onboarding-secondary-fill: #fae8f0;
+  --dsw-alias-onboarding-checkbox-border: #ecc6d8;
+  --dsw-alias-settings-card-fill: #fae8f0;
+  --dsw-alias-settings-card-stroke: #ecc6d8;
+  --dsw-specific-bubble: #fae8f0;
+  --dsw-specific-bubble-highlight: #fff0f5;
+  --dsw-specific-input-major: #ffffff;
+  --dsw-specific-login-input: #fdf0f5;
+  --dsw-specific-menu: #fdf0f5;
+  --dsw-specific-selector: #fae8f0;
+  --dsw-specific-sidebar-fill: #fdf0f5;
+  --dsw-specific-sidebar-nav-item-active: #f3d3e4;
+  --dsw-specific-sidebar-nav-item-active-accent: #d6336c;
+  --dsw-specific-sidebar-nav-item-hover: #f9e3ee;
+  --dsw-specific-tip: #f5dfeb;
   --dsw-static-deepseek-50: #fff0f6;
   --dsw-static-blue-50: #fff0f6;
   --dsw-static-deepseek-50p: #ffdeeb;
@@ -254,10 +221,142 @@ body[data-dsh-festival-valentine] {
   --dsw-static-red-500: #e03131;
   --dsw-static-red-600: color-mix(in srgb, #e03131 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #e03131 35%, black);
-}
-
-/* --- static palette: dark --- */
-body[data-dsh-festival-valentine][data-ds-dark-theme] {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-festival-valentine][data-ds-dark-theme]{
+  color: #fbe9f1;
+  background-color: var(--dsw-alias-bg-base) !important;
+  --primary-rgb: 240, 101, 149;
+  --valentine-rose: #f06595;
+  --valentine-pink: #f8a5c2;
+  --valentine-blush: #d6336c;
+  --valentine-candle: #ffd8a8;
+  --valentine-wax: #e64980;
+  /* --- DSH native aliases (derived by tools/native_port.mjs) --- */
+  --dsw-alias-bg-base: #12070d;
+  --dsw-alias-bg-l1: #1a0c13;
+  --dsw-alias-bg-l2: #221019;
+  --dsw-alias-bg-layer-1: #1a0c13;
+  --dsw-alias-bg-layer-2: #221019;
+  --dsw-alias-bg-layer-3: #2b1521;
+  --dsw-alias-bg-layer-4: #351b2a;
+  --dsw-alias-bg-overlay: #1e0f17;
+  --dsw-alias-bg-module-platform: #221019;
+  --dsw-alias-bg-multi-select: #351a29;
+  --dsw-alias-bg-skeleton: #2b1521;
+  --dsw-alias-bg-document-preview: #1a0c13;
+  --dsw-alias-bg-document-selection: color-mix(in srgb, #f06595 30%, transparent);
+  --dsw-alias-label-primary: #fbe9f1;
+  --dsw-alias-label-secondary: #d0a3b6;
+  --dsw-alias-label-tertiary: #a87a8e;
+  --dsw-alias-label-quaternary: #6f4a5a;
+  --dsw-alias-label-caption: #fff6fa;
+  --dsw-alias-label-dimmed: #6f4a5a;
+  --dsw-alias-label-primary-dimmed: #d0a3b6;
+  --dsw-alias-label-primary-bluish: #fbe9f1;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-document-preview: #fbe9f1;
+  --dsw-alias-label-error: #ff6b6b;
+  --dsw-alias-label-shimmer: color-mix(in srgb, #fbe9f1 30%, transparent);
+  --dsw-alias-label-deep-diving: #da77f2;
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, #da77f2 55%, transparent);
+  --dsw-alias-link: #f06595;
+  --dsw-alias-border-l1: #311623;
+  --dsw-alias-border-l2: #43202f;
+  --dsw-alias-border-l2-darkmode-thin: #311623;
+  --dsw-alias-border-l3: #7a2c48;
+  --dsw-alias-border-l4: #7a2c48;
+  --dsw-alias-border-inverted: #fbe9f1;
+  --dsw-alias-border-inverted2: #fbe9f1;
+  --dsw-alias-separator-primary: #311623;
+  --dsw-alias-brand-primary: #f06595;
+  --dsw-alias-brand-primary-invert: #fbe9f1;
+  --dsw-alias-brand-text: #ffffff;
+  --dsw-alias-onboarding-accent: #f06595;
+  --dsw-alias-markdown-citation: #f490ae;
+  --dsw-alias-markdown-tag: color-mix(in srgb, #f06595 14%, transparent);
+  --dsw-alias-markdown-inline-code: #221019;
+  --dsw-alias-markdown-code-block: #1a0c13;
+  --dsw-alias-markdown-code-block-banner: #221019;
+  --dsw-alias-markdown-code-segment-selected: #2b1521;
+  --dsw-alias-markdown-code-segment-unselected: #1a0c13;
+  --dsw-alias-markdown-placeholder: #6f4a5a;
+  --dsw-alias-fill-l1: #221019;
+  --dsw-alias-fill-l2: #1a0c13;
+  --dsw-alias-fill-tertiary: #2b1521;
+  --dsw-alias-fill-tsp-secondary: color-mix(in srgb, #fbe9f1 8%, transparent);
+  --dsw-alias-interactive-bg-hover: #2a1420;
+  --dsw-alias-interactive-bg-active: #351a29;
+  --dsw-alias-interactive-bg-hover-accent: color-mix(in srgb, #f06595 12%, transparent);
+  --dsw-alias-interactive-bg-hover-danger: color-mix(in srgb, #ff6b6b 12%, transparent);
+  --dsw-alias-interactive-bg-hover-solid: #2b1521;
+  --dsw-alias-state-error-primary: #ff6b6b;
+  --dsw-alias-state-error-secondary: color-mix(in srgb, #ff6b6b 15%, transparent);
+  --dsw-alias-state-success-primary: #69db7c;
+  --dsw-alias-state-success-secondary: color-mix(in srgb, #69db7c 15%, transparent);
+  --dsw-alias-state-success-tertiary: color-mix(in srgb, #69db7c 8%, transparent);
+  --dsw-alias-state-warn-primary: #f0a13d;
+  --dsw-alias-state-warn-secondary: color-mix(in srgb, #f0a13d 15%, transparent);
+  --dsw-alias-state-warn-tertiary: color-mix(in srgb, #f0a13d 8%, transparent);
+  --dsw-alias-state-warn-label: #f0a13d;
+  --dsw-alias-state-business-primary: #da77f2;
+  --dsw-alias-state-business-tertiary: color-mix(in srgb, #da77f2 10%, transparent);
+  --dsw-alias-state-idle-primary: #6f4a5a;
+  --dsw-alias-code-diff-added: color-mix(in srgb, #69db7c 18%, transparent);
+  --dsw-alias-code-diff-deleted: color-mix(in srgb, #ff6b6b 18%, transparent);
+  --dsw-alias-file-diff: color-mix(in srgb, #d0a3b6 12%, transparent);
+  --dsw-alias-file-diff-added-bg: color-mix(in srgb, #69db7c 12%, transparent);
+  --dsw-alias-file-diff-added-gutter: color-mix(in srgb, #69db7c 22%, transparent);
+  --dsw-alias-file-diff-added-marker: color-mix(in srgb, #69db7c 45%, transparent);
+  --dsw-alias-file-diff-deleted-bg: color-mix(in srgb, #ff6b6b 12%, transparent);
+  --dsw-alias-file-diff-deleted-gutter: color-mix(in srgb, #ff6b6b 22%, transparent);
+  --dsw-alias-file-diff-deleted-marker: color-mix(in srgb, #ff6b6b 45%, transparent);
+  --dsw-alias-scrollbar: color-mix(in srgb, #d0a3b6 45%, transparent);
+  --dsw-alias-scrollbar-bg-l1: #1a0c13;
+  --dsw-alias-scrollbar-bg-l2: #221019;
+  --dsw-alias-scrollbar-hover-l1: #2a1420;
+  --dsw-alias-scrollbar-hover-l2: #2a1420;
+  --dsw-alias-menu-icon: #d0a3b6;
+  --dsw-alias-menu-group-header-fill: #221019;
+  --dsw-alias-tooltip-bg: #fbe9f1;
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, #ffffff 14%, transparent);
+  --dsw-alias-toast-bg: #2b1521;
+  --dsw-alias-toast-label: #fbe9f1;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger: #d0a3b6;
+  --dsw-alias-turn-trigger-bg: #221019;
+  --dsw-alias-turn-trigger-bg-hover: #2b1521;
+  --dsw-alias-button-primary-fill: #f06595;
+  --dsw-alias-button-primary-hover: #d6336c;
+  --dsw-alias-button-primary-dimmed: color-mix(in srgb, #f06595 45%, transparent);
+  --dsw-alias-button-contrast-fill: #d6336c;
+  --dsw-alias-button-elevated-fill: #1a0c13;
+  --dsw-alias-button-floating-fill: #221019;
+  --dsw-alias-button-floating-hover: #2a1420;
+  --dsw-alias-button-ghost-active-fill: color-mix(in srgb, #f06595 16%, transparent);
+  --dsw-alias-button-ghost-active-border: #f8bccf;
+  --dsw-alias-button-ghost-active-hover: color-mix(in srgb, #f06595 24%, transparent);
+  --dsw-alias-button-info-fill: #da77f2;
+  --dsw-alias-button-info-hover: color-mix(in srgb, #da77f2 85%, transparent);
+  --dsw-alias-button-tool-bar-fill: #221019;
+  --dsw-alias-button-tool-bar-fill-invisible: transparent;
+  --dsw-alias-button-tool-bar-hover: #2a1420;
+  --dsw-alias-onboarding-card-fill: #1a0c13;
+  --dsw-alias-onboarding-secondary-fill: #221019;
+  --dsw-alias-onboarding-checkbox-border: #43202f;
+  --dsw-alias-settings-card-fill: #221019;
+  --dsw-alias-settings-card-stroke: #43202f;
+  --dsw-specific-bubble: #221019;
+  --dsw-specific-bubble-highlight: #4d1428;
+  --dsw-specific-input-major: #1e0f17;
+  --dsw-specific-login-input: #1a0c13;
+  --dsw-specific-menu: #1a0c13;
+  --dsw-specific-selector: #221019;
+  --dsw-specific-sidebar-fill: #1a0c13;
+  --dsw-specific-sidebar-nav-item-active: #351a29;
+  --dsw-specific-sidebar-nav-item-active-accent: #f06595;
+  --dsw-specific-sidebar-nav-item-hover: #2a1420;
+  --dsw-specific-tip: #2b1521;
   --dsw-static-deepseek-50: #2b0d18;
   --dsw-static-blue-50: #2b0d18;
   --dsw-static-deepseek-50p: #451224;
@@ -345,69 +444,8 @@ body[data-dsh-festival-valentine][data-ds-dark-theme] {
   --dsw-static-red-500: #ff6b6b;
   --dsw-static-red-600: color-mix(in srgb, #ff6b6b 82%, black);
   --dsw-static-red-900: color-mix(in srgb, #ff6b6b 35%, black);
-}
-
-/* --- alias & specific: light --- */
-body[data-dsh-festival-valentine] {
-  --dsw-alias-button-primary-fill: #d6336c;
-  --dsw-alias-button-primary-hover: #e0568b;
-  --dsw-alias-button-primary-dimmed: #ffdeeb;
-  --dsw-alias-button-info-fill: #d6336c;
-  --dsw-alias-button-info-hover: #e0568b;
-  --dsw-alias-button-contrast-fill: #e64980;
-  --dsw-alias-button-ghost-active-fill: #fbe4ee;
-  --dsw-alias-button-ghost-active-hover: #ffdeeb;
-  --dsw-alias-button-ghost-active-border: #faa2c1;
-  --dsw-alias-button-elevated-fill: #fdf0f5;
-  --dsw-alias-button-floating-fill: #fdf0f5;
-  --dsw-alias-button-floating-hover: #f9e3ee;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(214, 51, 108, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(214, 51, 108, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(214, 51, 108, 0.6);
-  --dsw-specific-bubble: #fff0f5;
-  --dsw-specific-bubble-highlight: #fcc2d7;
-  --dsw-specific-input-major: #fdf0f5;
-  --dsw-specific-login-input: #fdf0f5;
-  --dsw-specific-sidebar-fill: #d6336c;
-  --dsw-specific-sidebar-nav-item-active: #ffdeeb;
-  --dsw-specific-sidebar-nav-item-hover: #f9e3ee;
-  --dsw-specific-sidebar-nav-item-active-accent: #faa2c1;
-}
-
-/* --- alias & specific: dark --- */
-body[data-dsh-festival-valentine][data-ds-dark-theme] {
-  --dsw-alias-button-primary-fill: #f06595;
-  --dsw-alias-button-primary-hover: #f783ac;
-  --dsw-alias-button-primary-dimmed: #451224;
-  --dsw-alias-button-info-fill: #f06595;
-  --dsw-alias-button-info-hover: #f783ac;
-  --dsw-alias-button-contrast-fill: #f06595;
-  --dsw-alias-button-ghost-active-fill: #3d1524;
-  --dsw-alias-button-ghost-active-hover: #451224;
-  --dsw-alias-button-ghost-active-border: #80203f;
-  --dsw-alias-button-elevated-fill: #1a0c13;
-  --dsw-alias-button-floating-fill: #1a0c13;
-  --dsw-alias-button-floating-hover: #2a1420;
-  --dsw-alias-button-tool-bar-fill-invisible: rgba(240, 101, 149, 0.36);
-  --dsw-alias-button-tool-bar-fill: rgba(240, 101, 149, 0.5);
-  --dsw-alias-button-tool-bar-hover: rgba(240, 101, 149, 0.6);
-  --dsw-specific-bubble: #4d1428;
-  --dsw-specific-bubble-highlight: #611831;
-  --dsw-specific-input-major: #1a0c13;
-  --dsw-specific-login-input: #1a0c13;
-  --dsw-specific-sidebar-fill: #f06595;
-  --dsw-specific-sidebar-nav-item-active: #451224;
-  --dsw-specific-sidebar-nav-item-hover: #2a1420;
-  --dsw-specific-sidebar-nav-item-active-accent: #80203f;
-}
-
-/* --- signature decor: light --- */
-body[data-dsh-festival-valentine] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-festival-valentine]::before {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}body[data-dsh-festival-valentine]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -428,9 +466,7 @@ body[data-dsh-festival-valentine]::before {
     background-size: 540px 540px, 540px 540px, 620px 620px, 620px 620px, 480px 480px,
       480px 480px, 660px 660px, 660px 660px, 560px 560px, 560px 560px;
     animation: festival-valentine-valentine-hearts-float 34s linear infinite;
-}
-
-body[data-dsh-festival-valentine]::after {
+}body[data-dsh-festival-valentine]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -441,132 +477,48 @@ body[data-dsh-festival-valentine]::after {
       repeating-linear-gradient(115deg, var(--valentine-rose) 0 2px, transparent 2px 52px),
       repeating-linear-gradient(115deg, var(--valentine-pink) 0 1px, transparent 1px 26px);
     animation: festival-valentine-valentine-ribbon-drift 26s linear infinite;
-}
-
-body[data-dsh-festival-valentine] [class*='sider'] [class*='session'],
-body[data-dsh-festival-valentine] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-festival-valentine] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover);
-    box-shadow: inset 3px 0 0 0 var(--valentine-pink);
-}
-
-body[data-dsh-festival-valentine] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-festival-valentine] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(214, 51, 108, 0.16), rgba(214, 51, 108, 0.05) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--valentine-rose);
-    font-weight: 600;
-}
-
-body[data-dsh-festival-valentine] button[class*='primary'],
-body[data-dsh-festival-valentine] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #a61e4d 0%, var(--valentine-rose) 55%, #f06595 100%) !important;
-    border: 1px solid #f3b7cc !important;
-    color: var(--text-white) !important;
-    box-shadow: 0 2px 8px rgba(214, 51, 108, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.28);
-    text-shadow: 0 1px 2px rgba(117, 21, 52, 0.5);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-festival-valentine] button[class*='primary']:hover,
-body[data-dsh-festival-valentine] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.08);
-    box-shadow: 0 3px 16px rgba(214, 51, 108, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.34);
-    animation: festival-valentine-valentine-heartbeat 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-festival-valentine] pre,
-body[data-dsh-festival-valentine] .markdown-body pre {
+}body[data-dsh-festival-valentine] pre{
   background: linear-gradient(180deg, #fdf0f5 0%, #fae8f0 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid var(--valentine-rose) !important;
     border-radius: 8px;
     box-shadow: inset 0 0 20px rgba(214, 51, 108, 0.05);
-}
-
-body[data-dsh-festival-valentine] pre code,
-body[data-dsh-festival-valentine] .markdown-body pre code {
+}body[data-dsh-festival-valentine] pre code{
   background: transparent !important;
     color: #5c1f38 !important;
     text-shadow: none;
-}
-
-body[data-dsh-festival-valentine] code,
-body[data-dsh-festival-valentine] .markdown-body code {
-  background: var(--brand-light);
+}body[data-dsh-festival-valentine] code{
+  background: var(--dsw-alias-markdown-citation);
     color: var(--valentine-wax);
     border: 1px solid rgba(214, 51, 108, 0.25);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-festival-valentine]::selection {
-  background: color-mix(in srgb, var(--brand) 32%, transparent);
-    color: var(--text-0);
-}
-
-body[data-dsh-festival-valentine] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 8px rgba(214, 51, 108, 0.05), 0 0 0 1px rgba(214, 51, 108, 0.06);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-festival-valentine] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-festival-valentine] [class*='agent-bar'],
-body[data-dsh-festival-valentine] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(214, 51, 108, 0.3);
-}
-
-body[data-dsh-festival-valentine]::-webkit-scrollbar {
+}body[data-dsh-festival-valentine]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 32%, transparent);
+    color: var(--dsw-alias-label-caption);
+}body[data-dsh-festival-valentine]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-festival-valentine]::-webkit-scrollbar-thumb {
+}body[data-dsh-festival-valentine]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--valentine-pink), var(--valentine-rose));
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-festival-valentine]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-festival-valentine]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, #f06595, var(--valentine-wax));
-}
-
-body[data-dsh-festival-valentine]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-festival-valentine] .markdown-body a,
-body[data-dsh-festival-valentine] a {
+}body[data-dsh-festival-valentine]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-festival-valentine] a{
   color: var(--valentine-rose);
-}
-
-body[data-dsh-festival-valentine] .markdown-body a:hover,
-body[data-dsh-festival-valentine] a:hover {
+}body[data-dsh-festival-valentine] a:hover{
   color: var(--valentine-wax);
-}
-
-body[data-dsh-festival-valentine] .markdown-body blockquote {
+}body[data-dsh-festival-valentine] blockquote{
   border-left: 3px solid var(--valentine-rose);
     border-top: 1px dashed rgba(214, 51, 108, 0.35);
     border-bottom: 1px dashed rgba(214, 51, 108, 0.35);
     background: rgba(247, 131, 172, 0.1);
     border-radius: 0 10px 10px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-festival-valentine] .markdown-body hr,
-body[data-dsh-festival-valentine] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-festival-valentine] hr{
   border: none;
     height: 8px;
     background-image:
@@ -577,21 +529,7 @@ body[data-dsh-festival-valentine] hr {
     background-position: 0 0, 0 0, 0 4px;
     background-repeat: repeat-x, repeat-x, no-repeat;
     opacity: 0.65;
-}
-
-body[data-dsh-festival-valentine] .arco-btn:not(button[class*='primary']):hover {
-  color: var(--valentine-rose) !important;
-    border-color: rgba(214, 51, 108, 0.5) !important;
-    background-color: rgba(214, 51, 108, 0.08) !important;
-}
-
-/* --- signature decor: dark --- */
-body[data-dsh-festival-valentine][data-ds-dark-theme] {
-  background-color: var(--bg-base) !important;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme]::before {
+}body[data-dsh-festival-valentine][data-ds-dark-theme]::before{
   content: '';
     position: fixed;
     inset: 0;
@@ -612,9 +550,7 @@ body[data-dsh-festival-valentine][data-ds-dark-theme]::before {
     background-size: 540px 540px, 540px 540px, 620px 620px, 620px 620px, 480px 480px,
       480px 480px, 660px 660px, 660px 660px, 560px 560px, 560px 560px;
     animation: festival-valentine-valentine-hearts-float 34s linear infinite;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme]::after {
+}body[data-dsh-festival-valentine][data-ds-dark-theme]::after{
   content: '';
     position: fixed;
     inset: 0;
@@ -625,134 +561,50 @@ body[data-dsh-festival-valentine][data-ds-dark-theme]::after {
       repeating-linear-gradient(115deg, var(--valentine-rose) 0 2px, transparent 2px 52px),
       repeating-linear-gradient(115deg, var(--valentine-pink) 0 1px, transparent 1px 26px);
     animation: festival-valentine-valentine-ribbon-drift 26s linear infinite;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] [class*='sider'] [class*='session'],
-body[data-dsh-festival-valentine][data-ds-dark-theme] [class*='sider'] [class*='item'] {
-  border-radius: 8px;
-    transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] [class*='sider'] [class*='item']:hover {
-  background-color: var(--bg-hover);
-    box-shadow: inset 3px 0 0 0 var(--valentine-pink);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='active'],
-body[data-dsh-festival-valentine][data-ds-dark-theme] [class*='sider'] [class*='item'][class*='selected'] {
-  background:
-      linear-gradient(90deg, rgba(240, 101, 149, 0.26), rgba(240, 101, 149, 0.07) 60%, transparent) !important;
-    box-shadow: inset 3px 0 0 0 var(--valentine-rose);
-    font-weight: 600;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] button[class*='primary'],
-body[data-dsh-festival-valentine][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled) {
-  background: linear-gradient(135deg, #c73866 0%, var(--valentine-rose) 55%, #f8a5c2 100%) !important;
-    border: 1px solid #f8bccf !important;
-    color: #3a0d1e !important;
-    font-weight: 700;
-    box-shadow: 0 2px 10px rgba(240, 101, 149, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.32);
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] button[class*='primary']:hover,
-body[data-dsh-festival-valentine][data-ds-dark-theme] button[class*='primary']:not(.arco-btn-disabled):hover {
-  filter: brightness(1.1);
-    box-shadow: 0 3px 18px rgba(240, 101, 149, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.38);
-    animation: festival-valentine-valentine-heartbeat 2.8s ease-in-out infinite;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] pre,
-body[data-dsh-festival-valentine][data-ds-dark-theme] .markdown-body pre {
+}body[data-dsh-festival-valentine][data-ds-dark-theme] pre{
   background: linear-gradient(180deg, #170a11 0%, #12070d 100%) !important;
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--dsw-alias-border-l2);
     border-left: 3px solid var(--valentine-rose) !important;
     border-radius: 8px;
     box-shadow: inset 0 0 22px rgba(97, 24, 49, 0.4);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] pre code,
-body[data-dsh-festival-valentine][data-ds-dark-theme] .markdown-body pre code {
+}body[data-dsh-festival-valentine][data-ds-dark-theme] pre code{
   background: transparent !important;
     color: #f4d7e2 !important;
     text-shadow: none;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] code,
-body[data-dsh-festival-valentine][data-ds-dark-theme] .markdown-body code {
+}body[data-dsh-festival-valentine][data-ds-dark-theme] code{
   background: rgba(97, 24, 49, 0.5);
     color: #f8a5c2;
     border: 1px solid rgba(240, 101, 149, 0.3);
     border-radius: 4px;
     padding: 1px 5px;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme]::selection {
-  background: color-mix(in srgb, var(--brand) 42%, transparent);
-    color: var(--text-white);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] [class*='guidInputCard'] {
-  background-color: var(--dialog-fill-0) !important;
-    border: 1.5px solid var(--border-base) !important;
-    border-radius: 12px;
-    box-shadow: inset 0 2px 8px rgba(4, 1, 3, 0.55), 0 0 0 1px rgba(240, 101, 149, 0.12);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] [class*='guidInputCard']:hover {
-  border-color: var(--border-special) !important;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] [class*='agent-bar'],
-body[data-dsh-festival-valentine][data-ds-dark-theme] [class*='agentBar'] {
-  background-color: var(--color-guid-agent-bar) !important;
-    border-top: 1px solid rgba(240, 101, 149, 0.4);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme]::-webkit-scrollbar {
+}body[data-dsh-festival-valentine][data-ds-dark-theme]::selection{
+  background: color-mix(in srgb, var(--dsw-alias-brand-primary) 42%, transparent);
+    color: var(--dsw-alias-label-primary-inverted);
+}body[data-dsh-festival-valentine][data-ds-dark-theme]::-webkit-scrollbar{
   width: 10px;
     height: 10px;
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme]::-webkit-scrollbar-thumb {
+}body[data-dsh-festival-valentine][data-ds-dark-theme]::-webkit-scrollbar-thumb{
   background: linear-gradient(180deg, var(--valentine-rose), #611831);
     border-radius: 6px;
-    border: 2px solid var(--bg-base);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--dsw-alias-bg-base);
+}body[data-dsh-festival-valentine][data-ds-dark-theme]::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(180deg, var(--valentine-pink), #80203f);
     box-shadow: 0 0 8px rgba(240, 101, 149, 0.5);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme]::-webkit-scrollbar-track {
-  background: var(--bg-1);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] .markdown-body a,
-body[data-dsh-festival-valentine][data-ds-dark-theme] a {
+}body[data-dsh-festival-valentine][data-ds-dark-theme]::-webkit-scrollbar-track{
+  background: var(--dsw-alias-bg-layer-1);
+}body[data-dsh-festival-valentine][data-ds-dark-theme] a{
   color: var(--valentine-pink);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] .markdown-body a:hover,
-body[data-dsh-festival-valentine][data-ds-dark-theme] a:hover {
+}body[data-dsh-festival-valentine][data-ds-dark-theme] a:hover{
   color: #fcd9e5;
     text-shadow: 0 0 8px rgba(248, 165, 194, 0.5);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] .markdown-body blockquote {
+}body[data-dsh-festival-valentine][data-ds-dark-theme] blockquote{
   border-left: 3px solid var(--valentine-rose);
     border-top: 1px dashed rgba(240, 101, 149, 0.4);
     border-bottom: 1px dashed rgba(240, 101, 149, 0.4);
     background: rgba(97, 24, 49, 0.3);
     border-radius: 0 10px 10px 0;
-    color: var(--text-secondary);
-}
-
-body[data-dsh-festival-valentine][data-ds-dark-theme] .markdown-body hr,
-body[data-dsh-festival-valentine][data-ds-dark-theme] hr {
+    color: var(--dsw-alias-label-secondary);
+}body[data-dsh-festival-valentine][data-ds-dark-theme] hr{
   border: none;
     height: 8px;
     background-image:
@@ -765,43 +617,15 @@ body[data-dsh-festival-valentine][data-ds-dark-theme] hr {
     opacity: 0.65;
 }
 
-body[data-dsh-festival-valentine][data-ds-dark-theme] .arco-btn:not(button[class*='primary']):hover {
-  color: #f8bccf !important;
-    border-color: rgba(240, 101, 149, 0.5) !important;
-    background-color: rgba(240, 101, 149, 0.12) !important;
-}
-
 /* --- keyframes --- */
-@keyframes festival-valentine-valentine-hearts-float {
-  0% { background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0; }
-  100% { background-position: 30px -540px, 30px -540px, -24px -620px, -24px -620px,
+@keyframes festival-valentine-valentine-hearts-float {0%{ background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0; }100%{ background-position: 30px -540px, 30px -540px, -24px -620px, -24px -620px,
     18px -480px, 18px -480px, -30px -660px, -30px -660px, 22px -560px, 22px -560px; }
 }
 
-@keyframes festival-valentine-valentine-ribbon-drift {
-  0% { background-position: 0 0, 0 0; }
-  100% { background-position: 104px 0, 52px 0; }
+@keyframes festival-valentine-valentine-ribbon-drift {0%{ background-position: 0 0, 0 0; }100%{ background-position: 104px 0, 52px 0; }
 }
 
-@keyframes festival-valentine-valentine-titlebar-glow {
-  0%, 100% { box-shadow: 0 2px 10px rgba(214, 51, 108, 0.18); }
-  50% { box-shadow: 0 2px 18px rgba(214, 51, 108, 0.38); }
-}
-
-@keyframes festival-valentine-valentine-heartbeat {
-  0%, 100% { transform: scale(1); }
-  18% { transform: scale(1.045); }
-  32% { transform: scale(1); }
-  50% { transform: scale(1.06); }
-  66% { transform: scale(1); }
-}
-
-@keyframes festival-valentine-valentine-seal-glow {
-  0%, 100% { box-shadow: 0 1px 4px rgba(166, 30, 77, 0.4), inset 0 0 0 1.5px rgba(255, 255, 255, 0.3); }
-  50% { box-shadow: 0 1px 8px rgba(214, 51, 108, 0.65), inset 0 0 0 1.5px rgba(255, 255, 255, 0.45); }
-}
-
-@keyframes festival-valentine-valentine-ribbon-flow {
-  0% { background-position: center center, 0% 50%; }
-  100% { background-position: center center, 300% 50%; }
+/* --- DSH shell geometry (tools/native_port.mjs) --- */
+body[data-dsh-festival-valentine]{
+  --dsh-windows-content-radius: 6px;
 }
