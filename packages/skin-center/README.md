@@ -7,14 +7,49 @@
 ## 安装 / Install
 
 ```sh
-dsh plugin --profile web add @dsh-suite/themes
+dsh plugin --profile <你的 profile 名> add @dsh-suite/themes
 ```
 
-重启 `dsh web` 后，Settings → **皮肤中心 / Skin Center** 即可用。
+安装后重启 `dsh`（或桌面版），Settings → **皮肤中心 / Skin Center** 即可用。
+包内 `dsh.engines.dsh` 声明了兼容范围（当前为 `>=0.2.1-rc.3 <0.3.0`），
+`dsh.manifestVersion = 1`、`locale/{zh,en}.json` 与 `icon.webp` 提供插件列表里的
+标题 / 简介 / 图标。
+
+## 兼容性 / Compatibility
+
+- **DSH ≥ 0.2.1-rc.3**：浏览器半使用 `window.__ModuleLoader__.load({ id, factory })` 契约
+  + `ctx.slots.inject('settings.section')` / `ctx.locale.bind(ns)`；宿主半使用
+  `ctx.webServer.register({ kind, path, handler })`（`exact` + `prefix`）。
+- **面板配色**只用当前设计系统的 `--dsw-alias-*` 令牌（`bg-layer-1/2/3`、`border-l1`、
+  `brand-primary`、`label-primary/secondary`），无硬编码色值。
+- **昼夜由 shell 的 `theme` 服务负责**（v0.4）：面板把「昼 / 夜 / 跟随系统」转发给
+  `ctx.theme.setTheme()`，不再与 Settings → Appearance 抢同一个 `body[data-ds-dark-theme]`；
+  该服务不可用时自动退化为本地属性切换。
+- **皮肤是 DSH 原生的（v0.4）**：每款皮肤在 `body[data-dsh-<id>]` 与
+  `body[data-dsh-<id>][data-ds-dark-theme]` 两个作用域里直接重写 **125 个 DSH 语义令牌**
+  （120 个 `--dsw-alias-*` + 11 个 `--dsw-specific-*`；跳过 6 个与配色无关的遮罩/临时别名），
+  值取自该皮肤自己的调色板语义（`--bg-2 → --dsw-alias-bg-layer-2`、
+  `--color-primary → --dsw-alias-brand-primary`、状态色 → `state-*`、悬停/选中 → `interactive-*`），
+  派生色用 `color-mix()` 就地算，不再依赖旧调色板的静态步进。
+  AionUI 变量名（67 个）已删除，只保留皮肤纹理所消费的辅助变量（`--aou-*`、`--*-accent` 等）。
+- **死选择器已清除**：构建时 CSS module 会把类名哈希（`.markdown-body` →
+  `._6_hrsq_markdown-body`），所以 `[class*='…']`、`.arco-btn*` 那类规则在 DSH 里永远匹配不到；
+  `tools/native_port.mjs` 删掉它们，保留 `pre` / `code` / `a` / `blockquote` 等真实元素选择器，
+  主按钮改由 `--dsw-alias-button-primary-fill` 生效。
+- **资产热更新**：宿主按请求懒加载 `assets/*` 并以 mtime 校验缓存，`generate.mjs` 重建后
+  **无需重启** DSH（响应头 `x-skin-center-rev` 可确认版本）。
+- **死动画已清除**：151 款里共删掉 **480 个没有任何 `animation` 引用的 `@keyframes`**
+  （mock 时代写给 `.app-titlebar` 之类元素的动画，在 DSH 里永远不会跑）；
+  聚合 CSS 里现存 211 个，全部有引用。
+- **外壳几何（v0.4+）**：每款按自己的圆角语言写 `--dsh-windows-content-radius`
+  （像素/复古 5 款为 `0`，其余 4–7px，中位数 6px）；只有真正柔和的皮肤才把
+  `--dsh-windows-titlebar-height` 抬到 44px（仅 1 款）。侧栏宽度/缩进保持 DSH 默认，
+  不动布局。注意：标题栏的窗口按钮由系统绘制、左侧栏的行高/图标/字号属于 DSH 组件，
+  皮肤只能改它们的颜色与这两处几何。
 
 ## 功能 / Features
 
-- **试穿**: 点卡片即写 `body[data-dsh-<id>]` 属性切肤（CSS 变量实时生效），再次点击其他卡片切换，✖ 清除皮肤。
+- **试穿**: 点卡片即写 `body[data-dsh-<id>]` 属性切肤（CSS 变量实时生效），再次点击其他卡片切换，✖ 清除皮肤。切肤只回收本包 manifest 声明的 151 个属性，不动 shell / 其他插件写在 `<body>` 上的 `data-dsh-*`。
 - **151 款皮肤**: 分组（绝区零 / 原神 / 经典配色 / 节日限定 …，游戏系按品牌分组）、搜索（中文名/英文名/分组/标签）。
 - **昼夜三态 (v0.3)**: 工具条「☀️ 昼 / 🌙 夜 / 🖥 跟随系统」——昼/夜手动切换预览与实际主题（`data-ds-dark-theme`）；「跟随系统」监听 `prefers-color-scheme`，系统深浅色切换时预览与已应用皮肤自动跟随。
 - **皮肤详情卡 (v0.3)**: 点击卡片除试穿外，网格上方展示详情——作者 / 标签 / 令牌数（CSS 体积估算）/ 分组 / 宣传语 + 昼·夜两张 640px 大图预览。
@@ -43,7 +78,9 @@ cd packages/skin-center && node scripts/generate.mjs   # 需要系统 python3 + 
 
 ## 宿主路由 / Host routes
 
-`/skin-center/manifest`（gzip JSON）、`/skin-center/css`（gzip CSS）、`/skin-center/thumbs/*`（缩略图）。
+`/skin-center/manifest`（gzip JSON）、`/skin-center/css`（gzip CSS）、`/skin-center/thumbs/*`（缩略图）、
+`/skin-center/previews/*`（640px 大图）。gzip 由路由自己协商并带 `Vary: Accept-Encoding`
+（实测 manifest 86 KB → 17 KB、css 3.3 MB → 0.46 MB）。
 
 ## 关系 / Architecture
 

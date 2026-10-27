@@ -98,15 +98,23 @@ window.__ModuleLoader__.load({
       )
     }
 
-    /** Remove every previously-applied skin attribute from <body>. */
-    function clearSkins() {
+    /**
+     * Remove only the skin attributes this pack owns — never a foreign
+     * `data-dsh-*` attribute the shell or another plugin may have put on
+     * <body> (the previous code stripped every one of them).
+     * @param attrs - body attribute names declared by the manifest.
+     */
+    function clearSkins(attrs) {
       for (const a of [...document.body.attributes]) {
-        if (a.name.startsWith('data-dsh-')) document.body.removeAttribute(a.name)
+        if (attrs.has(a.name)) document.body.removeAttribute(a.name)
       }
     }
 
     function Panel(props) {
       const t = props.t
+      // Forwarded from the shell's theme service when it is available; the
+      // panel then never disagrees with Settings → Appearance about day/night.
+      const setShellTheme = props.setTheme || (() => {})
       const [skins, setSkins] = useState([])
       const [loading, setLoading] = useState(true)
       const [search, setSearch] = useState('')
@@ -121,6 +129,7 @@ window.__ModuleLoader__.load({
       const cssRef = useRef(null)
       const byId = {}
       skins.forEach((s) => { byId[s.id] = s })
+      const skinAttrs = new Set(skins.map((s) => s.bodyAttr))
 
       const dark = mode === 'system' ? sysDark : mode === 'dark'
 
@@ -133,11 +142,13 @@ window.__ModuleLoader__.load({
         return () => { alive = false }
       }, [])
 
-      // detect an already-applied skin on mount
+      // detect an already-applied skin once the manifest is known — only
+      // attributes this pack declares, so a foreign body attribute is ignored
       useEffect(() => {
-        const attr = [...document.body.attributes].find((a) => a.name.startsWith('data-dsh-'))
+        if (!skins.length) return
+        const attr = [...document.body.attributes].find((a) => skinAttrs.has(a.name))
         if (attr) setApplied(attr.name)
-      }, [])
+      }, [skins.length])
 
       // follow-system: listen to prefers-color-scheme
       useEffect(() => {
@@ -174,7 +185,7 @@ window.__ModuleLoader__.load({
             document.head.appendChild(style)
             cssRef.current = style
           }
-          clearSkins()
+          clearSkins(skinAttrs)
           document.body.setAttribute(skin.bodyAttr, '')
           setApplied(skin.bodyAttr)
         } catch { /* keep UI alive */ }
@@ -185,7 +196,7 @@ window.__ModuleLoader__.load({
         })
       }
 
-      function clearSkin() { clearSkins(); setApplied(null); setSelected(null) }
+      function clearSkin() { clearSkins(skinAttrs); setApplied(null); setSelected(null) }
 
       function toggleFav(id) {
         setFavs((prev) => {
@@ -219,6 +230,11 @@ window.__ModuleLoader__.load({
         ['system', '🖥 ' + t('system')],
       ]
 
+      function chooseMode(next) {
+        setMode(next)
+        setShellTheme(next)
+      }
+
       // detail card: dual large previews + meta
       const detailCard = selected
         ? h('div', { 'data-dsh-part': 'card', style: { background: 'var(--dsw-alias-bg-layer-2)', border: '1px solid ' + (selected.accent || 'var(--dsw-alias-border-l1)'), borderRadius: '8px', padding: '12px', marginBottom: '12px' } },
@@ -251,7 +267,7 @@ window.__ModuleLoader__.load({
             h('option', { value: 'all' }, t('all')),
             groups.map((g) => h('option', { key: g, value: g }, g))),
           h('div', { style: { display: 'flex', gap: '4px' } },
-            modeBtns.map(([m, label]) => h('button', { key: m, 'data-dsh-part': 'button-ghost', style: mode === m ? S.btnActive : S.btn, onClick: () => setMode(m) }, label))),
+            modeBtns.map(([m, label]) => h('button', { key: m, 'data-dsh-part': 'button-ghost', style: mode === m ? S.btnActive : S.btn, onClick: () => chooseMode(m) }, label))),
           h('button', { 'data-dsh-part': 'button-ghost', style: S.btn, onClick: randomSkin, title: t('random') }, '🎲 ' + t('random')),
           h('button', { 'data-dsh-part': 'button-ghost', style: favOnly ? S.btnActive : S.btn, onClick: () => setFavOnly(!favOnly) }, (favOnly ? '♥ ' : '♡ ') + t('favOnly')),
           applied ? h('button', { 'data-dsh-part': 'button-ghost', style: S.btn, onClick: clearSkin }, '✖ ' + t('clearSkin')) : null,
@@ -318,19 +334,24 @@ window.__ModuleLoader__.load({
     return {
       inject: ['slots', 'locale'],
       apply(ctx) {
-        try {
-          ctx.effect(() => ctx.locale.register(NS, { zh, en }), 'skin-center: dicts')
-          const t = ctx.locale.bind(NS)
-          ctx.slots.inject('settings.section', () => ctx.slots.register({
-            name: 'settings.section',
-            id: 'skin-center',
-            order: 60,
-            label: () => t('nav'),
-            locale: NS,
-          }, Panel))
-        } catch (e) {
-          console.error('[skin-center] apply failed:', e)
-        }
+        ctx.effect(() => ctx.locale.register(NS, { zh, en }), 'skin-center: dicts')
+        const t = ctx.locale.bind(NS)
+        // Optional bridge: the shell's `theme` service owns day/night, so the
+        // panel forwards its choice there instead of holding a rival opinion.
+        let setTheme = () => {}
+        ctx.inject(['theme'], (peer) => {
+          setTheme = (id) => peer.theme.setTheme(id)
+          peer.effect(() => () => { setTheme = () => {} }, 'skin-center: theme bridge')
+        })
+        // `order` 70 sits after the shipped sections (≤20) and after other
+        // community pages (45/60), so the pack is stable in the nav order.
+        ctx.slots.inject('settings.section', () => ctx.slots.register({
+          name: 'settings.section',
+          id: 'skin-center',
+          order: 70,
+          label: () => t('nav'),
+          locale: NS,
+        }, () => h(Panel, { t, setTheme })))
       },
     }
   },

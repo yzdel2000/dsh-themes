@@ -83,22 +83,31 @@ const manifest = { generatedAt: new Date().toISOString(), count: skins.length, s
 writeFileSync(join(ASSETS, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf8')
 writeFileSync(join(ASSETS, 'skins.css'), cssParts.join('\n'), 'utf8')
 
-writeFileSync('/tmp/skin-center-jobs.json', JSON.stringify(jobs), 'utf8')
-execFileSync('python3', [join(HERE, 'thumbs.py'), '/tmp/skin-center-jobs.json', THUMBS, PREVIEWS], { stdio: 'inherit' })
-
+// `--css-only` rebuilds manifest + skins.css without touching thumbnails, so it
+// runs on machines without python3/Pillow (the usual case when only skin CSS
+// changed, e.g. after tools/native_port.mjs).
+const cssOnly = process.argv.includes('--css-only')
 let thumbBytes = 0
-for (const f of readdirSync(THUMBS)) thumbBytes += statSync(join(THUMBS, f)).size
 let prevBytes = 0
-for (const f of readdirSync(PREVIEWS)) prevBytes += statSync(join(PREVIEWS, f)).size
+if (!cssOnly) {
+  writeFileSync('/tmp/skin-center-jobs.json', JSON.stringify(jobs), 'utf8')
+  execFileSync('python3', [join(HERE, 'thumbs.py'), '/tmp/skin-center-jobs.json', THUMBS, PREVIEWS], { stdio: 'inherit' })
+  for (const f of readdirSync(THUMBS)) thumbBytes += statSync(join(THUMBS, f)).size
+  for (const f of readdirSync(PREVIEWS)) prevBytes += statSync(join(PREVIEWS, f)).size
+}
 const cssBytes = statSync(join(ASSETS, 'skins.css')).size
 const manBytes = statSync(join(ASSETS, 'manifest.json')).size
 console.log(`\n=== skin-center assets generated ===`)
 console.log(`skins: ${skins.length} (css extracted: ${cssParts.length})`)
 console.log(`manifest.json: ${(manBytes / 1024).toFixed(1)} KB`)
 console.log(`skins.css:     ${(cssBytes / 1024).toFixed(1)} KB`)
-console.log(`thumbs:        ${(thumbBytes / 1048576).toFixed(2)} MB total (${jobs.length * 2} files, avg ${(thumbBytes / (jobs.length * 2)).toFixed(1)} KB each)`)
-console.log(`previews:      ${(prevBytes / 1048576).toFixed(2)} MB total (${jobs.length * 2} files, avg ${(prevBytes / (jobs.length * 2)).toFixed(1)} KB each)`)
-console.log(`assets total:  ${((manBytes + cssBytes + thumbBytes + prevBytes) / 1048576).toFixed(2)} MB (vs ~67 MB raw previews)`)
+if (!cssOnly) {
+  console.log(`thumbs:        ${(thumbBytes / 1048576).toFixed(2)} MB total (${jobs.length * 2} files, avg ${(thumbBytes / (jobs.length * 2)).toFixed(1)} KB each)`)
+  console.log(`previews:      ${(prevBytes / 1048576).toFixed(2)} MB total (${jobs.length * 2} files, avg ${(prevBytes / (jobs.length * 2)).toFixed(1)} KB each)`)
+  console.log(`assets total:  ${((manBytes + cssBytes + thumbBytes + prevBytes) / 1048576).toFixed(2)} MB (vs ~67 MB raw previews)`)
+} else {
+  console.log('thumbnails/previews: skipped (--css-only)')
+}
 
 // pipeline "fail loudly if most skins lost their CSS"
 if (cssParts.length < skins.length) {

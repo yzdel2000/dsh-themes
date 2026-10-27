@@ -16,9 +16,25 @@
 git clone https://github.com/whyihaveyou/dsh-themes.git
 # 安装单个皮肤（以马力欧为例；lib/ 已随仓库预构建，无需本地构建）
 dsh plugin --profile <你的profile> add ./dsh-themes/skins/mario
+# 或安装聚合包「皮肤中心」，一次拿到全部 151 款
+dsh plugin --profile <你的profile> add ./dsh-themes/packages/skin-center
 ```
 
 或在皮肤中心（skin-center）里试穿/启用。
+
+**兼容性**：面向 **DSH ≥ 0.2.1-rc.3**（`packages/skin-center` 的 `dsh.engines.dsh` 声明为
+`>=0.2.1-rc.3 <0.3.0`）。皮肤与面板走当前契约——`window.__ModuleLoader__.load({id, factory})`
+浏览器半、`ctx.webServer.register({kind, path, handler})` 宿主半、`settings.section` 槽位、
+`ctx.locale` 字典，以及 `--dsw-*` 设计令牌（已按 0.2.1-rc.3 的令牌表核对）。
+
+**皮肤是 DSH 原生的**：每款皮肤在 `body[data-dsh-<id>]` / `body[data-dsh-<id>][data-ds-dark-theme]`
+上直接重写 DSH 的 125 个语义令牌（`--dsw-alias-*` 120 个 + `--dsw-specific-*` 5 类里可安全覆盖的 11 个），
+不再是 AionUI 变量名的机械翻译；带类名的选择器（构建时被 CSS module 哈希、DSH 里永不匹配）
+已由 `tools/native_port.mjs` 清除，主按钮等改由令牌生效。
+
+**关于预览图**：`skins/*/preview/*.png` 是**配色意境图**——用 AionUI 的模拟界面渲染同一套配色，
+**不是 DSH 实景截图**。所以它只保证「配色对不对」，不保证「布局长什么样」；实机观感请以皮肤中心
+里试穿的结果为准。
 
 ## 皮肤一览
 
@@ -291,8 +307,15 @@ skins/<id>/
 ## 工具
 
 - `python3 tools/convert.py` — 从 aionui-themes 批量重新生成全部皮肤包
+- `node tools/native_port.mjs --all` — 把皮肤从 AionUI 变量改写为 DSH 原生令牌（幂等；
+  `--ids a,b` 只处理指定款，`--dry-run` 只报告；会同时更新 `src/*.module.css` 与
+  `lib/client.js` 内嵌的 CSS）；顺带清掉死选择器与没人引用的 `@keyframes`，并按皮肤
+  自己的圆角语言写入 `--dsh-windows-content-radius` / `--dsh-windows-titlebar-height`
 - `python3 tools/validate_skin.py` — 结构校验（作用域/令牌/keyframes 闭环/文件完整性）
 - `python3 tools/build_readme.py` — 重新生成本 README
+- `cd packages/skin-center && node scripts/generate.mjs [--css-only]` — 重建皮肤中心的
+  manifest + 聚合 CSS；`--css-only` 跳过缩略图（不需要 python3/Pillow），宿主按请求懒加载，
+  重建后**无需重启** DSH
 
 ## 致谢
 
