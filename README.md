@@ -1,6 +1,84 @@
 # DSH Themes · DeepSeek Harness 皮肤合集
 
-为 [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) Web UI 打造的 **151 个皮肤**，全部迁移自 [aionui-themes](https://github.com/whyihaveyou/aionui-themes)（302 套 AionUi 主题，昼夜成对合并而来）。皮肤格式与契约参考 [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) 的官方皮肤标准。
+> **一句话价值**：给 DSH Web UI 装上一个「皮肤中心」——151 款皮肤随点随换，昼夜两套令牌自动跟随，**重启 DSH 后还记得上次穿的那套**。
+
+| 项目 | 内容 |
+|---|---|
+| 能力分类 | 界面与体验 |
+| 支持平台 | DSH Web（桌面版内嵌 Web UI 同样可用） |
+| DSH 兼容 | `>=0.2.1-rc.3 <0.3.0` |
+| 安装命令 | `dsh plugin --profile web add @dsh-suite/themes` |
+| 许可证 | Apache-2.0（见文末 [License](#license)） |
+
+151 款皮肤全部迁移自 [aionui-themes](https://github.com/whyihaveyou/aionui-themes)（302 套 AionUi 主题按昼夜成对合并），皮肤格式与契约参考 [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) 的 DSH 皮肤标准。每款皮肤同时是一个可单独安装的 DSH 插件包；聚合包另带「皮肤中心」试穿面板。
+
+## 安装（复制即用）
+
+**A. 一条命令装齐 151 款（npm 包）**
+
+```sh
+dsh plugin --profile web add @dsh-suite/themes
+```
+
+> npm 发布线可能滞后于仓库（当前仓库 0.5.0）：要「重启恢复上次皮肤」等 v0.5 能力，请用下面的源码安装。
+
+**B. 源码安装（推荐：npm 发布线可能滞后于仓库，仓库 0.5.0 起才有「重启恢复上次皮肤」）**
+
+```sh
+git clone https://github.com/whyihaveyou/dsh-themes.git
+dsh plugin --profile web add ./dsh-themes/packages/skin-center
+```
+
+**C. 只装单款皮肤（不装面板）**
+
+```sh
+git clone https://github.com/whyihaveyou/dsh-themes.git
+dsh plugin --profile web add ./dsh-themes/skins/mario   # 换成任意 skins/<id>
+```
+
+安装后重启 `dsh`（桌面版重开应用），打开 **Settings → 皮肤中心 / Skin Center**，点卡片即可试穿；单皮肤包安装后直接生效，无需面板。
+
+## 安装后你能得到什么
+
+- **151 款皮肤，一个面板**：按系列分组（绝区零 / 原神 / 经典配色 / 节日限定 …），支持中文名、英文名、分组、标签搜索。
+- **点一下换肤，重启还认得你**（v0.5+）：试穿即时生效，选择写入 `$DSH_HOME/skin-center/state.json`，下次启动自动恢复；✖ 清除皮肤同样持久。
+- **昼夜交给 DSH**：面板的「昼 / 夜 / 跟随系统」转发给 shell 的 `theme` 服务；每款皮肤自带昼夜两套令牌，跟随系统深浅色切换。
+- **收藏 / 最近试穿 / 随机一款**：常用的几套不用每次翻 151 张卡片。
+- **不碰布局**：只覆盖 `--dsw-*` 设计令牌与纹理 / 动效，侧栏宽度、缩进保持 DSH 默认（仅按皮肤风格写少量标题栏圆角 / 高度）。
+
+## 看得见的效果（截图 / 演示）
+
+皮肤中心里点卡片即试穿；下面是其中 4 款（浅色态，从左到右：Catppuccin Latte / Nord / 原神·胡桃 / 绝区零·星见雅）：
+
+| Catppuccin Latte | Nord | 原神 · 胡桃 | 绝区零 · 星见雅 |
+|---|---|---|---|
+| ![Catppuccin Latte 浅色](skins/catppuccin/preview/light.png) | ![Nord 浅色](skins/nord/preview/light.png) | ![原神·胡桃 浅色](skins/genshin-hutao/preview/light.png) | ![绝区零·星见雅 浅色](skins/zzz-miyabi/preview/light.png) |
+
+> 预览图是**配色意境图**：用 AionUI 的模拟界面渲染同一套配色，**不是 DSH 实机截图**。它只保证配色一致，不保证布局；实机观感以皮肤中心试穿结果为准。
+
+真实输出（v0.5 持久化契约测试，`cd packages/skin-center && node tests/persistence.test.mjs`）：
+
+```text
+✔ host half: /skin-center/state persists, validates, and guards origin (36.6ms)
+✔ client half: boot restore, host reconciliation, and migration (62.1ms)
+ℹ tests 2
+ℹ pass 2
+ℹ fail 0
+```
+
+## 权限与风险
+
+- **安装期**：`dsh plugin add` 只在该 profile 的 `node_modules` 写入本包，并在该 profile 的插件清单里登记，不改动系统目录。
+- **运行期读取**：包内 `assets/`（manifest、151 款合成 CSS、缩略图 / 640px 预览图），只读。
+- **运行期写入**：宿主仅在 `$DSH_HOME/skin-center/state.json` 记录最近一次试穿的皮肤；浏览器端在 `localStorage` 存收藏、最近试穿、当前皮肤缓存与昼夜偏好。
+- **网络与数据**：不访问外部网络、无遥测、无第三方服务；路由挂在 DSH 本机 Web 服务上，写接口带同源校验。
+- **边界**：只面向 DSH Web 端（含桌面版内嵌 Web UI）；皮肤通过 `body[data-dsh-<id>]` 覆盖设计令牌与纹理，不动 DOM 结构、不改侧栏宽度与间距，也不修改 DSH 本体文件。
+
+## 兼容性
+
+面向 **DSH ≥ 0.2.1-rc.3**（`packages/skin-center` 的 `dsh.engines.dsh` 声明为 `>=0.2.1-rc.3 <0.3.0`）。皮肤与面板走当前契约——`window.__ModuleLoader__.load({id, factory})` 浏览器半、`ctx.webServer.register({kind, path, handler})` 宿主半、`settings.section` 槽位、`ctx.locale` 字典，以及 `--dsw-*` 设计令牌（已按 0.2.1-rc.3 的令牌表核对）。安装命令里的 `web` 可换成任意已存在的 profile 名。
+
+## 皮肤是怎么实现的
 
 每个皮肤都是一个**自包含的 DSH 插件包**：
 
@@ -10,29 +88,14 @@
 - **专属 favicon 与标题**：按主题主色生成
 - **热插拔契约**：`apply(ctx)` 写入的一切在 dispose 时全部收回（含契约测试 `tests/apply.spec.ts`）
 
-## 安装
-
-```bash
-git clone https://github.com/whyihaveyou/dsh-themes.git
-# 安装单个皮肤（以马力欧为例；lib/ 已随仓库预构建，无需本地构建）
-dsh plugin --profile <你的profile> add ./dsh-themes/skins/mario
-# 或安装聚合包「皮肤中心」，一次拿到全部 151 款
-dsh plugin --profile <你的profile> add ./dsh-themes/packages/skin-center
-```
-
-或在皮肤中心（skin-center）里试穿/启用。
-
-**兼容性**：面向 **DSH ≥ 0.2.1-rc.3**（`packages/skin-center` 的 `dsh.engines.dsh` 声明为
-`>=0.2.1-rc.3 <0.3.0`）。皮肤与面板走当前契约——`window.__ModuleLoader__.load({id, factory})`
-浏览器半、`ctx.webServer.register({kind, path, handler})` 宿主半、`settings.section` 槽位、
-`ctx.locale` 字典，以及 `--dsw-*` 设计令牌（已按 0.2.1-rc.3 的令牌表核对）。
-
 **皮肤是 DSH 原生的**：每款皮肤在 `body[data-dsh-<id>]` / `body[data-dsh-<id>][data-ds-dark-theme]`
 上直接重写 DSH 的 125 个语义令牌（`--dsw-alias-*` 120 个 + `--dsw-specific-*` 5 类里可安全覆盖的 11 个），
 不再是 AionUI 变量名的机械翻译；带类名的选择器（构建时被 CSS module 哈希、DSH 里永不匹配）
 已由 `tools/native_port.mjs` 清除，主按钮等改由令牌生效。
 
-**关于预览图**：`skins/*/preview/*.png` 是**配色意境图**——用 AionUI 的模拟界面渲染同一套配色，
+## 关于预览图
+
+`skins/*/preview/*.png` 是**配色意境图**——用 AionUI 的模拟界面渲染同一套配色，
 **不是 DSH 实景截图**。所以它只保证「配色对不对」，不保证「布局长什么样」；实机观感请以皮肤中心
 里试穿的结果为准。
 
@@ -333,4 +396,6 @@ skins/<id>/
 
 ## License
 
-Apache-2.0
+Apache-2.0（SPDX：`Apache-2.0`）。皮肤样式与面板代码可自由复用、二次开发；角色名称与形象版权归米哈游 / 任天堂 / 迪士尼 / 卡普空等各自厂商所有，仅作粉丝向非商业展示。
+
+本项目为社区作品，与 DeepSeek AI 无隶属关系。
