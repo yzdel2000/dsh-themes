@@ -2,15 +2,18 @@
 
 > **一句话价值**：给 DSH Web UI 装上一个「皮肤中心」——151 款皮肤随点随换，昼夜两套令牌自动跟随，**重启 DSH 后还记得上次穿的那套**。
 
+> **出处**：本项目独立维护，源自 [whyihaveyou/dsh-themes](https://github.com/whyihaveyou/dsh-themes)；当前仓库 [yzdel2000/dsh-themes](https://github.com/yzdel2000/dsh-themes)。
+
 | 项目 | 内容 |
 |---|---|
 | 能力分类 | 界面与体验 |
 | 支持平台 | DSH Web（桌面版内嵌 Web UI 同样可用） |
 | DSH 兼容 | `>=0.2.1-rc.3 <0.3.0` |
 | 安装命令 | `dsh plugin --profile web add @dsh-suite/themes` |
+| 仓库 | <https://github.com/yzdel2000/dsh-themes> |
 | 许可证 | Apache-2.0（见文末 [License](#license)） |
 
-151 款皮肤全部迁移自 [aionui-themes](https://github.com/whyihaveyou/aionui-themes)（302 套 AionUi 主题按昼夜成对合并），皮肤格式与契约参考 [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) 的 DSH 皮肤标准。每款皮肤同时是一个可单独安装的 DSH 插件包；聚合包另带「皮肤中心」试穿面板。
+151 款皮肤按昼夜成对整理，每款皮肤同时是一个可单独安装的 DSH 插件包；聚合包另带「皮肤中心」试穿面板，可一次装齐全部皮肤。
 
 ## 安装（复制即用）
 
@@ -25,14 +28,14 @@ dsh plugin --profile web add @dsh-suite/themes
 **B. 源码安装（推荐：npm 发布线可能滞后于仓库，仓库 0.5.0 起才有「重启恢复上次皮肤」）**
 
 ```sh
-git clone https://github.com/whyihaveyou/dsh-themes.git
+git clone https://github.com/yzdel2000/dsh-themes.git
 dsh plugin --profile web add ./dsh-themes/packages/skin-center
 ```
 
 **C. 只装单款皮肤（不装面板）**
 
 ```sh
-git clone https://github.com/whyihaveyou/dsh-themes.git
+git clone https://github.com/yzdel2000/dsh-themes.git
 dsh plugin --profile web add ./dsh-themes/skins/mario   # 换成任意 skins/<id>
 ```
 
@@ -382,17 +385,8 @@ skins/<id>/
 
 ## 致谢
 
-- 皮肤契约与插件标准参考 [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui)
 - 经典配色系列色板来自各方案官方定义（Catppuccin / Dracula / Nord / Tokyo Night / Gruvbox / Solarized / Rosé Pine / Everforest / Atom / Monokai / Night Owl / Synthwave '84 / Kanagawa / Ayu / GitHub Primer / Material Theme / VS Code / JetBrains / Flexoki）
 - 角色名称与形象版权归米哈游 / 任天堂 / 迪士尼 / 卡普空等各自厂商所有，本项目为粉丝向非商业作品
-
-## 相关项目
-
-- 🌐 [dsh-suite 目录网站](https://whyihaveyou.github.io/dsh-suite/) — 在线逛全部插件，带兼容徽章与搜索
-- 📦 [dsh-suite 主仓](https://github.com/whyihaveyou/dsh-suite) — DSH 插件活目录 + 内置商店 + 脚手架
-- 📖 [DSH 中文文档 · dsh-docs.com](https://dsh-docs.com) — 中文教程与文档，开箱即用无需翻墙
-- 📕 [DSH 插件开发指南](https://github.com/whyihaveyou/dsh-plugin-tutorial) — 中英双语成书
-- 🖥 [dsh-workstation](https://github.com/whyihaveyou/dsh-workstation) — 一体化工作台（🚧 开发中）
 
 ## License
 
