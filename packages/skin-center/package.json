@@ -1,6 +1,7 @@
 {
   "name": "@dsh-suite/themes",
   "version": "0.5.0",
+  "private": true,
   "description": "151 款 AionUi 皮肤聚合 + 皮肤中心试穿面板 / A 151-skin pack with a try-on panel for DSH Web UI.",
   "type": "module",
   "main": "lib/index.js",
@@ -35,16 +36,14 @@
   ],
   "scripts": {
     "generate": "node scripts/generate.mjs",
-    "test": "node tests/persistence.test.mjs"
+    "test": "node tests/persistence.test.mjs",
+    "prepublishOnly": "node scripts/guard-publish.mjs"
   },
   "engines": {
     "node": "^22.19 || >=24",
     "dsh": ">=0.2.1-rc.3 <0.3.0"
   },
   "license": "Apache-2.0",
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yzdel2000/dsh-themes.git",

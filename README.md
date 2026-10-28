@@ -391,6 +391,12 @@ skins/<id>/
   manifest + 聚合 CSS；`--css-only` 跳过缩略图（不需要 python3/Pillow），宿主按请求懒加载，
   重建后**无需重启** DSH
 
+## 发布 / Release
+
+唯一发布源是**仓库根**：版本号写在根 `package.json`，发布前先跑 `npm test`（`prepublishOnly` 也会跑），然后执行 `npm publish`。
+
+`packages/skin-center/` 是皮肤中心的源码与构建目录（host / client 入口、assets、locale、icon 都由根清单通过 `main` / `exports` 指向）；它的 `package.json` 已标记 `"private": true` 并带 `prepublishOnly` 守卫，从子目录发布会被拒绝，避免重复发布同一个包名。
+
 ## 致谢
 
 - 经典配色系列色板来自各方案官方定义（Catppuccin / Dracula / Nord / Tokyo Night / Gruvbox / Solarized / Rosé Pine / Everforest / Atom / Monokai / Night Owl / Synthwave '84 / Kanagawa / Ayu / GitHub Primer / Material Theme / VS Code / JetBrains / Flexoki）

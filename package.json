@@ -37,7 +37,9 @@
   "scripts": {
     "convert": "python3 tools/convert.py",
     "validate": "python3 tools/validate_skin.py",
-    "test": "node packages/skin-center/tests/persistence.test.mjs"
+    "generate": "node packages/skin-center/scripts/generate.mjs",
+    "test": "node packages/skin-center/tests/persistence.test.mjs",
+    "prepublishOnly": "npm test"
   },
   "engines": {
     "node": "^22.19 || >=24",
