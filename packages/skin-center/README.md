@@ -50,6 +50,7 @@ dsh plugin --profile <你的 profile 名> add @dsh-suite/themes
 ## 功能 / Features
 
 - **试穿**: 点卡片即写 `body[data-dsh-<id>]` 属性切肤（CSS 变量实时生效），再次点击其他卡片切换，✖ 清除皮肤。切肤只回收本包 manifest 声明的 151 个属性，不动 shell / 其他插件写在 `<body>` 上的 `data-dsh-*`。
+- **重启后仍是这套皮肤 (v0.5)**: 选择会持久化并在启动时恢复——`localStorage` 留一份同步副本（首帧就带上皮肤），宿主状态文件 `~/.dsh/skin-center/state.json`（`GET/POST /skin-center/state`）留一份跨重启副本；即使桌面版每次启动换了回环端口、浏览器 origin 变了，皮肤依然自动穿回。✖ 清除皮肤同样会写回两份记录。
 - **151 款皮肤**: 分组（绝区零 / 原神 / 经典配色 / 节日限定 …，游戏系按品牌分组）、搜索（中文名/英文名/分组/标签）。
 - **昼夜三态 (v0.3)**: 工具条「☀️ 昼 / 🌙 夜 / 🖥 跟随系统」——昼/夜手动切换预览与实际主题（`data-ds-dark-theme`）；「跟随系统」监听 `prefers-color-scheme`，系统深浅色切换时预览与已应用皮肤自动跟随。
 - **皮肤详情卡 (v0.3)**: 点击卡片除试穿外，网格上方展示详情——作者 / 标签 / 令牌数（CSS 体积估算）/ 分组 / 宣传语 + 昼·夜两张 640px 大图预览。
@@ -76,10 +77,20 @@ cd packages/skin-center && node scripts/generate.mjs   # 需要系统 python3 + 
 
 产物 `assets/manifest.json`、`assets/skins.css`、`assets/thumbs/*.webp` 随包发布。
 
+## 测试 / Test
+
+```sh
+cd packages/skin-center && node tests/persistence.test.mjs   # 只用 node:test，无第三方依赖
+```
+
+覆盖宿主 `/skin-center/state`（读写 / 校验 / 同源守卫）与浏览器半的启动恢复
+（本地缓存先穿、宿主状态对账、旧版本只存 localStorage 的选择自动上迁）。
+
 ## 宿主路由 / Host routes
 
 `/skin-center/manifest`（gzip JSON）、`/skin-center/css`（gzip CSS）、`/skin-center/thumbs/*`（缩略图）、
-`/skin-center/previews/*`（640px 大图）。gzip 由路由自己协商并带 `Vary: Accept-Encoding`
+`/skin-center/previews/*`（640px 大图）、`/skin-center/state`（`GET` 读 / `POST` 写上次穿的皮肤，
+落盘在 `$DSH_HOME/skin-center/state.json`，默认 `~/.dsh/skin-center/state.json`）。gzip 由路由自己协商并带 `Vary: Accept-Encoding`
 （实测 manifest 86 KB → 17 KB、css 3.3 MB → 0.46 MB）。
 
 ## 关系 / Architecture

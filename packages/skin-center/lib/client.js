@@ -3,6 +3,9 @@
 // same seam General / Models / Plugins use). Manifest + CSS + thumbnails come
 // from the host half routes (/skin-center/*) — the client bundle itself stays small.
 // v3: day/night 3-state (light / dark / follow system) + skin detail card.
+// v5: the chosen skin is persisted and restored on boot — localStorage for a
+// flash-free first paint, the host state file (/skin-center/state) for a
+// relaunch whose loopback port (and therefore localStorage origin) changed.
 window.__ModuleLoader__.load({
   id: '@dsh-suite/themes',
   factory: (require) => {
@@ -62,6 +65,118 @@ window.__ModuleLoader__.load({
         const v = localStorage.getItem(MODE_KEY)
         return v === 'light' || v === 'dark' || v === 'system' ? v : 'system'
       } catch { return 'system' }
+    }
+
+    // ---- applied skin persistence -------------------------------------------
+    // The chosen skin is remembered twice: in localStorage (synchronous, so the
+    // first paint after a reload already carries it) and in the host's state file
+    // via /skin-center/state (survives a relaunch whose loopback port — and
+    // therefore the localStorage origin — changed).
+    const STATE_KEY = 'skinCenter:state'
+    const ATTR_RE = /^data-dsh-[a-z0-9-]{1,64}$/
+
+    /** @type {{ id: string, bodyAttr: string } | null} */
+    let appliedState = null
+    const stateListeners = new Set()
+
+    function readLocalState() {
+      try {
+        const raw = JSON.parse(localStorage.getItem(STATE_KEY))
+        if (raw && typeof raw.id === 'string' && typeof raw.bodyAttr === 'string' && ATTR_RE.test(raw.bodyAttr)) {
+          return { id: raw.id, bodyAttr: raw.bodyAttr }
+        }
+      } catch { /* absent or corrupt */ }
+      return null
+    }
+
+    function writeLocalState(state) {
+      try {
+        if (state) localStorage.setItem(STATE_KEY, JSON.stringify(state))
+        else localStorage.removeItem(STATE_KEY)
+      } catch { /* quota / private mode */ }
+    }
+
+    function whenBody(run) {
+      if (document.body) { run(); return }
+      const once = () => {
+        document.removeEventListener('DOMContentLoaded', once)
+        if (document.body) run()
+      }
+      document.addEventListener('DOMContentLoaded', once)
+    }
+
+    /** Inject the aggregated skin stylesheet once; returns its <link>. */
+    function ensureSkinCss() {
+      try {
+        let link = document.getElementById('skin-center-css')
+        if (!link) {
+          link = document.createElement('link')
+          link.id = 'skin-center-css'
+          link.rel = 'stylesheet'
+          link.href = '/skin-center/css'
+          document.head.appendChild(link)
+        }
+        return link
+      } catch { return null }
+    }
+
+    /**
+     * Apply (or clear) the pack's body attribute, remember the choice, and tell
+     * every open panel. `persist: false` is for boot restore, where the host
+     * state file — not this tab — is the authority.
+     * @param state - the skin to wear, or null to go back to the stock theme.
+     * @param options.persist - also write the host state file (default true).
+     */
+    function applyState(state, options = {}) {
+      if (!document.body) {
+        whenBody(() => applyState(state, options))
+        return
+      }
+      if (appliedState && (!state || appliedState.bodyAttr !== state.bodyAttr)) {
+        document.body.removeAttribute(appliedState.bodyAttr)
+      }
+      if (state) {
+        ensureSkinCss()
+        document.body.setAttribute(state.bodyAttr, '')
+      }
+      appliedState = state
+      writeLocalState(state)
+      for (const fn of stateListeners) {
+        try { fn(state) } catch { /* a panel is unmounting */ }
+      }
+      if (options.persist !== false) saveHostState(state)
+    }
+
+    function saveHostState(state) {
+      try {
+        fetch('/skin-center/state', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify(state ? { id: state.id, bodyAttr: state.bodyAttr } : { id: null }),
+          keepalive: true,
+        }).catch(() => { /* host half too old — local state still works */ })
+      } catch { /* offline */ }
+    }
+
+    /** Host state: null = route unavailable; stored:false = never saved there. */
+    function readHostState() {
+      let request
+      try {
+        request = fetch('/skin-center/state', { headers: { accept: 'application/json' } })
+      } catch {
+        return Promise.resolve(null)
+      }
+      return request
+        .then((res) => (res.ok ? res.json() : null))
+        .then((raw) => {
+          if (!raw || typeof raw !== 'object') return null
+          if (raw.stored !== true) return { stored: false }
+          if (typeof raw.id === 'string' && typeof raw.bodyAttr === 'string' && ATTR_RE.test(raw.bodyAttr)) {
+            return { stored: true, id: raw.id, bodyAttr: raw.bodyAttr }
+          }
+          return { stored: true, id: null, bodyAttr: null }
+        })
+        .catch(() => null)
     }
 
     // Lazy thumbnail: IntersectionObserver gates the fetch; failed images hide.
@@ -124,9 +239,8 @@ window.__ModuleLoader__.load({
       const [favOnly, setFavOnly] = useState(false)
       const [favs, setFavs] = useState(() => new Set(loadJSON(FAVS_KEY, [])))
       const [recent, setRecent] = useState(() => loadJSON(RECENT_KEY, []))
-      const [applied, setApplied] = useState(null)
+      const [applied, setApplied] = useState(() => (appliedState ? appliedState.bodyAttr : null))
       const [selected, setSelected] = useState(null)
-      const cssRef = useRef(null)
       const byId = {}
       skins.forEach((s) => { byId[s.id] = s })
       const skinAttrs = new Set(skins.map((s) => s.bodyAttr))
@@ -142,10 +256,20 @@ window.__ModuleLoader__.load({
         return () => { alive = false }
       }, [])
 
-      // detect an already-applied skin once the manifest is known — only
-      // attributes this pack declares, so a foreign body attribute is ignored
+      // the restored skin may land before or after this panel mounts, and a card
+      // click here must also update any other open panel — one shared source.
       useEffect(() => {
-        if (!skins.length) return
+        const onChange = (state) => setApplied(state ? state.bodyAttr : null)
+        stateListeners.add(onChange)
+        onChange(appliedState)
+        return () => { stateListeners.delete(onChange) }
+      }, [])
+
+      // detect a skin applied by another pack (e.g. a standalone skin package)
+      // once the manifest is known — only attributes this pack declares, so a
+      // foreign body attribute is ignored
+      useEffect(() => {
+        if (!skins.length || appliedState) return
         const attr = [...document.body.attributes].find((a) => skinAttrs.has(a.name))
         if (attr) setApplied(attr.name)
       }, [skins.length])
@@ -168,27 +292,20 @@ window.__ModuleLoader__.load({
         try { localStorage.setItem(MODE_KEY, mode) } catch { /* ignore */ }
       }, [mode])
 
-      // apply day/night to the actual UI (skin dark variant) when a skin is on
+      // apply day/night to the actual UI (skin dark variant) when a skin is on.
+      // With the shell's theme service present it owns `data-ds-dark-theme`
+      // (and already persisted the preference), so the panel must not fight it.
       useEffect(() => {
-        if (!applied) return
+        if (!applied || props.shellTheme) return
         if (dark) document.body.setAttribute('data-ds-dark-theme', '')
         else document.body.removeAttribute('data-ds-dark-theme')
-      }, [dark, applied])
+      }, [dark, applied, props.shellTheme])
 
-      async function applySkin(skin) {
-        try {
-          if (!cssRef.current) {
-            const css = await fetch('/skin-center/css').then((r) => r.text())
-            const style = document.createElement('style')
-            style.id = 'skin-center-css'
-            style.textContent = css
-            document.head.appendChild(style)
-            cssRef.current = style
-          }
-          clearSkins(skinAttrs)
-          document.body.setAttribute(skin.bodyAttr, '')
-          setApplied(skin.bodyAttr)
-        } catch { /* keep UI alive */ }
+      /** Try a skin on: body attribute now, remembered for the next boot. */
+      function applySkin(skin) {
+        clearSkins(skinAttrs)
+        applyState({ id: skin.id, bodyAttr: skin.bodyAttr })
+        setSelected(skin)
         setRecent((prev) => {
           const next = [skin.id, ...prev.filter((x) => x !== skin.id)].slice(0, RECENT_MAX)
           saveJSON(RECENT_KEY, next)
@@ -196,7 +313,11 @@ window.__ModuleLoader__.load({
         })
       }
 
-      function clearSkin() { clearSkins(skinAttrs); setApplied(null); setSelected(null) }
+      function clearSkin() {
+        clearSkins(skinAttrs)
+        applyState(null)
+        setSelected(null)
+      }
 
       function toggleFav(id) {
         setFavs((prev) => {
@@ -331,6 +452,27 @@ window.__ModuleLoader__.load({
       )
     }
 
+    // Boot restore, before the shell mounts React: wear the cached skin right
+    // away, then let the host state file (the durable copy) win if it disagrees.
+    // A local-only choice from an older version is migrated up once. Never let a
+    // restore failure keep the settings section itself from registering.
+    const cachedState = readLocalState()
+    if (cachedState) {
+      try { applyState(cachedState, { persist: false }) } catch { /* fall back to the stock theme */ }
+    }
+    readHostState().then((host) => {
+      if (!host) return
+      if (host.stored === false) {
+        if (appliedState) saveHostState(appliedState)
+        return
+      }
+      if (host.id && host.bodyAttr) {
+        if (!appliedState || appliedState.bodyAttr !== host.bodyAttr) applyState(host, { persist: false })
+        return
+      }
+      if (appliedState) applyState(null, { persist: false })
+    }).catch(() => { /* keep the panel usable */ })
+
     return {
       inject: ['slots', 'locale'],
       apply(ctx) {
@@ -339,7 +481,9 @@ window.__ModuleLoader__.load({
         // Optional bridge: the shell's `theme` service owns day/night, so the
         // panel forwards its choice there instead of holding a rival opinion.
         let setTheme = () => {}
+        let shellTheme = false
         ctx.inject(['theme'], (peer) => {
+          shellTheme = true
           setTheme = (id) => peer.theme.setTheme(id)
           peer.effect(() => () => { setTheme = () => {} }, 'skin-center: theme bridge')
         })
@@ -351,7 +495,7 @@ window.__ModuleLoader__.load({
           order: 70,
           label: () => t('nav'),
           locale: NS,
-        }, () => h(Panel, { t, setTheme })))
+        }, () => h(Panel, { t, setTheme, shellTheme })))
       },
     }
   },
