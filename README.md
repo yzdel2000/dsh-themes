@@ -9,7 +9,7 @@
 | 能力分类 | 界面与体验 |
 | 支持平台 | DSH Web（桌面版内嵌 Web UI 同样可用） |
 | DSH 兼容 | `>=0.2.1-rc.3 <0.3.0` |
-| 安装命令 | `dsh plugin --profile web add @dsh-suite/themes` |
+| 安装命令 | `dsh plugin --profile web add dsh-themes-suite` |
 | 仓库 | <https://github.com/yzdel2000/dsh-themes> |
 | 许可证 | Apache-2.0（见文末 [License](#license)） |
 
@@ -20,7 +20,7 @@
 **A. 一条命令装齐 151 款（npm 包）**
 
 ```sh
-dsh plugin --profile web add @dsh-suite/themes
+dsh plugin --profile web add dsh-themes-suite
 ```
 
 > npm 发布线可能滞后于仓库（当前仓库 0.5.0）：要「重启恢复上次皮肤」等 v0.5 能力，请用下面的源码安装。

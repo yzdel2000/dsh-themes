@@ -1,4 +1,4 @@
-# @dsh-suite/themes — 151 款 DSH 皮肤聚合 / 151-skin pack for DSH Web UI
+# dsh-themes-suite — 151 款 DSH 皮肤聚合 / 151-skin pack for DSH Web UI
 
 [💬 问题反馈](https://github.com/yzdel2000/dsh-themes/issues) · [仓库](https://github.com/yzdel2000/dsh-themes)
 
@@ -9,7 +9,7 @@
 ## 安装 / Install
 
 ```sh
-dsh plugin --profile web add @dsh-suite/themes
+dsh plugin --profile web add dsh-themes-suite
 ```
 
 安装后重启 `dsh`（或桌面版），Settings → **皮肤中心 / Skin Center** 即可用。
