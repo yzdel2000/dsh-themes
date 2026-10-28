@@ -1,12 +1,68 @@
 {
-  "name": "dsh-themes",
-  "private": true,
+  "name": "@dsh-suite/themes",
+  "version": "0.5.0",
+  "description": "151 款 DSH 皮肤聚合 + 皮肤中心试穿面板 / A 151-skin pack with a try-on panel for DSH Web UI.",
   "type": "module",
-  "description": "DSH (DeepSeek Harness) 皮肤合集 — 151 个皮肤，全部由 aionui-themes 迁移",
+  "main": "packages/skin-center/lib/index.js",
+  "icon": "packages/skin-center/icon.webp",
+  "exports": {
+    ".": "./packages/skin-center/lib/index.js",
+    "./client": "./packages/skin-center/lib/client.js",
+    "./locale/*.json": "./packages/skin-center/locale/*.json",
+    "./icon": "./packages/skin-center/icon.webp",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./packages/skin-center/cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "files": [
+    "packages/skin-center/lib",
+    "packages/skin-center/cordis.patch.yml",
+    "packages/skin-center/assets",
+    "packages/skin-center/locale",
+    "packages/skin-center/icon.webp",
+    "packages/skin-center/README.md",
+    "README.md"
+  ],
   "scripts": {
     "convert": "python3 tools/convert.py",
-    "validate": "python3 tools/validate_skin.py"
+    "validate": "python3 tools/validate_skin.py",
+    "test": "node packages/skin-center/tests/persistence.test.mjs"
   },
+  "engines": {
+    "node": "^22.19 || >=24",
+    "dsh": ">=0.2.1-rc.3 <0.3.0"
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzdel2000/dsh-themes.git"
+  },
+  "homepage": "https://github.com/yzdel2000/dsh-themes#readme",
+  "bugs": {
+    "url": "https://github.com/yzdel2000/dsh-themes/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "themes",
+    "skin",
+    "aionui",
+    "skin-center"
+  ],
   "devDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
     "jsdom": "29.1.1",

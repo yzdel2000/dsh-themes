@@ -29,8 +29,10 @@ dsh plugin --profile web add @dsh-suite/themes
 
 ```sh
 git clone https://github.com/yzdel2000/dsh-themes.git
-dsh plugin --profile web add ./dsh-themes/packages/skin-center
+dsh plugin --profile web add ./dsh-themes
 ```
+
+> 也可以直接从 GitHub 安装：`dsh plugin --profile web add github:yzdel2000/dsh-themes`（仓库根的 `package.json` 就是组合包清单）。
 
 **C. 只装单款皮肤（不装面板）**
 
@@ -79,7 +81,9 @@ dsh plugin --profile web add ./dsh-themes/skins/mario   # 换成任意 skins/<id
 
 ## 兼容性
 
-面向 **DSH ≥ 0.2.1-rc.3**（`packages/skin-center` 的 `dsh.engines.dsh` 声明为 `>=0.2.1-rc.3 <0.3.0`）。皮肤与面板走当前契约——`window.__ModuleLoader__.load({id, factory})` 浏览器半、`ctx.webServer.register({kind, path, handler})` 宿主半、`settings.section` 槽位、`ctx.locale` 字典，以及 `--dsw-*` 设计令牌（已按 0.2.1-rc.3 的令牌表核对）。安装命令里的 `web` 可换成任意已存在的 profile 名。
+面向 **DSH ≥ 0.2.1-rc.3**（仓库根与 `packages/skin-center` 的 `engines.dsh` 都声明为 `>=0.2.1-rc.3 <0.3.0`）。皮肤与面板走当前契约——`window.__ModuleLoader__.load({id, factory})` 浏览器半、`ctx.webServer.register({kind, path, handler})` 宿主半、`settings.section` 槽位、`ctx.locale` 字典，以及 `--dsw-*` 设计令牌（已按 0.2.1-rc.3 的令牌表核对）。安装命令里的 `web` 可换成任意已存在的 profile 名。
+
+仓库根 `package.json` 声明了完整的组合包清单：`dsh.manifestVersion`、`dsh.bundle.patch`（指向 `packages/skin-center/cordis.patch.yml`）、`dsh.client`（`platform: web`）、`main` / `exports`（指向 `packages/skin-center/lib` 的预构建入口）、`engines.dsh`、`repository` 与 Apache-2.0 许可证。因此 `dsh plugin add <仓库根>` 与 `dsh plugin add github:yzdel2000/dsh-themes` 都能直接安装。
 
 ## 皮肤是怎么实现的
 
