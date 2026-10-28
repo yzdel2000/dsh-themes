@@ -3,19 +3,19 @@
   "version": "0.5.0",
   "description": "151 款 DSH 皮肤聚合 + 皮肤中心试穿面板 / A 151-skin pack with a try-on panel for DSH Web UI.",
   "type": "module",
-  "main": "packages/skin-center/lib/index.js",
-  "icon": "packages/skin-center/icon.webp",
+  "main": "lib/index.js",
+  "icon": "icon.webp",
   "exports": {
-    ".": "./packages/skin-center/lib/index.js",
-    "./client": "./packages/skin-center/lib/client.js",
-    "./locale/*.json": "./packages/skin-center/locale/*.json",
-    "./icon": "./packages/skin-center/icon.webp",
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.webp",
     "./package.json": "./package.json"
   },
   "dsh": {
     "manifestVersion": 1,
     "bundle": {
-      "patch": "./packages/skin-center/cordis.patch.yml"
+      "patch": "./cordis.patch.yml"
     },
     "client": {
       "platform": "web",
@@ -26,19 +26,18 @@
     }
   },
   "files": [
-    "packages/skin-center/lib",
-    "packages/skin-center/cordis.patch.yml",
-    "packages/skin-center/assets",
-    "packages/skin-center/locale",
-    "packages/skin-center/icon.webp",
-    "packages/skin-center/README.md",
+    "lib",
+    "cordis.patch.yml",
+    "assets",
+    "locale",
+    "icon.webp",
     "README.md"
   ],
   "scripts": {
     "convert": "python3 tools/convert.py",
     "validate": "python3 tools/validate_skin.py",
-    "generate": "node packages/skin-center/scripts/generate.mjs",
-    "test": "node packages/skin-center/tests/persistence.test.mjs",
+    "generate": "node scripts/generate.mjs",
+    "test": "node tests/persistence.test.mjs",
     "prepublishOnly": "npm test"
   },
   "engines": {

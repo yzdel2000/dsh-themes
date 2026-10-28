@@ -2,13 +2,12 @@
 /**
  * skin-center manifest/CSS/thumbnail generator.
  *
- * Scans ../../skins/ (read-only — never writes into skins/) and produces
- * packages/skin-center/assets/:
+ * Scans skins/ (read-only — never writes into skins/) and produces assets/:
  *   manifest.json  — one entry per skin (id/name/nameEn/group/accent/bodyAttr/…)
  *   skins.css      — concatenated `body[data-dsh-<id>]` CSS from every skin
  *   thumbs/        — compressed previews (320×200 WebP): <id>.light.webp / .dark.webp
  *
- * Run from packages/skin-center/:  node scripts/generate.mjs
+ * Run from the repo root:  node scripts/generate.mjs  (or `npm run generate`)
  * Thumbnails delegate to scripts/thumbs.py (system python3 + Pillow).
  *
  * Volume: 302 full-size previews are ~67 MB (1280×800 PNG) — too heavy for an
@@ -21,7 +20,7 @@ import { fileURLToPath } from 'node:url'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const PKG = resolve(HERE, '..')
-const SKINS = resolve(PKG, '..', '..', 'skins')
+const SKINS = resolve(PKG, 'skins')
 const ASSETS = join(PKG, 'assets')
 const THUMBS = join(ASSETS, 'thumbs')
 const PREVIEWS = join(ASSETS, 'previews')

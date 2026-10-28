@@ -74,7 +74,7 @@ dsh plugin --profile web add @dsh-suite/themes
 皮肤清单、CSS、缩略图全部由脚本从 `skins/` 扫描生成，**不手写**：
 
 ```sh
-cd packages/skin-center && node scripts/generate.mjs   # 需要系统 python3 + Pillow（缩略图）
+node scripts/generate.mjs   # 需要系统 python3 + Pillow（缩略图）
 ```
 
 产物 `assets/manifest.json`、`assets/skins.css`、`assets/thumbs/*.webp` 随包发布。
@@ -82,7 +82,7 @@ cd packages/skin-center && node scripts/generate.mjs   # 需要系统 python3 + 
 ## 测试 / Test
 
 ```sh
-cd packages/skin-center && node tests/persistence.test.mjs   # 只用 node:test，无第三方依赖
+node tests/persistence.test.mjs   # 只用 node:test，无第三方依赖
 ```
 
 覆盖宿主 `/skin-center/state`（读写 / 校验 / 同源守卫）与浏览器半的启动恢复

@@ -1,6 +1,6 @@
 // Persistence contract for the skin-center pack (no dependencies — node:test only).
 //
-//   cd packages/skin-center && node tests/persistence.test.mjs
+//   node tests/persistence.test.mjs
 //
 // (`node --test` also works outside a sandboxed shell; run the file directly when
 // the DSH shell forbids the child processes the test runner spawns.)

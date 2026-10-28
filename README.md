@@ -61,7 +61,7 @@ dsh plugin --profile web add ./dsh-themes/skins/mario   # 换成任意 skins/<id
 
 > 预览图是**配色意境图**：用 AionUI 的模拟界面渲染同一套配色，**不是 DSH 实机截图**。它只保证配色一致，不保证布局；实机观感以皮肤中心试穿结果为准。
 
-真实输出（v0.5 持久化契约测试，`cd packages/skin-center && node tests/persistence.test.mjs`）：
+真实输出（v0.5 持久化契约测试，`node tests/persistence.test.mjs`）：
 
 ```text
 ✔ host half: /skin-center/state persists, validates, and guards origin (36.6ms)
@@ -81,9 +81,9 @@ dsh plugin --profile web add ./dsh-themes/skins/mario   # 换成任意 skins/<id
 
 ## 兼容性
 
-面向 **DSH ≥ 0.2.1-rc.3**（仓库根与 `packages/skin-center` 的 `engines.dsh` 都声明为 `>=0.2.1-rc.3 <0.3.0`）。皮肤与面板走当前契约——`window.__ModuleLoader__.load({id, factory})` 浏览器半、`ctx.webServer.register({kind, path, handler})` 宿主半、`settings.section` 槽位、`ctx.locale` 字典，以及 `--dsw-*` 设计令牌（已按 0.2.1-rc.3 的令牌表核对）。安装命令里的 `web` 可换成任意已存在的 profile 名。
+面向 **DSH ≥ 0.2.1-rc.3**（仓库根的 `engines.dsh` 声明为 `>=0.2.1-rc.3 <0.3.0`）。皮肤与面板走当前契约——`window.__ModuleLoader__.load({id, factory})` 浏览器半、`ctx.webServer.register({kind, path, handler})` 宿主半、`settings.section` 槽位、`ctx.locale` 字典，以及 `--dsw-*` 设计令牌（已按 0.2.1-rc.3 的令牌表核对）。安装命令里的 `web` 可换成任意已存在的 profile 名。
 
-仓库根 `package.json` 声明了完整的组合包清单：`dsh.manifestVersion`、`dsh.bundle.patch`（指向 `packages/skin-center/cordis.patch.yml`）、`dsh.client`（`platform: web`）、`main` / `exports`（指向 `packages/skin-center/lib` 的预构建入口）、`engines.dsh`、`repository` 与 Apache-2.0 许可证。因此 `dsh plugin add <仓库根>` 与 `dsh plugin add github:yzdel2000/dsh-themes` 都能直接安装。
+仓库根 `package.json` 声明了完整的组合包清单：`dsh.manifestVersion`、`dsh.bundle.patch`（`./cordis.patch.yml`）、`dsh.client`（`platform: web`）、`main` / `exports`（`lib/` 的预构建入口）、`engines.dsh`、`repository` 与 Apache-2.0 许可证。因此 `dsh plugin add <仓库根>` 与 `dsh plugin add github:yzdel2000/dsh-themes` 都能直接安装。
 
 ## 皮肤是怎么实现的
 
@@ -364,6 +364,20 @@ dsh plugin --profile web add ./dsh-themes/skins/mario   # 换成任意 skins/<id
 ## 目录结构
 
 ```
+仓库根（组合包 / npm 包）
+├── package.json         # DSH bundle 清单（main / exports / dsh.bundle / dsh.client）
+├── cordis.patch.yml     # 插入皮肤中心面板行
+├── lib/                 # 预构建：host 路由（index.js）与浏览器半（client.js）
+├── assets/              # manifest + 聚合 CSS + 缩略图 / 640px 预览图
+├── locale/              # 插件列表的中英文字典
+├── icon.webp            # 插件图标
+├── docs/skin-center.md  # 皮肤中心实现细节与 dsh-web 兼容声明
+├── scripts/             # generate.mjs（重建 assets）/ thumbs.py
+├── tests/               # 持久化契约测试
+└── skins/<id>/          # 151 个可单独安装的皮肤包，结构见下
+```
+
+```
 skins/<id>/
 ├── skin.json            # 皮肤元数据（名称/主色/bodyAttr/预览）
 ├── package.json         # DSH 插件包声明（dsh.bundle.patch）
@@ -387,15 +401,15 @@ skins/<id>/
   自己的圆角语言写入 `--dsh-windows-content-radius` / `--dsh-windows-titlebar-height`
 - `python3 tools/validate_skin.py` — 结构校验（作用域/令牌/keyframes 闭环/文件完整性）
 - `python3 tools/build_readme.py` — 重新生成「皮肤一览」目录（只替换 `<!-- skins:start -->` / `<!-- skins:end -->` 之间的内容，手写文案不动）
-- `cd packages/skin-center && node scripts/generate.mjs [--css-only]` — 重建皮肤中心的
+- `node scripts/generate.mjs [--css-only]` — 重建皮肤中心的
   manifest + 聚合 CSS；`--css-only` 跳过缩略图（不需要 python3/Pillow），宿主按请求懒加载，
   重建后**无需重启** DSH
 
 ## 发布 / Release
 
-唯一发布源是**仓库根**：版本号写在根 `package.json`，发布前先跑 `npm test`（`prepublishOnly` 也会跑），然后执行 `npm publish`。
+唯一发布源是**仓库根**：版本号写在根 `package.json`，发布前先跑 `npm test`（`prepublishOnly` 也会跑），然后执行 `npm publish`。仓库里不再有第二份包清单，不存在从子目录误发布的可能。
 
-`packages/skin-center/` 是皮肤中心的源码与构建目录（host / client 入口、assets、locale、icon 都由根清单通过 `main` / `exports` 指向）；它的 `package.json` 已标记 `"private": true` 并带 `prepublishOnly` 守卫，从子目录发布会被拒绝，避免重复发布同一个包名。
+皮肤中心的实现细节、体积与 dsh-web 兼容声明见 [docs/skin-center.md](docs/skin-center.md)。
 
 ## 致谢
 
