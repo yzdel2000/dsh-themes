@@ -104,6 +104,8 @@ dsh plugin --profile web add ./dsh-themes/skins/mario   # 换成任意 skins/<id
 
 ## 皮肤一览
 
+<!-- skins:start -->
+
 <details open><summary><b>绝区零</b>（43 个）</summary>
 
 | 皮肤 | 浅色预览 | 深色预览 |
@@ -353,6 +355,8 @@ dsh plugin --profile web add ./dsh-themes/skins/mario   # 换成任意 skins/<id
 
 </details>
 
+<!-- skins:end -->
+
 ## 目录结构
 
 ```
@@ -378,7 +382,7 @@ skins/<id>/
   `lib/client.js` 内嵌的 CSS）；顺带清掉死选择器与没人引用的 `@keyframes`，并按皮肤
   自己的圆角语言写入 `--dsh-windows-content-radius` / `--dsh-windows-titlebar-height`
 - `python3 tools/validate_skin.py` — 结构校验（作用域/令牌/keyframes 闭环/文件完整性）
-- `python3 tools/build_readme.py` — 重新生成本 README
+- `python3 tools/build_readme.py` — 重新生成「皮肤一览」目录（只替换 `<!-- skins:start -->` / `<!-- skins:end -->` 之间的内容，手写文案不动）
 - `cd packages/skin-center && node scripts/generate.mjs [--css-only]` — 重建皮肤中心的
   manifest + 聚合 CSS；`--css-only` 跳过缩略图（不需要 python3/Pillow），宿主按请求懒加载，
   重建后**无需重启** DSH

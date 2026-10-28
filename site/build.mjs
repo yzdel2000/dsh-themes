@@ -11,8 +11,9 @@ const data = JSON.parse(readFileSync(join(ROOT, 'site', 'data', 'skins.json'), '
 const community = JSON.parse(readFileSync(join(ROOT, 'site', 'data', 'community.json'), 'utf8'));
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const MAIN = 'https://whyihaveyou.github.io/dsh-suite/';
-const REPO = 'https://github.com/whyihaveyou/dsh-themes';
+const SITE = 'https://yzdel2000.github.io/dsh-themes/';
+const REPO = 'https://github.com/yzdel2000/dsh-themes';
+const UPSTREAM = 'https://github.com/whyihaveyou/dsh-themes';
 const fmt = (n) => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : String(n);
 
 /* official skin card: day+night thumbs stacked, name, accent, tags */
@@ -74,22 +75,22 @@ const html = `<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DSH 皮肤画廊 · dsh-themes — 151 款官方皮肤，昼夜双模式</title>
-  <meta name="description" content="DeepSeek Harness 皮肤画廊：151 款官方皮肤（绝区零 / 原神 / 经典配色 / 节日限定…），昼夜双预览、契约测试全部通过，一键安装。">
+  <title>DSH 皮肤画廊 · dsh-themes — 151 款皮肤，昼夜双模式</title>
+  <meta name="description" content="DeepSeek Harness 皮肤画廊：151 款皮肤（绝区零 / 原神 / 经典配色 / 节日限定…），昼夜双预览、契约测试全部通过，一键安装。">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="dsh-themes">
-  <meta property="og:title" content="DSH 皮肤画廊 · 151 款官方皮肤，昼夜双模式">
-  <meta property="og:description" content="DeepSeek Harness 皮肤画廊：151 款官方皮肤（绝区零 / 原神 / 经典配色 / 节日限定…），昼夜双预览、契约测试全部通过，一键安装。">
-  <meta property="og:url" content="https://whyihaveyou.github.io/dsh-themes/">
-  <meta property="og:image" content="https://whyihaveyou.github.io/dsh-themes/assets/themes/tryon-panel.png">
+  <meta property="og:title" content="DSH 皮肤画廊 · 151 款皮肤，昼夜双模式">
+  <meta property="og:description" content="DeepSeek Harness 皮肤画廊：151 款皮肤（绝区零 / 原神 / 经典配色 / 节日限定…），昼夜双预览、契约测试全部通过，一键安装。">
+  <meta property="og:url" content="${SITE}">
+  <meta property="og:image" content="${SITE}assets/themes/tryon-panel.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="850">
   <meta property="og:image:alt" content="DSH 皮肤画廊界面预览 — 151 款皮肤试穿">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DSH 皮肤画廊 · 151 款官方皮肤，昼夜双模式">
-  <meta name="twitter:description" content="DeepSeek Harness 皮肤画廊：151 款官方皮肤，昼夜双预览、一键安装。">
+  <meta name="twitter:title" content="DSH 皮肤画廊 · 151 款皮肤，昼夜双模式">
+  <meta name="twitter:description" content="DeepSeek Harness 皮肤画廊：151 款皮肤，昼夜双预览、一键安装。">
   <meta name="theme-color" content="#0b0f1a">
-  <link rel="canonical" href="https://whyihaveyou.github.io/dsh-themes/">
+  <link rel="canonical" href="${SITE}">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
   <link rel="stylesheet" href="assets/style.css">
@@ -98,9 +99,8 @@ const html = `<!doctype html>
   <header class="site-header">
     <a class="brand" href="./"><span class="brand-mark">dsh</span>&nbsp;themes</a>
     <nav class="nav">
-      <a class="nav-btn" href="${MAIN}">主站目录</a>
-      <a class="nav-btn" href="${MAIN}stars.html">Star 榜</a>
-      <a class="nav-btn" href="${MAIN}learn.html">学习资源</a>
+      <a class="nav-btn" href="#gallery">全部皮肤</a>
+      <a class="nav-btn" href="#community">社区插件</a>
       <a class="nav-gh" href="${REPO}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
     </nav>
   </header>
@@ -110,7 +110,7 @@ const html = `<!doctype html>
       <div class="hero-grid">
         <div class="hero-text">
           <h1 class="slogan">DSH 皮肤画廊</h1>
-          <p class="subtitle">DeepSeek Harness 官方皮肤合集——151 款昼夜成对皮肤，全部通过契约测试，点击卡片即可试看大图。</p>
+          <p class="subtitle">DeepSeek Harness 皮肤合集——151 款昼夜成对皮肤，全部通过契约测试，点击卡片即可试看大图。</p>
           <div class="hero-badges">
             <span class="hbadge">${stats.skins} 款皮肤</span>
             <span class="hbadge">${stats.groups} 个分组</span>
@@ -157,11 +157,11 @@ const html = `<!doctype html>
 
     <section class="community" id="community">
       <h2 class="section-title section-title-community">社区皮肤 · Community Skins</h2>
-      <p class="section-hint">来自 dsh-suite 目录的社区皮肤插件（按星数排序）——开源作品，点「复制」即可安装</p>
+      <p class="section-hint">来自社区的皮肤插件（按星数排序）——开源作品，点「复制」即可安装</p>
       <div class="com-grid">${communityHtml}</div>
     </section>
 
-    <h2 class="section-title gallery-title" id="gallery-title">官方皮肤 · Official</h2>
+    <h2 class="section-title gallery-title" id="gallery-title">全部皮肤 · All</h2>
     <p class="section-hint">共 ${stats.skins} 款，点击卡片查看大图、安装命令与热插拔测试情况</p>
     <section class="gallery" id="gallery">
       ${groupsHtml}
@@ -196,12 +196,10 @@ const html = `<!doctype html>
   </div>
 
   <footer class="site-footer">
-    <p class="foot-about">dsh-themes · DeepSeek Harness 皮肤合集。预览图由工具链自动生成，皮肤包本体在仓库 skins/ 目录。</p>
+    <p class="foot-about">dsh-themes · DeepSeek Harness 皮肤合集，独立维护，源自 <a href="${UPSTREAM}" target="_blank" rel="noopener noreferrer">whyihaveyou/dsh-themes</a>。预览图由工具链自动生成，皮肤包本体在仓库 skins/ 目录。</p>
     <nav class="foot-links">
-      <a href="${MAIN}">dsh-suite 主站目录</a>
-      <a href="${MAIN}stars.html">Star 榜</a>
       <a href="${REPO}">GitHub 仓库</a>
-      <a href="${MAIN}learn.html">DeepSeek Harness 官方指南</a>
+      <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness 官方仓库</a>
     </nav>
   </footer>
 

@@ -1,13 +1,15 @@
 # @dsh-suite/themes — 151 款 DSH 皮肤聚合 / 151-skin pack for DSH Web UI
 
-[💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=skin-center)
+[💬 问题反馈](https://github.com/yzdel2000/dsh-themes/issues) · [仓库](https://github.com/yzdel2000/dsh-themes)
 
-> 把 dsh-themes 的 151 个皮肤包**一包打尽**：一个 npm 包 + 一个「皮肤中心」试穿面板。
+> 本项目独立维护，源自 [whyihaveyou/dsh-themes](https://github.com/whyihaveyou/dsh-themes)。
+
+> 把 151 个皮肤包**一包打尽**：一个 npm 包 + 一个「皮肤中心」试穿面板。
 
 ## 安装 / Install
 
 ```sh
-dsh plugin --profile <你的 profile 名> add @dsh-suite/themes
+dsh plugin --profile web add @dsh-suite/themes
 ```
 
 安装后重启 `dsh`（或桌面版），Settings → **皮肤中心 / Skin Center** 即可用。
@@ -123,3 +125,7 @@ per-skin skin-manifest-v2 asset-directory layout.
 作为皮肤聚合包，每个皮肤经 `body[data-dsh-<id>]` 作用域覆写 `--dsw-alias-*` 令牌（昼夜双模式），并遵循
 primary-action 令牌规则（主按钮四件套 verbatim、禁止跨族配对）；随包 manifest 为聚合格式（151 皮合一），
 非逐皮的 skin-manifest-v2 资产目录布局。
+
+## License / 许可证
+
+Apache-2.0（SPDX：`Apache-2.0`）。本项目为社区作品，与 DeepSeek AI 无隶属关系；皮肤中的角色名称与形象版权归各自厂商所有（粉丝向非商业展示）。
